@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 01/08/2025
+ms.date: 02/11/2025
 ---
 
 # Essential services for Office
@@ -4750,6 +4750,10 @@ This product telemetry is collected for tracking and logging the internal transa
 
 The following fields are collected:
 
+- **GranularStatusCode** - Exact granular error code returned during purchase provisioning on Microsoft end.
+
+- **GranularStatusMessage** - Exact error message to be returned during purchase provisioning on Microsoft end.
+
 - **MicrosoftPurchaseOrderId** - Microsoft Order ID sent by Retail Federation Service (RFS) for tracking purposes.
 
 - **ResponseCode** - HTTP Response code (int)
@@ -4956,6 +4960,7 @@ This event is used to understand the in-app purchase (IAP) experience for the us
  
    The following fields are collected: 
  
+   - **attemptCount** - Indicates how many activation attempts were made.
    - **status** - String – To know the response during activation (successful, failed, or skipped)
 
 - **Office.iOS.Paywall.BottomSheet.Stats** - Usage telemetry to measure how many users expanded/dismissed bottom sheet UI of subscription-plan (SKU) chooser screen. The data is used to understand usage of the SKU chooser and optimize the in-app purchase experience in future versions. 
@@ -5101,6 +5106,7 @@ This event is used to understand the in-app purchase (IAP) experience for the us
 
    - **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
    - **failureReason** - String – Only added when status is “failure”. Indicating the error response given by the App-store response.
+   - **OriginalTransactionId** - Apple Transaction Id for the purchase.
    - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
    - **productId** - String – Only for “MakePurchase”, “PendingPurchase”, the app-store ID of the product for which the request was made.
    - **productsCount** - Int – Only for “ProductsFetch”, the number of products returned by Store.
@@ -5299,6 +5305,32 @@ The following fields are collected:
 
 - **featureId** - TCID for premium feature on which user taps
 
+
+### Office.iOS.Paywall.ShareSubscriptionScreen.ShareableLinkFail
+
+This event is triggered when tapping the "Share Invite" link in user profile fails. The event is used to determine the reason for the shareable link service failure.
+
+The following fields are collected: 
+
+- **failureReason** - Indicates the failure reason of shareable link service.
+
+
+### Office.iOS.Paywall.SuccessScreen.ShareableLinkFail 
+
+This event is triggered when tapping the "Share Invite" link on the Family onboarding congratulation screen fails. The data is used to determine the reason for the shareable link service failure.
+
+The following fields are collected: 
+
+- **failureReason** - Indicates the failure reason of the shareable link service
+
+
+### Office.iOS.Paywall.SuccessScreen.ShareLinkTap
+
+This event is triggered when user taps on the "Share Invite" button after a successful Family subscription purchase. The data is used to detect the clicks and number of successful subscription shares.
+
+The following fields are collected:
+
+- None
 
 ### Office.Licensing.AcceptEulaForCurrentLicense 
 
@@ -18661,6 +18693,20 @@ The following fields are collected:
 - **SessionId** - Guid: Unique Paywall session identifier
 
 - **V2Enabled** - Boolean – Flag denoting if experimental modern upsell UX was shown.
+
+### Office.Android.DocsUI.PaywallControl.SubscriptionOfferTypeDuringPurchase
+
+Data event is triggered when a user goes to purchase a subscription on the paywall screen in the app via Google App Store. Critical data to log whether user is going to purchase trial or no-trial or any other offer type during the actual purchase through the paywall. This data would help with identifying and finding the root cause of purchase failures.
+
+The following fields are collected:
+
+- **EventDate** - Timestamp of the event occurrence 
+
+- **OfferType** - Type of offer, like trial or any other offer type 
+
+- **ProductId** - String - ProductId of the SKU being purchased.
+
+- **SessionID** - GUID to connect events by session
 
 ### Office.Android.DocsUI.Views.CopilotCreditsFRE 
 

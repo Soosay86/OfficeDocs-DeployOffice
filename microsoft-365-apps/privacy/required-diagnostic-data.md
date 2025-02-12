@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 01/08/2025
+ms.date: 02/11/2025
 ---
 
 # Required diagnostic data for Office
@@ -10701,6 +10701,8 @@ The following fields are collected:
 
 - **Data\_ErrorID** - error identifier in case of operation failure
 
+- **Data_fAutoCreateOn** – indicates that Autocreate is turned on, which allows user to automatically save file to cloud when they create a new document.
+
 - **Data\_MainPdod** - The document identifier during this process session
 
 - **Data_StyleVersion** – version number of default Word styles.
@@ -16299,6 +16301,24 @@ The following fields are collected:
     - 16 - AuthToken isn't sent to Dime
 
 - **WebViewShownDuration** - Duration for which the dime purchase page is shown to the user 
+
+#### Office.Android.DocsUI.Views.PrivacyFreDialogEvent
+
+This event is triggered when Office apps on Android are launched for the first time and users are presented with privacy dialogs. The data is used to monitor the health of our applications' First Run Experience (FRE) flow, determine its success state, and identify whether users encounter obstacles or potential points of confusion in the process of using the app for the first time. 
+
+The following fields are collected:
+
+- **Data_DialogDisplayDurationInMs** - the amount of time (in milliseconds) that the dialog is visible to the user.
+
+- **Data_DialogType** - the First Run dialog type.
+
+#### Office.Android.DocsUI.Views.SubscriptionFlowEvent
+
+The event is triggered when Office apps on Android are launched for the first time and users are first presented with the in-app premium subscription purchase screens. The data is used to monitor the health of our applications' First Run Experience (FRE) flow, determine its success state, and identify whether users encounter obstacles or potential points of confusion in the process of using the app for the first time.
+
+The following fields are collected:
+
+- **Data_SubscriptionFlowDurationInMs** - the amount of time (in milliseconds) that the subscription flow is visible to the user.
 
 
 #### Office.Android.EarlyTelemetry.AdErrorEvent
