@@ -87,7 +87,7 @@ function updateUWPVersion {
         $uwpVersion = $uwpApp.Version
         $uwpVersionObject = [System.Version]$uwpVersion
 
-        $updatedVersion = "16001.14326.22008.0"
+        $updatedVersion = "16001.14326.22094.0"
         $updatedVersionObject = [System.Version]$updatedVersion
 
         $unsupportedVersion = "16001.14327.10000.0"

@@ -65,7 +65,7 @@ In this video demo, you can see custom reporting in action. We compare data that
   
 **Custom reporting in Office Telemetry Dashboard**
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/ed8327e4-c063-40f5-a634-230c067d73b4?autoplay=false]
+> [!VIDEO 96809fac-4ac9-4a33-bc78-d36c8dd6f2be]
 
 *Although this video is for an earlier version of Office, the information also applies to newer versions of Office.*
   

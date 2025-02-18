@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 05/31/2024
+ms.date: 10/01/2024
 ---
 
 # Privacy controls available for Office products
@@ -31,11 +31,12 @@ The sections are organized by where Office is being run, such as on a Windows or
 Our most recent privacy controls are available for the following Office products when using Office on Windows devices:
 
 - Desktop versions of the Office applications that come with Microsoft 365 or Office 365 subscription plans. For example, the Office apps that come with the Microsoft 365 Personal plan (for home), the Microsoft 365 Business Standard plan (for businesses), or the Microsoft 365 E5 plan (for enterprises).
-- Retail versions of Office 2021, Office 2019, and Office 2016, which are available as a one-time purchase. For example, Office Professional 2021 or Office Home & Student 2019.
+- Retail versions of Office 2024, Office 2021, Office 2019, and Office 2016, which are available as a one-time purchase. For example, Office Home 2024 or Office Professional 2021.
 - Desktop versions of Project and Visio that come with some subscription plans, such as Project Plan 5 or Visio Plan 2.
-- Retail versions of Project 2021, Project 2019, and Project 2016, all of which are available as a one-time purchase.
-- Retail versions of Visio 2021, Visio 2019, and Visio 2016, all of which are available as a one-time purchase.
+- Retail versions of Project 2024, Project 2021, Project 2019, and Project 2016, all of which are available as a one-time purchase.
+- Retail versions of Visio 2024, Visio 2021, Visio 2019, and Visio 2016, all of which are available as a one-time purchase.
 - Volume licensed versions of Office LTSC 2021, Project 2021, and Visio LTSC 2021.
+- Volume licensed versions of Office LTSC 2024, Project 2024, and Visio LTSC 2024.
 
 For Windows devices, the following table lists the apps and the minimum version of those apps that have our most recent privacy controls.
 
@@ -80,7 +81,9 @@ Our most recent privacy controls are available for the following Office products
 
 - Office for Mac, which is available with any Office 365 or Microsoft 365 subscription plan that includes the desktop versions of the Office apps. For example, the Office apps that come with the Microsoft 365 Family plan (for home), the Microsoft 365 Business Premium plan (for businesses), or the Microsoft 365 E3 plan (for enterprises).
 - Office LTSC Standard for Mac 2021, which is available as a one-time purchase through a volume licensing agreement.
+- Office LTSC Standard for Mac 2024, which is available as a one-time purchase through a volume licensing agreement.
 - Office 2021 for Mac, which is available as a one-time purchase from a retail store.
+- Office 2024 for Mac, which is available as a one-time purchase from a retail store.
 
 For Mac devices, the following table lists the apps and the minimum version of those apps that have our most recent privacy controls.
 

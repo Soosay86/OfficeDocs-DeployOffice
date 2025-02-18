@@ -16,7 +16,7 @@ ms.date: 01/09/2024
 
 # Security baseline for Microsoft 365 Apps for enterprise
 
-The security baseline for Microsoft 365 Apps for enterprise is published twice a year, usually in June and December. The most current version is [Version 2306](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-m365-apps-for-enterprise-v2306/ba-p/3858702), released on June 29, 2023.
+The security baseline for Microsoft 365 Apps for enterprise is published twice a year, usually in June and December. The most current version is [Version 2412](https://techcommunity.microsoft.com/blog/microsoft-security-baselines/security-baseline-for-m365-apps-for-enterprise-v2412/4357320), released on December 13, 2024.
 
 To get the security baseline for Microsoft 365 Apps for enterprise, [download the Security Compliance Toolkit](https://www.microsoft.com/en-us/download/details.aspx?id=55319).
 

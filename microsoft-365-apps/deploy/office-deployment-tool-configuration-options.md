@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "Configuration options for the Office Deployment Tool"
-ms.date: 08/15/2024
+ms.date: 12/19/2024
 
 ---
 
@@ -113,17 +113,20 @@ Example values:
 - Version="MatchInstalled"
 
 
-### OfficeClientEdition attribute (part of Add element) 
+### OfficeClientEdition attribute (part of Add element)
 
 Optional.
 
-
-Defines whether the 32-bit or 64-bit edition of Microsoft 365 Apps is downloaded or installed. If Microsoft 365 Apps isn't installed on the device and OfficeClientEdition isn't set, the ODT automatically selects the 64-bit edition. However, it selects the 32-bit edition if the device uses a 32-bit version of Windows or has less than 4-GB RAM. If Microsoft 365 Apps is installed and OfficeClientEdition not specified, the ODT matches the architecture of the existing installation of Microsoft 365 Apps. If Microsoft 365 Apps is installed and OfficeClientEdition is specified, then it must match the already installed architecture. If it doesn't, the installation fails, since mixed architectures aren't supported. 
+Defines whether the 32-bit or 64-bit edition of Microsoft 365 Apps is downloaded or installed. If Microsoft 365 Apps isn't installed on the device and OfficeClientEdition isn't set, the ODT automatically selects the 64-bit edition. However, it selects the 32-bit edition if the device uses a 32-bit version of Windows or has less than 4-GB RAM. If Microsoft 365 Apps is installed and OfficeClientEdition not specified, the ODT matches the architecture of the existing installation of Microsoft 365 Apps. If Microsoft 365 Apps is installed and OfficeClientEdition is specified, then it must match the already installed architecture. If it doesn't, the installation fails, since mixed architectures aren't supported.
 
 Allowed values:
 
 - OfficeClientEdition="64"
 - OfficeClientEdition="32"
+ 
+<!--Using include for Microsoft 365 Apps on arm-->
+> [!NOTE]
+> [!INCLUDE[m365-apps-arm.md](../includes/m365-apps-arm.md)]
 
 ### Channel attribute (part of Add element) 
 
@@ -463,6 +466,7 @@ Allowed values:
 - ID="OneDrive"
 - ID="OneNote"
 - ID="Outlook"
+- ID="OutlookForWindows"
 - ID="PowerPoint"
 - ID="Publisher"
 - ID="Teams"
@@ -470,6 +474,7 @@ Allowed values:
 
 > [!NOTE]
 > - For OneDrive, use **Groove**. For Skype for Business, use **Lync**.
+> - *OutlookForWindows* refers to the new Outlook app. For more information, see [Overview of the new Outlook for Windows](../outlook/overview-new-outlook.md)
 > - For more information about Microsoft Teams, see [Deploy Microsoft Teams with Microsoft 365 Apps](teams-install.md).
 > - "Bing" refers to the background service for Microsoft Search in Bing. For more information, see [Microsoft Search in Bing and Microsoft 365 Apps for enterprise](microsoft-search-bing.md).
 

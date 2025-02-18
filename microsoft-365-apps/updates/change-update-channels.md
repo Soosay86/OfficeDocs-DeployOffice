@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "This article gives step-by-step instructions for changing the update channel for Microsoft 365 Apps."
-ms.date: 03/25/2024
+ms.date: 11/12/2024
 ---
 
 # Change the Microsoft 365 Apps update channel for devices in your organization
@@ -37,7 +37,7 @@ For more information about channels, see [Overview of update channels for Micros
 
 3. Link the updated policy to the OU with the devices whose channel you want to change.
 
-4. By default, Group Policy refreshes in the background every 90 minutes.  If you want to refresh policy assignment immediately (for example, if you're testing in a lab environment), you can use the **gpupdate** command. For more information, see [gpupdate](/windows-server/administration/windows-commands/gpupdate).
+4. By default, Group Policy refreshes in the background every 90 minutes. If you want to refresh policy assignment immediately (for example, if you're testing in a lab environment), you can use the **gpupdate** command. For more information, see [gpupdate](/windows-server/administration/windows-commands/gpupdate).
 
 After the policy is applied, the "Office Automatic Updates 2.0" scheduled task must run. It detects the updated policy and updates the assigned channel. When the task runs again, it detects the new assigned channel and Microsoft 365 Apps updates to a new build from that channel. The client device's user interface will display the updated channel only after installing a build from the new channel.
 
@@ -108,7 +108,7 @@ If you prefer watching over reading, view [How to trigger an update channel chan
 Here are the steps for changing the update channel to Current Channel or Monthly Enterprise Channel:
 
 1. Log into the [Microsoft 365 Apps admin center](https://config.office.com). Review the [requirements](../admin-center/overview.md#requirements) for eligible admin roles.
-1. Navigate to **Inventory**, select **Show all devices** and then the **Switch device update channel** button on the top.
+1. Navigate to **Inventory**, select **Show all devices**, and then the **Switch device update channel** button on the top.
 1. Select which devices should be moved and the targeted update channel.
     - You can enter device names or Microsoft Entra ID groups, or a mix of both.
     - For Entry ID groups, groups can be nested up to three levels down and contain a mix of device and user objects.
@@ -157,6 +157,8 @@ Priority|Management Type|Registry Value|Registry Path
 2nd|Cloud Update|UpdateBranch|HKLM\SOFTWARE\Policies\Microsoft\cloud\office\16.0\Common\officeupdate
 3rd|Policy Setting|UpdatePath|HKLM\SOFTWARE\Policies\Microsoft\office\16.0\Common\officeupdate
 4th|Policy Setting|UpdateBranch|HKLM\SOFTWARE\Policies\Microsoft\office\16.0\Common\officeupdate
-5th|ODT|UpdateUrl or UpdatePath|HKLM\SOFTWARE\Microsoft\office\ClickToRun\Configuration
-6th|Unmanaged|UnmanagedUpdateURL|HKLM\SOFTWARE\Microsoft\office\ClickToRun\Configuration
+5th|ODT|UpdateUrl|HKLM\SOFTWARE\Microsoft\office\ClickToRun\Configuration
+6th|Unmanaged|UnmanagedUpdateURL<sup>*</sup>|HKLM\SOFTWARE\Microsoft\office\ClickToRun\Configuration
 7th|Unmanaged|CDNBaseUrl|HKLM\SOFTWARE\Microsoft\office\ClickToRun\Configuration
+
+<sup>*</sup>_Only set on unmanaged devices. See [the second notes section](../deploy/manage-software-download-settings-office-365.md#choose-how-often-to-get-feature-updates-for-office) on how the Microsoft 365 Apps determine if the installation qualifies as unmanaged._

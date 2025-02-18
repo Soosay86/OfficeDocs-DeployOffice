@@ -11,3 +11,5 @@ items:
         href: basic-authentication-prompts-blocked.md
       - name: OneNote blocks dangerous extensions
         href: onenote-extension-block.md
+      - name: Compliance in Microsoft 365 Apps
+        href: compliance-overview.md

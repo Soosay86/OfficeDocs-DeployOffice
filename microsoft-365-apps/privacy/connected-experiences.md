@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 08/13/2024
+ms.date: 02/14/2025
 ---
 
 # Connected experiences in Office
@@ -31,6 +31,7 @@ The following table provides a list of connected experiences that analyze your c
 | Analyze Data | [Analyze Data in Excel](https://support.microsoft.com/office/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
 | Automatic alt text <sup>[2]</sup> | [Everything you need to know to write effective alt text](https://support.microsoft.com/office/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
 |Automatically apply or recommend sensitivity labels <sup>[2]</sup> <sup>[3]</sup> <sup>[4]</sup>|[Sensitivity labels are automatically applied or recommended for your files and emails in Office](https://support.microsoft.com/office/622e0d9c-f38c-470a-bcdb-9e90b24d71a1)|
+|Copilot|When using Copilot in Microsoft 365 apps (Excel, OneNote, Outlook, PowerPoint, and Word)|
 | Data types| [Excel data types: Stocks and geography](https://support.microsoft.com/office/61a33056-9935-484f-8ac8-f1a89e210877)   |
 | Dictation  | [Dictate in Microsoft 365](https://support.microsoft.com/office/eab203e1-d030-43c1-84ef-999b0b9675fe) |
 |Editor <sup>[4]</sup> <sup>[5]</sup> |[Microsoft Editor checks grammar and more in documents, mail, and the web](https://support.microsoft.com/office/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
@@ -46,6 +47,7 @@ The following table provides a list of connected experiences that analyze your c
 | Print <sup>[1]</sup> | When you print a file in the [Microsoft 365 mobile app](https://www.microsoft.com/microsoft-365/mobile), or in the individual Word, Excel, and PowerPoint apps for iOS and Android.|
 | Publish to Microsoft Stream    | [Turn your presentation into a video](https://support.microsoft.com/office/c140551f-cb37-4818-b5d4-3e30815c3e83#bkmk_microsoftstream)  |
 | Publish to Power BI   | [Publish to Power BI from Microsoft Excel](/power-bi/connect-data/service-publish-from-excel) |
+|Python in Excel|[Get started with Python in Excel](https://support.microsoft.com/office/a33fbcbe-065b-41d3-82cf-23d05397f53d)|
 | Read Aloud <sup>[7]</sup>|[Listen to your Word documents](https://support.microsoft.com/office/5a2de7f3-1ef4-4795-b24e-64fc2731b001)|
 | Research <sup>[1]</sup> | [Add or change research services](https://support.microsoft.com/office/b862efc5-9a7b-4f88-a23d-93712d6e4397)  |
 | Reuse Files| [Find and use the content you need, when you need, without leaving Word](https://support.microsoft.com/office/860118fc-1f61-41f6-922f-40084a284658)   |
@@ -63,7 +65,7 @@ The following table provides a list of connected experiences that analyze your c
 | Translator <sup>[2]</sup>  | [Translate text into a different language](https://support.microsoft.com/office/287380e4-a56c-48a1-9977-f2dca89ce93f)  |
 
 > [!NOTE]
-> <sup>[1]</sup> When users are signed in with a work or school account, these connected experiences are optional connected experiences and are provided under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/privacystatement), and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md). If you're an admin, these optional connected experiences can be managed by privacy controls for connected experiences or by the *Allow the use of additional optional connected experiences in Office* policy setting.
+> <sup>[1]</sup> When users are signed in with a work or school account, these connected experiences are optional connected experiences and are provided under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://www.microsoft.com/privacy/privacystatement), and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md). If you're an admin, these optional connected experiences can be managed by privacy controls for connected experiences or by the *Allow the use of additional optional connected experiences in Office* policy setting.
 >
 > <sup>[2]</sup> These connected experiences in Word, Excel, PowerPoint, and Outlook (classic) of Microsoft 365 Apps won’t be available to your users in the following scenarios on Windows devices:
 > - If your organization is using the PowerShell advanced setting *BlockContentAnalysisServices* with sensitivity labels from Microsoft Purview Information Protection. For more information, see [Prevent some connected experiences that analyze content](/purview/sensitivity-labels-office-apps#prevent-some-connected-experiences-that-analyze-content).
@@ -118,7 +120,7 @@ The following table provides a list of connected experiences that download onlin
 |Weather on calendar <sup>[9]</sup> |[How do I turn on weather on calendar on Outlook mobile?](https://support.microsoft.com/office/04c48f70-4780-47d6-bc2e-d77d2f4c4ef2)|
 
 > [!NOTE]
-> <sup>[9]</sup> When users are signed in with a work or school account, these connected experiences are optional connected experiences and are provided under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/privacystatement), and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md). If you're an admin, these optional connected experiences can be managed by privacy controls for connected experiences or by the *Allow the use of additional optional connected experiences in Office* policy setting.
+> <sup>[9]</sup> When users are signed in with a work or school account, these connected experiences are optional connected experiences and are provided under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://www.microsoft.com/privacy/privacystatement), and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md). If you're an admin, these optional connected experiences can be managed by privacy controls for connected experiences or by the *Allow the use of additional optional connected experiences in Office* policy setting.
 >
 > <sup>[10]</sup> Basic functionality of Tell Me remains available even if you're not connected to the internet. That same basic functionality also remains available if you decide to disable the use of connected experiences that download online content. In both cases, no data about the use of Tell Me is sent to Microsoft.
 
@@ -132,6 +134,7 @@ The following table provides a list of those other connected experiences and pro
 | ------------- | ------------- |
 | @mention | [Use @mention in comments to tag someone for feedback](https://support.microsoft.com/office/644bf689-31a0-4977-a4fb-afe01820c1fd) |
 |Brainstorming diagram |[Create a brainstorming diagram](https://support.microsoft.com/office/642706c0-7e63-463b-8aa8-a9aa67367989)|
+|Collect Diagnostics <sup>[11]</sup>|When you choose **Settings** > **Help & Feedback** > **Collect Diagnostics** in Outlook on Mac, iOS, or Android devices.|
 | Coming Soon  |[Coming Soon](https://support.microsoft.com/office/d4b7db49-b4e0-4f98-a0dc-156952e551e2)  |
 | Contact Support  | When you choose **Help** > **Contact Support** on the ribbon|
 | Custom import  | [Import data to shapes in your drawing](https://support.microsoft.com/office/d174b3fd-3079-42fd-81e8-2dbf8d38bb03) |
@@ -162,7 +165,7 @@ The following table provides a list of those other connected experiences and pro
 | While you were away |[Get notified when members of your team update your shared file](https://support.microsoft.com/office/9cc94893-02d5-4d96-9b3f-8b9414d5047a)  |
 
 > [!NOTE]
-> <sup>[11]</sup> When users are signed in with a work or school account, these connected experiences are optional connected experiences and are provided under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/privacystatement), and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md). If you're an admin, these optional connected experiences can be managed by privacy controls for connected experiences or by the *Allow the use of additional optional connected experiences in Office* policy setting.
+> <sup>[11]</sup> When users are signed in with a work or school account, these connected experiences are optional connected experiences and are provided under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://www.microsoft.com/privacy/privacystatement), and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md). If you're an admin, these optional connected experiences can be managed by privacy controls for connected experiences or by the *Allow the use of additional optional connected experiences in Office* policy setting.
 >
 > <sup>[12]</sup> Starting with Version 2405 of Microsoft 365 Apps, these connected experiences are no longer managed by privacy controls for connected experiences. Instead, these connected experiences can be managed by using existing security controls available in Microsoft Purview portals. For more information, see [Set up Information Rights Management (IRM) in SharePoint admin center](/purview/set-up-irm-in-sp-admin-center) and [Manage sensitivity labels in Office apps](/purview/sensitivity-labels-office-apps).
 
@@ -186,7 +189,7 @@ If you're the admin for your organization, you can use policy settings to determ
 - [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md)
 
 > [!NOTE]
-> For information about the effect of these policy settings on Copilot for Microsoft 365 features, see [Microsoft Copilot for Microsoft 365 and policy settings for connected experiences](/copilot/microsoft-365/microsoft-365-copilot-privacy#microsoft-copilot-for-microsoft-365-and-policy-settings-for-connected-experiences).
+> For information about the effect of these policy settings on Microsoft 365 Copilot features, see [Microsoft 365 Copilot and privacy controls for connected experiences](/copilot/microsoft-365/microsoft-365-copilot-privacy#microsoft-365-copilot-and-privacy-controls-for-connected-experiences).
 
 If you choose to turn off some types of connected experiences, either the ribbon or menu command for those connected experiences is grayed out, or you get an error message when you try to use those connected experiences.
 

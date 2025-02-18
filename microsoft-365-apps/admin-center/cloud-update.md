@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Provides Office admins information about cloud update in the Microsoft 365 Apps admin center"
-ms.date: 08/27/2024
+ms.date: 12/09/2024
 ---
 
 # Overview of cloud update in the Microsoft 365 Apps admin center
@@ -93,6 +93,9 @@ The [Current Channel profile](https://config.office.com/officeSettings/MPCurrent
 - **Potential update issues** shows potential issues that might require more attention to ensure devices are reporting in and receiving their updates. Failure details aren't available for this profile due to the fast-paced nature of Current Channel.
 
 - **Profile settings** is a separate tab on this page for configuring profile-specific settings, such as the [update deadline](#deadline).
+ 
+> [!NOTE]
+> Cloud update profile is not available for Semi-Annual Enterprise Channel.
 
 ## Profile controls
 
@@ -245,7 +248,7 @@ Deadline is available for all cloud update profiles.
 
 The update deadline is used to ensure updates are applied in a specified period. Keep these points in mind when configuring your update deadline:
 
-- The update deadline is independently calculated for each device, commencing from the first unsuccessful installation attempt. For example, if open applications prevent the update from installing, the deadline is triggered from this initial failure. Neither the start of the deployment wave nor the update's release date influence this timeline.
+- The update deadline is independently calculated for each device, commencing from the first unsuccessful installation attempt. For example, if open applications prevent the update from installing, the deadline is triggered from this initial failure. The start of the deployment wave and the update's release date do not influence this timeline.
 - If the deadline passes, a prompt is shown to the user, offering the option to close their applications now or postpone the installation.
 - Users can postpone the update installation three times for two hours each, before a final two-hour countdown is shown. If the deadline is around seven hours past already, users can postpone only once.
 - When the countdown reaches zero, the system saves open files, closes necessary applications, applies the update, and then reopens the applications and files. User downtime is less than five minutes.
@@ -261,7 +264,7 @@ To configure the deadline, follow these steps:
 5. Adjust the **Update deadline** slider to your preferred value and select **Save**.
 
 ### Cloud update review (deactivation)
-Admins have the ability to deactivate a channel profile at any time. Deactivating a profile disables update management for all devices on the corresponding update channel. For example, deactivating the Current Channel profile will disable update management for all devices in your tenant that are on Current Channel.
+Admins have the ability to deactivate a channel profile at any time. Deactivating a profile disables update management for all devices on the corresponding update channel. For example, deactivating the Current Channel profile disables update management for all devices in your tenant that are on Current Channel.
 
 > [!IMPORTANT]
 > Using the [switch device update channel](inventory.md#switch-device-update-channel) feature automatically enables all channel profiles, regardless of deactivation state. This feature is dependent on the cloud update service to function.
@@ -275,7 +278,7 @@ To deactivate a profile, follow these steps:
 5. Review the information and click the link to **deactivate the management through cloud update**.
 6. Fill out the form and click **submit**.
 
-The cloud update status for devices in inventory on a deactivated profile will be updated to **Eligible for *ChannelName*** and update management from the service will stop. You can change the following registry value to regain control:
+The cloud update status for devices in inventory on a deactivated profile changes to **Eligible for *ChannelName*** and update management from the service stops. You can change the following registry value to regain control:
 `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\cloud\office\16.0\Common\officeupdate`  
 `Value: IgnoreGPO=0`
 
@@ -292,6 +295,9 @@ With cloud update enabled, devices are automatically mapped to the corresponding
 
 Cloud update currently supports management for devices on Current Channel and Monthly Enterprise Channel. Devices on any other update channel won't be managed by cloud update until they're moved to a channel that cloud update supports.
 
+## Microsoft Purview support
+Cloud update supports the [Microsoft Purview auditing solutions](/purview/audit-solutions-overview). When auditing is enabled, any changes to a profile’s configuration, tenant-wide settings, or actions triggered for managed devices are tracked. You can use the portal or PowerShell to [search the audit log](/purview/audit-search?tabs=microsoft-purview-portal) for such changes. For more information on captured operations and data format, refer to the [activity documentation](/Purview/audit-log-activities#microsoft-365-apps-admin-services-cloud-update-activities) and [schema reference](/office/office-365-management-api/office-365-management-activity-api-schema#cloud-update-profile-configuration-schema).
+
 ## Troubleshooting
 > [!IMPORTANT]
 > If you are experiencing any issues enabling cloud update or managing the devices in your environment, be sure to review the [requirements for cloud update](#requirements) before proceeding.
@@ -305,7 +311,7 @@ With cloud update enabled, the service uses [channel to profile mapping](#channe
 
 ### Devices are updating outside of their assigned wave
 
-If you are using [custom rollout waves](#rollout-waves), there may be instances where devices update outside of their assigned wave.Review the following scenarios and take any necessary actions:
+If you are using [custom rollout waves](#rollout-waves), there may be instances where devices update outside of their assigned wave. Review the following scenarios and take any necessary actions:
 
 - **Add-on app deployments**: When you install an add-on app, such as Project or Visio, it can trigger an update check when the application is retrieved from the Office CDN. Consider updating your XML to included [Version="MatchInstalled"](../deploy/office-deployment-tool-configuration-options.md#version-attribute-part-of-add-element) to install the same version of Office, even if a newer version is available.
 
@@ -316,6 +322,10 @@ If you are using [custom rollout waves](#rollout-waves), there may be instances 
 ### My Device-based group didn't work with *[feature name]*
 
 If you're using a group that contains device objects, the devices must be Microsoft Entra joined or hybrid joined. Devices that are Microsoft Entra registered/Workplace joined aren't recognized when the group is processed. As an alternative, consider adding one or more corresponding user objects. For more information, see the [requirements for using Microsoft Entra groups](#microsoft-entra-groups-requirements).
+
+### I noticed that no Component Object Model (COM) component for Cloud update has been registered on my devices.
+
+The predecessor of Cloud Update, Servicing Profiles, registered [COM objects](/windows/win32/com/component-object-model--com--portal) on a device to manage Microsoft 365 Apps updates. With Cloud Update, the COM object is no longer necessary, so no such control gets registered anymore and this is expected.
 
 ## Report a problem
 

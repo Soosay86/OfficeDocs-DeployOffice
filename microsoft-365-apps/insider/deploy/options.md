@@ -64,7 +64,7 @@ If you're doing a new installation of Microsoft 365 Apps, here are ways that you
 
 To learn more about the Microsoft 365 Insider program and to see demos of some of these deployment options, you can watch the following video.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ImX5]
+> [!VIDEO 52fd2595-dcc4-433e-81a5-0fe51626781d]
 
 ## Apps covered by Microsoft 365 Insider
 

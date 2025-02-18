@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: true
 description: "Cloud Policy lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device isn't domain joined or otherwise managed."
-ms.date: 04/25/2024
+ms.date: 12/03/2024
 ---
 
 # Overview of Cloud Policy service for Microsoft 365
@@ -19,7 +19,7 @@ ms.date: 04/25/2024
 > [!NOTE]
 > "Office cloud policy service" has been renamed to "Cloud Policy service for Microsoft 365." In most cases, we'll just refer to it as Cloud Policy.
 
-[Cloud Policy service for Microsoft 365](https://config.office.com/officeSettings/officePolicies) lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device isn't domain joined or otherwise managed. When a user signs into Microsoft 365 Apps for enterprise on a device, the policy settings roam to that device. Policy settings are available for devices running Windows, macOS, iOS, and Android, although not all policy settings are available for all operating systems. You can also enforce some policy settings for Office for the web and Loop, both for guest users who are signed in and for users who access documents anonymously.
+[Cloud Policy service for Microsoft 365](https://config.office.com/officeSettings/officePolicies) lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device isn't domain joined or otherwise managed. When a user signs into Microsoft 365 Apps for enterprise on a device, the policy settings roam to that device. Policy settings are available for devices running Windows, macOS, iOS, and Android, although not all policy settings are available for all operating systems. You can also enforce some policy settings for Office for the web and Loop, both for guests who are signed in and for users who access documents anonymously.
 
 Cloud Policy is part of the [Microsoft 365 Apps admin center](https://config.office.com/). The service includes many of the same user-based policy settings that are available in Group Policy. You can also use Cloud Policy directly in the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/p/?linkid=2109431), under **Apps** > **Policy** > **Policies for Office apps**.  
 
@@ -30,8 +30,20 @@ Cloud Policy is part of the [Microsoft 365 Apps admin center](https://config.off
 [!INCLUDE [Roles requirements](./includes/requirements-roles.md)]
 
 ### Licensing requirements
-<!--Using include for adding requirements-->
-[!INCLUDE [License requirements](./includes/requirements-licenses.md)]
+
+Your user must be assigned to one of the following subscription plans:
+
+| Type       | Subscription Plan |
+| ---------- | ----------------- |
+| Education  | <li>Microsoft 365 A3</li><li>Microsoft 365 A5</li> |
+| Business   | <li>Microsoft 365 Business Standard</li><li>Microsoft 365 Business Premium</li> |
+| Enterprise | <li>Office 365 E3</li><li>Office 365 E5</li><li>Microsoft 365 E3</li><li>Microsoft 365 E5</li> |
+| Government | <li>Microsoft 365 G3</li><li>Microsoft 365 G5</li> |
+
+> [!IMPORTANT]
+> The following plans are not supported:
+> - Microsoft 365 operated by 21Vianet
+> - Microsoft 365 GCC High and DoD
 
 > [!NOTE]
 > - A policy configuration can't be applied to volume licensed versions of Office that use Click-to-Run, such as Office LTSC Professional Plus 2021 or Office Standard 2019.
@@ -40,6 +52,9 @@ Cloud Policy is part of the [Microsoft 365 Apps admin center](https://config.off
 ### Product version requirements
 <!--Using include for adding requirements-->
 [!INCLUDE [Version requirements](./includes/requirements-versions.md)]
+
+> [!NOTE]  
+> For GCC customers, the minimum supported Office client version for policies to be delivered to Microsoft 365 Apps running on Windows is *Version 2410* or later.
 
 ### Network requirements
 <!--Using include for adding requirements-->
@@ -51,7 +66,7 @@ Cloud Policy Service supports the use of [Microsoft Entra groups](/entra/fundame
 - Policies only apply to **user objects**. 
 - **User objects** must be present in Microsoft Entra ID and have a [supported license](#licensing-requirements) assigned.
 - Nested groups support up to three levels deep.
-- A group might contain both **device objects** and **user objects**, but the **device objects** will be ignored.
+- A group might contain both **device objects** and **user objects**, but the **device objects** are ignored.
 
 ## Steps for creating a policy configuration
 
@@ -84,13 +99,13 @@ To see which policies are configured when you're editing a policy configuration,
 
 To change the priority order for the policy configurations, select **Reorder priority** on the **Policy configurations** page.
 
-If you want to export a policy configuration, select the existing policy configuration on the **Policy configurations** page, and then select **Export**.  This action generates a CSV file for download.
+If you want to export a policy configuration, select the existing policy configuration on the **Policy configurations** page, and then select **Export**. This action generates a CSV file for download.
 
 ## How the policy configuration is applied
 
 The Click-to-Run service used by Microsoft 365 Apps for enterprise checks in with the Cloud Policy service regularly to see if there are any policies that pertain to the signed in user. If there are, then the appropriate policies are applied and take effect the next time the user opens an Office app, such as Word or Excel.
 
-- When an Office app is launched or the signed in user changes, the Click-to-Run service determines if it is time to retrieve policies for the signed in user.
+- When an Office app is launched or the signed in user changes, the Click-to-Run service determines if it's time to retrieve policies for the signed in user.
     - If this is the user’s first sign in, the check-in call is made to retrieve policies for the signed in user.
     - If the user has previously signed in, the check-in call is made only if the check-in interval has lapsed.
 - When the service receives the check-in call, Microsoft Entra group membership is determined for the user.
@@ -120,6 +135,9 @@ For more information, see [Security baseline for Microsoft 365 Apps for enterpri
 ### Accessibility baseline
 Most of our customers are making strides to become more accessible as an organization. The accessibility baseline enables IT Pros to configure accessibility policies to empower their end users to create accessible content and limit the ability to remove accessibility checker settings from being disabled.
 
+## Microsoft Purview support
+Cloud Policy service supports the [Microsoft Purview auditing solutions](/purview/audit-solutions-overview). When auditing is enabled, events such as the creation, deletion, modification of policy configurations, changes to configured policy settings, and adjustments to priority order are tracked. You can use the portal or PowerShell to [search the audit log](/purview/audit-search?tabs=microsoft-purview-portal) for such changes. For more information on captured operations and data format, refer to the [activity documentation](/Purview/audit-log-activities#microsoft-365-apps-admin-services-cloud-policy-activities) and [schema reference](/office/office-365-management-api/office-365-management-activity-api-schema#cloud-policy-service-schema).
+
 ## Additional information about Cloud Policy
 
 - Only user-based policy settings are available. Computer-based policy settings aren't available.
@@ -131,19 +149,11 @@ Most of our customers are making strides to become more accessible as an organiz
 
 If the expected policies aren't correctly applied to a user's device, try the following actions:
 - Make sure the user is signed into Microsoft 365 Apps for enterprise, activated it, and has a valid license.
-
 - Make sure the user is part of the appropriate security group.
-
 - Verify you aren't using an authenticated proxy.
-
 - Check the priority of the policy configurations. If the user is in multiple security groups that have policy configurations assigned to them, then the priority of the policy configurations determines which policies take effect.
-
-- In some cases, policies might not be applied correctly if two users with different policies sign into Office on the same device during the same Windows session.  
-
+- In some cases, policies might not be applied correctly if two users with different policies sign into Office on the same device during the same Windows session.
 - Policy settings retrieved from Cloud Policy are stored in the Windows registry under HKEY_CURRENT_USER\Software\Policies\Microsoft\Cloud\Office\16.0. This key is overwritten each time a new set of policies is retrieved from the policy service during the check-in process.
-
 - Policy service check-in activity is stored in the Windows registry under HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\CloudPolicy. Deleting this key and restarting the Office apps will trigger the policy service to check in the next time an Office app is launched.
-
-- If you want to see the next time a device running Windows is scheduled to check with Cloud Policy, look at the FetchInterval under HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\CloudPolicy. The value is expressed in minutes. For example, 1440, which equates to 24 hours.  
-
+- If you want to see the next time a device running Windows is scheduled to check with Cloud Policy, look at the FetchInterval under HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\CloudPolicy. The value is expressed in minutes. For example, 1440, which equates to 24 hours.
 - You might encounter a FetchInterval value of 0.  If this value exists, the client waits 24 hours from the last check-in before attempting to check with Cloud Policy again.

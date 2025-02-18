@@ -23,6 +23,8 @@ items:
             href: deploy-mac-app-store.md
           - name: Deployment options
             href: deployment-options-for-office-for-mac.md
+          - name: Configure shared device mode on iOS and iPadOS
+            href: configure-shared-device-mode.md
 
       - name: Manage updates
         items:
@@ -49,6 +51,8 @@ items:
             href: mau-set-license-info.md
           - name: Use msupdate
             href: update-office-for-mac-using-msupdate.md
+          - name: Updater types used by MAU
+            href: updater-types-used-by-microsoft-autoupdate.md
 
       - name: Set preferences
         items:
