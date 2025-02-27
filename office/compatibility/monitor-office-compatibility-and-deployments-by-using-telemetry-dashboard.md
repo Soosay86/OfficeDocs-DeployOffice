@@ -38,7 +38,7 @@ To help you get started, view this short video called  *Quick tips for Office Te
   
 **Short video about Office Telemetry Dashboard navigation**
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/e766090b-4229-45d5-a9cc-dee992054990?autoplay=false]
+> [!VIDEO 7c7e4760-d8fe-473f-b9fa-5f1588158a8b]
 
 *Although this video is for an earlier version of Office, the information also applies to newer versions of Office.*
   

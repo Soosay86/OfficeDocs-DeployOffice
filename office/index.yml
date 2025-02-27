@@ -2,7 +2,7 @@
 
 #root section (Required)
 title: Microsoft Office documentation # < 60 chars
-summary: Learn how to deploy and manage Office, Microsoft's productivity software that's available as a one-time purchase from a retail store of through a volume licensing agreement. # < 400 chars
+summary: Learn how to deploy and manage Office, Microsoft's productivity software that's available as a one-time purchase from a retail store or through a volume licensing agreement. # < 400 chars
 brand: office # brand: aspnet | azure | bash | bizapps | bot-framework | dotnet | dynamics | education | enterprise-mobility | gaming | graph | m365 | nuget | office | powershell | playfab | power-apps | power-automate | power-bi | power-platform | power-virtual-agents | project | sharepoint | sql | surface | system-center | teams | visual-studio | windows | workplace-analytics | xamarin
 
 metadata:
@@ -22,8 +22,12 @@ additionalContent:
   sections:
     - items:
         # Card
+        - title: Office LTSC 2024
+          summary: Learn how to deploy and manage Office LTSC 2024 - the latest version of Microsoft's productivity software that's available to organizations through a volume licensing agreement.
+          url: /office/ltsc/2024/
+        # Card
         - title: Office LTSC 2021
-          summary: Learn how to deploy and manage Office LTSC 2021 - the latest version of Microsoft's productivity software that's available to organizations through a volume licensing agreement.
+          summary: Learn how to deploy and manage Office LTSC 2021 - Microsoft's productivity software that's available to organizations through a volume licensing agreement.
           url: /office/ltsc/2021/
         # Card
         - title: Office 2019
@@ -53,4 +57,3 @@ additionalContent:
         - title: Microsoft 365 Apps
           summary: Find information about deploying Microsoft 365 Apps (Office apps included with Microsoft 365 or Office 365) to your organization.
           url: /microsoft-365-apps/ 
-

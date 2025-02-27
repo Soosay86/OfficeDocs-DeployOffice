@@ -14,6 +14,8 @@ items:
         href: get-started/deployment-new-outlook.md
       - name: Control new Outlook installation
         href: get-started/control-install.md
+      - name: Virtualized desktop infrastructure (VDI)  
+        href: get-started/virtualized-desktop-infrastructure.md
       - name: COM add-ins 
         items:
           - name: Identify COM add-ins in your organization
@@ -29,20 +31,28 @@ items:
     items:
       - name: Manage updates
         href: manage/manage-updates-new-outlook-windows.md
+      - name: Monitor usage
+        href: manage/monitor-usage-reports.md
       - name: Policy management
         href: manage/policy-management.md
       - name: Exchange Online PowerShell
         href: /powershell/exchange/exchange-online-powershell
       - name: Policy for admin-controlled migration 
         href: manage/admin-controlled-migration-policy.md   
+      - name: Newsletters in Outlook (Preview)
+        href: manage/newsletters.md
 
   - name: Security
     items:
       - name: Security and compliance
-        href: security/security-compliance.md     
+        href: security/security-compliance.md
+      - name: Data loss prevention policy tips
+        href: /purview/dlp-policy-reference-new-outlook           
 
   - name: Troubleshoot
     items:
+      - name: Troubleshoot new Outlook
+        href: troubleshoot/troubleshoot-overview-new-outlook.md    
       - name: Deployment issues in new Outlook
         href: troubleshoot/troubleshoot-deployment-new-outlook.md
       - name: Shared mailbox issues in new Outlook

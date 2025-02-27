@@ -11,14 +11,14 @@ ms.localizationpriority: medium
 ms.collection: Tier3
 recommendations: false
 description: "Shows preferences that IT Pros can set for Outlook for Mac and Outlook 2021 for Mac."
-ms.date: 08/23/2024
+ms.date: 02/25/2025
 ---
 
 # Set preferences for Outlook for Mac
 
-***Applies to:*** *Outlook for Mac, Outlook LTSC for Mac 2021, Outlook 2019 for Mac*
+***Applies to:*** *Outlook for Mac, Outlook Long Term Service Channel (LTSC) for Mac 2024, Outlook LTSC for Mac 2021*
 
-The following preferences can be used to simplify account setup for Microsoft 365 (or Office 365) mailboxes, help protect company data, and support a streamlined user experience.
+The following preferences can be used to simplify account setup for Microsoft 365 mailboxes, help protect company data, and support a streamlined user experience.
 
 As an IT admin, you can provide Mac users in your organization with a standard set of preferences for Outlook in either of the following ways:
 
@@ -36,7 +36,7 @@ When you change preferences in Terminal, users can override the value in the Out
 All of these keys are CFPreferences-compatible, which means that they can be set by using enterprise management (MDM) software for Mac, such as Microsoft Intune and Jamf Pro.
 
 > [!IMPORTANT]
-> Preferences that are marked as Yes to 'Requires Configuration Profile' in the consecutive tables can only be set via a Configuration Profile. In these case, use of the defaults command is ineffective.
+> Preferences that are marked as Yes to 'Requires Configuration Profile' in the consecutive tables can only be set via a Configuration Profile. In these cases, use of the defaults command is ineffective.
 
 The following list shows the preferences that are covered in this article:
 
@@ -44,13 +44,17 @@ The following list shows the preferences that are covered in this article:
 - [Allow S/MIME certificates without a matching email address](#allow-smime-certificates-without-a-matching-email-address)
 - [Automatically configure Microsoft 365 mailbox on first launch](#automatically-configure-microsoft-365-mailbox-on-first-launch)
 - [Block access to mailboxes from unauthorized domains](#block-access-to-mailboxes-from-unauthorized-domains)
+- [Block access to mailbox if there is a security certificate error](#block-access-to-mailbox-if-there-is-a-security-certificate-error)
+- [Block access to mailbox if user is trying to use basic authentication](#block-access-to-mailbox-if-user-is-trying-to-use-basic-authentication)
 - [Disable automatic updating of weather location](#disable-automatic-updating-of-weather-location)
 - [Disable calendar sharing permissions](#disable-calendar-sharing-permissions)
+- [Disable Copy or Move emails between accounts](#disable-copy-or-move-emails-between-accounts)
 - [Disable "Do Not Forward"](#disable-do-not-forward)
 - [Disable "Do not send a response"](#disable-do-not-send-a-response)
 - [Disable "Encrypt-Only"](#disable-encrypt-only)
 - [Disable export](#disable-export)
 - [Disable Focused Inbox](#disable-focused-inbox)
+- [Disable Focused Inbox by Default](#disable-focused-inbox-by-default)
 - [Disable import](#disable-import)
 - [Disable Junk settings](#disable-junk-settings)
 - [Disable Pride theme](#disable-pride-theme)
@@ -266,7 +270,7 @@ Prevent users from applying the **Encrypt-Only** option to emails when using Mic
 |Key|DisableEncryptOnly |
 |Data Type| Boolean |
 |Possible values| false (default) <br/> true  |
-|Requires Configuration Profile| No |
+|Requires Configuration Profile| Yes |
 |Availability|16.40 |
 |Comments|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
 
@@ -325,6 +329,34 @@ Prevent users from applying S/MIME option to email messages.
 |Requires Configuration Profile| No |
 |Availability|16.57 |
 |Comments|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
+
+### Block access to mailbox if there is a security certificate error
+
+Prevent users from connecting to mailbox if there is a security certificate error.
+
+|Category|Details|
+|:-----|:-----|
+|Domain| com.microsoft.Outlook |
+|Key|FailAllCertificateErrors|
+|Data Type|Boolean  |
+|Possible values| false (default) <br/> true  |
+|Requires Configuration Profile| No |
+|Availability|16.94 |
+|Comments|This key suppresses all certificate alerts and block connections if there is a security certificate error. |
+
+### Block access to mailbox if user is trying to use basic authentication
+
+Prevent users from connecting to mailbox if basic authentication is used.
+
+|Category|Details|
+|:-----|:-----|
+|Domain| com.microsoft.Outlook |
+|Key|DisableBasic|
+|Data Type|Boolean  |
+|Possible values| false (default) <br/> true  |
+|Requires Configuration Profile| No |
+|Availability|16.93 |
+|Comments| This key disables basic authentication for Exchange accounts in Outlook. |
 
 ### Trust AutoDiscover redirects
 
@@ -394,9 +426,9 @@ Set when pictures are automatically downloaded from the internet for email.
 |Domain| com.microsoft.Outlook |
 |Key|AutomaticallyDownloadExternalContent |
 |Data Type|Integer   |
-|Possible values| 0 = Never <br/> 1 = In messages from my contacts  <br/> 2 = In all messages  (default) |
+|Possible values| 0 = Never <br/> 1 = In messages from my contacts, safe senders and GAL  <br/> 2 = In all messages  (default) |
 |Requires Configuration Profile| No |
-|Availability|16.17 |
+|Availability|16.91 |
 |Comments| Found under **Outlook** > **Settings** > **Email** > **Reading** > **Download external images**.  |
 
 ### Disable signatures
@@ -492,6 +524,33 @@ Prevent users from viewing Focused Inbox.
 |Possible values|  false (default) <br/> true  |
 |Requires Configuration Profile| Yes |
 |Availability| 16.66 |
+
+### Disable Focused Inbox by Default
+
+Prevent users from viewing Focused Inbox but giving option to users to enable it.
+
+|Category|Details|
+|:-----|:-----|
+|Domain| com.microsoft.Outlook |
+|Key| FocusedInboxOffByDefault|
+|Data Type|Boolean |
+|Possible values|  false (default) <br/> true  |
+|Requires Configuration Profile| No |
+|Availability| 16.95 |
+|Comments|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
+
+### Disable Copy or Move emails between accounts
+
+Prevent users from copying or moving emails between accounts.
+
+|Category|Details|
+|:-----|:-----|
+|Domain| com.microsoft.Outlook |
+|Key|ItemsToOtherAccountsEnabled |
+|Data Type|Integer   |
+|Possible values| 0 = Disable move/copy between accounts <br/> 1 = Allow move/copy between accounts (Default) |
+|Requires Configuration Profile| No |
+|Availability|16.87 |
 
 ## Related articles
 

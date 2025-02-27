@@ -6,11 +6,11 @@ manager: dougeby
 audience: ITPro
 ms.topic: conceptual
 ms.service: office-perpetual-itpro
-ms.collection: Tier2
+ms.collection: Tier1
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Explains how to use the Office DocRecrypt tool to unlock password protected OOXML formatted Word, Excel, and PowerPoint files."
-ms.date: 04/19/2024
+ms.date: 01/14/2025
 ---
 
 # Remove or reset file passwords in Office 2016
@@ -22,7 +22,7 @@ Use Group Policy to push registry changes that associate a certificate with pass
 
 > [!NOTE]
 > - If you want information about passwords in a personal copy of Office 2016, see [Protect a document with a password](https://support.microsoft.com/topic/05084cc3-300d-4c1a-8416-38d3e37d6826) or [Protect an Excel file](https://support.microsoft.com/office/7359d4ae-7213-4ac2-b058-f75e9311b599). 
-> - If you are an IT Professional looking to remove or reset passwords in Office 2016 files within your organization, for example if an employee has left the organization and you do not know the password, you're at the right place, so keep reading. |
+> - If you're an IT professional who needs to remove or reset passwords in Office 2016 files in your organization, this article helps you do it. For example, you might lose a password when an employee leaves. Keep reading to learn more. |
    
     
 <a name="BKMK_Overview"> </a>
@@ -98,31 +98,29 @@ There are some factors that might affect your ability to remove the password on 
 
 ## Set up client computers for password protection removal
 
-To enable your IT department to remove a password from a password-protected Word, PowerPoint, or Excel file, when you deploy Office 2016 to your organization, you must first push the certificate public keys and do some registry work on the client computers. There are two ways to achieve this:
+When you deploy Office 2016 to your organization, push your certificate’s public keys and update the registry on the client computers. This step helps your IT department remove a password from a password-protected Word, PowerPoint, or Excel file. There are two ways to do it:
   
-- Through a Group Policy Administrative template, which is the best choice for multiple or enterprise client computers, or
+- Use a Group Policy Administrative template. This option is best for multiple or enterprise client computers.
     
-- By manually changing a client computer's registry, which is the best choice for a single computer or a few client computers.
+- Manually change the registry on a client computer. This option is best for a single computer or a few client computers.
     
-### To set up multiple client computers for password protection by using a group policy object
+### Set up multiple client computers for password protection with a Group Policy object
 
-1. Download the Group Policy Administrative template (ADMX/ADML) files from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626001).
-    
-2. Open the template in the Local Group Policy Editor and navigate to the escrow key settings. Open the **User Configuration** branch, then choose **Administrative Templates**, **Microsoft Office 2016**, **Security Settings**, and then **Escrow Certificates**. 
-    
-    20 escrow keys are available to configure, each named Escrow Key #n.
-    
-3. Select an escrow key, and then from the shortcut menu (right-click), choose **Edit** to configure an escrow key. 
-    
-    The **Escrow Key #n** dialog appears. 
-    
-4. To set up and enable this key, select the **Enabled** button. If you want to disable this key later, return to **Escrow Key #n** dialog box and select the **Disabled** button. 
-    
-5. In the **Certificate Hash** box, enter the certificate hash that is used as the certificate unique identifier, also known as a "thumbprint." For example, if your certificate thumbprint is 9131517191121d94d143117fc126213c1781d21c, set the certificate hash value to that number. This hash can include spaces if you want to make it more readable. 
-    
-6. Enter a comment to provide more details about this particular certificate, if it's necessary. This is optional.
-    
-7. Choose **OK**. 
+1. Download the Group Policy Administrative template (ADMX/ADML) files from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626001).  
+
+2. Open the template in the Local Group Policy Editor and navigate to the escrow key settings. Open the **User Configuration** branch, then choose **Administrative Templates**, **Microsoft Office 2016**, **Security Settings**, and then **Escrow Certificates**. You have 20 escrow keys to configure, each named **Escrow Key #n**.
+
+3. Right-click and escrow key, and then choose **Edit** to configure that key. The **Escrow Key #n** dialog box appears.
+
+4. Enable or disable the key:  
+   - To enable the key, select **Enabled**.  
+   - To disable the key later, return to the **Escrow Key #n** dialog box and select **Disabled**.
+
+5. In the **Certificate Hash** box, enter the certificate’s unique identifier (thumbprint). For example, if the thumbprint is `9131517191121d94d143117fc126213c1781d21c`, enter that number.
+
+6. Enter a comment to provide more details about the certificate if you need to.
+
+7. Choose **OK** to save your changes.
     
 ### To set up a single client computer for password protection with new registry settings
 
@@ -135,13 +133,13 @@ To be able to remove a password from a Word, PowerPoint, or Excel file, you must
     
     Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\16.0 \common\Security\Crypto\EscrowCerts
     
-    Create this new key either manually or through a .reg batch file. To create a .reg file by using regedit.exe, see [Creating a .reg File](/previous-versions/windows/it-pro/windows-server-2003/dd379001(v=ws.10)).
+    Create this new key either manually or with a `.reg` batch file. To learn how to create a `.reg` file with **regedit.exe**, see [Creating a .reg File](/previous-versions/windows/it-pro/windows-server-2003/dd379001(v=ws.10)).
     
-   **Create a key in the client computer registry**
+ **Create a key in the client computer registry**
 
 |**Registry element**|**Description**|
 |:-----|:-----|
-|Key Name  <br/> |This must be EscrowCerts.  <br/> |
+|Key Name  <br/> |This name must be EscrowCerts.  <br/> |
 |Data Type  <br/> |key  <br/> |
 |Parent  <br/> |Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\16.0\ common\Security\Crypto\  <br/> |
    
@@ -153,40 +151,36 @@ To be able to remove a password from a Word, PowerPoint, or Excel file, you must
 |:-----|:-----|
 |Key Name  <br/> |Unique user-defined name that describes the public key certificate. For example, EscrowCert01, EscrowCert02, and so on.  <br/> |
 |Type  <br/> |STRING  <br/> |
-|Value  <br/> |The hash that is used as the certificate unique identifier, also known as a "thumbprint" in the **Windows Certificate** dialog box. For example, if your certificate thumbprint is 9131517191121d94d143117fc126213c1781d21c, set this value to that number. This hash can include spaces if you want to make it more readable.  <br/> |
+|Value  <br/> |The hash that is used as the certificate unique identifier, also known as a "thumbprint" in the **Windows Certificate** dialog box. For example, if your certificate thumbprint is 9131517191121d94d143117fc126213c1781d21c, set this value to that number.  <br/> |
    
 - When the registry entries are in place, push the certificate to the client computer. The public key certificate should be stored in Windows Certificate Manager (certmgr.msc) in the Certificates - Current User or Logical, Personal store. For details about pushing public key certificates to client computers through Group Policy, see [Distribute Certificates to Client Computers by Using Group Policy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd807084(v=ws.10)).
     
     > [!IMPORTANT]
-    > The IT admin must make sure that the certificate that was used for this process is valid and has not expired. 
+    > The IT admin must make sure that the certificate that was used for this process is valid and isn't expired. 
   
-When users decide to password protect the files that they create in Office 2016 Word, PowerPoint, or Excel, the appropriate public key information is saved in the file header. The administrator can use this public key and matching private key later if asked to remove the password protection.
+When users password-protect files in Word, PowerPoint, or Excel in Office 2016, the app saves a public key in the file header. Administrators can then use that public key and the matching private key if they need to remove the password protection.
   
 <a name="BKMK_SetUpTheITAdminComputer"> </a>
 
-## Set up the IT admin computer that has the key and DocRecrypt tool
+## Set up the IT admin computer with the key and DocRecrypt tool
 
-The IT admin computer doesn't have to have key and subkey in the registry, nor does it have to have a copy of the public key certificate. But, the IT admin computer does need the following:
-  
-- The matching private key/certificate pair
-    
+You don't need the key, subkey, or public key certificate in the registry on the IT admin computer. However, the computer must have these items:
+
+- The matching private key/certificate pair  
 - The Office DocRecrypt tool
     
 ### To set up the IT computer that has the key and DocRecrypt tool
 
 1. Use the Certificate Import Wizard to import the matching private key to the certificate in the Windows Certificate Manager.
     
-2. Download and install the Office DocRecrypt tool. This tool is available in the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=626081). 
-    
-- When you install the Office DocRecrypt tool on a 64-bit computer, it's installed in the following location:
-    
-   - %programfiles(x86)%\Microsoft Office\DOCRECRYPT
-    
-- When you install the Office DocRecrypt tool on a 32-bit computer, it's installed in the following location:
-    
-   - %programfiles%\Microsoft Office\DOCRECRYPT
-    
-That's it. All the pieces are in place and you're ready to remove the password on a Word, Excel, or PowerPoint file the next time that a user asks you to do it.
+2. Download and install the Office DocRecrypt tool:  
+   Get it from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=626081).
+
+   - 64-bit computers  
+     The tool installs to `%programfiles(x86)%\Microsoft Office\DOCRECRYPT`.
+
+   - 32-bit computers  
+     The tool installs to `%programfiles%\Microsoft Office\DOCRECRYPT`.  
   
 <a name="BKMK_UsetheDocRecryptTool"> </a>
 
@@ -200,37 +194,38 @@ Follow these instructions to use the DocRecrypt tool from the command line. You 
   
 - Navigate to and open the Office DocRecrypt tool command line by using the following syntax:
     
-     DocRecrypt [-p <new_password>] -i <inputfile_or_folder> [-o <outputfile_or_folder>] [-q]
+     DocRecrypt [`-p` <new_password>] `-i` <inputfile_or_folder> [`-o` <outputfile_or_folder>] [`-q`]
     
-    The DocRecrypt tool options are described in the following table.
+    The following table describes the DocRecrypt tool options.
     
    **DocRecrypt tool options**
 
 |**Parameter**|**Description**|
 |:-----|:-----|
-|-p \<new_password\>  <br/> |(Optional) This is the new password that is assigned to the input file, or the output file if an output file name is supplied.  <br/> |
-|-i \<inputfile_or_folder\>  <br/> |This is the file or folder that contains files that are locked because the password is unknown. If you specify a folder, the Office DocRecrypt tool ignores any files that aren't Office Open XML format.  <br/> |
-|-o \<outputfile_or_folder\>  <br/> |(Optional) This is the name of a new output file or folder for files that will be created from the input files. Again, any files that aren't Office Open XML format are ignored.  <br/> |
-|-q  <br/> |(Optional) Indicates that you want to run the Office DocRecrypt tool in quiet mode, usually in a script. Quiet mode doesn't show a UI and it fails if a certificate requires the IT admin to enter a PIN. If your certificate requires a PIN, don't use quiet mode.  <br/> |
+| `-p` <new_password>       | *(Optional)* This new password is assigned to the input file or to the output file if you specify an output file name.                                                                                                                                 |
+| `-i` <inputfile_or_folder> | This file or folder contains files that are locked with an unknown password. If you specify a folder, the Office DocRecrypt tool ignores files that aren’t in Office Open XML format.                                                                 |
+| `-o` <outputfile_or_folder> | *(Optional)* This new output file name or folder is for the files you create from the input files. The tool ignores files that aren’t in Office Open XML format.                                                                                 |
+| `-q`                        | *(Optional)* Runs the Office DocRecrypt tool in quiet mode, usually in a script. Quiet mode doesn’t display a UI and fails if a certificate needs a PIN. If your certificate needs a PIN, don’t use quiet mode.                                      |
    
 For example:
   
 To remove the password from a file, use this code:
     
- DocRecrypt -i lockedfile
-    
+```
+DocRecrypt -i lockedfile
+```    
 To remove the password and assign a new password of 12345, use this code:
-    
+```    
  DocRecrypt -p 12345 -i lockedfile
-    
+```    
 To remove the password, create a new file, and assign a new password of 12345 to that file, use this code:
-    
+```    
  DocRecrypt -p 12345 -i lockedfile -o newfile
-    
+```    
 Once files are password protected using Office 2016, won't remove the passwords.
-  
+
 <a name="BK_officeEarly"> </a>
 
 ### Office 2010 and 2007 files
 
-Once the client computers in your organization have been configured by using the Office DocRecrypt tool (either individually or through Group Policy), any future Word 2016, Excel 2016, or PowerPoint 2016 files (docx, xlsx and pptx files) and any existing password protected Office Word 2007, Word 2010, Office Excel 2007, Excel 2010, Office PowerPoint 2007 or PowerPoint 2010 files that the users edit in Office 2016 can be unlocked or the password reset with the DocRecrypt tool. Once an escrow key is added to a password protected file, it can be unlocked or reset even if it's been edited in Office 2007 or Office 2010.
+After you configure client computers with the Office DocRecrypt tool (individually or through Group Policy), you can unlock or reset passwords for new Word 2016, Excel 2016, or PowerPoint 2016 files (docx, xlsx, and pptx). You can unlock or reset passwords for existing password-protected Word 2007, Word 2010, Excel 2007, Excel 2010, PowerPoint 2007, or PowerPoint 2010 files that users edit in Office 2016. When you add an escrow key to a password-protected file, you can still unlock or reset that file even if it’s edited in Office 2007 or Office 2010.
