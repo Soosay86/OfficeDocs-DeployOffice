@@ -4403,7 +4403,7 @@ The following fields are collected:
 
 ### Office.Apple.Licensing.CPCPrivacyConsentViewDismissed
 
-This event is triggered when Privacy Consent View is dismissed by the user. The Privacy Consent View is displayed in countries where users' consent is required for showing upsell screens to them. This telemetry will help us understand the actions users take when they encounter this screen.
+This event is triggered when Privacy Consent View is dismissed by the user. The Privacy Consent View is displayed in countries or regions where users' consent is required for showing upsell screens to them. This telemetry will help us understand the actions users take when they encounter this screen.
 
 The following fields are collected:
 
@@ -4411,7 +4411,7 @@ The following fields are collected:
 
 ### Office.Apple.Licensing.CPCPrivacyConsentViewVisible
 
-This event is triggered when Privacy Consent View is shown to users. The Privacy Consent View is displayed in countries where users' consent is required for showing upsell screens to them. This telemetry will help us understand if the consent is being shown in such countries.
+This event is triggered when Privacy Consent View is shown to users. The Privacy Consent View is displayed in countries or regions where users' consent is required for showing upsell screens to them. This telemetry will help us understand if the consent is being shown in such countries.
 
 The following fields are collected:
 
@@ -4818,7 +4818,7 @@ The following fields are collected:
 
 ### Office.Android.DocsUI.PaywallControl.SkuPriceDiscountErrorEvent
 
-The event is triggered when a user lands on the SKU chooser screen of the app and the prices are fetched from the Google Playstore for different subscriptions. The event identifies price differences between monthly and annual plan offered in different countries and in different currencies. The data is used to ensure that the pricing configuration is working as expected. 
+The event is triggered when a user lands on the SKU chooser screen of the app and the prices are fetched from the Google Playstore for different subscriptions. The event identifies price differences between monthly and annual plan offered in different countries or regions and in different currencies. The data is used to ensure that the pricing configuration is working as expected. 
 
 The following fields are collected:
 
