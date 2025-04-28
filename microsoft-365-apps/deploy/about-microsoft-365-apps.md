@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
 description: "Provides Office admins with an overview of Microsoft 365 Apps, including information about deploying and licensing."
-ms.date: 09/30/2024
+ms.date: 05/26/2025
 ---
 
 # About Microsoft 365 Apps in the enterprise
@@ -61,7 +61,7 @@ The most significant difference is that Microsoft 365 Apps is updated regularly,
     
 - Microsoft 365 Apps lets you control how often users receive feature updates. For example, users can get new features to Microsoft 365 Apps as soon as they're ready, or once a month (on the second Tuesday of the month), or twice a year (in January and July, on the second Tuesday). For more information, see [Overview of update channels for Microsoft 365 Apps](../updates/overview-update-channels.md).
     
-- Office 365 (and Microsoft 365) provides a web-based portal where users can install Microsoft 365 Apps themselves. Keep in mind that users have to be local administrators on their computers to install Microsoft 365 Apps. If users aren't local administrators, you need to install Microsoft 365 Apps for them. Also, if you don't want your users to install from the portal, you can prevent that. For more information, see [Choose how to deploy](plan-microsoft-365-apps.md#step-1---choose-how-to-deploy).
+- Users can install Microsoft 365 Apps themselves through **Apps** at [Office.com](https://www.office.com) by selecting **Install apps** > **Microsoft 365 apps**. Keep in mind that users must be local administrators on their computers to install Microsoft 365 Apps. If users aren't local administrators, you need to install Microsoft 365 Apps for them. If you don't want your users to install the apps themselves, you can prevent that. For more information, see [Choose how to deploy](plan-microsoft-365-apps.md#step-1---choose-how-to-deploy).
     
 ### Licensing differences
 <a name="BKMK_Licensing"> </a>

@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 audience: ITPro
 recommendations: false
 description: "Compares different ways to update Microsoft 365 Apps, including automatically from the internet or from an on-premises location."
-ms.date: 03/01/2023
+ms.date: 05/26/2025
 ---
 
 # Choose how to manage updates to Microsoft 365 Apps
@@ -36,7 +36,7 @@ In most cases, you use the Office Deployment Tool or Group Policy to [configure 
 ## Apply updates automatically from the internet to Microsoft 365 Apps
 <a name="Internet"> </a>
 
-This is the default setting for Microsoft 365 Apps. For example, if your users install Microsoft 365 Apps themselves from the Office 365 portal, Microsoft 365 Apps is configured to get updates automatically from the internet. No additional user or administrative configuration is needed.
+This is the default setting for Microsoft 365 Apps. For example, if your users install Microsoft 365 Apps themselves through **Apps** at [Office.com](https://www.office.com) by selecting **Install apps** > **Microsoft 365 apps**, Microsoft 365 Apps is configured to get updates automatically from the internet. No additional user or administrative configuration is needed.
   
 Even if you use the Office Deployment Tool to deploy Microsoft 365 Apps to your users, you can configure updates to be applied automatically from the internet.
   

@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides Office admins with an overview of how to deploy Project to users in their organization."
-ms.date: 04/01/2025
+ms.date: 05/26/2025
 ---
 
 # Deployment guide for Project
@@ -38,7 +38,7 @@ Here are the general steps to deploy Project Online Desktop Client to users in y
 
 1. Purchase either Planner and Project Plan 3 or Planner and Project Plan 5, which includes Project Online Desktop Client and the Planner app, with enough licenses for all of your Project users.
 2. Sign in to the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/about-the-admin-center) and [assign licenses](/microsoft-365/admin/manage/assign-licenses-to-users) for Project Online Desktop Client to those users.
-3. Have your users sign in to [Office.com](https://www.office.com) and install Project from the **Apps & devices** section of [My account](https://portal.office.com/account). Users have to be local administrators on their devices to install Project.
+3. Have your users sign in to [Office.com](https://www.office.com), select **Apps** from the navigation menu, and then select **Install apps** > **Microsoft 365 apps**. In the installation pop-up, users can select **Project** and install it on their device. Users must be local administrators on their devices to complete the installation.
 
 If you want to have more control over how Project is deployed to your users, you can do the following instead:
 

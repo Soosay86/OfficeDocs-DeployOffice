@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides Office admins with an overview of how to deploy subscription and volume licensed versions of Visio to users in their organization."
-ms.date: 09/19/2024
+ms.date: 05/26/2025
 ---
 
 # Deployment guide for Visio
@@ -38,7 +38,8 @@ Here are the general steps to deploy a subscription version of Visio to users in
 
 1. Purchase Visio Plan 2, with enough licenses for all of your Visio users.
 2. Sign in to the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/about-the-admin-center) and [assign licenses](/microsoft-365/admin/manage/assign-licenses-to-users) for Visio to those users.
-3. Have your users sign in to [Office.com](https://www.office.com) and install Visio from the **Apps & devices** section of [My account](https://portal.office.com/account). Users have to be local administrators on their devices to install Visio.
+3. Have your users sign in to [Office.com](https://www.office.com), select **Apps** from the navigation menu, and then select **Install apps** > **Microsoft 365 apps**. In the installation pop-up, users can select **Visio** and install it on their device. Users must be local administrators on their devices to complete the installation.
+
 
 If you want to have more control over how the subscription version of Visio is deployed to your users, you can do the following instead:
 

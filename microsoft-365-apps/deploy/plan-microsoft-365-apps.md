@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "This article gives step-by-step instructions for how to plan your deployment of Microsoft 365 Apps. The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
-ms.date: 01/25/2024
+ms.date: 05/26/2025
 ---
 
 # Plan your enterprise deployment of Microsoft 365 Apps
@@ -41,7 +41,7 @@ If you use the ODT and have the network capacity, we recommend deploying Microso
 
 Choose how you want to deploy:
 
-- **Self-install from the cloud:** Manage your deployment from the Microsoft 365 portal and have your users install the apps on their client devices directly from the portal.
+- **Self-install from the cloud:** Manage your deployment from [Office.com](https://www.office.com). Users install the apps on their client devices by selecting **Apps** and then choosing **Install apps** > **Microsoft 365 apps**. This method requires the least amount of administrative setup, but provides less control over the deployment.
 
 - **Deploy from the cloud using Intune:** Manage your deployment through Intune and automate the configuration and installation of the Microsoft 365 Apps.
 
