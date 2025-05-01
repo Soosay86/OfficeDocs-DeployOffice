@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 04/14/2025
+ms.date: 05/05/2025
 ---
 
 # Required diagnostic data for Office
@@ -3567,6 +3567,17 @@ The following fields are collected:
 - **Data_SilhouetteDurationTillPostRender** - The duration of document end to post render.
 
 - **Data_TimeSplitMeasurements** - A string value logging the time duration spent in some function calls, in a format with function tag, start timestamp and duration. 
+
+#### Office.Android.DocsUI.PaywallControl.OneDriveStorageUsage 
+
+This event is triggered when the notification to turn on Auto Renewal is displayed. The data is used to determine that the notification is shown to non-eligible users based on their estimated OneDrive storage usage.
+
+The following fields are collected:
+
+- **totalStorageInGB** – The total storage allocated to user in gigabytes. 
+
+- **usedStorageInPercentage** – The percentage of OneDrive storage that has been used.  
+
 
 #### Office.Android.DocsUI.PaywallControl.PreSignInFRE
 
@@ -14901,6 +14912,7 @@ The following fields are collected:
 
 - **glEsVersion** - OpenGL Embedded Systems version key
 
+- **specific_feature_state** - The number encodes the states of specific feature flights, which captures whether the feature is enabled and the source of its enable state (such as default or flighting system).
 
 #### crash.event
 
@@ -14948,6 +14960,16 @@ The following fields are collected:
 - **roamingSettingType** - identifies the location from which we attempt to read settings
 
 - **settingId** - the setting that was attempted to be fetched
+
+
+#### Office.Android.DocsUI.PaywallControl.ActivityNotAvailableToLaunchPaywall 
+
+This event is triggered when the app crashes. The data is used to determine whether the app crashed due to activity context being null/destroyed or working as expected. Activity context refers to the scenarios when users try to access the paywall but are unable to for any reason.
+
+The following fields are collected:
+
+- None
+
 
 #### Office.Android.EarlyTelemetry.UngracefulAppExitInfo
 
@@ -17194,6 +17216,37 @@ The following fields are collected:
   - **Data.Cid** - dynamically generated correlation identifier sent to the service when the service call was made to fetch the cloud policy. Used to correlate which call caused an issue while applying the policies on the cloud.
 
   - **Data.Last Error** - One of five string values (enumerators) to log which stage of policy application was being executed when the exception occurred
+
+
+#### Office.OfficeMobile.AppActivation.LandingViewPerf
+
+This event is triggered when user launches Copilot in Office Mobile. The data is used to calculate latency of user perceived load time.
+
+The following fields are collected:
+ 
+- **App_Name** - The application name.
+
+- **App_Platform** – The application platform.
+
+- **App_Version** – The application version.
+
+- **Data_LandingView** – The landing view for data.
+
+- **Device_Model** – The device model.
+
+- **Device_OsBuild** – The version of the operating system.
+
+- **Device_OsVersion** – The version of the device.
+
+- **Event_Source** – The event source.
+
+- **SessionId** – The identifier for the session.
+
+- **Session_SubAppName** – sub app name.
+
+- **User_ActiveUserTenantId** – User Tenant ID.
+
+- **User_TenantGroup** – Tenant group
 
 
 #### Office.OfficeMobile.PdfViewer.PdfFileOpenMeasurements (on Android)
