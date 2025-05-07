@@ -139,7 +139,7 @@ items:
             href: deploy/upgrade-from-msi-version.md
 
       - name: New Outlook for Windows
-        href: /outlook/overview-new-outlook
+        href: /microsoft-365-apps/outlook/overview-new-outlook
 
       - name: Project, Visio, Teams, and OneNote
         items:
