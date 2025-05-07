@@ -133,19 +133,19 @@ conceptualContent:
     - title: Outlook
       links:
         - text: Overview of the new Outlook
-          url: outlook/overview-new-outlook.md
+          url: /microsoft-365-apps/outlook/overview-new-outlook
           itemType: overview
         - text: Managing updates for Outlook
-          url: outlook/manage/manage-updates-new-outlook-windows.md
+          url: /microsoft-365-apps/outlook/manage/manage-updates-new-outlook-windows
           itemType: how-to-guide
         - text: Troubleshooting Outlook issues
-          url: outlook/troubleshoot/troubleshoot-overview-new-outlook.md
+          url: /microsoft-365-apps/outlook/troubleshoot/troubleshoot-overview-new-outlook
           itemType: learn
         - text: Licensing options for Outlook
-          url: outlook/get-started/licensing-options.md
+          url: /microsoft-365-apps/outlook/get-started/licensing-options
           itemType: reference
         - text: Migration planning for the new Outlook
-          url: outlook/get-started/migration-planning.md
+          url: /microsoft-365-apps/outlook/get-started/migration-planning
           itemType: how-to-guide 
 
     - title: Office for Mac
