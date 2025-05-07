@@ -35,13 +35,13 @@ New productivity features, People and File Search companions, are now available 
 
 ### Newsletters in Outlook
 
-Organizations can now configure and manage newsletters in Outlook, providing a new way to communicate with users effectively. For more information, see [Newsletters in Outlook](../outlook/manage/newsletters.md).
+Organizations can now configure and manage newsletters in Outlook, providing a new way to communicate with users effectively. For more information, see [Newsletters in Outlook](/outlook/manage/newsletters).
 
 ## December 2024
 
 ### New Outlook for Windows on Virtualized Desktop Infrastructure (VDI)
 
-Organizations can now deploy New Outlook for Windows on VDI, enabling better support for virtualized environments and improved user experiences. For more information, see [Deploy New Outlook for Windows](../outlook/get-started/deployment-new-outlook.md).
+Organizations can now deploy New Outlook for Windows on VDI, enabling better support for virtualized environments and improved user experiences. For more information, see [Deploy New Outlook for Windows](/outlook/get-started/deployment-new-outlook).
 
 ## October 2024
 
@@ -53,11 +53,11 @@ The goal of migrating from OneNote for Windows 10 to the modern OneNote app is n
 
 ### Troubleshooting tools for New Outlook
 
-New troubleshooting tools for New Outlook documentation provides administrators with better diagnostics and solutions for common deployment issues. For more information, see [Troubleshoot deployment issues in new Outlook](../outlook/troubleshoot/troubleshoot-deployment-new-outlook.md).
+New troubleshooting tools for New Outlook documentation provides administrators with better diagnostics and solutions for common deployment issues. For more information, see [Troubleshoot deployment issues in new Outlook](/outlook/troubleshoot/troubleshoot-deployment-new-outlook).
 
 ### Usage reports for New Outlook
 
-New usage reports for New Outlook help administrators track adoption and usage patterns, providing insights into user behavior. For more information, see [Monitor usage reports for New Outlook](../outlook/manage/monitor-usage-reports.md).
+New usage reports for New Outlook help administrators track adoption and usage patterns, providing insights into user behavior. For more information, see [Monitor usage reports for New Outlook](/outlook/manage/monitor-usage-reports).
 
 ## September 2024
 
@@ -73,7 +73,7 @@ For more information, see [Office LTSC 2024 overview](/office/ltsc/2024/overview
 
 ### New Outlook deployment improvements
 
-New Outlook for Windows now includes enhanced deployment options, new policy configurations, and troubleshooting tools to support enterprise environments. For more information, see [Deploy New Outlook for Windows](../outlook/overview-new-outlook.md)
+New Outlook for Windows now includes enhanced deployment options, new policy configurations, and troubleshooting tools to support enterprise environments. For more information, see [Deploy New Outlook for Windows](/outlook/overview-new-outlook)
 
 ## October 2023
 
