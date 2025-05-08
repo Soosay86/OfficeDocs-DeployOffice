@@ -209,7 +209,7 @@ For details on deploying languages, see [Overview of deploying languages for Mic
 
 ## Apply application preferences to Microsoft 365 Apps
 
-As part of your deployment, you can define application preferences for Microsoft 365 Apps, including VBA Macro notifications,  default file locations, and default file formats. To do so, you deploy Office using the standard steps in [Install Microsoft 365 Apps](#install-microsoft-365-apps), but you include application preferences as part of your configuration file. 
+As part of your deployment, you can define application preferences for Microsoft 365 Apps, including VBA Macro notifications, default file locations, and default file formats. To do so, you deploy Office using the standard steps in [Install Microsoft 365 Apps](#install-microsoft-365-apps), but you include application preferences as part of your configuration file. 
 
 To create the configuration file, we recommend you use the [Office Customization Tool for Click-to-Run](https://config.office.com/), a web application with a full user interface.
 
@@ -217,29 +217,30 @@ To create the configuration file, we recommend you use the [Office Customization
 2. Export the file.
 3. Follow the steps in [Install Microsoft 365 Apps](#install-microsoft-365-apps) to deploy Office with the newly created configuration file.
 
-In this example, the configuration file installs the 32-bit version of Microsoft 365 Apps for enterprise in English and displays the Trust Bar for all VBA macros in Excel.
+   In this example, the configuration file installs the 32-bit version of Microsoft 365 Apps for enterprise in English and displays the Trust Bar for all VBA macros in Excel.
 
-```xml
-<Configuration>
-  <Add OfficeClientEdition="32" Channel="Current">
-    <Product ID="O365ProPlusRetail">
-      <Language ID="en-us" />
-    </Product>
-  </Add>
-  <AppSettings>
-    <User Key="software\microsoft\office\16.0\excel\security"
-          Name="vbawarnings" 
-          Value="3" 
-          Type="REG_DWORD" 
-          App="excel16" 
-          Id="L_VBAWarningsPolicy" />
-  </AppSettings>
-</Configuration>
-```
+    ```xml
+    <Configuration>
+      <Add OfficeClientEdition="32" Channel="Current">
+        <Product ID="O365ProPlusRetail">
+          <Language ID="en-us" />
+        </Product>
+      </Add>
+      <AppSettings>
+        <User Key="software\microsoft\office\16.0\excel\security"
+              Name="vbawarnings" 
+              Value="3" 
+              Type="REG_DWORD" 
+              App="excel16" 
+              Id="L_VBAWarningsPolicy" />
+      </AppSettings>
+    </Configuration>
+    ```
 
-This file was created with the Office Customization Tool for Click-to-Run. For more information on the app preferences, we recommend browsing the options in the tool itself.
+    This file was created with the Office Customization Tool for Click-to-Run. For more information on the app preferences, we recommend browsing the options in the tool itself.
 
-Note: When Office is installed, the app preferences defined in the configuration file are applied to all existing users of the device and any new users added to the device in the future.
+> [!NOTE]
+> When Office is installed, the app preferences defined in the configuration file are applied to all existing users of the device and any new users added to the device in the future.
 
 ## Apply application preferences to an existing installation of Microsoft 365 Apps
 
@@ -248,9 +249,9 @@ You can apply new application preferences to client computers that already have 
 1. Use the steps in [define application preferences](../admin-center/overview-office-customization-tool.md#define-application-preferences) to create the configuration file.
 2. From a command prompt, run the ODT executable in customize mode with a reference to the configuration file you created. In the following example, the configuration file is named **installapppreferences.xml**:
   
- `setup.exe /customize installapppreferences.xml`
+   `setup.exe /customize installapppreferences.xml`
   
-You must run the executable from the client computer on which you want to apply the app preferences and you must have local administrator permissions on that computer. When using customize mode, the app preferences defined in the configuration file are applied to all existing users of the device and any new users added to the device in the future. If you apply application preferences when Office apps are running, the preferences are applied when Office is next restarted. 
+   You must run the executable from the client computer on which you want to apply the app preferences and you must have local administrator permissions on that computer. When using customize mode, the app preferences defined in the configuration file are applied to all existing users of the device and any new users added to the device in the future. If you apply application preferences when Office apps are running, the preferences are applied when Office is next restarted. 
 
 ## Create an App-V package for Microsoft 365 Apps
 <a name="BKMK_createanappvpackage"> </a>
@@ -276,7 +277,7 @@ In this example, the configuration file creates an App-V package from a 32-bit E
 </Configuration> 
 ```
 
-The location of the Office installation files is \\\\server\share. For your configuration file, substitute the example values with the appropriate option for your environment. For more information about the options, see [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md),
+The location of the Office installation files is \\\\server\share. For your configuration file, substitute the example values with the appropriate option for your environment. For more information about the options, see [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
 
  **Step 2: Run the ODT executable in packager mode**
 
