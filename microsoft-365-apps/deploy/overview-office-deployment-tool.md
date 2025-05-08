@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "The Office Deployment Tool (ODT) is a command-line tool that you can use to download and deploy Microsoft 365 Apps to your client computers. The ODT gives you more control over an Office installation: you can define which products and languages are installed, how those products should be updated, and whether or not to display the install experience to your users."
-ms.date: 03/11/2024
+ms.date: 05/08/2025
 ---
 
 # Overview of the Office Deployment Tool
@@ -40,11 +40,11 @@ The ODT consists of two files: setup.exe and configuration.xml. To work with the
 
 When running the ODT, you provide the location of the configuration file and define which  *mode*  the ODT should run in:
 
-- To download Microsoft 365 Apps products and languages, use **download** mode. Example: `setup.exe /download downloadconfig.xml`. When you download Office to a folder that already contains that version of Office, the ODT will conserve your network bandwidth by downloading only the missing files. For example, if you use the ODT to download Office in English and German to a folder that already contains Office in English, only the German language pack will be downloaded.
+- To download Microsoft 365 Apps products and languages, use **download** mode. Example: `setup.exe /download downloadconfig.xml`. When you download Office to a folder that already contains that version of Office, the ODT will conserve your network bandwidth by downloading only the missing files. For example, if you use the ODT to download Office in English and German to a folder that already contains Office in English, only the German language pack is downloaded.
 
 - To install the downloaded Microsoft 365 Apps products and languages on a client computer, use **configure** mode. You also use configure mode to remove and update Office products and languages. Example: `setup.exe /configure installconfig.xml`
 
-- To apply new application preferences to client computers that already have Microsoft 365 Apps installed, use **customize** mode. This mode will apply only application preferences, without changing any other deployment settings. Example: `setup.exe /customize preferencesconfig.xml`
+- To apply new application preferences to client computers that already have Microsoft 365 Apps installed, use **customize** mode. This mode applies only application preferences, without changing any other deployment settings. Example: `setup.exe /customize preferencesconfig.xml`
 
 - To create an App-V package from the downloaded Microsoft 365 Apps products and languages, use **packager** mode. Example: `setup.exe /packager packageconfig.xml`
 
@@ -57,7 +57,7 @@ Follow these steps to download installation files for Microsoft 365 Apps from th
 
  **Step 1: Create the configuration file**
 
-When creating the configuration file, we recommend starting with an example file and updating it with the appropriate options for your environment. You can start by copying and pasting the example below into a text file, saving it with a name of your choosing, and then editing the XML elements and attributes to define the options you want.
+When creating the configuration file, we recommend starting with an example file and updating it with the appropriate options for your environment. You can start by copying and pasting the following example into a text file, saving it with a name of your choosing, and then editing the XML elements and attributes to define the options you want.
 
 In this example, the configuration file downloads the installation files for a 32-bit English edition of Microsoft 365 Apps for enterprise and the subscription version of the Visio desktop app to \\\\server\share on your network:
 
@@ -112,7 +112,7 @@ After you download Microsoft 365 Apps installation files, follow these steps to 
 
  **Step 1: Create the configuration file**
 
-When creating the configuration file, we recommend starting with an example file and updating it with the appropriate options for your environment. You can start by copying and pasting the example below into a text file, saving it with a name of your choosing, and then editing the XML elements and attributes to define the options you want.
+When creating the configuration file, we recommend starting with an example file and updating it with the appropriate options for your environment. You can start by copying and pasting the following example into a text file, saving it with a name of your choosing, and then editing the XML elements and attributes to define the options you want.
 
 In this example, the configuration file installs a 32-bit English edition of Microsoft 365 Apps for enterprise without Publisher:
 
@@ -128,7 +128,7 @@ In this example, the configuration file installs a 32-bit English edition of Mic
 </Configuration> 
 ```
 
-The location of the Office installation files is **\\\\server\share**. The display level is set to **None**, which means the user will not see any user interface during the install. The AcceptEULA is set to **TRUE**, which means your users will not have to click to accept the license terms during the installation.
+The location of the Office installation files is **\\\\server\share**. The display level is set to **None**, so users don't see any user interface during the installation. The AcceptEULA is set to **TRUE**, so users don't need to accept the license terms during the installation.
 
 For more information about the configuration options, see [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
 
@@ -149,7 +149,7 @@ After running the command, you should see the Office installation start (unless 
 
 You can use the Office Deployment Tool to make updates to your client computers after installing Microsoft 365 Apps. There are two ways to make the updates:
 
-- Use the ODT to install Microsoft 365 Apps again, which will update Office to the newest version. Only the files that have changed in the new version will be updated.
+- Use the ODT to install Microsoft 365 Apps again, which updates Office to the newest version. Only the files that change in the new version are updated.
 
 - Use the ODT to download the Office installation files and then point your client computers to that location to receive their updates. (By default, clients are updated directly from the Office Content Delivery Network (CDN).)
 
@@ -157,7 +157,7 @@ To change where your client computers receive their updates, run the ODT in conf
 
  `<Updates Enabled="TRUE" UpdatePath="\\server\updates" />`
 
-This article does not cover all the issues related to managing updates for Office in your organization. For more information on that scenario, including using Group Policy, see [Choose how to manage updates to Microsoft 365 Apps](../updates/choose-how-manage-updates-microsoft-365-apps.md).
+This article doesn't cover all the issues related to managing updates for Office in your organization. For more information on that scenario, including using Group Policy, see [Choose how to manage updates to Microsoft 365 Apps](../updates/choose-how-manage-updates-microsoft-365-apps.md).
 
 <a name="BKMK_excludeorremove"> </a>
 
@@ -174,7 +174,7 @@ When installing Microsoft 365 Apps, you can exclude specific applications. To do
 </Add>
 ```
 
-If you've already installed Microsoft 365 Apps, you can also use the ExcludeApp element to remove an application that you've previously installed. For example, the configuration file above removes Publisher from the previous installation of Office.
+If you installed Microsoft 365 Apps, you can also use the ExcludeApp element to remove an application that you previously installed. For example, the previous configuration file removes Publisher from the previous installation of Office.
 
 You can also remove an entire language version of Microsoft 365 Apps. To do so, follow the steps for excluding products for installing Office with the ODT, but replace the configuration file with one that uses the **Remove** element. For example, this configuration file removes the Spanish language version of Microsoft 365 Apps for enterprise:
 
@@ -250,18 +250,18 @@ You can apply new application preferences to client computers that already have 
   
  `setup.exe /customize installapppreferences.xml`
   
-You must run the executable from the client computer on which you want to apply the app preferences and you must have local administrator permissions on that computer. When using customize mode, the app preferences defined in the configuration file are applied to all existing users of the device and any new users added to the device in the future. If you apply application preferences when Office apps are running, the preferences will be applied when Office is next restarted. 
+You must run the executable from the client computer on which you want to apply the app preferences and you must have local administrator permissions on that computer. When using customize mode, the app preferences defined in the configuration file are applied to all existing users of the device and any new users added to the device in the future. If you apply application preferences when Office apps are running, the preferences are applied when Office is next restarted. 
 
 ## Create an App-V package for Microsoft 365 Apps
 <a name="BKMK_createanappvpackage"> </a>
 
 In addition to downloading and deploying Microsoft 365 Apps, you can use the Office Deployment Tool to create App-V packages. To do so, update the configuration file and then run the ODT in packager mode. You must create App-V packages on a computer that has a clean install of the operating system.
 
-This article does not cover all the issues related to deploying App-V packages. For more information on that scenario, see [Deploying Microsoft Office 2016 by Using App-V](/microsoft-desktop-optimization-pack/appv-v5/deploying-microsoft-office-2016-by-using-app-v).
+This article doesn't cover all the issues related to deploying App-V packages. For more information on that scenario, see [Deploying Microsoft Office 2016 by Using App-V](/microsoft-desktop-optimization-pack/appv-v5/deploying-microsoft-office-2016-by-using-app-v).
 
  **Step 1: Create the configuration file**
 
-When creating the configuration file, we recommend starting with an example file and updating it with the appropriate options for your environment. You can start by copying and pasting the example below into a text file, saving it with a name of your choosing, and then editing the XML elements and attributes to define the options you want.
+When creating the configuration file, we recommend starting with an example file and updating it with the appropriate options for your environment. You can start by copying and pasting the following example into a text file, saving it with a name of your choosing, and then editing the XML elements and attributes to define the options you want.
 
 In this example, the configuration file creates an App-V package from a 32-bit English edition of Microsoft 365 Apps for enterprise without Publisher:
 
@@ -280,7 +280,7 @@ The location of the Office installation files is \\\\server\share. For your conf
 
  **Step 2: Run the ODT executable in packager mode**
 
-From a command prompt, run the ODT executable in packager mode with a reference to the configuration file you saved and to the location where you want to save the App-V package. In the following example, the configuration file is named **packageconfig.xml** and the App-V package will be saved to **\\\\server\share\appv\\**:
+From a command prompt, run the ODT executable in packager mode with a reference to the configuration file you saved and to the location where you want to save the App-V package. In the following example, the configuration file is named **packageconfig.xml** and the App-V package is saved to **\\\\server\share\appv\\**:
 
  `setup.exe /packager packageconfig.xml \\server\share\appv\`
 
