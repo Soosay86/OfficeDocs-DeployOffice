@@ -10,13 +10,13 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides Office admins with information about the implications of Windows 10 end of support on Microsoft 365 Apps."
-ms.date: 04/24/2025
+ms.date: 05/08/2025
 ---
 
 # Windows 10 end of support and Microsoft 365 Apps
 
 > [!IMPORTANT]
-> - Support for Windows 10 ends on October 14, 2025. Microsoft 365 Apps isn't supported on Windows 10 after this date.
+> - Support for Windows 10 ends on October 14, 2025.
 
 Microsoft 365 is governed by the [Modern Lifecycle Policy](/lifecycle/policies/modern). This policy requires customers to stay current as per the servicing and [system requirements](https://support.microsoft.com/topic/13eda659-3dfc-448e-b2cd-70ebb989be47) for the product or service. These requirements include using Microsoft 365 Apps on a supported Windows operating system.
 
