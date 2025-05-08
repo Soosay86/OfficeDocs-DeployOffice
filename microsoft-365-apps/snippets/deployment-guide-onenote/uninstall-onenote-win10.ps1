@@ -8,7 +8,7 @@ function writeLogsToFileAndConsole {
     Param ([string]$logstring)
     $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
     $logstringWithTimestamp = "[$timestamp] $logstring"
-    $backupFolder = [System.Environment]::GetFolderPath('LocalApplicationData') + "\Microsoft\OneNote\16.0\Backup"
+    $backupFolder = [System.Environment]::GetFolderPath('LocalApplicationData') + "\Microsoft\OneNote\16.0\Backup\OneNoteForWindows10"
     $outputFile = $backupFolder + "\UWPMigrationResult.log"
 
     if (-not (Test-Path $backupFolder))
@@ -203,11 +203,11 @@ function parseJson {
 
 ## Copy the backup files to a directory outside of the sandbox path ##
 function moveBackup {
-    try
+try
     {
         $localAppDataPath = [System.Environment]::GetFolderPath('LocalApplicationData')
         $sourcePath = "$localAppDataPath\Packages\Microsoft.Office.OneNote_8wekyb3d8bbwe\LocalState\AppData\Local\OneNote\16.0\BackUp\"
-        $destinationPath = [System.Environment]::GetFolderPath('LocalApplicationData') + "\Microsoft\OneNote\16.0\Backup\"
+        $destinationPath = [System.Environment]::GetFolderPath('LocalApplicationData') + "\Microsoft\OneNote\16.0\Backup\OneNoteForWindows10\"
 
         Copy-Item -Path $sourcePath\* -Destination $destinationPath -Recurse -Force
 
