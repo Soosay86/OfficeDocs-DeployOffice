@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 recommendations: false
 hideEdit: false
 description: "Provides migration guidance for OneNote for Windows 10"
-ms.date: 03/11/2025
+ms.date: 05/08/2025
 ---
 
 # OneNote for Windows 10 migration guidance
