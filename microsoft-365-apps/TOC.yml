@@ -184,7 +184,7 @@ items:
           - name: File Search companion
             href: companions/file-search.md
           - name: Calendar companion
-            href: companions/calendar.md    
+            href: companions/calendar.md
 
       - name: Microsoft 365 Insider Program for Business
         href: insider/index.yml
