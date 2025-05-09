@@ -133,7 +133,7 @@ conceptualContent:
     - title: Outlook
       links:
         - text: Overview of the new Outlook
-          url: /microsoft-365-apps/outlook/overview-new-outlook
+          url: /microsoft-365-apps/outlook/overview-new-outlook-windows
           itemType: overview
         - text: Managing updates for Outlook
           url: /microsoft-365-apps/outlook/manage/manage-updates-new-outlook-windows
