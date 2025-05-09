@@ -73,7 +73,7 @@ For more information, see [Office LTSC 2024 overview](/office/ltsc/2024/overview
 
 ### New Outlook deployment improvements
 
-New Outlook for Windows now includes enhanced deployment options, new policy configurations, and troubleshooting tools to support enterprise environments. For more information, see [Deploy New Outlook for Windows](/microsoft-365-apps/outlook/overview-new-outlook)
+New Outlook for Windows now includes enhanced deployment options, new policy configurations, and troubleshooting tools to support enterprise environments. For more information, see [Deploy New Outlook for Windows](/microsoft-365-apps/outlook/overview-new-outlook-windows)
 
 ## October 2023
 
