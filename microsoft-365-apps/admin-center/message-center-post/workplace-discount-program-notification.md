@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier2
 ROBOTS: NOINDEX, NOFOLLOW
 hideEdit: true
-ms.date: 03/01/2023
+ms.date: 05/09/2025
 ---
 
 # In-product notification for Microsoft Workplace Discount Program

@@ -10,7 +10,7 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 recommendations: false
 description: "Overview of extended offline access for Microsoft 365 Apps."
-ms.date: 03/01/2023
+ms.date: 05/12/2025
 ---
 
 # Overview of extended offline access for Microsoft 365 Apps
@@ -18,15 +18,15 @@ ms.date: 03/01/2023
 Extended offline access enables devices running Microsoft 365 Apps for enterprise to stay activated for up to six months without the need to connect to the internet to validate the license and install updates. To use extended offline access, you must have Version 2002 or later of Microsoft 365 Apps. To enable extended offline access, your organization must have a Microsoft 365 Apps license subscription.
 
 > [!IMPORTANT]
-> Extended offline access is not available as a license for all customers. To find out about eligibility for your organization, contact your Microsoft account representative.
+> Extended offline access is included with specific license packages. To find out about eligibility for your organization, contact your Microsoft account representative.
 
 Extended offline access is designed for users with devices that need to go offline for an extended period, such as users in secure environments, remote locations, or on field trips with no connectivity. 
 
 ## Online setup of the device for users
 
 To enable extended offline access for users in your organization:
-- Admin installs Microsoft 365 Apps and enables extended offline access by deploying the [Group Policy](#enable-extended-offline-access-with-group-policy) or the [registry](#enable-extended-offline-access-with-the-registry).
-- Once deployed, the user signs into Windows using a Microsoft Entra account.
+- Admin installs Microsoft 365 Apps for enterprise and enables extended offline access by deploying the [Group Policy](#enable-extended-offline-access-with-group-policy) or the [registry](#enable-extended-offline-access-with-the-registry).
+- Once deployed, the user signs into Windows using a Microsoft Entra ID account.
 - User launches an Office app like Word or Excel.
 - User confirms Office license is valid for 180 days.
 
@@ -50,7 +50,7 @@ To use this policy setting, download and install the [Group Policy Administrativ
 
 ## Enable extended offline access with the registry
 
-If you can't use Group Policy to enable extended offline access, you can update the registry. To enable the setting, set the following:
+If you can't use Group Policy to enable extended offline access, use the registry instead. Set the following values to enable the feature:
 
 ```console
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0\Common\Licensing]
@@ -60,7 +60,7 @@ If you can't use Group Policy to enable extended offline access, you can update 
 "ExtendedOfflineSubscription"=dword:00000001
 ```
 
-To disable the setting, set the following:
+Set the following values to disable the feature:
 
 ```console
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0\Common\Licensing]
@@ -78,6 +78,6 @@ If the device cannot connect to the internet every 180 days, you can still [exte
 
 ## Considerations when using extended offline access
 
-- Extended offline access is currently supported for Word, Excel, PowerPoint, Outlook, OneNote, Publisher and Access, as well as Project and Visio subscription plans. For information about how to exclude applications when deploying, see [ExcludeApp element](../deploy/office-deployment-tool-configuration-options.md#excludeapp-element). 
+- xtended offline access is currently supported for Word, Excel, PowerPoint, Outlook, OneNote, Publisher, and Access on Windows, as well as Project and Visio subscription plans. For information about how to exclude applications when deploying, see [ExcludeApp element](../deploy/office-deployment-tool-configuration-options.md#excludeapp-element).
 - Updates, such as new features and security updates, must be applied manually if the device is not connected to the internet.
 - For information about the availability of Version 2002 or later in the update channels for Microsoft 365 Apps, see [Update history for Microsoft 365 Apps](/officeupdates/update-history-office365-proplus-by-date).
