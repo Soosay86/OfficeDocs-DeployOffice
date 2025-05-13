@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier3
 recommendations: true
 description: "Provides information for admins on how to deploy standard preference settings for Office for Mac, by configuring .plist files"
-ms.date: 03/01/2023
+ms.date: 05/12/2024
 ---
 
 # Deploy preferences for Office for Mac

@@ -10,7 +10,7 @@ ms.collection: Tier2
 ms.localizationpriority: low
 recommendations: false
 description: "Provides guidance for deploying Microsoft 365 Apps for enterprise  in a GCC High or DoD environment"
-ms.date: 03/01/2023
+ms.date: 05/12/2025
 ---
 
 # Guidance for deploying Microsoft 365 Apps for enterprise in a GCC High or DoD environment
