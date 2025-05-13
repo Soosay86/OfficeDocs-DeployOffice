@@ -8,7 +8,7 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: must-keep
 ROBOTS: NOINDEX, NOFOLLOW
-ms.date: 06/07/2024
+ms.date: 05/13/2025
 ---
 
 # Office Customization Tool (OCT) 2016 Help: Office security settings
