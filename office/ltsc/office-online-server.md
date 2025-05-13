@@ -1,5 +1,5 @@
 ---
-title: "Office There isn't a version of [Office Online Server](/officeonlineserver/office-online-server) specifically for Office LTSC. However, you can use the existing version of Office Online Server, which is available for download from the [Microsoft 365 admin center](https://admin.microsoft.com).here isn't a version of [Office Online Server](/officeonlineserver/office-online-server) specifically for Office LTSC. However, you can use the existing version of Office Online Server, which is available for download from the [Microsoft 365 admin center](https://admin.microsoft.com).nline Server for Office LTSC customers"
+title: "Office Online Server for Office LTSC customers"
 ms.author: nwhite
 author: nicholasswhite
 manager: dougeby
