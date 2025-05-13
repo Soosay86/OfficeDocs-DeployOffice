@@ -1,5 +1,5 @@
 ---
-title: "Office Online Server for Office LTSC customers"
+title: "Office There isn't a version of [Office Online Server](/officeonlineserver/office-online-server) specifically for Office LTSC. However, you can use the existing version of Office Online Server, which is available for download from the [Microsoft 365 admin center](https://admin.microsoft.com).here isn't a version of [Office Online Server](/officeonlineserver/office-online-server) specifically for Office LTSC. However, you can use the existing version of Office Online Server, which is available for download from the [Microsoft 365 admin center](https://admin.microsoft.com).nline Server for Office LTSC customers"
 ms.author: nwhite
 author: nicholasswhite
 manager: dougeby
@@ -11,7 +11,7 @@ ms.collection: Tier2
 ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
 description: "Provides information about how Office LTSC customers can get Office Online Server."
-ms.date: 09/18/2024
+ms.date: 05/13/2025
 ---
 
 # Office Online Server for Office LTSC customers
