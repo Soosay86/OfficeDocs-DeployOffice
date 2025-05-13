@@ -74,7 +74,7 @@ After the compressed files are downloaded, Click-to-Run uncompresses and moves t
   
 The system can't apply updates if an Office program that needs updating is currently in use. In this case, the task tries to apply the updates the next time the scheduled task runs. If updates can't be applied for several days, [users see a message](end-user-update-notifications-microsoft-365-apps.md) that updates are ready to install. If the user restarts the computer and updates haven't been applied, the updates are applied as Windows starts. This won't prevent the user from logging in.
   
-To mae sure users apply updates, admins can [configure a deadline](configure-update-settings-microsoft-365-apps.md). The deadline specifies a date and time by when the updates must be applied. If users don't apply the updates by the deadline, Office automatically closes any open Office programs and applies the updates. Users receive [notifications leading up to the deadline](end-user-update-notifications-microsoft-365-apps.md).
+To make sure users apply updates, admins can [configure a deadline](configure-update-settings-microsoft-365-apps.md). The deadline specifies a date and time by when the updates must be applied. If users don't apply the updates by the deadline, Office automatically closes any open Office programs and applies the updates. Users receive [notifications leading up to the deadline](end-user-update-notifications-microsoft-365-apps.md).
   
 ## Related articles
 
