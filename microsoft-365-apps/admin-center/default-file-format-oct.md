@@ -12,7 +12,7 @@ ms.collection: Tier2
 recommendations: false
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Provides admins information about choosing a default file format when using the Office Customization Tool."
-ms.date: 03/01/2023
+ms.date: 05/12/2025
 ---
 
 # Default file format for the Office Customization Tool (for Click-to-Run)

@@ -9,14 +9,14 @@ ms.service: o365-proplus-itpro
 ms.collection: Tier2
 ms.localizationpriority: medium
 description: "Provides guidance to Office admins about Trusted Locations in Office apps."
-ms.date: 05/24/2024
+ms.date: 05/12/2025
 ---
 
 # Trusted Locations for Office files
 
-***Applies to:*** *Microsoft 365 Apps, Office LTSC 2021, Office 2019, and Office 2016*
+[!INCLUDE [applies-to](../../office/includes/applies-to.md)]
 
-Trusted Locations is a feature of Office where files contained in these folders are assumed safe, such as files you create yourself or saved from a trustworthy source. These files bypass threat protection services, bypass file block settings, and all active content is enabled. This means files saved in Trusted Locations aren't opened in [Protected View](https://support.microsoft.com/topic/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653) or [Application Guard](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46).
+Trusted Locations is a feature of Office where files contained in these folders are assumed safe, such as files you create yourself or saved from a trustworthy source. These files bypass threat protection services, bypass file block settings, and all active content is enabled. This means files saved in Trusted Locations aren't opened in [Protected View](https://support.microsoft.com/topic/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653) or [Application Guard](/windows/security/application-security/application-isolation/microsoft-defender-application-guard/md-app-guard-overview).
 
 [Active content](https://support.microsoft.com/office/b7ff2e8a-4055-47d4-8c7d-541e19f62bea) can include unsigned add-ins, VBA macros, connections to external data and more. Ensure you trust the original source of the file before saving it to a Trusted Location. It's important as all active content is enabled, and users don't receive notifications about potential security risks. The following diagram shows the trust workflow for opening Office files.
 
