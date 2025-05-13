@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Provides Office admins information about cloud update in the Microsoft 365 Apps admin center"
-ms.date: 12/09/2024
+ms.date: 05/13/2025
 ---
 
 # Overview of cloud update in the Microsoft 365 Apps admin center
@@ -95,7 +95,7 @@ The [Current Channel profile](https://config.office.com/officeSettings/MPCurrent
 - **Profile settings** is a separate tab on this page for configuring profile-specific settings, such as the [update deadline](#deadline).
  
 > [!NOTE]
-> Cloud update profile is not available for Semi-Annual Enterprise Channel.
+> Cloud update profile isn't available for Semi-Annual Enterprise Channel.
 
 ## Profile controls
 
@@ -121,26 +121,30 @@ To pause and resume a profile, follow these steps:
 5. Resume the profile by returning to the **Monthly Enterprise Channel** profile page and selecting **Resume channel**.
 
 > [!NOTE]
-> For [rollout waves](#rollout-waves), the scheduled rollout continues when a profile is paused and does not restart when the profile is resumed.
+> For [rollout waves](#rollout-waves), the scheduled rollout continues when a profile is paused and doesn't restart when the profile is resumed.
 
 ### Rollback
 
 > [!NOTE]
 > Rollback is only available for devices managed by the Monthly Enterprise Channel profile. 
 
-Rollback enables you to roll back a device to a previous version. For example, if your finance department experiences an issue with the latest version of Excel, you can roll them back to the previous version. Keep these points in mind when using rollback:
+Rollback enables you to roll back a device to a previous version. For example, if your finance department experiences an issue with the latest version of Excel, you can roll them back to the previous version. Monthly Enterprise Channel provides access to two previous monthly builds for rollback purposes through the Microsoft 365 Apps admin center.
+
+Keep these points in mind when using rollback:
 
 - Devices that are rolled back will stay on the previous version until the next version is released. When the new version releases, devices in a rolled-back state revert to their regular update schedule. They skip the previous version and update to the latest release. 
 - If the underlying issue was resolved, you can cancel a rollback action before the next version is available. 
 - A rollback can still be initiated when a profile is paused.
-- Devices always roll back to the previous version of the Monthly Enterprise Channel. It isn't possible to roll devices back to another channel.
+- You can select either of the two previous monthly builds when rolling back devices. This gives you up to two months of rollback support.
+- The rollback builds are intended as a safety net when issues are encountered with the latest build, not as a method to delay updates. We recommend deploying the latest monthly build and only using rollback when necessary.
+- It isn't possible to roll devices back to another channel.
 
 To trigger a rollback, follow these steps:
 
 1. Sign in to the [Microsoft 365 Apps admin center](https://config.office.com) with a privileged account.
 2. Expand **Cloud Update** from the left navigation and select **Monthly Enterprise Channel**.
 3. On the **Overview** tab of the **Monthly Enterprise Channel** profile, select **Channel actions** > **Rollback devices**.
-4. On the flyout, select the version you want to roll the device back to, enter the name of the device or devices, and select **Roll back**.
+4. On the flyout, select which of the two previous versions you want to roll the device back to, enter the name of the device or devices, and select **Roll back**.
 5. The rollback action takes 24 hours to complete. You can monitor the status from the **Overview** page by selecting **Channel actions** > **Manage rolled back devices**.
 
 ## Tenant settings
@@ -171,7 +175,7 @@ To create and manage an exclusion window, follow these steps:
 7. Once an exclusion window is created, you can monitor, edit, and/or delete it from the **Exclusion windows** page.
 
 > [!NOTE]
-> For rollout waves, the scheduled rollout continues when an exclusion window is active and does not restart when updates resume.
+> For rollout waves, the scheduled rollout continues when an exclusion window is active and doesn't restart when updates resume.
 
 ### Exclude groups
 
@@ -210,7 +214,7 @@ Rollout waves let you configure custom waves for your update rollout. For exampl
 - You can configure a delay between waves ranging from 1-5 days.
 - If [update validation]() is enabled, ...
     - wave 1 is locked to 7 days, and all other waves are configured for **days between waves**.
-    - we recommend having at least twenty devices on wave 1, so enough signals are generated.
+    - we recommend having at least 20 devices on wave 1, so enough signals are generated.
     - waves start on their assigned start dates. Update validation doesn't halt or delay waves.
 - Rollout waves aren't enforced for expedited actions, such as rollback and switch device update channel. These actions occur outside of a wave assignment.
 - The rollout wave schedule continues even if a profile is paused or during an active exclusion window. For example, if you pause a profile on patch Tuesday and resume 20 days later, all rollout waves pass, and all unpatched devices are eligible for updates.
@@ -231,7 +235,7 @@ To configure rollout waves, follow these steps:
 > [!IMPORTANT]
 > Rollout waves can be used to help reduce network congestion. In addition, cloud update includes built-in update thresholds. These include the following:
 > 
-> - The **Current Channel** profile leverages the default rollout schedule defined by the Office Content Delivery Network (CDN), which on average reaches full deployment within 5 days of patch Tuesday.
+> - The **Current Channel** profile uses the default rollout schedule defined by the Office Content Delivery Network (CDN), which on average reaches full deployment within 5 days of patch Tuesday.
 > - The **Monthly Enterprise Channel** profile has a separate threshold that prevents more than 30% of your eligible devices from updating per day. This same enforcement is applied when using custom rollout waves. 
 
 ### Update validation
@@ -248,7 +252,7 @@ Deadline is available for all cloud update profiles.
 
 The update deadline is used to ensure updates are applied in a specified period. Keep these points in mind when configuring your update deadline:
 
-- The update deadline is independently calculated for each device, commencing from the first unsuccessful installation attempt. For example, if open applications prevent the update from installing, the deadline is triggered from this initial failure. The start of the deployment wave and the update's release date do not influence this timeline.
+- The update deadline is independently calculated for each device, commencing from the first unsuccessful installation attempt. For example, if open applications prevent the update from installing, the deadline is triggered from this initial failure. The start of the deployment wave and the update's release date don't influence this timeline.
 - If the deadline passes, a prompt is shown to the user, offering the option to close their applications now or postpone the installation.
 - Users can postpone the update installation three times for two hours each, before a final two-hour countdown is shown. If the deadline is around seven hours past already, users can postpone only once.
 - When the countdown reaches zero, the system saves open files, closes necessary applications, applies the update, and then reopens the applications and files. User downtime is less than five minutes.
@@ -275,8 +279,8 @@ To deactivate a profile, follow these steps:
 2. Expand **Cloud Update** from the left navigation and select an update profile.
 3. On the profile page, select the **Settings** tab.
 4. From **Settings**, select **Cloud Update review**.
-5. Review the information and click the link to **deactivate the management through cloud update**.
-6. Fill out the form and click **submit**.
+5. Review the information and select the link to **deactivate the management through cloud update**.
+6. Fill out the form and select **submit**.
 
 The cloud update status for devices in inventory on a deactivated profile changes to **Eligible for *ChannelName*** and update management from the service stops. You can change the following registry value to regain control:
 `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\cloud\office\16.0\Common\officeupdate`  
@@ -287,7 +291,7 @@ The cloud update status for devices in inventory on a deactivated profile change
 Cloud updates take priority over existing update management settings for Microsoft 365 Apps. For example, if you apply settings through Microsoft Configuration Manager or set policies using Microsoft Intune’s configuration profiles, these settings remain unchanged by the cloud update but aren't enforced anymore. This change affects all devices managed by the cloud update.
 
 > [!NOTE]
-> Cloud update will not change the update settings of other products, such as Windows or Edge. It will also not prevent management solutions from reinstalling Microsoft 365 Apps. 
+> Cloud update won't change the update settings of other products, such as Windows or Microsoft Edge. It won't prevent management solutions from reinstalling Microsoft 365 Apps. 
 
 ## Channel to profile mapping
 
@@ -296,11 +300,11 @@ With cloud update enabled, devices are automatically mapped to the corresponding
 Cloud update currently supports management for devices on Current Channel and Monthly Enterprise Channel. Devices on any other update channel won't be managed by cloud update until they're moved to a channel that cloud update supports.
 
 ## Microsoft Purview support
-Cloud update supports the [Microsoft Purview auditing solutions](/purview/audit-solutions-overview). When auditing is enabled, any changes to a profile’s configuration, tenant-wide settings, or actions triggered for managed devices are tracked. You can use the portal or PowerShell to [search the audit log](/purview/audit-search?tabs=microsoft-purview-portal) for such changes. For more information on captured operations and data format, refer to the [activity documentation](/Purview/audit-log-activities#microsoft-365-apps-admin-services-cloud-update-activities) and [schema reference](/office/office-365-management-api/office-365-management-activity-api-schema#cloud-update-profile-configuration-schema).
+Cloud update supports the [Microsoft Purview auditing solutions](/purview/audit-solutions-overview). When auditing is enabled, any changes to a profile’s configuration, tenant-wide settings, or actions triggered for managed devices are tracked. You can use the portal or PowerShell to [search the audit log](/purview/audit-search?tabs=microsoft-purview-portal) for such changes. For more information on captured operations and data format, see [activity documentation](/Purview/audit-log-activities#microsoft-365-apps-admin-services-cloud-update-activities) and [schema reference](/office/office-365-management-api/office-365-management-activity-api-schema#cloud-update-profile-configuration-schema).
 
 ## Troubleshooting
 > [!IMPORTANT]
-> If you are experiencing any issues enabling cloud update or managing the devices in your environment, be sure to review the [requirements for cloud update](#requirements) before proceeding.
+> If you're experiencing any issues enabling cloud update or managing the devices in your environment, be sure to review the [requirements for cloud update](#requirements) before proceeding.
 
 ### Devices are stuck in an onboarding state
 With cloud update enabled, the service uses [channel to profile mapping](#channel-to-profile-mapping) to automatically identify and onboard devices to their corresponding profile. Devices on the Monthly Enterprise Channel show a status of **Onboarding to Monthly Enterprise Channel** until a new update is available. Here are the two scenarios where this situation applies:
@@ -311,13 +315,13 @@ With cloud update enabled, the service uses [channel to profile mapping](#channe
 
 ### Devices are updating outside of their assigned wave
 
-If you are using [custom rollout waves](#rollout-waves), there may be instances where devices update outside of their assigned wave. Review the following scenarios and take any necessary actions:
+If you're using [custom rollout waves](#rollout-waves), there could be instances where devices update outside of their assigned wave. Review the following scenarios and take any necessary actions:
 
 - **Add-on app deployments**: When you install an add-on app, such as Project or Visio, it can trigger an update check when the application is retrieved from the Office CDN. Consider updating your XML to included [Version="MatchInstalled"](../deploy/office-deployment-tool-configuration-options.md#version-attribute-part-of-add-element) to install the same version of Office, even if a newer version is available.
 
 - **Onboarding devices**: Devices that are still in an **Onboarding to [channel-name]** state are managed by your existing settings until cloud update takes control. During this time, other management settings can enforce updates. Consider excluding devices from these other management tools or wait until the next patch Tuesday cycle for cloud update to engage.
 
-- **Channel change**: The [switch device update channel](inventory.md#switch-device-update-channel) feature will trigger an update check. If you initiate a channel change using a group that contains devices already on Monthly Enterprise Channel, those devices will not receive a channel change action, but will check for the latest available update for Monthly Enterprise Channel. Consider removing those devices from the group if you need to ensure they only update within their wave assignment.
+- **Channel change**: The [switch device update channel](inventory.md#switch-device-update-channel) feature triggers an update check. If you initiate a channel change using a group that contains devices already on Monthly Enterprise Channel, those devices won't receive a channel change action, but checks for the latest available update for Monthly Enterprise Channel. Consider removing those devices from the group if you need to ensure they only update within their wave assignment.
   
 ### My Device-based group didn't work with *[feature name]*
 
