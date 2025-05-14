@@ -111,7 +111,7 @@ The [Weather Bar](https://support.microsoft.com/office/d11b7532-7c58-489e-8103-5
 
 ### Scheduled prompts
 
-You can [schedule Copilot prompts](https://support.microsoft.com/topic/29dfd5fb-211a-4515-88a6-730b8074e489) to run at set times and frequencies. This experience relies on Microsoft Power Automate and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://www.microsoft.com/privacy/privacystatement) apply.
+You can [schedule Copilot prompts](https://support.microsoft.com/topic/29dfd5fb-211a-4515-88a6-730b8074e489) to run automatically at set times and frequencies. This experience relies on Microsoft Power Automate and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://www.microsoft.com/privacy/privacystatement) apply.
 
 ## How to determine if your admin has given you the ability to use optional connected experiences
 
