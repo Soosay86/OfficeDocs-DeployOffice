@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 02/14/2025
+ms.date: 05/14/2025
 ---
 
 # Overview of optional connected experiences in Office
@@ -106,6 +106,12 @@ On Outlook for iOS, your next upcoming event is summarized at the top of your em
 ### Weather Bar in Outlook
 
 The [Weather Bar](https://support.microsoft.com/office/d11b7532-7c58-489e-8103-5cc5d727b06b) in Outlook displays weather forecasts for geographic locations you choose. During use, the Weather Bar in Outlook connects to MSN Weather by default. MSN is owned by Microsoft and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://www.microsoft.com/privacy/privacystatement) apply. When you use the Weather Bar with MSN Weather, Microsoft doesn't detect your location, and the cities that you choose to display aren't linkable to you. You may [change this default setting](/office/client-developer/outlook/weather/extending-the-weather-bar-in-outlook) to connect to other weather service providers. If you decide to use another weather service provider, you'll need to check the privacy statement and license terms of that provider to know which terms apply.
+
+## Experiences for Microsoft 365  Copilot
+
+### Scheduled prompts
+
+You can [schedule Copilot prompts](https://support.microsoft.com/topic/29dfd5fb-211a-4515-88a6-730b8074e489) to run at set times and frequencies. This experience relies on Microsoft Power Automate and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://www.microsoft.com/privacy/privacystatement) apply.
 
 ## How to determine if your admin has given you the ability to use optional connected experiences
 
