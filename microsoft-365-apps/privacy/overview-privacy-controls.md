@@ -3,13 +3,14 @@ title: "Overview of privacy controls for Microsoft 365 Apps for enterprise"
 description: "Provides Office admins with an overview of privacy controls for Microsoft 365 Apps for enterprise, including for diagnostic data and connected experiences."
 author: DHB-MSFT
 ms.author: danbrown
-manager: laurawi
-ms.topic: conceptual
+manager: dansimp
+ms.topic: concept-article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: 
  - privacy-microsoft365
  - essentials-privacy
+ - must-keep
 hideEdit: true
 ms.date: 05/31/2024
 ---
