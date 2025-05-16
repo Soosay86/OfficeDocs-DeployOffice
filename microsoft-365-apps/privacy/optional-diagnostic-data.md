@@ -3,11 +3,13 @@ title: "Optional diagnostic data for Office"
 description: "Provides Office admins with information about optional diagnostic data in Office, including some examples of events."
 author: DHB-MSFT
 ms.author: danbrown
-manager: laurawi
-ms.topic: conceptual
+manager: dansimp
+ms.topic: concept-article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
-ms.collection: privacy-microsoft365
+ms.collection: 
+- privacy-microsoft365
+- must-keep
 hideEdit: true
 ms.date: 05/31/2024
 ---

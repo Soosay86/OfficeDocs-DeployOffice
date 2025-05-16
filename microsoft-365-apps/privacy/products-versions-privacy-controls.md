@@ -3,11 +3,13 @@ title: "Privacy controls available for Office products"
 description: "Provides information about which Office products and versions have the most recent privacy controls."
 author: DHB-MSFT
 ms.author: danbrown
-manager: laurawi
-ms.topic: conceptual
+manager: dansimp
+ms.topic: concept-article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
-ms.collection: privacy-microsoft365
+ms.collection: 
+- privacy-microsoft365
+- must-keep
 hideEdit: true
 ms.date: 10/01/2024
 ---
