@@ -3,7 +3,7 @@ title: "Essential services for Office"
 description: "Provides Office admins with information about essential services in Office, such as Click-to-Run and Licensing, and provides a list of events and data fields for those essential services."
 author: DHB-MSFT
 ms.author: danbrown
-manager: laurawi
+manager: dansimp
 ms.topic: reference
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
