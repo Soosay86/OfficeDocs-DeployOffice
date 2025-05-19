@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: true
 description: "Cloud Policy lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device isn't domain joined or otherwise managed."
-ms.date: 12/03/2024
+ms.date: 05/19/2025
 ---
 
 # Overview of Cloud Policy service for Microsoft 365
@@ -31,19 +31,11 @@ Cloud Policy is part of the [Microsoft 365 Apps admin center](https://config.off
 
 ### Licensing requirements
 
-Your user must be assigned to one of the following subscription plans:
-
-| Type       | Subscription Plan |
-| ---------- | ----------------- |
-| Education  | <li>Microsoft 365 A3</li><li>Microsoft 365 A5</li> |
-| Business   | <li>Microsoft 365 Business Standard</li><li>Microsoft 365 Business Premium</li> |
-| Enterprise | <li>Office 365 E3</li><li>Office 365 E5</li><li>Microsoft 365 E3</li><li>Microsoft 365 E5</li> |
-| Government | <li>Microsoft 365 G3</li><li>Microsoft 365 G5</li> |
+Cloud Policy supports most Microsoft 365 subscription plans that include Microsoft 365 Apps. Check your licensing documentation for specific requirements.
 
 > [!IMPORTANT]
 > The following plans are not supported:
 > - Microsoft 365 operated by 21Vianet
-> - Microsoft 365 GCC High and DoD
 
 > [!NOTE]
 > - A policy configuration can't be applied to volume licensed versions of Office that use Click-to-Run, such as Office LTSC Professional Plus 2021 or Office Standard 2019.
@@ -54,11 +46,27 @@ Your user must be assigned to one of the following subscription plans:
 [!INCLUDE [Version requirements](./includes/requirements-versions.md)]
 
 > [!NOTE]  
-> For GCC customers, the minimum supported Office client version for policies to be delivered to Microsoft 365 Apps running on Windows is *Version 2410* or later.
+> For government customers (GCC, GCC High, and DoD), the minimum supported Office client version for policies to be delivered to Microsoft 365 Apps running on Windows is *Version 2410* or later.
 
 ### Network requirements
 <!--Using include for adding requirements-->
 [!INCLUDE [Network requirements](./includes/requirements-network.md)]
+
+<!-- If the network requirements are not in the include file, you'll need to add the following content -->
+<!-- 
+The following endpoints need to be accessible:
+
+For Commercial and GCC environments:
+* *.config.office.com
+* *.config.office.net
+
+For GCC High environment:
+* *.office365.us
+
+For DoD environment:
+* *.apps.mil
+* *.office365.us
+-->
 
 ### Microsoft Entra groups requirements
 Cloud Policy Service supports the use of [Microsoft Entra groups](/entra/fundamentals/concept-learn-about-groups) with the following requirements:
