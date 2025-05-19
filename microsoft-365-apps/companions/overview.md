@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
 description: "Learn about Microsoft 365 companions, including availability, opt-out options, and feedback mechanisms."
-ms.date: 05/09/2025
+ms.date: 05/19/2025
 ---
 
 # Overview of Microsoft 365 companion apps (preview)
@@ -24,7 +24,9 @@ Microsoft 365 companions is a suite of apps designed to enhance productivity by 
 - [File Search companion](file-search.md): Enables users to quickly find Microsoft 365 files, preview file contents, send files to colleagues, and easily access recently used documents.
 - [Calendar companion](calendar.md): Lets users quickly access their Microsoft 365 calendar, view upcoming events, join meetings, and search appointments directly from the Windows taskbar.
 
-These lightweight apps integrate seamlessly with Microsoft 365, allowing users to efficiently look up contacts, locate files, manage calendar events, and streamline workflows without interrupting their tasks. The People companion, File Search companion, and Calendar companion help users find colleagues, access recent documents, manage appointments, and navigate organizational charts to work smarter and stay connected.
+These lightweight apps integrate seamlessly with Microsoft 365, allowing users to efficiently look up contacts, locate files, manage calendar events, and streamline workflows without interrupting their tasks.
+> [!NOTE]
+> Users without a Teams license see the Calendar companion app but can't access to it, resulting in an error screen.
 
 ## Who is eligible to receive Microsoft 365 companion apps?
 

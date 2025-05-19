@@ -12,7 +12,7 @@ ms.collection:
 ms.localizationpriority: medium
 recommendations: false
 description: "Provides IT Pros with an overview of the update channels for Microsoft 365 Apps, including Current Channel, Monthly Enterprise Channel, and Semi-Annual Enterprise Channel"
-ms.date: 04/01/2025
+ms.date: 05/19/2025
 ---
 
 # Overview of update channels for Microsoft 365 Apps
@@ -235,7 +235,7 @@ You can use the [Office Deployment Tool](../deploy/overview-office-deployment-to
 You can [download](https://www.microsoft.com/download/details.aspx?id=49030) the Administrative Template files (ADMX/ADML) and enable the Update Channel policy setting. When you enable the policy setting, you can select the appropriate update channel from a drop-down list. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates.
 
 #### Microsoft 365 admin center 
-If you allow your users to install Microsoft 365 Apps for themselves from the portal, you can specify which update channel they install. To do that, sign in to the Microsoft 365 admin center with your admin account, go to **Show all** > **Settings** > **Org settings** > **Services** > **Microsoft 365 installation options**, and then choose the appropriate update channel for your users. This setting applies to all users in your tenant and only applies to users that install Microsoft 365 Apps for themselves from the portal.
+If you allow your users to install Microsoft 365 Apps for themselves through **Apps** at [Office.com](https://www.office.com), you can specify which update channel they install. To do that, sign in to the Microsoft 365 admin center with your admin account, go to **Show all** > **Settings** > **Org settings** > **Services** > **Microsoft 365 installation options**, and then choose the appropriate update channel for your users. This setting applies to all users in your tenant and only applies to users that install Microsoft 365 Apps for themselves through **Apps**.
 
 ### Manage the update channel
 After Microsoft 365 Apps is installed, you can change the update channel for a device. For more information on how to do that, see [Change the Microsoft 365 Apps update channel for devices in your organization](change-update-channels.md). Keep in mind that if you change the update channel for the device, the features that the user has access to change. For example, moving the device from Current Channel to Semi-Annual Enterprise Channel can cause the user to lose access to features they use, as those features aren't yet available in Semi-Annual Enterprise Channel.

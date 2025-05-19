@@ -3,11 +3,13 @@ title: "Overview of optional connected experiences in Office"
 description: "Provides Office admins with information about optional connected experiences, including which terms of use apply."
 author: DHB-MSFT
 ms.author: danbrown
-manager: laurawi
-ms.topic: conceptual
+manager: dansimp
+ms.topic: concept-article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
-ms.collection: privacy-microsoft365
+ms.collection: 
+- privacy-microsoft365
+- must-keep
 hideEdit: true
 ms.date: 05/14/2025
 ---
