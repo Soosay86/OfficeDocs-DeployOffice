@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides admins with information to help them configure Microsoft 365 installation options in the Microsoft 365 admin center."
-ms.date: 01/25/2024
+ms.date: 05/19/2025
 ---
 
 # Manage Microsoft 365 installation options in the Microsoft 365 admin center
@@ -41,7 +41,7 @@ For more information, see [Overview of update channels for Microsoft 365 Apps](.
 
 After you select an update channel under **Feature updates** and choose **Save**, your choice of update channel will apply to both new and existing installations of Office in your organization. You can change your channel selection at any time.
 
-For *new* installations, your update channel selection applies to any new installations of Office that are initiated by your users at [My account](https://portal.office.com/account) > **Apps & devices**.
+For *new* installations, your update channel selection applies to any new installations of Office that are initiated by your users through **Apps** at [Office.com](https://www.office.com) by selecting **Install apps** > **Microsoft 365 apps**.
 
 For *existing* installations of Office, your selection is applied to devices within 12 hours. Devices will automatically get the latest build from the selected update channel the next time they check for Office updates. Office is updated directly from the Office Content Delivery Network (CDN) on the internet.
 
@@ -95,7 +95,7 @@ We don’t recommend staying on a version that is no longer supported and that i
 
 ## Choose whether users can install Office on their own devices
 
-As an admin, you can control which Office software your users can download and install from [My account](https://portal.office.com/account) > **Apps & devices**. Whichever choices you make, they apply to all users in your organization.
+As an admin, you can control which Office software your users can download and install through **Apps** at [Office.com](https://www.office.com) by selecting **Install apps** > **Microsoft 365 apps**.
 
 If you choose to make some software unavailable to your users, they see a message on their **Apps & devices** page instead of an **Install** button. For example, if you choose to make Office unavailable, users see this message: 
   
@@ -112,7 +112,7 @@ From the **Manually deploy apps to users** page, you can download the installati
 
 ### Manually deploy the Office apps
 
-If you don't want your users to install software themselves from [My account](https://portal.office.com/account) > **Apps & devices**, there are several ways you can deploy Office to devices running Windows in your organization.
+If you don't want your users to install software themselves through **Apps** at [Office.com](https://www.office.com), there are several ways you can deploy Office to devices running Windows in your organization.
   
 One way you can deploy Office to your users is by using the Office Deployment Tool, which you can download for free from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49117). You can use the Office Deployment Tool on its own or with your existing software deployment tools and processes. For more information, see [Overview of the Office Deployment Tool](overview-office-deployment-tool.md).
 
@@ -129,10 +129,6 @@ In addition to Office, you can download InfoPath 2013 and SharePoint Designer 20
 - [SharePoint Designer 2013](https://go.microsoft.com/fwlink/p/?LinkID=626622) (32-bit and 64-bit versions) 
     
 After you download the software, you can use your existing software deployment tools and processes to deploy InfoPath or SharePoint Designer to your users.
-
-> [!NOTE]
-> If you want your users to install InfoPath 2013 or SharePoint Designer 2013 for themselves, there are links to the downloads on [My account](https://portal.office.com/account) > **Tools & add-ins**.
-
 
 ## Related articles
 

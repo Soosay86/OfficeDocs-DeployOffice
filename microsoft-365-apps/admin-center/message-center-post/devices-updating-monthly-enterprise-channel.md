@@ -12,7 +12,8 @@ ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
 hideEdit: true
 description: "Provides guidance only to customers who received a Message center post about their devices with Microsoft 365 Apps being updated to Monthly Enterprise Channel."
-ms.date: 05/13/2025
+
+ms.date: 05/19/2025
 ---
 
 # Microsoft 365 Apps will be updated to Monthly Enterprise Channel on all your Office devices
@@ -40,7 +41,7 @@ Therefore, to improve the experience for your users, we’ll automatically chang
 
 In addition, Office will be configured to get updates automatically from Microsoft directly from the internet, which is our recommendation. This should help reduce your administrative workload when it comes to keeping Office up to date each month. It should also help ensure that most of your devices are updated in a timely manner after an update is released, as long as the devices are connected to the internet regularly.
 
-These changes aren’t based on how you install or manage Microsoft 365 Apps. For example, these changes will apply whether you use Microsoft Intune to install on your users’ devices or if your users install from the **My account** page in the portal. Or whether you use Group Policy to set the update channel or use Configuration Manager to provide updates.
+These changes aren’t based on how you install or manage Microsoft 365 Apps. For example, these changes will apply whether you use Microsoft Intune to install on your users’ devices or if your users install Microsoft 365 Apps themselves through **Apps** at [Office.com](https://www.office.com) by selecting **Install apps** > **Microsoft 365 apps**. Or whether you use Group Policy to set the update channel or use Configuration Manager to provide updates.
 
 > [!TIP]
 > - To view more information about your devices, we recommend you sign into the [Microsoft 365 Apps admin center](https://config.office.com) and use the [Inventory](../../admin-center/inventory.md) feature.

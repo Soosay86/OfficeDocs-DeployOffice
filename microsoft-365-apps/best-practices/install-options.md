@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Choose how to install Microsoft 365 Apps for enterprise"
-ms.date: 05/25/2024
+ms.date: 05/19/2025
 ---
 
 # Choose how to install Microsoft 365 Apps
@@ -102,14 +102,14 @@ Disadvantages:
 - Customer might need to adopt other technologies like DFS-R and DFS-N to replicate content to file shares globally to remote sites.
 - No caching technology available to reduce network impact.
 
-## Self-install from the portal
+## Self-install from Office.com
 
 Advantages:
-- The most direct and simple method of installing Microsoft 365 Apps.
+- The most direct and simple method of installing Microsoft 365 Apps. Users can sign in to [Office.com](https://www.office.com), select **Apps**, and choose **Install apps** > **Microsoft 365 apps** to initiate the installation.
 
 Disadvantages:
 - Requires end-user administrator permissions to install.
-- Doesn't permit advanced customization of the installation with the configuration file.
+- Doesn't permit advanced customization of the installation with a configuration file.
 
 ## Related topics
 
