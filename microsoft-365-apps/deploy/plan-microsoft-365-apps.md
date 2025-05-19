@@ -56,7 +56,7 @@ Many organizations use a combination of these options for different users. For e
 ## Step 2 - Choose how to manage updates
 
 > [!NOTE]
-> **Best practice:** We recommend updating your client devices automatically.  You can define the frequency of the feature updates, but the updates occur without any administrative overhead. If you want to take more control and get additional insights into e.g. the progress of an update deployment, we recommend usinga [cloud update](../admin-center/cloud-update.md).
+> **Best practice:** We recommend updating your client devices automatically.  You can define the frequency of the feature updates, but the updates occur without any administrative overhead. If you want to take more control and get additional insights into e.g. the progress of an update deployment, we recommend using a [cloud update](../admin-center/cloud-update.md).
 
 Set your client devices to update automatically from the Office CDN. You can still control the frequency of the feature updates, as those settings are defined as part of the initial deployment, but the updates themselves occur without any other tools or administrative overhead. In addition, the updates are automatically deployed over many days to conserve your network bandwidth.
 
