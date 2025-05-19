@@ -11,7 +11,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Explains how to assign Microsoft 365 Apps licenses to users, and how individual installations are activated."
-ms.date: 05/26/2025
+ms.date: 05/19/2025
 ---
 
 # Overview of licensing and activation in Microsoft 365 Apps

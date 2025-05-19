@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Choose how to install Microsoft 365 Apps for enterprise"
-ms.date: 05/26/2025
+ms.date: 05/19/2025
 ---
 
 # Choose how to install Microsoft 365 Apps

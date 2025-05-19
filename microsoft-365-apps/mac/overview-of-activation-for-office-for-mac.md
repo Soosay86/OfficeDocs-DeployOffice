@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier3
 recommendations: true
 description: "Describes for admins how activation works for Office for Mac, for both Office 365 plans and volume license agreements"
-ms.date: 05/26/2025
+ms.date: 05/19/2025
 ---
 
 # Overview of activation for Office for Mac

@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides admins with information to help them configure Microsoft 365 installation options in the Microsoft 365 admin center."
-ms.date: 05/26/2025
+ms.date: 05/19/2025
 ---
 
 # Manage Microsoft 365 installation options in the Microsoft 365 admin center

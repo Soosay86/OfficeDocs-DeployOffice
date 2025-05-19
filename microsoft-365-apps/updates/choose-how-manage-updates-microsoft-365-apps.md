@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 audience: ITPro
 recommendations: false
 description: "Compares different ways to update Microsoft 365 Apps, including automatically from the internet or from an on-premises location."
-ms.date: 05/26/2025
+ms.date: 05/19/2025
 ---
 
 # Choose how to manage updates to Microsoft 365 Apps

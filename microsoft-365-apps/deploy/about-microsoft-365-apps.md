@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
 description: "Provides Office admins with an overview of Microsoft 365 Apps, including information about deploying and licensing."
-ms.date: 05/26/2025
+ms.date: 05/19/2025
 ---
 
 # About Microsoft 365 Apps in the enterprise

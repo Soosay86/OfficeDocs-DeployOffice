@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides Office admins with an overview of how to deploy Project to users in their organization."
-ms.date: 05/26/2025
+ms.date: 05/19/2025
 ---
 
 # Deployment guide for Project

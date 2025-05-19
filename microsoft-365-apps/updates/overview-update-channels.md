@@ -12,7 +12,7 @@ ms.collection:
 ms.localizationpriority: medium
 recommendations: false
 description: "Provides IT Pros with an overview of the update channels for Microsoft 365 Apps, including Current Channel, Monthly Enterprise Channel, and Semi-Annual Enterprise Channel"
-ms.date: 05/26/2025
+ms.date: 05/19/2025
 ---
 
 # Overview of update channels for Microsoft 365 Apps
