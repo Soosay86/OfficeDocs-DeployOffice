@@ -1,5 +1,5 @@
 ---
-title: "Overview of Calendar companion app"
+title: "Overview of Calendar companion"
 ms.author: nwhite
 author: nicholasswhite
 manager: dougeby
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
 description: "Learn about the Calendar companion app, including key features, calendar access from the Windows taskbar, and privacy controls."
-ms.date: 05/09/2025
+ms.date: 05/19/2025
 ---
 
 # What is the Calendar companion app?
 
-The Calendar companion app lets users quickly access their Microsoft 365 calendar directly from the Windows taskbar. With this app, users don't need to switch between applications, helping to maintain focus and efficiency throughout the day. Quickly view upcoming events, effortlessly join meetings, and easily search for appointments.
+The Calendar companion app lets users quickly view their Microsoft 365 calendar directly from the Windows taskbar, eliminating the need to switch between apps and lose context. View upcoming events, join meetings, and search for appointments to stay on top of your schedule.
 
 ## Key features
 
@@ -28,6 +28,6 @@ The Calendar companion app provides several key capabilities:
 - Join meetings – Seamlessly join calendar events directly from the taskbar, saving time and reducing distractions.
 - Search your calendar – Use the search functionality to locate specific events or appointments quickly by searching for event names, organizers, or attendees.
 
-## Privacy and visibility
+## Who can see my calendar
 
-Your privacy is prioritized in the Calendar companion app. Only you can view your private events unless you explicitly choose to share them. You maintain control over your calendar visibility and settings within the app.
+Only you can view your private events unless you choose to share them. You control your calendar visibility within the Calendar companion app.
