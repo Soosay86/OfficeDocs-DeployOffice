@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "This article lists the new tools, content, and processes for IT Pros deploying Microsoft 365 Apps."
-ms.date: 03/25/2025
+ms.date: 05/19/2025
 ---
 
 # What's new for deploying Microsoft 365 Apps
@@ -57,7 +57,7 @@ New troubleshooting tools for New Outlook documentation provides administrators 
 
 ### Usage reports for New Outlook
 
-New usage reports for New Outlook help administrators track adoption and usage patterns, providing insights into user behavior. For more information, see [Monitor usage reports for New Outlook](/microsoft-365-apps/outlook/manage/monitor-usage-reports).
+New usage reports for New Outlook help administrators track adoption and usage patterns, providing insights into user behavior. For more information, see [Monitor usage reports for New Outlook](/microsoft-365/admin/activity-reports/microsoft365-apps-usage).
 
 ## September 2024
 
