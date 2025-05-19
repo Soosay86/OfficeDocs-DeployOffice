@@ -11,7 +11,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Explains how to assign Microsoft 365 Apps licenses to users, and how individual installations are activated."
-ms.date: 05/22/2024
+ms.date: 05/19/2025
 ---
 
 # Overview of licensing and activation in Microsoft 365 Apps
@@ -38,7 +38,7 @@ To use Microsoft 365 Apps, your users need the appropriate license. Use one of t
 
 - If you have a subscription to Microsoft Entra ID P1 or a higher version, you're eligible for group-based licensing. This feature is also available with Office 365 Enterprise E3, Office 365 A3, or Office 365 GCC G3 and newer versions. You can assign one or more product licenses to a group, and Microsoft Entra ID ensures that the licenses are assigned to all members of the group. Any new members who join the group are assigned the appropriate licenses. When they leave the group, those licenses are removed. For more information, see [Group-based licensing in Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal). 
 
-After a user is assigned a license, you can deploy Office to your users or your users can install Office directly from the Office 365 portal. If the user isn't assigned a license, they can't install Office from the Office 365 portal. We recommend assigning the license 24 hours prior to the deployment so you can ensure that the license is provisioned. 
+After a user is assigned a license, you can deploy Office to your users or your users can install Microsoft 365 Apps themselves through **Apps** at [Office.com](https://www.office.com) by selecting **Install apps** > **Microsoft 365 apps**. If the user isn't assigned a license, they won't be able to install Microsoft 365 Apps. We recommend assigning the license 24 hours prior to the deployment so you can ensure that the license is provisioned. 
 
 ## Licensing Modes
 
@@ -87,8 +87,7 @@ Microsoft 365 Apps communicates with the Office Licensing Service and the Activa
  
 ### Managing activated installations
 
-Each Microsoft 365 Apps license allows a user to install Microsoft 365 Apps on up to five desktops, five tablets, and five mobile devices. The user manages installations in the Office 365 portal.
-  
+Each Microsoft 365 Apps license allows a user to install Microsoft 365 Apps on up to five desktops, five tablets, and five mobile devices. Users can manage their installations by signing into [Office.com](https://www.office.com) and navigating to **Apps**.  
 If a user installs Microsoft 365 Apps on more than 10 devices, then the device that wasn't used for the longest amount of time is automatically deactivated. Microsoft 365 Apps goes into reduced functionality mode on the deactivated device.
 
 > [!NOTE]

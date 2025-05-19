@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "This article gives step-by-step instructions for how to plan your deployment of Microsoft 365 Apps. The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
-ms.date: 01/25/2024
+ms.date: 05/19/2025
 ---
 
 # Plan your enterprise deployment of Microsoft 365 Apps
@@ -41,7 +41,7 @@ If you use the ODT and have the network capacity, we recommend deploying Microso
 
 Choose how you want to deploy:
 
-- **Self-install from the cloud:** Manage your deployment from the Microsoft 365 portal and have your users install the apps on their client devices directly from the portal.
+- **Self-install from the cloud:** Manage your deployment from [Office.com](https://www.office.com). Users install the apps on their client devices by selecting **Apps** and then choosing **Install apps** > **Microsoft 365 apps**. This method requires the least amount of administrative setup, but provides less control over the deployment.
 
 - **Deploy from the cloud using Intune:** Manage your deployment through Intune and automate the configuration and installation of the Microsoft 365 Apps.
 
@@ -56,7 +56,7 @@ Many organizations use a combination of these options for different users. For e
 ## Step 2 - Choose how to manage updates
 
 > [!NOTE]
-> **Best practice:** We recommend updating your client devices automatically.  You can define the frequency of the feature updates, but the updates occur without any administrative overhead. If you want to take more control and get additional insights into e.g. the progress of an update deployment, we recommend usinga [cloud update](../admin-center/cloud-update.md).
+> **Best practice:** We recommend updating your client devices automatically.  You can define the frequency of the feature updates, but the updates occur without any administrative overhead. If you want to take more control and get additional insights into e.g. the progress of an update deployment, we recommend using a [cloud update](../admin-center/cloud-update.md).
 
 Set your client devices to update automatically from the Office CDN. You can still control the frequency of the feature updates, as those settings are defined as part of the initial deployment, but the updates themselves occur without any other tools or administrative overhead. In addition, the updates are automatically deployed over many days to conserve your network bandwidth.
 
