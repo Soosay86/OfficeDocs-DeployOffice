@@ -52,22 +52,6 @@ Cloud Policy supports most Microsoft 365 subscription plans that include Microso
 <!--Using include for adding requirements-->
 [!INCLUDE [Network requirements](./includes/requirements-network.md)]
 
-<!-- If the network requirements are not in the include file, you'll need to add the following content -->
-<!-- 
-The following endpoints need to be accessible:
-
-For Commercial and GCC environments:
-* *.config.office.com
-* *.config.office.net
-
-For GCC High environment:
-* *.office365.us
-
-For DoD environment:
-* *.apps.mil
-* *.office365.us
--->
-
 ### Microsoft Entra groups requirements
 Cloud Policy Service supports the use of [Microsoft Entra groups](/entra/fundamentals/concept-learn-about-groups) with the following requirements:
 
