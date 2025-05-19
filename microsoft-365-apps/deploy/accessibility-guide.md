@@ -12,14 +12,14 @@ ms.collection:
 ms.localizationpriority: medium
 recommendations: true
 description: "Provide Office admins with guidance and resources to help make their Microsoft 365 environment as inclusive and accessible as possible for their users"
-ms.date: 03/01/2023
+ms.date: 05/12/2025
 ---
 
 # Accessibility guide for Microsoft 365 Apps
 
 Microsoft 365 provides apps and cloud services designed to help everyone create, communicate, and collaborate from any device. For example, by using the Office apps (such as Word, Excel, PowerPoint, and Outlook) that are included with [Microsoft 365 Apps](about-microsoft-365-apps.md).
 
-As an admin responsible for deploying and managing the Office apps in your organization, you have a key role to play in helping make your Microsoft 365 environment as inclusive and accessible as possible for all your users.
+As an admin responsible for deploying and managing the Microsoft 365 apps in your organization, you play a key role in making your Microsoft 365 environment inclusive and accessible for all users.
 
 The following information is intended to provide you with guidance and resources to help your organization create a more inclusive and accessible environment for your users.
 
@@ -38,23 +38,23 @@ Microsoft 365 Apps is updated regularly with new and improved features for the O
 
 To provide your users with the newest and most up-to-date accessibility features, we recommend using [Current Channel](../updates/overview-update-channels.md#current-channel-overview). Current Channel is updated every month with new and improved features, along with the latest security updates and bug fixes.
 
-With Current Channel, you’ll be getting the accessibility features as soon as they’re ready. To see the features that are released each month, see [Release notes for Current Channel](/officeupdates/current-channel).
+With Current Channel, you're getting the accessibility features as soon as they’re ready. To see the features that are released each month, see [Release notes for Current Channel](/officeupdates/current-channel).
 
 > [!NOTE]
-> - If you need additional predictability of when new Office features are released each month, you can choose [Monthly Enterprise Channel](../updates/overview-update-channels.md#monthly-enterprise-channel-overview), which is updated on the 2nd Tuesday of each month. You’ll still be getting new and improved accessibility features monthly, but a month or two after they’re available in Current Channel.
+> - If you need predictability of when new Office features are released each month, you can choose [Monthly Enterprise Channel](../updates/overview-update-channels.md#monthly-enterprise-channel-overview), which is updated on the second Tuesday of each month. You’ll still be getting new and improved accessibility features monthly, but a month or two after they’re available in Current Channel.
 >- For information about how to move users to a particular channel, see [Change the Microsoft 365 Apps update channel for devices in your organization](../updates/change-update-channels.md).
 
 ## Check that connected experiences for accessibility are turned on for your users
 
-Microsoft 365 Apps provides [connected experiences](../privacy/connected-experiences.md), which use cloud-based functionality to provide enhanced capabilities when using Office apps. This includes capabilities that improve accessibility to create and consume Office content.
+Microsoft 365 Apps provides [connected experiences](../privacy/connected-experiences.md), which use cloud-based functionality to provide enhanced capabilities when using Microsoft 365 Apps. These include features that improve accessibility to create and consume Microsoft 365 content.
 
 Here are some examples of connected experiences for accessibility.
 
-- [Live captions and subtitles (PowerPoint)](https://support.microsoft.com/office/68d20e49-aec3-456a-939d-34a79e8ddd5f), which can help accommodate users who may be deaf or hard of hearing, or more familiar with another language.
+- [Live captions and subtitles (PowerPoint)](https://support.microsoft.com/office/68d20e49-aec3-456a-939d-34a79e8ddd5f), which can help accommodate users who could be deaf or hard of hearing, or more familiar with another language.
 
 - [Dictation (Word or Outlook)](https://support.microsoft.com/office/eab203e1-d030-43c1-84ef-999b0b9675fe), which converts speech to text to allow users to author content without using a keyboard.
 
-- [Read Aloud (Word)](https://support.microsoft.com/office/5a2de7f3-1ef4-4795-b24e-64fc2731b001), which reads all or part of a document out loud to assist users who are blind or have low vision.
+- [Read Aloud (Word)](https://support.microsoft.com/office/5a2de7f3-1ef4-4795-b24e-64fc2731b001), which reads all or part of a document out loud to assist users who have blindness or have low vision.
 
 - [Learning Tools (multiple apps)](https://support.microsoft.com/topic/eff7f7e3-7e21-42f0-a6f1-da7027f98261), such as Immersive Reader options in Outlook, which can assist users with dyslexia or learning disabilities by allowing them to customize how email text appears on the screen.
 
@@ -88,7 +88,7 @@ People supporting users in the organization should also be aware of these access
 
 The following links provide information about accessibility tools available for Office and Windows, organized by area of focus.
 
-- [Accessibility tools for vision](https://support.microsoft.com/topic/b3c57606-e0af-46d2-97b4-fa6b5fba4fa1), for people who are blind, color blind, or have low vision.
+- [Accessibility tools for vision](https://support.microsoft.com/topic/b3c57606-e0af-46d2-97b4-fa6b5fba4fa1), for people who have blindness, color blind, or have low vision.
 
 - [Accessibility tools for hearing](https://support.microsoft.com/topic/111d7360-cd47-4104-aef1-2a33297909ad), for people who are hard of hearing, have hearing loss, or have deafness.
 
@@ -105,14 +105,14 @@ The following links provide information about accessibility tools available for 
 The following links provide information about accessibility options available in Microsoft products that might be used in your organization. You can also go to the [Accessibility help & learning](https://support.microsoft.com/accessibility) page and do a search for what you're looking for.
 
 - Office
-   - [Accessibility tools for Office](https://support.microsoft.com/office/b5087b20-1387-4686-a0a5-8e11c5f46cdf)
-   - [Keyboard shortcuts in Office](https://support.microsoft.com/office/e765366f-24fc-4054-870d-39b214f223fd)
-   - [Use a screen reader with Office apps](https://support.microsoft.com/office/4aba5a56-f80c-4a6b-a584-d0f415471617)
+   - [Accessibility tools for Microsoft 365](https://support.microsoft.com/office/b5087b20-1387-4686-a0a5-8e11c5f46cdf)
+   - [Keyboard shortcuts in Microsoft 365](https://support.microsoft.com/office/e765366f-24fc-4054-870d-39b214f223fd)
+   - [Use a screen reader with Microsoft 365 apps](https://support.microsoft.com/office/4aba5a56-f80c-4a6b-a584-d0f415471617)
    - [Set up your device to work with accessibility in Microsoft 365](https://support.microsoft.com/office/a0ca81c1-fa3e-417e-9d3b-78b8816fce58)
    - [Use color and contrast for accessibility in Microsoft 365](https://support.microsoft.com/office/bb11486d-fc7d-4cd9-b344-16e2bc2a2387)
 
 - Windows
-   - [Accessibility support for Windows](https://support.microsoft.com/windows/8b1068e6-d3b8-4ba8-b027-133dd8911df9)
+   - [Discover Windows accessibility features](https://support.microsoft.com/windows/8b1068e6-d3b8-4ba8-b027-133dd8911df9)
    - [Windows keyboard shortcuts for accessibility](https://support.microsoft.com/windows/021bcb62-45c8-e4ef-1e4f-41b8c1fc87fd)
    - [Keyboard shortcuts in Windows](https://support.microsoft.com/windows/dcc61a57-8ff0-cffe-9796-cb9706c75eec)
    - [Keyboard shortcuts in apps](https://support.microsoft.com/windows/139014e7-177b-d1f3-eb2e-7298b2599a34)
@@ -120,10 +120,9 @@ The following links provide information about accessibility options available in
    - [Accessibility information for IT Professionals](/windows/configuration/windows-10-accessibility-for-itpros)
 
 - Teams
-   - [Accessibility support for Microsoft Teams](https://support.microsoft.com/topic/d12ee53f-d15f-445e-be8d-f0ba2c5ee68f)
+   - [Screen reader support for Microsoft Teams](https://support.microsoft.com/topic/d12ee53f-d15f-445e-be8d-f0ba2c5ee68f)
    - [Keyboard shortcuts for Microsoft Teams](https://support.microsoft.com/office/2e8e2a70-e8d8-4a19-949b-4c36dd5292d2)
    - [Quick Start Guide: Using Microsoft Teams with a screen reader](https://support.microsoft.com/topic/c065927a-3c43-4a09-9ad3-d5ecf0c0f8a0)
-   - [Configure Microsoft Teams meetings and calls for inclusion (self-paced learning module)](/training/modules/m365-teams-accessibility/)
    - [Accessibility guide for Microsoft Teams Admins](/microsoftteams/accessibility-guide-admin)
 
 - Microsoft Edge
@@ -143,7 +142,7 @@ The following links provide information about accessibility options available in
 
 The following list provides other accessibility resources that you might find helpful.
 
-- [Enterprise Disability Answer Desk](https://support.microsoft.com/accessibility/enterprise-answer-desk), which is a support resource for organizations that have questions about the accessibility of Microsoft products and product compliance.
+- [Accessibility support for enterprise customers](https://support.microsoft.com/accessibility/enterprise-answer-desk), which is a support resource for organizations that have questions about the accessibility of Microsoft products and product compliance.
 
 - [Microsoft Accessibility website](https://www.microsoft.com/accessibility), which provides information about the range of assistive technologies from Microsoft.
 

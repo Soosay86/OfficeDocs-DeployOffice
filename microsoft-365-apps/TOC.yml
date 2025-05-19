@@ -138,9 +138,6 @@ items:
           - name: Remove existing MSI versions when upgrading
             href: deploy/upgrade-from-msi-version.md
 
-      - name: New Outlook for Windows
-        href: outlook/overview-new-outlook.md
-
       - name: Project, Visio, Teams, and OneNote
         items:
           - name: Deploy Project
@@ -185,7 +182,9 @@ items:
           - name: People companion
             href: companions/people.md
           - name: File Search companion
-            href: companions/file-search.md  
+            href: companions/file-search.md
+          - name: Calendar companion
+            href: companions/calendar.md
 
       - name: Microsoft 365 Insider Program for Business
         href: insider/index.yml

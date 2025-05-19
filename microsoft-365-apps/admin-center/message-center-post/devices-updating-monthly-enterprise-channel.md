@@ -12,6 +12,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
 hideEdit: true
 description: "Provides guidance only to customers who received a Message center post about their devices with Microsoft 365 Apps being updated to Monthly Enterprise Channel."
+
 ms.date: 05/19/2025
 ---
 

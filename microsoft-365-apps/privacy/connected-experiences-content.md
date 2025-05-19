@@ -3,11 +3,13 @@ title: "Connected experiences and your content"
 description: "Provides information about how connected experiences for Microsoft 365 Apps use content to provide its functionality and how that content is managed and secured."
 author: DHB-MSFT
 ms.author: danbrown
-manager: laurawi
-ms.topic: conceptual
+manager: dansimp
+ms.topic: concept-article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
-ms.collection: privacy-microsoft365
+ms.collection: 
+- privacy-microsoft365
+- must-keep
 hideEdit: true
 ms.date: 04/26/2024
 ---

@@ -3,11 +3,13 @@ title: "Use policy settings to manage privacy controls for Microsoft 365 Apps fo
 description: "Provides Office admins with information about how to manage privacy controls in Microsoft 365 Apps for enterprise by using policy settings."
 author: DHB-MSFT
 ms.author: danbrown
-manager: laurawi
-ms.topic: conceptual
+manager: dansimp
+ms.topic: concept-article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
-ms.collection: privacy-microsoft365
+ms.collection: 
+- privacy-microsoft365
+- must-keep
 hideEdit: true
 ms.date: 09/16/2024
 ---

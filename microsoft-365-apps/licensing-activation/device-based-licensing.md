@@ -10,7 +10,7 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 recommendations: false
 description: "Explains how to configure device-based licensing for Microsoft 365 Apps for enterprise."
-ms.date: 10/04/2024
+ms.date: 05/12/2025
 ---
 
 # Device-based licensing for Microsoft 365 Apps for enterprise
@@ -42,6 +42,9 @@ After you verify that your Windows client devices and Microsoft 365 Apps for ent
 - Add the Windows client devices to a group that's available in Microsoft Entra ID.
 - Assign the appropriate licenses to that group by signing into the Microsoft 365 admin center and going to **Billing** > **Licenses**. You can't assign the licenses in the Azure portal.
 - Configure Microsoft 365 Apps for enterprise to use device-based licensing instead of user-based licensing.
+
+> [!NOTE]
+> The following admin roles can complete this process: Global Admin, Security Admin, Office Apps Admin.
 
 > [!IMPORTANT]
 > Be sure to create the Microsoft Entra group and assign the licenses ***before*** you configure Microsoft 365 Apps for enterprise to use device-based licensing. Otherwise you will receive error messages in Microsoft 365 Apps for enterprise.

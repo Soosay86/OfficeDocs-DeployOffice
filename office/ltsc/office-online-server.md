@@ -11,7 +11,7 @@ ms.collection: Tier2
 ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
 description: "Provides information about how Office LTSC customers can get Office Online Server."
-ms.date: 09/18/2024
+ms.date: 05/13/2025
 ---
 
 # Office Online Server for Office LTSC customers

@@ -3,11 +3,13 @@ title: "Connected experiences in Office"
 description: "Provides Office admins with information about connected experiences for Office, such as experiences that analyze content or experiences that download online content."
 author: DHB-MSFT
 ms.author: danbrown
-manager: laurawi
-ms.topic: conceptual
+manager: dansimp
+ms.topic: concept-article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
-ms.collection: privacy-microsoft365
+ms.collection: 
+- privacy-microsoft365
+- must-keep
 hideEdit: true
 ms.date: 02/14/2025
 ---
@@ -153,7 +155,7 @@ The following table provides a list of those other connected experiences and pro
 | Organization chart |[Create an organization chart in Visio](https://support.microsoft.com/office/abb3dd17-2692-439f-9945-3a015767d96a)|
 |PivotDiagram |[Create a PivotDiagram in Visio](https://support.microsoft.com/office/0d061d05-60b5-4549-b301-4d0b37625a4c)|
 | Recent documents |[Open files from the File menu](https://support.microsoft.com/office/97f087d8-3136-4485-8e86-c5b12a8c4176)  |
-| Room Finder |[Use the Scheduling Assistant and Room Finder for meetings in Outlook](https://support.microsoft.com/office/2e00ac07-cef1-47c8-9b99-77372434d3fa) *(for users)*  <br/>[How to control the Room Finder in Outlook](/outlook/troubleshoot/calendaring/room-finder) *(for admins)* |
+| Room Finder |[Use the Scheduling Assistant and Room Finder for meetings in Outlook](https://support.microsoft.com/office/2e00ac07-cef1-47c8-9b99-77372434d3fa) *(for users)*  <br/>[How to control the Room Finder in Outlook](/microsoft-365-apps/outlook/calendaring/room-finder) *(for admins)* |
 |Safe Documents|[Safe Documents](https://support.microsoft.com/office/e2071599-fb31-442b-a30c-198c25e2aacd) *(for users)* <br/> [Safe Documents in Microsoft 365 A5 or E5 Security](/microsoft-365/security/office-365-security/safe-documents-in-e5-plus-security-about) *(for admins)*|
 | Safe Links |[Advanced Outlook.com security for Microsoft 365 subscribers](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2) *(for users)* </br> [Safe Links in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/safe-links-about) *(for admins)* |
 | Sensitivity labels <sup>[12]</sup> |[Apply sensitivity labels to your files and email in Office](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)  |
