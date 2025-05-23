@@ -35,7 +35,7 @@ This will trigger the following flow of events on Configuration Manager and the 
 
 1. The device executes the assigned application and updates the Click-to-Run configuration with the newly assigned update channel.
 
-1. During the next [Software Updates Deployment Evaluation Cycle](/mem/configmgr/sum/understand/software-updates-compliance-process), Click-to-Run will download and install the client update from the new channel. The device now runs on the new channel.
+1. During the next [Software Updates Deployment Evaluation Cycle](/mem/configmgr/sum/understand/software-updates-introduction#scan-for-software-updates-compliance-process), Click-to-Run will download and install the client update from the new channel. The device now runs on the new channel.
    
 1. Configuration Manager receives an updated hardware inventory and automatically removes the device from the old collection and adds it to the **MEC devices** collection.
 
