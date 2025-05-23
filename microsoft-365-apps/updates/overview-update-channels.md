@@ -166,9 +166,9 @@ Updates deployed to Monthly Enterprise Channel in this manner are documented lik
 ### Support duration for Monthly Enterprise Channel
 Any given version of Monthly Enterprise Channel is supported for two months. For example, the version of Monthly Enterprise Channel that is released on the second Tuesday of August is supported until the second Tuesday of October. 
 
-Beginning July 2025, Monthly Enterprise Channel will include two months of rollback support. This will expand the support window to revert to a known build with the latest security fixes in case of any issues.
+Beginning July 2025, Monthly Enterprise Channel will support up to three months of rollback. This extended rollback window provides greater flexibility to revert to a known build with the latest security fixes in case of issues.
 
-At any given time, there are always two versions of Monthly Enterprise Channel that are supported. To see which versions of Monthly Enterprise Channel are currently supported, refer to the table at the top of [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
+At any given time, there are always two versions of Monthly Enterprise Channel that are supported.To see which versions of Monthly Enterprise Channel are currently supported, refer to the table at the top of [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
 
 ## Semi-Annual Enterprise Channel overview
 
@@ -189,9 +189,9 @@ For a list of feature updates included in a given release of Semi-Annual Enterpr
 #### Preview upcoming new features of Semi-Annual Enterprise Channel
 [!INCLUDE [saec-preview-deprecation-notice](../includes/saec-preview-deprecation-notice.md)]
 
-To become familiar with the new features coming in the next feature release of Semi-Annual Enterprise Channel, we currently recommend that you use Semi-Annual Enterprise Channel (Preview).
+The Semi-Annual Enterprise Channel (Preview) is deprecated and will no longer be used to release or validate new features. Beginning July 2025, there is no dedicated preview channel for Semi-Annual Enterprise Channel. To validate features and gather feedback, use Current Channel or Monthly Enterprise Channel before those features are enabled in Semi-Annual Enterprise Channel.
 
-Semi-Annual Enterprise Channel (Preview) is released with new features twice a year, on the second Tuesday in March and September. This schedule provides you with four months before those same new features are released in Semi-Annual Enterprise Channel. Semi-Annual Enterprise Channel (Preview) also receives, if needed, security and non-security updates every month, on the second Tuesday of the month.
+Semi-Annual Enterprise Channel (Preview) is released with new features twice a year, on the second Tuesday in March and September.This schedule provides you with four months before those same new features are released in Semi-Annual Enterprise Channel. Semi-Annual Enterprise Channel (Preview) also receives, if needed, security and non-security updates every month, on the second Tuesday of the month.
 
 You should deploy Semi-Annual Enterprise Channel (Preview) to a small, representative sample of users in your organization. This approach can help you identify any possible issues for your organization before the new features are released more broadly to your users on Semi-Annual Enterprise Channel.
 
@@ -220,12 +220,12 @@ Separate downloads of just non-security updates for Semi-Annual Enterprise Chann
 For a list of non-security updates included in a given release of Semi-Annual Enterprise Channel, see [Release notes for Microsoft 365 Apps releases](/officeupdates/release-notes-microsoft365-apps#release-notes-for-microsoft-365-apps-releases). The updates are listed as "Resolved issues."
 
 ### Support duration for Semi-Annual Enterprise Channel
-Any given version of Semi-Annual Enterprise Channel is supported for 14 months. The new Semi-Annual Enterprise Channel version released in January receives support until March of the next year. Similarly, the version released in July is supported until September of the following year.
+Any given version of Semi-Annual Enterprise Channel is supported for 14 months. Semi-Annual Enterprise Channel versions will continue to release in January and July using the most recent available fork. There is no longer a commitment to a specific fork ahead of time.
 
 > [!IMPORTANT]
-> Beginning July 2025, Semi-Annual Enterprise Channel versions will be supported for 8 months (reduced from 14 months), with a maximum of 2 forks supported simultaneously (reduced from 2 or 3 forks). Additionally, a 2-month rollback period will be available to allow users to revert to the prior feature release with security updates in case of issues.
+> Beginning July 2025, feature releases for Semi-Annual Enterprise Channel will be supported for 6 months. A 2-month rollback period will be available, allowing devices to revert to the previous feature release with security updates, resulting in an effective 8-month support window. No more than two forks will be supported simultaneously.
 
-At any given time, there are always two versions of Semi-Annual Enterprise Channel that are supported. To see which versions of Semi-Annual Enterprise Channel are currently supported, refer to the table at the top of [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
+At any given time, there are always two versions of Semi-Annual Enterprise Channel that are supported.To see which versions of Semi-Annual Enterprise Channel are currently supported, refer to the table at the top of [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
 
 Semi-Annual Enterprise Channel offers extended support to give organizations more time and flexibility. The extended support is especially helpful for thoroughly testing devices before implementing new Microsoft 365 Apps features. For example, in cases where organizations have to comply with specific regulatory, governmental, or other organizational requirements. The longer support duration gives these organizations the ability to deploy new features only once a year if needed.
 
