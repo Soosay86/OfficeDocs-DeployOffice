@@ -61,7 +61,7 @@ The following table provides a list of the categories for required diagnostic da
 | **Software setup and inventory**​ | [Office setup and inventory​](#office-setup-and-inventory-subtype)   | Installed product and version and the installation status.  |
 | | [Office add-in configuration​](#office-add-in-configuration-subtype)  | Software add-ins and their settings​.     |
 | | [Security](#security-subtype)​  | Document, feature, and add-in error conditions that may compromise security, including product update readiness.  |
-| **Product and service usage**​    | [Application feature success](#application-feature-success-subtype)​   | Success of application functionality. Limited to opening and closing of the application and documents, file editing, and file sharing (collaboration).​ |
+| **Product and service usage**​    | [Application feature success](#application-feature-success-subtype)​   | Success of application functionality. Limited to opening and closing of the application and documents, file editing, file sharing (collaboration), and in-app purchases.​ |
 | | [Application status and boot](#application-status-and-boot-subtype)    | Determination if specific feature events have occurred, such as start or stop, and if feature is running​.   |
 | | [Office accessibility configuration](#office-accessibility-configuration-subtype)  | Office accessibility features​       |
 | | [Privacy](#privacy-subtype)| Office privacy settings|
@@ -2114,7 +2114,7 @@ The following are the data subtypes in this category:
 
 ### *Application feature success subtype*
 
-Success of application functionality. Limited to opening and closing of the application and documents, file editing, and file sharing (collaboration).​
+Success of application functionality. Limited to opening and closing of the application and documents, file editing, file sharing (collaboration), and in-app purchases.​
 
 #### account.action
 
@@ -4049,8 +4049,7 @@ The following fields are collected:
 
 #### Office.Apple.InAppAssociationActivity
 
-This event is collected for Office applications running under Apple platforms. 
-We collect information related to product association after an in-app purchase. We log which subscription SKU we're associating. This is used to monitor the health of the in-app purchase product associations.
+This event is collected for Office applications running under Apple platforms. We collect information related to product association after an in-app purchase. We log which subscription SKU we're associating. This is used to monitor the health of the in-app purchase product associations.
 
 The following fields are collected:
 
