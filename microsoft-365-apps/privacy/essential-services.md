@@ -11,7 +11,7 @@ ms.collection:
 - privacy-microsoft365
 - must-keep
 hideEdit: true
-ms.date: 05/05/2025
+ms.date: 06/03/2025
 ---
 
 # Essential services for Office
@@ -5094,12 +5094,14 @@ This event is used to understand the in-app purchase (IAP) experience for the us
    - **floatingToggleCount** - Int - Number of times the user switched between monthly and yearly on the floating dock
    - **graceLeftoverDays** - Int – number of days left for grace period
    - **isFRE** - Boolean – Are we showing the First Run Experience or regular UI?
+   - **isStudentOfferBannerShown** - If the banner button displaying the student discount offer is visible to user after all product and availability checks.
    - **jumpScrollInteracted** - Bool - If user clicked on the jumping scroll down button to navigate to comparison table.
    - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
    - **scrollDepth** - Double - Scroll depth throughout the current session of paywall.
    - **studentOfferButtonTap** - Indicates whether user clicked on the button to view the student discount offer screen.
    - **userDuration** - Double – Duration in milliseconds the user spent on the SKU chooser.
-   - **toggleCount** - Int - Number of times the user switched between viewing various products, before they tapped the Buy/Cancel Button, in the current session of Paywall.  
+   - **toggleCount** - Int - Number of times the user switched between viewing various products, before they tapped the Buy/Cancel Button, in the current session of Paywall.
+   - **webRedirectPurchaseButtonTap** - If the user clicked on the button to start purchase of product through webpage. 
 
 - **Office.iOS.Paywall.SKUChooser.ToggleTap** - Data is collected when user taps the Toggle. The data is used to measure the performance of the toggle and ensure that it performing as expected. 
  
@@ -5165,6 +5167,7 @@ This event is used to understand the in-app purchase (IAP) experience for the us
    The following fields are collected:
 
    - **academicVerificationStatusCode** - Data would help monitor fraud, error, and safe academic verification status codes post a verification attempt of the user.
+   - **aveSessionId** - Collected to uniquely identify an academic verification engine (AVE) session in a paywall session.
    - **backButtonTap** - Indicates if the back button was tapped to exit the verification screen.
    - **isUserRisk** - Indicates if the user is failing or passing the risk checks to help in early detection of security risks.
    - **isVerifiedStudentSameAsAppUser** - Indicates if the verified student user is the same as the app user to help in detecting fraudulent verification to claim discount by using another account.
@@ -5173,13 +5176,24 @@ This event is used to understand the in-app purchase (IAP) experience for the us
    - **studentVerificationMethod** - Data would help us do root cause analysis in case of unfair rejection with certain verification methods
 
 
-
 - **Office.iOS.Paywall.SuccessScreen.SeeAllBenefitsButtonTap** - This event is collected when the user taps “See All Benefits” after a successful purchase to see the apps and features included in the purchase. The data is used to measure that the user interface is performing as expected.
 
    The following fields are collected:
 
    - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
    - **productId** - String – App Store ID of the product for which user is viewing all benefits offered.
+
+- **Office.iOS.Paywall.WebRedirectScreen.Stats** - This event is triggered when a user is redirected to the web purchase page. The data collected helps understand how many users land on redirection page and how many proceed to complete payment and activation.
+
+   The following fields are collected:
+
+   - **exitReason** - Indicates the reason why the user exited the Webpage payment redirection screen, either to stop the payment flow or to buy product.
+   - **hasUserReturnedToApp** - Indicates if user returns to app after moving away to complete payment.
+   - **manualActivationButtonTap** - Indicates if user manually clicks button to start activation of product after they complete payment.
+   - **manualRedirectionButtonTap** - Indicates if user manually taps button to redirect to payment page in web browser.
+   - **PaywallSessionId** - Collected to uniquely identify a Paywall session in an app session.
+   - **productId** - App Store ID of the product for which the user is initiating purchase in the web redirect payment page.
+
 
 ### Office.Apple.Licensing.CommonPaywallDetails
 

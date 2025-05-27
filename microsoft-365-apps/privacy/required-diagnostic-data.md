@@ -11,7 +11,7 @@ ms.collection:
 - privacy-microsoft365
 - must-keep
 hideEdit: true
-ms.date: 05/05/2025
+ms.date: 06/03/2025
 ---
 
 # Required diagnostic data for Office
@@ -3235,9 +3235,11 @@ The following fields are collected:
 
 - **attachment_extn** - the file extension of the downloaded attachment *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-- **attachment_id** - the system identifier for the downloaded attachment 
+- **attachment_id** - the system identifier for the downloaded attachment
 
 - **attachment_size** - the size of downloaded attachment
+
+- **copilot_priority** - Indicates whether user opens an email that is low, medium, or high priority. This will only be sent for users who have the Copilot Prioritize feature enabled.
 
 - **domain** - domain of the document being opened
 
@@ -21625,6 +21627,8 @@ This event collects information that allows us to categorize and classify issues
 The following fields are collected for iOS:
 
 - **alternate_app_icon**- Tell us the alternate app icon that user currently selected by the application
+
+- **apk_splits** - Tells us which App Bundle packaging system splits are installed on the Android device so that we can accurately diagnose root cause of crashes, app slow down, or unexpected missing functionalities due to the Android app store failing to install one of the splits.
 
 - **app_lock_disabled_reason** - Tells us if the applock feature is disabled by us, if so for what reason
 
