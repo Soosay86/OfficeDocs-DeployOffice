@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Choose how to deliver updates for the Microsoft 365 Apps"
-ms.date: 03/13/2024
+ms.date: 05/27/2025
 ---
 
 # Choose how to deliver updates
@@ -46,7 +46,7 @@ There are two core benefits when leveraging the cloud as your update source:
 
 When using the cloud as your update source, there are also some considerations:
 - **Network connectivity**: Devices must be able to connect to the Office CDN. For this the URLs and IPs listed in [Office 365 URLs and IP address ranges](/Microsoft-365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) must be accessible for devices. Microsoft recommends allowing devices to connect to the Office CDN on a system-level, bypassing any proxy servers to ensure best performance. We recommend reviewing the [Download sizes for updates to Microsoft 365 Apps](/officeupdates/download-sizes-microsoft365-apps-updates) to assess the impact on the network.
-- **Delivery Optimization**: In all cloud-based update scenarios, the update mechanism can and will use [Delivery Optimization](../updates/delivery-optimization.md) when available. This allows devices to share the required sources in a peer-to-peer fashion and reduces the amount of data that needs to be downloaded from the internet. Microsoft recommends the usage of Delivery Optimization. If [Connected Caches](/windows/deployment/do/waas-microsoft-connected-cache) are deployed and configured, those will also be used. Especially [Microsoft Connected Cache in Configuration Manager](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) is straight forward to implement and is recommended for environments with existing Configuration Manager infrastructures.
+- **Delivery Optimization**: In all cloud-based update scenarios, the update mechanism can and will use [Delivery Optimization](../updates/delivery-optimization.md) when available. This allows devices to share the required sources in a peer-to-peer fashion and reduces the amount of data that needs to be downloaded from the internet. Microsoft recommends the usage of Delivery Optimization. If [Connected Caches](/windows/deployment/do/waas-microsoft-connected-cache) are deployed and configured, those will also be used. Especially [Microsoft Connected Cache in Configuration Manager](/intune/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) is straight forward to implement and is recommended for environments with existing Configuration Manager infrastructures.
 - **VPN bypass**: When using virtual private network (VPN) solutions, it's recommended to bypass the VPN tunnel when downloading data from the Office CDN. This reduces the load on the VPN infrastructure, network uplinks and allows for faster downloads.
 
 ### Updates from on-premises locations
@@ -58,7 +58,7 @@ In general, Microsoft no longer recommends to host updates on-premises due to th
 - **Source file maintenance**: When update sources are hosted on-premises, the admin must ensure that the required releases for all deployed update channels, languages and architectures are available. As Microsoft releases security updates on a monthly schedule, the on-premises repositories would have to be updated with the same cadence to stay current and secure.
 - **Source size**: As Microsoft doesn't release individual patches, but rather a new set of source files, the source files for an update for a specific update channel and architecture are about 3.5 GB in size. Each included language pack adds 100-300 MB to this source file set. For example, when devices run a mix of 32 bit and 64 bit, on Current Channel with three included language packs, this means 2 * 4 GB of source files that have to be downloaded and synchronized across the update locations on a monthly schedule.
 - **Finding nearest update location**: If network shares are used for hosting updates, devices need a way to identify the closest network share to limit WAN traffic. This could be addressed by using [group policy preferences with Site targeting](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn789189(v=ws.11)#site-targeting) or custom scripting, but this increases the complexity of the implementation. If updates are managed by Configuration Manager, the before mentioned doesn't apply, as devices determine the nearest distribution point automatically.
-- **No Delivery Optimization**: When updates are hosted in on-premises locations, the Microsoft 365 Apps can't apply Delivery Optimization for reducing the network impact. All devices pull their individual set of delta files down. When using Microsoft Configuration Manager, this can be mitigated by using [Peer Cache](/troubleshoot/mem/configmgr/configure-peer-cache).
+- **No Delivery Optimization**: When updates are hosted in on-premises locations, the Microsoft 365 Apps can't apply Delivery Optimization for reducing the network impact. All devices pull their individual set of delta files down. When using Microsoft Configuration Manager, this can be mitigated by using [Peer Cache](/troubleshoot/intune/configmgr/configure-peer-cache).
 
 
 ### Updates from mixed on-premises and cloud locations (hybrid)
@@ -81,7 +81,7 @@ Based on your preferred update source location, there are several solutions for 
 
 ### Automatic Update / Microsoft Intune
 
-Default configuration of the Microsoft 365 Apps. If not otherwise configured, devices will automatically check in with the Office CDN on a regular base and pull-down updates automatically. If the Microsoft 365 Apps were deployed using [Intune](/mem/intune/apps/apps-add-office365), this is also the default configuration.
+Default configuration of the Microsoft 365 Apps. If not otherwise configured, devices will automatically check in with the Office CDN on a regular base and pull-down updates automatically. If the Microsoft 365 Apps were deployed using [Intune](/intune/intune-service/apps/apps-add-office365), this is also the default configuration.
 
 **Benefits**
 - No upfront configuration needed. Just works out of the box.
