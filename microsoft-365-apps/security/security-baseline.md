@@ -11,7 +11,7 @@ ms.collection:
  - essentials-security
 ms.localizationpriority: medium
 description: "Provide Office admins with an overview of the security baseline for Microsoft 365 Apps for enterprise"
-ms.date: 01/09/2024
+ms.date: 01/31/2025
 ---
 
 # Security baseline for Microsoft 365 Apps for enterprise
@@ -21,7 +21,7 @@ The security baseline for Microsoft 365 Apps for enterprise is published twice a
 To get the security baseline for Microsoft 365 Apps for enterprise, [download the Security Compliance Toolkit](https://www.microsoft.com/en-us/download/details.aspx?id=55319).
 
 > [!NOTE]
-> This security baseline is for Microsoft 365 Apps for enterprise. Some of the policies might be applicable to other versions of Office, such as Office LTSC 2021, Office 2019, or Office 2016. But you'll have to determine which policies are applicable for those versions.
+> This security baseline is for Microsoft 365 Apps for enterprise. Some of the policies might be applicable to other versions of Office, such as Office Long Term Service Channel (LTSC) 2024, LTSC 2021, Office 2019, or Office 2016. But you have to determine which policies are applicable for those versions.
 
 ## Overview of security baselines
 
@@ -49,11 +49,11 @@ The download of the security baseline for Microsoft 365 Apps for enterprise incl
 
 ### Group Policy Objects (GPOs)
 
-The download of the security baseline for Microsoft 365 Apps for enterprise includes several pre-configured Group Policy Objects (GPOs).
+The download of the security baseline for Microsoft 365 Apps for enterprise includes several preconfigured Group Policy Objects (GPOs).
 
 Most organizations can implement, without any problems, the recommended settings that are included in the **Computer** and the **User** GPOs.
 
-However, there are a few settings that will cause operational issues for some organizations. We've broken out related groups of such settings into their own GPOs to make it easier for organizations to add or remove these restrictions as a set. Those settings are included in the following four separate GPOs:
+However, there are a few settings that cause operational issues for some organizations. We've broken out related groups of such settings into their own GPOs to make it easier for organizations to add or remove these restrictions as a set. Those settings are included in the following four separate GPOs:
 
 - **DDE Block - User**, which is a User Configuration GPO that blocks using DDE to search for existing DDE server processes or to start new ones.
 
@@ -63,7 +63,7 @@ However, there are a few settings that will cause operational issues for some or
 
 - **Require Macro Signing - User**, which is a User Configuration GPO that disables unsigned macros in each of the Office applications.
 
-The local-policy script, named Baseline-LocalInstall.ps1, offers command-line options to control whether these GPOs are installed.
+The local-policy script named Baseline-LocalInstall.ps1 offers command-line options to control whether these GPOs are installed.
 
 ### "MS Security Guide" Administrative template
 
