@@ -6,7 +6,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.topic: include
 description: Network Requirements for Microsoft 365 Apps admin center 
-ms.date: 04/24/2024
+ms.date: 05/19/2025
 ---
 <!--This file is shared by update-validation.md, cloud-update.md, inventory.md, microsoft-365-apps-health.md, overview.md, security-update-status.md, overview-cloud-policy.md. Headings are driven by article context.-->
 You can manage Microsoft 365 Apps on Windows with the following version requirements:
@@ -14,3 +14,6 @@ You can manage Microsoft 365 Apps on Windows with the following version requirem
 - [Supported version of Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date)
 - [Supported version of Microsoft Windows 10/11](/windows/release-health/supported-versions-windows-client)
 - [Supported version of Windows Server that supports Microsoft 365 Apps](../../end-of-support/windows-server-support.md)
+
+> [!NOTE]  
+> For government customers (GCC, GCC High, and DoD), the minimum supported Office client version for policies to be delivered to Microsoft 365 Apps running on Windows is *Version 2410* or later.

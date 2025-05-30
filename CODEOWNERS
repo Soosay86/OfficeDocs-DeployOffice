@@ -4,6 +4,6 @@ docfx.json                          @microsoftdocs/officedocs-admin
 CODEOWNERS                          @microsoftdocs/officedocs-admin
 .acrolinx-config.edn                @microsoftdocs/officedocs-admin
 
-/DeployOffice/  @DHB-MSFT @nicholasswhite
-/microsoft-365-apps/  @DHB-MSFT @nicholasswhite
-/office/  @DHB-MSFT @nicholasswhite
+/DeployOffice/  @DHB-MSFT
+/microsoft-365-apps/  @DHB-MSFT
+/office/  @DHB-MSFT

@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "This article gives step-by-step instructions for how to assess your environment and requirements before deploying Microsoft 365 Apps.  The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
-ms.date: 09/19/2024
+ms.date: 05/29/2025
 ---
 
 # Assess your environment and requirements for deploying Microsoft 365 Apps
@@ -27,7 +27,7 @@ As part of this review, make sure that your client devices meet or exceed the [m
 
 Review the client requirements for your on-premises server workloads as well. For example, verify if your on-premises Exchange servers meet the minimum requirements as described in the [Exchange Server Supportability Matrix](/exchange/plan-and-deploy/supportability-matrix#clients).
 
-Finally, you should review the deployment tools you use in your organization. We recommend using Microsoft Intune. If you're using Microsoft Configuration Manager, we recommend upgrading to the current branch and updating to the current release. For more information, see [Which branch of Configuration Manager should I use?](/mem/configmgr/core/understand/which-branch-should-i-use).
+Finally, you should review the deployment tools you use in your organization. We recommend using Microsoft Intune. If you're using Microsoft Configuration Manager, we recommend upgrading to the current branch and updating to the current release. For more information, see [Which branch of Configuration Manager should I use?](/intune/configmgr/core/understand/which-branch-should-i-use).
 
 ## Step 2 - Review licensing and accounts
 

@@ -12,7 +12,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
 hideEdit: true
 description: "Provides guidance only to customers who received a Message center post about updates to the Microsoft 365 update channels in the Microsoft 365 admin center."
-ms.date: 05/13/2025
+ms.date: 05/27/2025
 ---
 
 # Updates to the Microsoft 365 admin center may cause your devices to change update channels 
@@ -61,11 +61,11 @@ There are several ways to enable the Office COM object, such as using client pol
 
 Microsoft Intune, through the [Office Deployment Tool](../../deploy/overview-office-deployment-tool.md), enables the download and deployment of Microsoft 365 Apps to client computers through the [Office Content Deliver Network](../../deploy/deploy-microsoft-365-apps-cloud.md). Devices that you manage and run on Windows 10/11 can have Microsoft 365 apps assigned and installed, provided you have the necessary licenses.
 
-For information on deploying Microsoft 365 Apps with Microsoft Intune, see [Add Microsoft 365 Apps to Windows 10/11 devices with Microsoft Intune](/mem/intune/apps/apps-add-office365).
+For information on deploying Microsoft 365 Apps with Microsoft Intune, see [Add Microsoft 365 Apps to Windows 10/11 devices with Microsoft Intune](/intune/intune-service/apps/apps-add-office365).
 
 ### Set an update policy
 
-You can keep your devices on their current update channel by setting update-related policies through [Group Policy](../../updates/change-update-channels.md#change-the-update-channel-with-group-policy) or [Microsoft Intune](/mem/intune/configuration/administrative-templates-windows).
+You can keep your devices on their current update channel by setting update-related policies through [Group Policy](../../updates/change-update-channels.md#change-the-update-channel-with-group-policy) or [Microsoft Intune](/intune/intune-service/configuration/administrative-templates-windows).
 These policies include:
 
 - Update Channel: specify the update channel, such as Current Channel, Monthly Enterprise Channel, or Semi-Annual Enterprise Channel.

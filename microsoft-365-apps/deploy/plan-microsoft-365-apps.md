@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "This article gives step-by-step instructions for how to plan your deployment of Microsoft 365 Apps. The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
-ms.date: 05/19/2025
+ms.date: 05/27/2025
 ---
 
 # Plan your enterprise deployment of Microsoft 365 Apps
@@ -30,7 +30,7 @@ First choose which deployment tool to use and whether to install from the cloud 
 
 You can also manage your deployment from the Microsoft 365 portal and have your users install the Microsoft 365 Apps on their client devices [directly from the portal](https://www.microsoft365.com/). This method requires the least amount of administrative setup, but gives you less control over the deployment. You can, however, still define how frequently your users receive feature updates. For more information, see [Manage Microsoft 365 installation options in the Microsoft 365 admin center](manage-software-download-settings-office-365.md). This option requires that your users have local administrative rights on their client devices.
 
-If managing numerous devices or user restrictions on administrative permissions on their devices makes this option impractical, consider deploying Microsoft 365 Apps through [Microsoft Intune](/mem/intune/apps/apps-add-office365). Check out [this video](https://youtu.be/fA8lcnRXmkI) and the [Intune documentation](/mem/intune/apps/apps-add-office365) to learn more about deploying the Microsoft 365 Apps this way.
+If managing numerous devices or user restrictions on administrative permissions on their devices makes this option impractical, consider deploying Microsoft 365 Apps through [Microsoft Intune](/intune/intune-service/apps/apps-add-office365). Check out [this video](https://youtu.be/fA8lcnRXmkI) and the [Intune documentation](/intune/intune-service/apps/apps-add-office365) to learn more about deploying the Microsoft 365 Apps this way.
 
 You can also use Configuration Manager to deploy from local Distribution points. This option reduces the network load on your internet links. We recommend using the latest current branch release. 
 
@@ -60,7 +60,7 @@ Many organizations use a combination of these options for different users. For e
 
 Set your client devices to update automatically from the Office CDN. You can still control the frequency of the feature updates, as those settings are defined as part of the initial deployment, but the updates themselves occur without any other tools or administrative overhead. In addition, the updates are automatically deployed over many days to conserve your network bandwidth.
 
-You can also use Intune to apply other policies. For example, to set a deadline after how many days an update installation should be enforced. Review the [Intune documentation](/mem/intune/configuration/administrative-templates-update-office) on how to apply ADMX settings to devices.
+You can also use Intune to apply other policies. For example, to set a deadline after how many days an update installation should be enforced. Review the [Intune documentation](/intune/intune-service/configuration/administrative-templates-update-office) on how to apply ADMX settings to devices.
 
 The third, cloud-based option is to use [cloud update](../admin-center/cloud-update.md). It's a cloud-based update management solution for devices on Monthly Enterprise Channel and Current Channel. It includes features like advanced monitoring, reporting, enforcing, staggering, and rolling back devices.
 
