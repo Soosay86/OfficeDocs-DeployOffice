@@ -27,9 +27,6 @@ One of the benefits of Microsoft 365 Apps is that Microsoft provides new (and up
 
 In addition to new features, update channels provide, as needed, security and non-security updates regularly, every month. Non-security updates provide fixes for known issues and offer stability or performance improvements for Microsoft 365 Apps.
 
-> [!NOTE]
-> If you prefer watching over reading, check out the [Update Channels Explained video](https://youtu.be/eNn4PDkmo7s). It covers all available update channels, plus  some tips & tricks for admins.
-
 There are three primary update channels:
 
 - [Current Channel](#current-channel-overview)
@@ -47,7 +44,7 @@ The following table provides a comparison of Current Channel, Monthly Enterprise
 
 | Category | Current Channel | Monthly Enterprise Channel | Semi-Annual Enterprise Channel |
 |---------|---------|---------|---------|
-| *Recommended use* | Provide your users with new Microsoft 365 Apps features as soon as they're ready, but on no set schedule. | Provide your users with new Microsoft 365 Apps features only once a month and on a predictable schedule. | For non-human devices and those running specialized or business-critical workloads that require extensive testing before new Microsoft 365 Apps features are implemented. Suitable for select devices performing automated tasks where end-users aren't present, ensuring compliance with regulatory and organizational standards. |
+| *Recommended use* | Provide your users with new Microsoft 365 Apps features as soon as they're ready, but on no set schedule. | Provide your users with new Microsoft 365 Apps features only once a month and on a predictable schedule. | For non-interactive devices and those running specialized or business-critical workloads that require extensive testing before new Microsoft 365 Apps features are implemented. Suitable for select devices performing automated tasks where end-users aren't present, ensuring compliance with regulatory and organizational standards. |
 | *Release frequency*<sup>1</sup> | At least once a month (likely more often), but on no set schedule | Once a month, on the second Tuesday of the month | Once a month, on the second Tuesday of the month |
 | *Feature updates*<sup>2</sup> | As soon as they’re ready (once a month), but on no set schedule | Once a month, on the second Tuesday of the month | Twice a year (in January and July), on the second Tuesday of the month |
 | *Security updates*<sup>3</sup><br></br>*(if needed)* | Once a month, on the second Tuesday of the month | Once a month, on the second Tuesday of the month | Once a month, on the second Tuesday of the month |
@@ -172,7 +169,7 @@ At any given time, there are always two versions of Monthly Enterprise Channel t
 
 ## Semi-Annual Enterprise Channel overview
 
-Choose Semi-Annual Enterprise Channel only for non-human devices and those running specialized or business-critical workloads that require extensive testing before new Microsoft 365 Apps features are implemented. This channel is suitable for select devices performing automated tasks where end-users aren't present, ensuring compliance with regulatory and organizational standards.
+Choose Semi-Annual Enterprise Channel only for non-interactive devices and those running specialized or business-critical workloads that require extensive testing before new Microsoft 365 Apps features are implemented. This channel is suitable for select devices performing automated tasks where end-users aren't present, ensuring compliance with regulatory and organizational standards.
 
 Updates to Semi-Annual Enterprise Channel are released on the second Tuesday of the month. In January and July, the monthly update can include feature, security, and non-security updates. In other months, the update can include security and non-security updates.
 
@@ -188,14 +185,6 @@ For a list of feature updates included in a given release of Semi-Annual Enterpr
 
 #### Preview upcoming new features of Semi-Annual Enterprise Channel
 [!INCLUDE [saec-preview-deprecation-notice](../includes/saec-preview-deprecation-notice.md)]
-
-The Semi-Annual Enterprise Channel (Preview) is deprecated and will no longer be used to release or validate new features. Beginning July 2025, there is no dedicated preview channel for Semi-Annual Enterprise Channel. To validate features and gather feedback, use Current Channel or Monthly Enterprise Channel before those features are enabled in Semi-Annual Enterprise Channel.
-
-Semi-Annual Enterprise Channel (Preview) is released with new features twice a year, on the second Tuesday in March and September.This schedule provides you with four months before those same new features are released in Semi-Annual Enterprise Channel. Semi-Annual Enterprise Channel (Preview) also receives, if needed, security and non-security updates every month, on the second Tuesday of the month.
-
-You should deploy Semi-Annual Enterprise Channel (Preview) to a small, representative sample of users in your organization. This approach can help you identify any possible issues for your organization before the new features are released more broadly to your users on Semi-Annual Enterprise Channel.
-
-We recommend using Semi-Annual Enterprise Channel (Preview). This approach allows you to identify and report any potential issues. We can then address these concerns in the four months before the version's release on Semi-Annual Enterprise Channel. Once a version is released to Semi-Annual Enterprise Channel, the approval process for non-security updates becomes even more rigorous.
 
 ### Security updates for Semi-Annual Enterprise Channel
 If needed, security updates for Semi-Annual Enterprise Channel are released on the second Tuesday of the month. 
