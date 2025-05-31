@@ -12,7 +12,7 @@ ms.collection:
  - essentials-privacy
  - must-keep
 hideEdit: true
-ms.date: 05/31/2024
+ms.date: 05/30/2025
 ---
 
 # Overview of privacy controls for Microsoft 365 Apps for enterprise

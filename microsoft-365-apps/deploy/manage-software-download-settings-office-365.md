@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides admins with information to help them configure Microsoft 365 installation options in the Microsoft 365 admin center."
-ms.date: 05/19/2025
+ms.date: 05/27/2025
 ---
 
 # Manage Microsoft 365 installation options in the Microsoft 365 admin center
@@ -118,7 +118,7 @@ One way you can deploy Office to your users is by using the Office Deployment To
 
 You can use the Office Deployment Tool to configure your deployments of Office, whether you’re installing Office directly from the Office Content Delivery Network (CDN) on the internet or from a shared folder on your network. As part of the installation, you can, for example, specify an update channel, include more languages, or exclude certain applications from being installed, such as Access or Publisher. 
 
-If available to your organization, you can also use Microsoft Configuration Manager or Microsoft Intune to deploy Office to your users. For more information, see [Manage Microsoft 365 Apps with Configuration Manager](/mem/configmgr/sum/deploy-use/manage-office-365-proplus-updates) and [Add Microsoft 365 apps to Windows 10 devices using Microsoft Intune](/mem/intune/apps/apps-add-office365).
+If available to your organization, you can also use Microsoft Configuration Manager or Microsoft Intune to deploy Office to your users. For more information, see [Manage Microsoft 365 Apps with Configuration Manager](/intune/configmgr/sum/deploy-use/manage-office-365-proplus-updates) and [Add Microsoft 365 apps to Windows 10 devices using Microsoft Intune](/intune/intune-service/apps/apps-add-office365).
   
 ### Manually deploy InfoPath 2013 and SharePoint Designer 2013
 

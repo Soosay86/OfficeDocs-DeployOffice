@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Provides steps for admins to use the reg add command to install Microsoft 365 Insider on Windows devices."
-ms.date: 02/05/2024
+ms.date: 05/27/2025
 ---
 
 # Use a registry command to install Microsoft 365 Insider on Windows devices
