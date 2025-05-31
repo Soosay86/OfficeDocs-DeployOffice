@@ -10,7 +10,7 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides Office admins with information about using Delivery Optimization to reduce network bandwidth when installing or updating Microsoft 365 Apps."
-ms.date: 03/01/2023
+ms.date: 05/29/2025
 ---
 
 # Delivery Optimization and Microsoft 365 Apps
@@ -52,7 +52,7 @@ If you're using Configuration Manager or local network shares to manage installi
 
 There are some settings that you can configure to allow your environment to take better advantage of Delivery Optimization.  For example, you should choose the appropriate [download mode](/windows/deployment/update/waas-delivery-optimization-reference#download-mode) for your environment. The download mode defines how devices determine whether other devices are suitable peers. Here are some recommendations for download mode:
 
-- If you're using Microsoft Configuration Manager (current branch) in your environment, you should consider using *Group (2)* for the download mode and use boundary groups for the GroupID. If you do this, Delivery Optimization uses the existing information about which devices are in the same [boundary group](/mem/configmgr/core/plan-design/hierarchy/fundamental-concepts-for-content-management#delivery-optimization) and consider all of them to be peers. This can save you from having to define new peer groups for Delivery Optimization to use.
+- If you're using Microsoft Configuration Manager (current branch) in your environment, you should consider using *Group (2)* for the download mode and use boundary groups for the GroupID. If you do this, Delivery Optimization uses the existing information about which devices are in the same [boundary group](/intune/configmgr/core/plan-design/hierarchy/fundamental-concepts-for-content-management#delivery-optimization) and consider all of them to be peers. This can save you from having to define new peer groups for Delivery Optimization to use.
 - If you're not using Configuration Manager, you can still use *Group (2)* for download mode. This uses the Active Directory site to determine which devices should be considered as peers.
 - If you're not using Active Directory, consider using *LAN (1)* for the download mode.
 
@@ -80,8 +80,8 @@ Keep in mind that this information represents overall results for Delivery Optim
 ## Additional information about Delivery Optimization and Microsoft 365 Apps
 
 - You can also take advantage of Delivery Optimization if you're using the [AllowCdnFallback](../deploy/office-deployment-tool-configuration-options.md#allowcdnfallback-attribute-part-of-add-element) attribute to allow devices to use the Office Content Delivery Network (CDN) on the internet as a source for installing additional language packs.
-- If you're already using Configuration Manager (current branch) and [peer cache](/mem/configmgr/core/plan-design/hierarchy/client-peer-cache) to manage installing and updating Microsoft 365 Apps, Delivery Optimization won't provide any added benefit for content coming from your on-premises infrastructure.
-- You can also try using a Microsoft Connected Cache server, which is an application installed on Windows Server and can be used with distribution points in Configuration Manager (current branch). For more information, see [Microsoft Connected Cache in Configuration Manager](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache).
+- If you're already using Configuration Manager (current branch) and [peer cache](/intune/configmgr/core/plan-design/hierarchy/client-peer-cache) to manage installing and updating Microsoft 365 Apps, Delivery Optimization won't provide any added benefit for content coming from your on-premises infrastructure.
+- You can also try using a Microsoft Connected Cache server, which is an application installed on Windows Server and can be used with distribution points in Configuration Manager (current branch). For more information, see [Microsoft Connected Cache in Configuration Manager](/intune/configmgr/core/plan-design/hierarchy/microsoft-connected-cache).
 - Delivery Optimization can also be used with the subscription versions of the Project and Visio desktop apps. The same [requirements](#requirements-for-using-delivery-optimization-with-microsoft-365-apps) as for Microsoft 365 Apps apply.
 - Office LTSC Professional Plus 2021 and Office LTSC Standard 2021 can take advantage of Delivery Optimization for installing, background updates, and user-initiated updates. The same applies to volume licensed versions of Project 2021 and Visio LTSC 2021.
 - Volume licensed versions of Office 2019, such as Office Professional Plus 2019, can take advantage of Delivery Optimization, but only for background updates. Delivery Optimization isn't available for installing or for user-initiated updates. The same applies to volume licensed versions of Project 2019 and Visio 2019.

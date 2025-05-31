@@ -11,7 +11,7 @@ ms.collection:
 - privacy-microsoft365
 - must-keep
 hideEdit: true
-ms.date: 05/31/2024
+ms.date: 05/30/2025
 ---
 
 # Required service data for Office

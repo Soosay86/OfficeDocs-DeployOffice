@@ -11,13 +11,10 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: true
 description: "Cloud Policy lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device isn't domain joined or otherwise managed."
-ms.date: 12/03/2024
+ms.date: 05/26/2025
 ---
 
 # Overview of Cloud Policy service for Microsoft 365
-
-> [!NOTE]
-> "Office cloud policy service" has been renamed to "Cloud Policy service for Microsoft 365." In most cases, we'll just refer to it as Cloud Policy.
 
 [Cloud Policy service for Microsoft 365](https://config.office.com/officeSettings/officePolicies) lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device isn't domain joined or otherwise managed. When a user signs into Microsoft 365 Apps for enterprise on a device, the policy settings roam to that device. Policy settings are available for devices running Windows, macOS, iOS, and Android, although not all policy settings are available for all operating systems. You can also enforce some policy settings for Office for the web and Loop, both for guests who are signed in and for users who access documents anonymously.
 
@@ -31,19 +28,11 @@ Cloud Policy is part of the [Microsoft 365 Apps admin center](https://config.off
 
 ### Licensing requirements
 
-Your user must be assigned to one of the following subscription plans:
-
-| Type       | Subscription Plan |
-| ---------- | ----------------- |
-| Education  | <li>Microsoft 365 A3</li><li>Microsoft 365 A5</li> |
-| Business   | <li>Microsoft 365 Business Standard</li><li>Microsoft 365 Business Premium</li> |
-| Enterprise | <li>Office 365 E3</li><li>Office 365 E5</li><li>Microsoft 365 E3</li><li>Microsoft 365 E5</li> |
-| Government | <li>Microsoft 365 G3</li><li>Microsoft 365 G5</li> |
+Cloud Policy supports most Microsoft 365 subscription plans that include Microsoft 365 Apps. Check your licensing documentation for specific requirements.
 
 > [!IMPORTANT]
 > The following plans are not supported:
 > - Microsoft 365 operated by 21Vianet
-> - Microsoft 365 GCC High and DoD
 
 > [!NOTE]
 > - A policy configuration can't be applied to volume licensed versions of Office that use Click-to-Run, such as Office LTSC Professional Plus 2021 or Office Standard 2019.
@@ -52,9 +41,6 @@ Your user must be assigned to one of the following subscription plans:
 ### Product version requirements
 <!--Using include for adding requirements-->
 [!INCLUDE [Version requirements](./includes/requirements-versions.md)]
-
-> [!NOTE]  
-> For GCC customers, the minimum supported Office client version for policies to be delivered to Microsoft 365 Apps running on Windows is *Version 2410* or later.
 
 ### Network requirements
 <!--Using include for adding requirements-->
@@ -150,7 +136,7 @@ Cloud Policy service supports the [Microsoft Purview auditing solutions](/purvie
 If the expected policies aren't correctly applied to a user's device, try the following actions:
 - Make sure the user is signed into Microsoft 365 Apps for enterprise, activated it, and has a valid license.
 - Make sure the user is part of the appropriate security group.
-- Verify you aren't using an authenticated proxy.
+- Verify you aren't using an authenticated proxy. The Click-to-Run service is responsible for making calls to Cloud Policy service to retrieve a user's policies. Click-to-Run runs under the system context. If Click-to-Run fails to access the proxy using the system account, a reattempt will be made impersonating the Windows login user.
 - Check the priority of the policy configurations. If the user is in multiple security groups that have policy configurations assigned to them, then the priority of the policy configurations determines which policies take effect.
 - In some cases, policies might not be applied correctly if two users with different policies sign into Office on the same device during the same Windows session.
 - Policy settings retrieved from Cloud Policy are stored in the Windows registry under HKEY_CURRENT_USER\Software\Policies\Microsoft\Cloud\Office\16.0. This key is overwritten each time a new set of policies is retrieved from the policy service during the check-in process.
