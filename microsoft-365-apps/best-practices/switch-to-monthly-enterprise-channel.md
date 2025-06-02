@@ -9,13 +9,15 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Switch to Monthly Enterprise Channel with Configuration Manager"
-ms.date: 05/25/2024
+ms.date: 05/30/2025
 ---
 
 # Switch to Monthly Enterprise Channel with Configuration Manager
 
 > [!NOTE]
 > Authored by the Microsoft 365 Apps Rangers, this article outlines common practices observed across customer implementations. We advise assessing the relevance of this guidance for your organization and adapting the approach as necessary.
+
+[!INCLUDE [july-2025-update-channel-changes](../includes/july-2025-update-channel-changes.md)]
 
 The [Monthly Enterprise Channel](../updates/overview-update-channels.md#monthly-enterprise-channel-overview) for Microsoft 365 Apps offers organizations a new option to balance monthly feature adoption with a longer support lifetime and faster quality update adoption. This article walks you through the steps to move all or some of your devices from their current update channel to Monthly Enterprise Channel. You can [perform a channel change](../updates/change-update-channels.md) in several ways. This article focuses on using Microsoft Configuration Manager. The following steps assume that you use it for both managing the device and deploying [Microsoft 365 Apps client updates](../updates/manage-microsoft-365-apps-updates-configuration-manager.md).
 
