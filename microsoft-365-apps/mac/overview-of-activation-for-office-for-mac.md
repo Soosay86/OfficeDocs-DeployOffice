@@ -4,7 +4,7 @@ ms.author: geokri
 author: nicholasswhite
 manager: dougeby
 audience: ITPro
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: o365-proplus-itpro
 ms.subservice: office-mac
 ms.localizationpriority: medium
