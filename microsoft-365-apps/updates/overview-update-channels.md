@@ -165,7 +165,7 @@ Any given version of Monthly Enterprise Channel is supported for two months. For
 
 Beginning July 2025, Monthly Enterprise Channel will support up to three months of rollback. This extended rollback window provides greater flexibility to revert to a known build with the latest security fixes in case of issues.
 
-At any given time, there are always two versions of Monthly Enterprise Channel that are supported.To see which versions of Monthly Enterprise Channel are currently supported, refer to the table at the top of [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
+At any given time, there are always two versions of Monthly Enterprise Channel that are supported. To see which versions of Monthly Enterprise Channel are currently supported, refer to the table at the top of [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
 
 ## Semi-Annual Enterprise Channel overview
 
