@@ -6747,7 +6747,7 @@ v
 
 - **Event_ReceivedTime** - Time at which event telemetry was recorded
 
-- **Event_SampleRate** - The Sampling rate of the event
+- **Event_SampleRate** - The sampling rate of the event
 
 - **Event_SchemaVersion** - The event schema version
 
@@ -6779,7 +6779,7 @@ v
 
 - **Session_SamplingClientIdValue** - The sampling client ID value
 
-- **Session_SubAppName** - The Sub-process name
+- **Session_SubAppName** - The sub-process name
 
 - **Session_VirtualizationType** - The session virtualization type
 
