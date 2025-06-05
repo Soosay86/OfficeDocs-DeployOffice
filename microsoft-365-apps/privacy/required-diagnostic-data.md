@@ -3617,7 +3617,7 @@ This event measures telemetry to see if users are trying to complete an action b
  
 The following fields are collected: 
 
-- **EventDate** -Timestamp of the event occurrence  
+- **EventDate** - Timestamp of the event occurrence  
 
 - **SessionID** - Globally Unique Identifier to connect events by session 
 
@@ -6919,13 +6919,13 @@ The following fields are collected:
 
   - **externalAppSessionCorrelationId** - A globally unique identifier for the app to identify all persona cards opened in the same sub-session
 
-- **Data.region** -The country or region of the profile card backend service to which user is connected
+- **Data.region** - The country or region of the profile card backend service to which user is connected
 
 - **Data.tenantAadObjectId** - The tenant to which a user's subscription is tied. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
 
-- **Data.type** -Type of the logged event, for example, Trace, Error, Event
+- **Data.type** - Type of the logged event, for example, Trace, Error, Event
 
-- **Data.userAadObjectId** -The globally unique user identifier for an enterprise Microsoft account (duplicate of Data.UserInfo.Id)
+- **Data.userAadObjectId** - The globally unique user identifier for an enterprise Microsoft account (duplicate of Data.UserInfo.Id)
 
 - **Data.UserInfo.Id** - The globally unique user identifier for an enterprise Microsoft account
 
@@ -6996,13 +6996,13 @@ The following fields are collected:
    - **ClientTimeStamp** - time that the event occurred in Unix epoch time
    - **consumerCorrelationId** - Duplicate of Data.clientCorrelationId above 
 
-- **Data.region** -The country or region of the profile card backend service to which user is connected
+- **Data.region** - The country or region of the profile card backend service to which user is connected
 
 - **Data.tenantAadObjectId** - The tenant to which a user’s subscription is tied. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
 
-- **Data.type** -Type of the logged event, for example, Trace, Error, Event
+- **Data.type** - Type of the logged event, for example, Trace, Error, Event
 
-- **Data.userAadObjectId** -The globally unique user identifier for an enterprise Microsoft account (duplicate of Data.UserInfo.Id)
+- **Data.userAadObjectId** - The globally unique user identifier for an enterprise Microsoft account (duplicate of Data.UserInfo.Id)
 
 - **Data.UserInfo.Id** - The globally unique user identifier for an enterprise Microsoft account 
 
@@ -7010,9 +7010,9 @@ The following fields are collected:
 
 - **Data.UserInfo.OMSTenantId** - The tenant that a user’s subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant.
 
-- **Data.userPuid** -The globally unique user identifier for a consumer Microsoft account (duplicate of Data.UserInfo.MsaId)
+- **Data.userPuid** - The globally unique user identifier for a consumer Microsoft account (duplicate of Data.UserInfo.MsaId)
 
-- **Data.version** -The version of the service (Profile Card)
+- **Data.version** - The version of the service (Profile Card)
 
 - **DeviceInfo_Id** – The globally unique device identifier for a device
 
@@ -7072,13 +7072,13 @@ The following fields are collected:
   - **cardPersonaCorrelationId** - Duplicate of Data.cardCorrelationId above
   - **consumerCorrelationId** - Duplicate of Data.clientCorrelationId above
 
-- **Data.region** -The country or region of the profile card backend service to which user is connected
+- **Data.region** - The country or region of the profile card backend service to which user is connected
 
 - **Data.tenantAadObjectId** - The tenant to which a user's subscription is tied. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
 
-- **Data.type** -Type of the logged event, for example, Trace, Error, Event
+- **Data.type** - Type of the logged event, for example, Trace, Error, Event
 
-- **Data.userAadObjectId** -The globally unique user identifier for an enterprise Microsoft account (duplicate of Data.UserInfo.Id)
+- **Data.userAadObjectId** - The globally unique user identifier for an enterprise Microsoft account (duplicate of Data.UserInfo.Id)
 
 - **Data.UserInfo.Id** - The globally unique user identifier for an enterprise Microsoft account
 
@@ -7086,9 +7086,9 @@ The following fields are collected:
 
 - **Data.UserInfo.OMSTenantId** - The tenant that a user's subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
 
-- **Data.userPuid** -The globally unique user identifier for a consumer Microsoft account (duplicate of Data.UserInfo.MsaId)
+- **Data.userPuid** - The globally unique user identifier for a consumer Microsoft account (duplicate of Data.UserInfo.MsaId)
 
-- **Data.version** -The version of the service (Profile Card)
+- **Data.version** - The version of the service (Profile Card)
 
 - **Data_hostAppRing** - The rollout ring of the persona card
 
@@ -7144,15 +7144,15 @@ The following fields are collected:
   - **cardPersonaCorrelationId** - Duplicate of Data.cardCorrelationId above
   - **consumerCorrelationId** - Duplicate of Data.clientCorrelationId above 
 
-- **Data.region** -The country or region of the profile card backend service to which user is connected
+- **Data.region** - The country or region of the profile card backend service to which user is connected
 
 - **Data.section** – The active section of the expanded card
 
 - **Data.tenantAadObjectId** - The tenant to which a user's subscription is tied. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
 
-- **Data.type** -Type of the logged event, for example, Trace, Error, Event
+- **Data.type** - Type of the logged event, for example, Trace, Error, Event
 
-- **Data.userAadObjectId** -The globally unique user identifier for an enterprise Microsoft account (duplicate of Data.UserInfo.Id)
+- **Data.userAadObjectId** - The globally unique user identifier for an enterprise Microsoft account (duplicate of Data.UserInfo.Id)
 
 - **Data.UserInfo.Id** - The globally unique user identifier for an enterprise Microsoft account 
 
@@ -7160,9 +7160,9 @@ The following fields are collected:
 
 - **Data.UserInfo.OMSTenantId** - The tenant that a user's subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
 
-- **Data.userPuid** -The globally unique user identifier for a consumer Microsoft account (duplicate of Data.UserInfo.MsaId)
+- **Data.userPuid** - The globally unique user identifier for a consumer Microsoft account (duplicate of Data.UserInfo.MsaId)
 
-- **Data.version** -The version of the service (Profile Card)
+- **Data.version** - The version of the service (Profile Card)
 
 - **DeviceInfo_Id** – The globally unique device identifier for a device
 
@@ -7230,13 +7230,13 @@ The following fields are collected:
     - **networkType** - The type of network connectivity of the device in use
     - **roundTripEstimateMs** - Estimated effective round trip of the current connection in milliseconds
 
-- **Data.region** -The country or region of the profile card backend service to which user is connected
+- **Data.region** - The country or region of the profile card backend service to which user is connected
 
 - **Data.tenantAadObjectId** - The tenant to which a user's subscription is tied. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
 
-- **Data.type** -Type of the logged event, for example, Trace, Error, Event
+- **Data.type** - Type of the logged event, for example, Trace, Error, Event
 
-- **Data.userAadObjectId** -The globally unique user identifier for an enterprise Microsoft account (duplicate of Data.UserInfo.Id)
+- **Data.userAadObjectId** - The globally unique user identifier for an enterprise Microsoft account (duplicate of Data.UserInfo.Id)
 
 - **Data.UserInfo.Id** - The globally unique user identifier for an enterprise Microsoft account 
 
@@ -7244,9 +7244,9 @@ The following fields are collected:
 
 - **Data.UserInfo.OMSTenantId** - The tenant that a user's subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
 
-- **Data.userPuid** -The globally unique user identifier for a consumer Microsoft account (duplicate of Data.UserInfo.MsaId)
+- **Data.userPuid** - The globally unique user identifier for a consumer Microsoft account (duplicate of Data.UserInfo.MsaId)
 
-- **Data.version** -The version of the service (Profile Card)
+- **Data.version** - The version of the service (Profile Card)
 
 - **Data.viewType** -Defines the type of the Profile card displayed
 
@@ -11517,7 +11517,7 @@ The event collects origin points for the reason a search sub_tab was selected. T
 
 The following fields are collected:
 
-- **properties_general** -The general properties that all Aria event is collecting
+- **properties_general** - The general properties that all Aria event is collecting
 
 - **selected_reason** - The cause of the type pill getting selected, which could be one of the following values (glyph being an icon): tap_on_header, tap_on_see_all, enter_search_mode, mail_glyph, calendar_glyph.
 
@@ -17258,169 +17258,169 @@ This event captures tab render when user clicks on the tab or from feature entry
 
 The following fields are collected:
 
-- **Activity_AggMode** -The field captures the aggregation mode of the activity
+- **Activity_AggMode** - The field captures the aggregation mode of the activity
 
-- **Activity_Count** -The field captures the count of similar telemetry events happening at nearly the same time within a single session
+- **Activity_Count** - The field captures the count of similar telemetry events happening at nearly the same time within a single session
 
-- **Activity_CV** -The field captures the correlation vector, which is used to track the sequence of related events
+- **Activity_CV** - The field captures the correlation vector, which is used to track the sequence of related events
 
-- **Activity_Duration** -The field captures the correlation vector, which is used to track the sequence of related events
+- **Activity_Duration** - The field captures the correlation vector, which is used to track the sequence of related events
 
-- **Activity_Result_Code** -The field captures the duration of the activity in milliseconds
+- **Activity_Result_Code** - The field captures the duration of the activity in milliseconds
 
-- **Activity_Result_Tag** -The field captures the result code of the activity
+- **Activity_Result_Tag** - The field captures the result code of the activity
 
-- **Activity_Result_Type** -The field captures the type of result for the activity
+- **Activity_Result_Type** - The field captures the type of result for the activity
 
-- **Activity_Success** -Boolean denoting whether the activity was a success
+- **Activity_Success** - Boolean denoting whether the activity was a success
 
-- **App_Branch** -The app branch
+- **App_Branch** - The app branch
 
-- **App_InstallType** -The field captures additional tags related to the result of the activity
+- **App_InstallType** - The field captures additional tags related to the result of the activity
 
-- **App_Name** -The app name
+- **App_Name** - The app name
 
-- **App_Platform** -The OS type (Android/iOS)
+- **App_Platform** - The OS type (Android/iOS)
 
-- **App_Version** -The app version
+- **App_Version** - The app version
 
-- **Client_Id** -A unique identifier of the user device
+- **Client_Id** - A unique identifier of the user device
 
-- **Consent_AddInContentSourceLocation** -Indicates how the user made the choice to allow or disallow collection of add-in content
+- **Consent_AddInContentSourceLocation** - Indicates how the user made the choice to allow or disallow collection of add-in content
 
-- **Consent_AddInContentState** -Indicates whether add-in content collection is allowed
+- **Consent_AddInContentState** - Indicates whether add-in content collection is allowed
 
-- **Consent_ControllerConnectedServicesConsentTime** -Indicates when the user chose the status of optional connected experiences.
+- **Consent_ControllerConnectedServicesConsentTime** - Indicates when the user chose the status of optional connected experiences.
 
-- **Consent_ControllerConnectedServicesSourceLocation** -Indicates how the user's choice for optional connected experiences was made
+- **Consent_ControllerConnectedServicesSourceLocation** - Indicates how the user's choice for optional connected experiences was made
 
-- **Consent_ControllerConnectedServicesState** -Indicates whether the user has access to optional connected experiences
+- **Consent_ControllerConnectedServicesState** - Indicates whether the user has access to optional connected experiences
 
-- **Consent_DiagnosticConsentLevel** -Indicates what level of diagnostic data consent the user has given - Required, optional
+- **Consent_DiagnosticConsentLevel** - Indicates what level of diagnostic data consent the user has given - Required, optional
 
-- **Consent_DiagnosticConsentLevelSourceLocation** -Indicates how the user had provided the consent for diagnostic data
+- **Consent_DiagnosticConsentLevelSourceLocation** - Indicates how the user had provided the consent for diagnostic data
 
-- **Consent_DiagnosticDataConsentTime** -Indicates when the user provided the consent for diagnostic data.
+- **Consent_DiagnosticDataConsentTime** - Indicates when the user provided the consent for diagnostic data.
 
-- **Consent_DownloadContentConsentTime** -Indicates when the user made the choice to enable or disable connected experiences that download online content.
+- **Consent_DownloadContentConsentTime** - Indicates when the user made the choice to enable or disable connected experiences that download online content.
 
-- **Consent_DownloadContentSourceLocation** -Indicates how the user made the choice to enable or disable connected experiences that that download online content
+- **Consent_DownloadContentSourceLocation** - Indicates how the user made the choice to enable or disable connected experiences that that download online content
 
-- **Consent_DownloadContentState** -Indicates whether the user has chosen to enable or disable connected experiences that download online content
+- **Consent_DownloadContentState** - Indicates whether the user has chosen to enable or disable connected experiences that download online content
 
-- **Consent_ServiceConnectionState** -Indicates whether the user has chosen to use or not use all connected experiences
+- **Consent_ServiceConnectionState** - Indicates whether the user has chosen to use or not use all connected experiences
 
-- **Consent_ServiceConnectionStateSourceLocation** -Indicates how the user provided the choice whether to use all connected experiences
+- **Consent_ServiceConnectionStateSourceLocation** - Indicates how the user provided the choice whether to use all connected experiences
 
-- **Consent_UserCategoryValue** -This field is used to record the user's consent preferences for different types of data usage, ensuring compliance with privacy regulations and providing transparency about how user data is handled
+- **Consent_UserCategoryValue** - This field is used to record the user's consent preferences for different types of data usage, ensuring compliance with privacy regulations and providing transparency about how user data is handled
 
-- **Consent_UserContentDependentConsentTime** -Indicates when the user chose to enable or disable connected experiences that analyze content.
+- **Consent_UserContentDependentConsentTime** - Indicates when the user chose to enable or disable connected experiences that analyze content.
 
-- **Consent_UserContentDependentSourceLocation** -Indicates how the user's choice to enable or disable was made for connected experiences that analyze content
+- **Consent_UserContentDependentSourceLocation** - Indicates how the user's choice to enable or disable was made for connected experiences that analyze content
 
-- **Consent_UserContentDependentState** -Indicates whether the user has chosen to enable or disable connected experiences that analyze content
+- **Consent_UserContentDependentState** - Indicates whether the user has chosen to enable or disable connected experiences that analyze content
 
-- **Data_DetachedDuration** -Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+- **Data_DetachedDuration** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
 
 - **Data_EventTime** - The time of point-event, as measured from the start of the OperationTelemetry it is logged from.
 
-- **Data_HostView** -Hostview of the appshell tabs.
+- **Data_HostView** - Hostview of the appshell tabs.
 
-- **Data_ImpressionName** -The event of a user viewing  a particular menu element  within an hamburger menu.
+- **Data_ImpressionName** - The event of a user viewing  a particular menu element  within an hamburger menu.
 
-- **Data_IsLargeScreen** -This field captures whether the device being used has a large screen
+- **Data_IsLargeScreen** - This field captures whether the device being used has a large screen
 
-- **Data_isOpen** -Data regarding if hamburger menu is in dismiss or active state
+- **Data_isOpen** - Data regarding if hamburger menu is in dismiss or active state
 
-- **Data_IsOpen** -This field records whether a specific context or activity is open
+- **Data_IsOpen** - This field records whether a specific context or activity is open
 
-- **Data_IsPinnedToBottom** -This field captures if the feature is pinned
+- **Data_IsPinnedToBottom** - This field captures if the feature is pinned
 
-- **Data_IsSuccess** -This field captures whether an activity or event was successful
+- **Data_IsSuccess** - This field captures whether an activity or event was successful
 
-- **Data_OperationId** -Unique Id for an activity instance 
+- **Data_OperationId** - Unique Id for an activity instance 
 
-- **Data_OperationName** -Name of the feature 
+- **Data_OperationName** - Name of the feature 
 
-- **Data_StopwatchDuration** -Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+- **Data_StopwatchDuration** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
 
-- **Data_tabId** -Menu item id from hamburger menu
+- **Data_tabId** - Menu item id from hamburger menu
 
-- **Data_TargetView** -Target view of the hamburger menu item click
+- **Data_TargetView** - Target view of the hamburger menu item click
 
-- **Data_UserActionType** -Action type details, for example, click on hamburger menu item
+- **Data_UserActionType** - Action type details, for example, click on hamburger menu item
 
-- **Device_Model** -The Device model (for example, iPhone 16 )
+- **Device_Model** - The device model (for example, iPhone 16 )
 
-- **Device_NetworkCost** -Network cost of the user (Low, Med, High)
+- **Device_NetworkCost** - Network cost of the user (Low, Med, High)
 
-- **Device_NetworkCountry** -The device country (based on network)
+- **Device_NetworkCountry** - The device country (based on network)
 
-- **Device_OsBuild** -The device OS build
+- **Device_OsBuild** - The device OS build
 
-- **Device_OsVersion** -The OS version installed in the user's device 
+- **Device_OsVersion** - The OS version installed in the user's device 
 
-- **Event_Contract** -Office.System.Activity
+- **Event_Contract** - Office.System.Activity
 
-- **Event_CV** -This field captures the coefficient of variation for events
+- **Event_CV** - This field captures the coefficient of variation for events
 
-- **Event_Flags** -The event flags
+- **Event_Flags** - The event flags
 
-- **Event_IsExportable** -Boolean denoting whether the event is exportable
+- **Event_IsExportable** - Boolean denoting whether the event is exportable
 
-- **Event_Name** -The table name
+- **Event_Name** - The table name
 
-- **Event_ReceivedTime** -Time at which event telemetry was recorded
+- **Event_ReceivedTime** - Time at which event telemetry was recorded
 
-- **Event_SampleRate** -The Sampling rate of the event
+- **Event_SampleRate** - The Sampling rate of the event
 
-- **Event_SchemaVersion** -The event schema version
+- **Event_SchemaVersion** - The event schema version
 
-- **Event_Sequence** -The event sequence
+- **Event_Sequence** - The event sequence
 
-- **Event_Source** -The table source 
+- **Event_Source** - The table source 
 
-- **Event_Time** -Time at which event occurred
+- **Event_Time** - Time at which event occurred
 
-- **Release_Audience** -The audience ring 
+- **Release_Audience** - The audience ring 
 
-- **Release_AudienceGroup** -The audience ring 
+- **Release_AudienceGroup** - The audience ring 
 
-- **Release_Channel** -The release channel 
+- **Release_Channel** - The release channel 
 
-- **Release_Fork** -The monthly release fork 
+- **Release_Fork** - The monthly release fork 
 
-- **Session_EcsETag** -The session ECS tag
+- **Session_EcsETag** - The session ECS tag
 
-- **Session_Flags** -The session flags
+- **Session_Flags** - The session flags
 
-- **Session_HostAppName** -The app host name
+- **Session_HostAppName** - The app host name
 
-- **Session_HostSessionId** -The host session ID
+- **Session_HostSessionId** - The host session ID
 
-- **Session_Id** -The user session id
+- **Session_Id** - The user session id
 
-- **Session_MeasuresEnabled** -The session measures are enabled
+- **Session_MeasuresEnabled** - The session measures are enabled
 
-- **Session_SamplingClientIdValue** -The session sampling value
+- **Session_SamplingClientIdValue** - The session sampling value
 
-- **Session_SubAppName** -The Sub-process name
+- **Session_SubAppName** - The Sub-process name
 
-- **Session_VirtualizationType** -The session virtualization type
+- **Session_VirtualizationType** - The session virtualization type
 
-- **User_ActiveUserTenantId** -A unique identifier of the active user's tenant
+- **User_ActiveUserTenantId** - A unique identifier of the active user's tenant
 
-- **User_PrimaryIdentityHash** -A unique identifier of User identity
+- **User_PrimaryIdentityHash** - A unique identifier of User identity
 
-- **User_PrimaryIdentitySpace** -The type of user identity 
+- **User_PrimaryIdentitySpace** - The type of user identity 
 
-- **User_TelemetryRegion** -The region in which user telemetry is collected and stored
+- **User_TelemetryRegion** - The region in which user telemetry is collected and stored
 
-- **User_TenantGroup** -The category of tenant user belongs to 
+- **User_TenantGroup** - The category of tenant user belongs to 
 
-- **User_TenantId** -A unique identifier of the user tenant
+- **User_TenantId** - A unique identifier of the user tenant
 
-- **zC_Activity_Result** -This field captures the result of an activity
+- **zC_Activity_Result** - This field captures the result of an activity
 
 
 #### Office.OfficeMobile.AppShell.UserAction
@@ -17429,151 +17429,151 @@ This event captures tab render when user clicks on the tab or from feature entry
 
 The following fields are collected:
 
-- **Activity_AggMode** -The field captures the aggregation mode of the activity
+- **Activity_AggMode** - The field captures the aggregation mode of the activity
 
-- **Activity_Count** -The field captures the count of similar telemetry events happening at nearly the same time within a single session
+- **Activity_Count** - The field captures the count of similar telemetry events happening at nearly the same time within a single session
 
-- **Activity_CV** -The field captures the correlation vector, which is used to track the sequence of related events
+- **Activity_CV** - The field captures the correlation vector, which is used to track the sequence of related events
 
-- **Activity_Duration** -The field captures the duration of the activity in milliseconds
+- **Activity_Duration** - The field captures the duration of the activity in milliseconds
 
-- **Activity_Result_Code** -The field captures the result code of the activity
+- **Activity_Result_Code** - The field captures the result code of the activity
 
-- **Activity_Result_Tag** -The field captures additional tags related to the result of the activity
+- **Activity_Result_Tag** - The field captures additional tags related to the result of the activity
 
-- **Activity_Result_Type** -The field captures the type of result for the activity
+- **Activity_Result_Type** - The field captures the type of result for the activity
 
 - **Activity_Success** -Boolean denoting whether the activity was a success
 
-- **App_Branch** -The app branch
+- **App_Branch** - The app branch
 
-- **App_InstallType** -A unique identifier of the app installation type
+- **App_InstallType** - A unique identifier of the app installation type
 
-- **App_Name** -The app name
+- **App_Name** - The app name
 
-- **App_Platform** -The OS type
+- **App_Platform** - The OS type
 
-- **App_Version** -The app version
+- **App_Version** - The app version
 
-- **Client_Id** -A unique identifier of the user device
+- **Client_Id** - A unique identifier of the user device
 
-- **Consent_AddInContentSourceLocation** -Indicates how the user made the choice to allow or disallow collection of add-in content
+- **Consent_AddInContentSourceLocation** - Indicates how the user made the choice to allow or disallow collection of add-in content
 
-- **Consent_AddInContentState** -Indicates whether add-in content collection is allowed
+- **Consent_AddInContentState** - Indicates whether add-in content collection is allowed
 
-- **Consent_ControllerConnectedServicesConsentTime** -Indicates when the user chose the status of optional connected experiences.
+- **Consent_ControllerConnectedServicesConsentTime** - Indicates when the user chose the status of optional connected experiences.
 
-- **Consent_ControllerConnectedServicesSourceLocation** -Indicates how the user's choice for optional connected experiences was made
+- **Consent_ControllerConnectedServicesSourceLocation** - Indicates how the user's choice for optional connected experiences was made
 
-- **Consent_ControllerConnectedServicesState** -Indicates whether the user has access to optional connected experiences
+- **Consent_ControllerConnectedServicesState** - Indicates whether the user has access to optional connected experiences
 
-- **Consent_DiagnosticConsentLevel** -Indicates what level of diagnostic data consent the user has given - Required, optional
+- **Consent_DiagnosticConsentLevel** - Indicates what level of diagnostic data consent the user has given - Required, optional
 
-- **Consent_DiagnosticConsentLevelSourceLocation** -Indicates how the user had provided the consent for diagnostic data
+- **Consent_DiagnosticConsentLevelSourceLocation** - Indicates how the user had provided the consent for diagnostic data
 
-- **Consent_DiagnosticDataConsentTime** -Indicates when the user provided the consent for diagnostic data.
+- **Consent_DiagnosticDataConsentTime** - Indicates when the user provided the consent for diagnostic data.
 
-- **Consent_DownloadContentConsentTime** -Indicates when the user made the choice to enable or disable connected experiences that download online content.
+- **Consent_DownloadContentConsentTime** - Indicates when the user made the choice to enable or disable connected experiences that download online content.
 
-- **Consent_DownloadContentSourceLocation** -Indicates how the user made the choice to enable or disable connected experiences that that download online content
+- **Consent_DownloadContentSourceLocation** - Indicates how the user made the choice to enable or disable connected experiences that that download online content
 
-- **Consent_DownloadContentState** -Indicates whether the user has chosen to enable or disable connected experiences that download online content
+- **Consent_DownloadContentState** - Indicates whether the user has chosen to enable or disable connected experiences that download online content
 
-- **Consent_ServiceConnectionState** -Indicates whether the user has chosen to use or not use all connected experiences
+- **Consent_ServiceConnectionState** - Indicates whether the user has chosen to use or not use all connected experiences
 
-- **Consent_ServiceConnectionStateSourceLocation** -Indicates how the user provided the choice whether to use all connected experiences
+- **Consent_ServiceConnectionStateSourceLocation** - Indicates how the user provided the choice whether to use all connected experiences
 
-- **Consent_UserCategoryValue** -The user consent category value
+- **Consent_UserCategoryValue** - The user consent category value
 
-- **Consent_UserContentDependentConsentTime** -Indicates when the user chose to enable or disable connected experiences that analyze content.
+- **Consent_UserContentDependentConsentTime** - Indicates when the user chose to enable or disable connected experiences that analyze content.
 
-- **Consent_UserContentDependentSourceLocation** -Indicates how the user's choice to enable or disable was made for connected experiences that analyze content
+- **Consent_UserContentDependentSourceLocation** - Indicates how the user's choice to enable or disable was made for connected experiences that analyze content
 
-- **Consent_UserContentDependentState** -Indicates whether the user has chosen to enable or disable connected experiences that analyze content
+- **Consent_UserContentDependentState** - Indicates whether the user has chosen to enable or disable connected experiences that analyze content
 
-- **Data_ActionType** -The action type
+- **Data_ActionType** - The action type
 
-- **Data_DetachedDuration** -Logs timestamp for a specific stage of the feature to evaluate its performance
+- **Data_DetachedDuration** - Logs timestamp for a specific stage of the feature to evaluate its performance
 
-- **Data_EventTime** -The event type
+- **Data_EventTime** - The event type
 
-- **Data_HostView** -The host view
+- **Data_HostView** - The host view
 
-- **Data_OperationId** -The operation ID
+- **Data_OperationId** - The operation ID
 
-- **Data_OperationName** -The operation name
+- **Data_OperationName** - The operation name
 
-- **Data_StopwatchDuration** -Logs timestamp for a specific stage of the feature to evaluate its performance
+- **Data_StopwatchDuration** - Logs timestamp for a specific stage of the feature to evaluate its performance
 
-- **Data_Target** -Target
+- **Data_Target** - Target
 
-- **Data_ToggleValue** -The toggle value
+- **Data_ToggleValue** - The toggle value
 
-- **Device_Model** -The device model
+- **Device_Model** - The device model
 
-- **Device_NetworkCost** -Network cost
+- **Device_NetworkCost** - Network cost
 
-- **Device_NetworkCountry** -Network country
+- **Device_NetworkCountry** - Network country
 
-- **Device_OsBuild** -The device OS build
+- **Device_OsBuild** - The device OS build
 
-- **Device_OsVersion** -The device OS version
+- **Device_OsVersion** - The device OS version
 
-- **Event_Contract** -The event contract
+- **Event_Contract** - The event contract
 
-- **Event_CV** -The field captures information related to the context of an event within the application
+- **Event_CV** - The field captures information related to the context of an event within the application
 
-- **Event_Flags** -The event flags
+- **Event_Flags** - The event flags
 
-- **Event_Name** -The event name
+- **Event_Name** - The event name
 
-- **Event_ReceivedTime** -The event received time
+- **Event_ReceivedTime** - The event received time
 
-- **Event_SampleRate** -The event sample rate
+- **Event_SampleRate** - The event sample rate
 
-- **Event_SchemaVersion** -The event schema version
+- **Event_SchemaVersion** - The event schema version
 
-- **Event_Sequence** -The event sequence
+- **Event_Sequence** - The event sequence
 
-- **Event_Source** -The event source
+- **Event_Source** - The event source
 
-- **Event_Time** -The event time
+- **Event_Time** - The event time
 
-- **Release_Audience** -The release audience 
+- **Release_Audience** - The release audience 
 
-- **Release_AudienceGroup** -The release audience group
+- **Release_AudienceGroup** - The release audience group
 
-- **Release_Channel** -The release channel
+- **Release_Channel** - The release channel
 
-- **Release_Fork** -App release fork
+- **Release_Fork** - App release fork
 
-- **Session_EcsETag** -The session ECS tab
+- **Session_EcsETag** - The session ECS tab
 
-- **Session_Flags** -The session flags
+- **Session_Flags** - The session flags
 
-- **Session_Id** -The session ID
+- **Session_Id** - The session ID
 
-- **Session_MeasuresEnabled** -Captures if the session measures are enabled
+- **Session_MeasuresEnabled** - Captures if the session measures are enabled
 
-- **Session_SamplingClientIdValue** -The sampling client ID value
+- **Session_SamplingClientIdValue** - The sampling client ID value
 
-- **Session_SubAppName** -The sub app name
+- **Session_SubAppName** - The sub app name
 
-- **Session_VirtualizationType** -The session virtualization type
+- **Session_VirtualizationType** - The session virtualization type
 
-- **User_ActiveUserTenantId** -A unique identifier of the active user's tenant
+- **User_ActiveUserTenantId** - A unique identifier of the active user's tenant
 
-- **User_PrimaryIdentityHash** -A unique identifier of User identity
+- **User_PrimaryIdentityHash** - A unique identifier of User identity
 
-- **User_PrimaryIdentitySpace** -The type of user identity 
+- **User_PrimaryIdentitySpace** - The type of user identity 
 
-- **User_TelemetryRegion** -The region in which user telemetry is collected and stored
+- **User_TelemetryRegion** - The region in which user telemetry is collected and stored
 
-- **User_TenantGroup** -The category of tenant user belongs to 
+- **User_TenantGroup** - The category of tenant user belongs to 
 
-- **User_TenantId** -A unique identifier of the user tenant
+- **User_TenantId** - A unique identifier of the user tenant
 
-- **zC_Activity_Result** -This field captures the result of an activity
+- **zC_Activity_Result** - This field captures the result of an activity
 
 
 #### Office.OfficeMobile.PdfViewer.PdfFileOpenMeasurements (on Android)
@@ -17780,7 +17780,7 @@ The following fields are collected:
 
 - **Data_PostAppInitEndTimeSA** - Time taken to complete setup in base activity post native libraries initialization since app boot.
 
-- **Data_PostAppInitStartTimeSA** -Time taken to start setup in base activity post native libraries initialization since app boot.
+- **Data_PostAppInitStartTimeSA** - Time taken to start setup in base activity post native libraries initialization since app boot.
 
 - **Data_PostAppInitTimeInMs** - Time taken by post app initialization since pre-app initialization.
 

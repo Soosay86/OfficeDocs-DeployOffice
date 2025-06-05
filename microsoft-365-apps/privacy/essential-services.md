@@ -2961,7 +2961,7 @@ The following fields are collected:
 
 - **Data_CompletionState** - If we completed the task
 
-- **Data_ErrorCode** -The error code we failed with 
+- **Data_ErrorCode** - The error code we failed with 
 
 - **Data_ErrorDetails** - Extra details about an error 
 
@@ -4120,7 +4120,7 @@ The following fields are collected:
 
   - **Data\_status** – A short status of what happened during the update, such as Succeeded or Downloaded
 
-  - **Data\_targetBuild -** -The Office version that we're attempting to update to
+  - **Data\_targetBuild -** - The Office version that we're attempting to update to
 
 
 ### Office.ClickToRun.UniversalBootstrapper.Application2
@@ -4980,7 +4980,7 @@ This event is used to understand the in-app purchase (IAP) experience for the us
 - **Office.iOS.Paywall.Paywall.Presented** - Data is collected when paywall control is shown to the user. The data is used to build a view to measure the conversion rate at every step and ensure that the user interface is performing as expected with users experiencing minimal friction during the purchase experience.
 
    The following fields are collected:
-  - **CPCVersion** - Integer -The version of customer paywall control we're presenting. We determine this based on experiment flag.
+  - **CPCVersion** - Integer  - The version of customer paywall control we're presenting. We determine this based on experiment flag.
   - **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”
   - **isFRE** - Boolean – Are we showing the First Run Experience or regular UI?
   - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
@@ -6651,147 +6651,147 @@ This event captures users eligibility to Copilot features via pinning and enable
 
 The following fields are collected:
 
-- **App_Branch** -The app branch
+- **App_Branch** - The app branch
 
-- **App_InstallType** -The field captures additional tags related to the result of the activity
+- **App_InstallType** - The field captures additional tags related to the result of the activity
 
-- **App_Name** -The app name
+- **App_Name** - The app name
 
-- **App_Platform** -The OS type (Android/iOS)
+- **App_Platform**  - The OS type (Android/iOS)
 
-- **App_Version** -The app version
+- **App_Version** - The app version
 
-- **Client_Id** -A unique identifier of the user device
+- **Client_Id** - A unique identifier of the user device
 
-- **Consent_AddInContentSourceLocation** -Indicates how the user made the choice to allow or disallow collection of add-in content
+- **Consent_AddInContentSourceLocation** - Indicates how the user made the choice to allow or disallow collection of add-in content
 
-- **Consent_AddInContentState** -Indicates whether add-in content collection is allowed
+- **Consent_AddInContentState** - Indicates whether add-in content collection is allowed
 
-- **Consent_ControllerConnectedServicesConsentTime** -Indicates when the user chose the status of optional connected experiences.
+- **Consent_ControllerConnectedServicesConsentTime** - Indicates when the user chose the status of optional connected experiences.
 
-- **Consent_ControllerConnectedServicesSourceLocation** -Indicates how the user's choice for optional connected experiences was made
+- **Consent_ControllerConnectedServicesSourceLocation** - Indicates how the user's choice for optional connected experiences was made
 
-- **Consent_ControllerConnectedServicesState** -Indicates whether the user has access to optional connected experiences
+- **Consent_ControllerConnectedServicesState** - Indicates whether the user has access to optional connected experiences
 
-- **Consent_DiagnosticConsentLevel** -Indicates what level of diagnostic data consent the user has given - Required, optional
+- **Consent_DiagnosticConsentLevel** - Indicates what level of diagnostic data consent the user has given - Required, optional
+v
+- **Consent_DiagnosticConsentLevelSourceLocation** - Indicates how the user had provided the consent for diagnostic data
 
-- **Consent_DiagnosticConsentLevelSourceLocation** -Indicates how the user had provided the consent for diagnostic data
+- **Consent_DiagnosticDataConsentTime** - Indicates when the user provided the consent for diagnostic data.
 
-- **Consent_DiagnosticDataConsentTime** -Indicates when the user provided the consent for diagnostic data.
+- **Consent_DownloadContentConsentTime** - Indicates when the user made the choice to enable or disable connected experiences that download online content.
 
-- **Consent_DownloadContentConsentTime** -Indicates when the user made the choice to enable or disable connected experiences that download online content.
+- **Consent_DownloadContentSourceLocation** - Indicates how the user made the choice to enable or disable connected experiences that that download online content
 
-- **Consent_DownloadContentSourceLocation** -Indicates how the user made the choice to enable or disable connected experiences that that download online content
+- **Consent_DownloadContentState** - Indicates whether the user has chosen to enable or disable connected experiences that download online content
 
-- **Consent_DownloadContentState** -Indicates whether the user has chosen to enable or disable connected experiences that download online content
+- **Consent_ServiceConnectionState** - Indicates whether the user has chosen to use or not use all connected experiences
 
-- **Consent_ServiceConnectionState** -Indicates whether the user has chosen to use or not use all connected experiences
+- **Consent_ServiceConnectionStateSourceLocation** - Indicates how the user provided the choice whether to use all connected experiences
 
-- **Consent_ServiceConnectionStateSourceLocation** -Indicates how the user provided the choice whether to use all connected experiences
+- **Consent_UserCategoryValue** - The user category value
 
-- **Consent_UserCategoryValue** -The user category value
+- **Consent_UserContentDependentConsentTime** - Indicates when the user chose to enable or disable connected experiences that analyze content.
 
-- **Consent_UserContentDependentConsentTime** -Indicates when the user chose to enable or disable connected experiences that analyze content.
+- **Consent_UserContentDependentSourceLocation** - Indicates how the user's choice to enable or disable was made for connected experiences that analyze content
 
-- **Consent_UserContentDependentSourceLocation** -Indicates how the user's choice to enable or disable was made for connected experiences that analyze content
+- **Consent_UserContentDependentState** - Indicates whether the user has chosen to enable or disable connected experiences that analyze content
 
-- **Consent_UserContentDependentState** -Indicates whether the user has chosen to enable or disable connected experiences that analyze content
+- **Data_ChatTabVisible** - Captures if the chat tab is visible for the user
 
-- **Data_ChatTabVisible** -Captures if the chat tab is visible for the user
+- **Data_CopilotDisabledTime** - The time at which Copilot tab was hidden from the user
 
-- **Data_CopilotDisabledTime** -The time at which Copilot tab was hidden from the user
+- **Data_CopilotEarlyRegistrationEnabled** - Captures if Copilot is enabled
 
-- **Data_CopilotEarlyRegistrationEnabled** -Captures if Copilot is enabled
+- **Data_CopilotEligibilityStartTime** - The time at which user's Copilot eligibility status was fetched
 
-- **Data_CopilotEligibilityStartTime** -The time at which user's Copilot eligibility status was fetched
+- **Data_CopilotEnabledTime** - The time at which Copilot tab was shown to the user
 
-- **Data_CopilotEnabledTime** -The time at which Copilot tab was shown to the user
+- **Data_CwCImplicitPinningConsentStatus** - Captured if Copilot tab is pinned for the user
 
-- **Data_CwCImplicitPinningConsentStatus** -Captured if Copilot tab is pinned for the user
+- **Data_EventTime** - The event time
 
-- **Data_EventTime** -The event time
+- **Data_ImplicitPinningConsentStatus** - The reason why Copilot tab was implicitly pinned for the user in the app
 
-- **Data_ImplicitPinningConsentStatus** -The reason why Copilot tab was implicitly pinned for the user in the app
+- **Data_InitialCopilotDisabilityReason** - The reason why Copilot tab was hidden from the user
 
-- **Data_InitialCopilotDisabilityReason** -The reason why Copilot tab was hidden from the user
+- **Data_InitialCopilotEvaluationTime** - The time at which Copilot eligibility status was retrieved from cache as API returned error
 
-- **Data_InitialCopilotEvaluationTime** -The time at which Copilot eligibility status was retrieved from cache as API returned error
+- **Data_InitialCopilotVisibility** - A boolean that indicates whether Copilot was pinned at the start of user session
 
-- **Data_InitialCopilotVisibility** -A boolean that indicates whether Copilot was pinned at the start of user session
+- **Data_IsFirstSession** - A boolean that indicates whether this is user's first session in the app
 
-- **Data_IsFirstSession** -A boolean that indicates whether this is user's first session in the app
+- **Data_IsPinnedInCurrentSession** - A boolean that indicates whether Copilot was pinned during the current session
 
-- **Data_IsPinnedInCurrentSession** -A boolean that indicates whether Copilot was pinned during the current session
+- **Data_IsRockSteadyEnabled** - A boolean that denotes if Rocksteady build is enabled for the user
 
-- **Data_IsRockSteadyEnabled** -A boolean that denotes if Rocksteady build is enabled for the user
+- **Data_OperationId** - The operation ID
 
-- **Data_OperationId** -The operation ID
+- **Data_OperationName** - The operation name
 
-- **Data_OperationName** -The operation name
+- **Data_VisibilityErrorCode** - This field captures error codes related to visibility issues within the application
 
-- **Data_VisibilityErrorCode** -This field captures error codes related to visibility issues within the application
+- **Device_NetworkCost** - Network cost of the user (Low, Med, High)
 
-- **Device_NetworkCost** -Network cost of the user (Low, Med, High)
+- **Device_NetworkCountry** - The device country (based on network)
 
-- **Device_NetworkCountry** -The device country (based on network)
+- **Device_OsBuild** - The device OS build
 
-- **Device_OsBuild** -The device OS build
+- **Device_OsVersion** - The OS version installed in the user's device 
 
-- **Device_OsVersion** -The OS version installed in the user's device 
+- **Event_Flags** - The event flags
 
-- **Event_Flags** -The event flags
+- **Event_IsExportable** - Boolean denoting whether the event is exportable
 
-- **Event_IsExportable** -Boolean denoting whether the event is exportable
+- **Event_Name** - The table name
 
-- **Event_Name** -The table name
+- **Event_ReceivedTime** - Time at which event telemetry was recorded
 
-- **Event_ReceivedTime** -Time at which event telemetry was recorded
+- **Event_SampleRate** - The Sampling rate of the event
 
-- **Event_SampleRate** -The Sampling rate of the event
+- **Event_SchemaVersion** - The event schema version
 
-- **Event_SchemaVersion** -The event schema version
+- **Event_Sequence** - The event sequence
 
-- **Event_Sequence** -The event sequence
+- **Event_Source** - The table source 
 
-- **Event_Source** -The table source 
+- **Event_Time** - Time at which event occurred
 
-- **Event_Time** -Time at which event occurred
+- **Release_Audience** - The audience ring 
 
-- **Release_Audience** -The audience ring 
+- **Release_AudienceGroup** - The audience ring 
 
-- **Release_AudienceGroup** -The audience ring 
+- **Release_Channel** - The release channel 
 
-- **Release_Channel** -The release channel 
+- **Release_Fork** - The monthly release fork 
 
-- **Release_Fork** -The monthly release fork 
+- **Session_EcsETag** - The sessions ECS tag
 
-- **Session_EcsETag** -The sessions ECS tag
+- **Session_Flags** - The session flags
 
-- **Session_Flags** -The session flags
+- **Session_HostAppName** - The host app name
 
-- **Session_HostAppName** -The host app name
+- **Session_HostSessionId** - The host session ID
 
-- **Session_HostSessionId** -The host session ID
+- **Session_Id** - The user session ID
 
-- **Session_Id** -The user session ID
+- **Session_MeasuresEnabled** - Captures if the session measures are enabled
 
-- **Session_MeasuresEnabled** -Captures if the session measures are enabled
+- **Session_SamplingClientIdValue** - The sampling client ID value
 
-- **Session_SamplingClientIdValue** -The sampling client ID value
+- **Session_SubAppName** - The Sub-process name
 
-- **Session_SubAppName** -The Sub-process name
+- **Session_VirtualizationType** - The session virtualization type
 
-- **Session_VirtualizationType** -The session virtualization type
+- **User_ActiveUserTenantId** - A unique identifier of the active user's tenant
 
-- **User_ActiveUserTenantId** -A unique identifier of the active user's tenant
+- **User_PrimaryIdentityHash** - A unique identifier of User identity
 
-- **User_PrimaryIdentityHash** -A unique identifier of User identity
+- **User_PrimaryIdentitySpace** - The type of user identity 
 
-- **User_PrimaryIdentitySpace** -The type of user identity 
+- **User_TelemetryRegion** - The region in which user telemetry is collected and stored
 
-- **User_TelemetryRegion** -The region in which user telemetry is collected and stored
-
-- **User_TenantGroup** -The category of tenant user belongs to 
+- **User_TenantGroup** - The category of tenant user belongs to 
 
 - **User_TenantId** -A unique identifier of the user tenant
 
@@ -15551,7 +15551,7 @@ The following fields are collected:
 
 - **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
-- **PipelineInfo_ClientIp** -The first three octets of the IP address
+- **PipelineInfo_ClientIp** - The first three octets of the IP address
 
 - **Reason** - Static text
 
@@ -18825,39 +18825,39 @@ This event is triggered when Microsoft AutoUpdate (MAU) queries web-services on 
 
 The following fields are collected:
 
-- **App** -The application process sending the event
+- **App** - The application process sending the event
 
-- **AppInfo_Language** -The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-- **AppVersionLong** -The application version
+- **AppVersionLong** - The application version
 
-- **Channel** -The preference for audience
+- **Channel** - The preference for audience
 
-- **Device_NetworkCountry** -The device country or region (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
-- **DeviceID** -The device identifier
+- **DeviceID** - The device identifier
 
-- **DeviceInfo_Model** -The hardware model of the device
+- **DeviceInfo_Model** - The hardware model of the device
 
-- **DeviceInfo_NetworkType** -The type of network (Wi-Fi, wired, unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, wired, unknown)
 
-- **DeviceInfo_OsBuild** -The version of the operating system
+- **DeviceInfo_OsBuild** - The version of the operating system
 
-- **Event_ReceivedTime** -The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-- **EventInfo_Name** -The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-- **EventInfo_Time** -The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
 - **HowToCheck** -How to check setting
 
 - **Payload** -Contains information on number of applications with what’s new information
 
-- **PipelineInfo_ClientCountry** -The device country or region (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
-- **PipelineInfo_ClientIp** -The first three octets of the IP address
+- **PipelineInfo_ClientIp** - The first three octets of the IP address
 
-- **SessionId** -The identifier for the session
+- **SessionId** - The identifier for the session
 
 ## OneNote sync events
 
@@ -20009,7 +20009,7 @@ The following fields are collected:
 
   - **FirstRunTime -** The first time an Office application was run.
 
-  - **IsClickToRunInstall -** Whether the Office application was installed using Click -To-Run
+  - **IsClickToRunInstall -** Whether the Office application was installed using Click-To-Run
 
   - **IsDebug -** Whether this is a debug build of Office.
 
