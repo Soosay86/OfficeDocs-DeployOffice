@@ -6639,10 +6639,386 @@ For some reason if we're unable to license the user, we install a grace key and 
 
 The following fields are collected:
 
-  - **OpportunisticTokenRenewalAttempted** – Indicates if we attempted an opportunistic renewal for the user in shared computer activation mode
+- **OpportunisticTokenRenewalAttempted** – Indicates if we attempted an opportunistic renewal for the user in shared computer activation mode
 
-  - **ReArmResult** – Indicates the result of rearming the installed key which can extend the expiry of the current license
+- **ReArmResult** – Indicates the result of rearming the installed key which can extend the expiry of the current license
 
+
+### Office.OfficeMobile.Copilot.ChatTabVisibility
+
+This event captures users eligibility to Copilot features via pinning and enables the app to present the right Copilot features to the user. This event captures users eligibility to Copilot features via pinning and enables the app to present the right Copilot features to the user in both iOS and Android apps.
+
+
+The following fields are collected:
+
+- **App_Branch** -The app branch
+
+- **App_InstallType** -The field captures additional tags related to the result of the activity
+
+- **App_Name** -The app name
+
+- **App_Platform** -The OS type (Android/iOS)
+
+- **App_Version** -The app version
+
+- **Client_Id** -A unique identifier of the user device
+
+- **Consent_AddInContentSourceLocation** -Indicates how the user made the choice to allow or disallow collection of add-in content
+
+- **Consent_AddInContentState** -Indicates whether add-in content collection is allowed
+
+- **Consent_ControllerConnectedServicesConsentTime** -Indicates when the user chose the status of optional connected experiences.
+
+- **Consent_ControllerConnectedServicesSourceLocation** -Indicates how the user's choice for optional connected experiences was made
+
+- **Consent_ControllerConnectedServicesState** -Indicates whether the user has access to optional connected experiences
+
+- **Consent_DiagnosticConsentLevel** -Indicates what level of diagnostic data consent the user has given - Required, optional
+
+- **Consent_DiagnosticConsentLevelSourceLocation** -Indicates how the user had provided the consent for diagnostic data
+
+- **Consent_DiagnosticDataConsentTime** -Indicates when the user provided the consent for diagnostic data.
+
+- **Consent_DownloadContentConsentTime** -Indicates when the user made the choice to enable or disable connected experiences that download online content.
+
+- **Consent_DownloadContentSourceLocation** -Indicates how the user made the choice to enable or disable connected experiences that that download online content
+
+- **Consent_DownloadContentState** -Indicates whether the user has chosen to enable or disable connected experiences that download online content
+
+- **Consent_ServiceConnectionState** -Indicates whether the user has chosen to use or not use all connected experiences
+
+- **Consent_ServiceConnectionStateSourceLocation** -Indicates how the user provided the choice whether to use all connected experiences
+
+- **Consent_UserCategoryValue** -The user category value
+
+- **Consent_UserContentDependentConsentTime** -Indicates when the user chose to enable or disable connected experiences that analyze content.
+
+- **Consent_UserContentDependentSourceLocation** -Indicates how the user's choice to enable or disable was made for connected experiences that analyze content
+
+- **Consent_UserContentDependentState** -Indicates whether the user has chosen to enable or disable connected experiences that analyze content
+
+- **Data_ChatTabVisible** -Captures if the chat tab is visible for the user
+
+- **Data_CopilotDisabledTime** -The time at which Copilot tab was hidden from the user
+
+- **Data_CopilotEarlyRegistrationEnabled** -Captures if Copilot is enabled
+
+- **Data_CopilotEligibilityStartTime** -The time at which user's Copilot eligibility status was fetched
+
+- **Data_CopilotEnabledTime** -The time at which Copilot tab was shown to the user
+
+- **Data_CwCImplicitPinningConsentStatus** -Captured if Copilot tab is pinned for the user
+
+- **Data_EventTime** -The event time
+
+- **Data_ImplicitPinningConsentStatus** -The reason why Copilot tab was implicitly pinned for the user in the app
+
+- **Data_InitialCopilotDisabilityReason** -The reason why Copilot tab was hidden from the user
+
+- **Data_InitialCopilotEvaluationTime** -The time at which Copilot eligibility status was retrieved from cache as API returned error
+
+- **Data_InitialCopilotVisibility** -A boolean that indicates whether Copilot was pinned at the start of user session
+
+- **Data_IsFirstSession** -A boolean that indicates whether this is user's first session in the app
+
+- **Data_IsPinnedInCurrentSession** -A boolean that indicates whether Copilot was pinned during the current session
+
+- **Data_IsRockSteadyEnabled** -A boolean that denotes if Rocksteady build is enabled for the user
+
+- **Data_OperationId** -The operation ID
+
+- **Data_OperationName** -The operation name
+
+- **Data_VisibilityErrorCode** -This field captures error codes related to visibility issues within the application
+
+- **Device_NetworkCost** -Network cost of the user (Low, Med, High)
+
+- **Device_NetworkCountry** -The device country (based on network)
+
+- **Device_OsBuild** -The device OS build
+
+- **Device_OsVersion** -The OS version installed in the user's device 
+
+- **Event_Flags** -The event flags
+
+- **Event_IsExportable** -Boolean denoting whether the event is exportable
+
+- **Event_Name** -The table name
+
+- **Event_ReceivedTime** -Time at which event telemetry was recorded
+
+- **Event_SampleRate** -The Sampling rate of the event
+
+- **Event_SchemaVersion** -The event schema version
+
+- **Event_Sequence** -The event sequence
+
+- **Event_Source** -The table source 
+
+- **Event_Time** -Time at which event occurred
+
+- **Release_Audience** -The audience ring 
+
+- **Release_AudienceGroup** -The audience ring 
+
+- **Release_Channel** -The release channel 
+
+- **Release_Fork** -The monthly release fork 
+
+- **Session_EcsETag** -The sessions ECS tag
+
+- **Session_Flags** -The session flags
+
+- **Session_HostAppName** -The host app name
+
+- **Session_HostSessionId** -The host session ID
+
+- **Session_Id** -The user session ID
+
+- **Session_MeasuresEnabled** -Captures if the session measures are enabled
+
+- **Session_SamplingClientIdValue** -The sampling client ID value
+
+- **Session_SubAppName** -The Sub-process name
+
+- **Session_VirtualizationType** -The session virtualization type
+
+- **User_ActiveUserTenantId** -A unique identifier of the active user's tenant
+
+- **User_PrimaryIdentityHash** -A unique identifier of User identity
+
+- **User_PrimaryIdentitySpace** -The type of user identity 
+
+- **User_TelemetryRegion** -The region in which user telemetry is collected and stored
+
+- **User_TenantGroup** -The category of tenant user belongs to 
+
+- **User_TenantId** -A unique identifier of the user tenant
+
+### Office.OfficeMobile.Copilot.CopilotMSAUpsell
+
+This event is triggered when the user enters consumer upsell flow in Copilot. This event tells us whether the user successfully bought MSA subscription.
+
+The following fields are collected:
+
+- **Activity_CV** – The client version associated with this activity
+
+- **Activity_Result_Type** – The result type code indicating success/failure status
+
+- **App_Branch** – The app branch detail
+
+- **App_InstallType** – The app install type
+
+- **App_Name** – The app name
+
+- **App_Platform** – The app platform name 
+
+- **App_Version** – The version number of the app
+
+- **Client_Id** – The client ID
+
+- **Data_DetachedDuration** – The time the operation ran detached from foreground
+
+- **Data_EventCode** – Numeric code representing this event type
+
+- **Data_EventTime** – The timestamp when this event occurred
+
+- **Data_OperationId** – A unique identifier for this upsell operation instance
+
+- **Data_OperationName** – The name of the upsell operation 
+
+- **Data_Result** – Indicates the outcome of the upsell operation (for example, success/failure code)
+
+- **Data_StartwatchDuration** – (if present) The total elapsed time since operation start
+
+- **Data_StopwatchDuration** – The measured duration of the upsell operation
+
+- **Device_Model** – The device model 
+
+- **Device_NetworkCost** – The network cost tier
+
+- **Device_NetworkCountry** – The network country code
+
+- **Device_OsBuild** – The device build number
+
+- **Device_OsVersion** – The device OS version
+
+- **Event_Name** – The event name
+
+- **Event_Source** – The event source
+
+- **Event_Time** – The event timestamp
+
+- **Event_ReceivedTime** – When the event was received by backend
+
+- **Event_SampleRate** – The sampling rate for this event
+
+- **Event_SchemaVersion** – The schema version of the event
+
+- **Event_Sequence** – The sequence number in the event stream
+
+- **Event_Flags** – Flags associated with the event
+
+- **Release_Audience** – The app release audience
+
+- **Release_AudienceGroup** – The release audience group
+
+- **Release_Channel** – The release channel
+
+- **Release_Fork** – The release fork name
+
+- **Session_EcsETag** – The ECS tag for telemetry session
+
+- **Session_Flags** – Flags associated with the session
+
+- **Session_HostSessionId** – The host session ID
+
+- **Session_HostAppName** – The host app name
+
+- **Session_Id** – The session ID
+
+- **Session_MeasuresEnabled** – Whether session measures are enabled
+
+- **Session_SamplingClientIdValue** – Sampling client ID value for session
+
+- **Session_SubAppName** – The sub-app name if any
+
+- **Session_VirtualizationType** – Virtualization context for the session
+
+- **User_PrimaryIdentityHash** – A unique hashed identifier for the user
+
+- **User_PrimaryIdentitySpace** – The identity namespace for the user
+
+- **User_TelemetryRegion** – The region where telemetry is stored
+
+- **User_TenantId** – The user’s tenant ID
+
+- **User_TenantGroup** – The tenant grouping for the user
+
+- **zC_Activity_Result** – The high-level result classification for the activity
+
+### Office.OfficeMobile.Copilot.SubscriptionFlowEvent
+
+This event is triggered when the user starts the subscription flow. This event tells us whether the user successfully purchased a subscription or not.
+
+The following fields are collected:
+
+- **App_Branch** – The app branch detail
+
+- **App_InstallType** – The app install type
+
+- **App_Name** – The app name
+
+- **App_Platform** – The app platform name 
+
+- **App_Version** – The version number of the app
+
+- **Client_Id** – The client ID
+
+- **Consent_AddInContentSourceLocation** – Feature gate related events to track their availability 
+
+- **Consent_AddInContentState** – Indicates whether add-in content collection is allowed 
+
+- **Consent_ControllerConnectedServicesSourceLocation** – Feature gate related events to track their availability 
+
+- **Consent_ControllerConnectedServicesState** – Indicates whether the user has access to optional connected experiences 
+
+- **Consent_ControllerConnectedServicesConsentTime** – This field captures the time when consent was given 
+
+- **Consent_DiagnosticConsentLevelSourceLocation** – Feature gate related events to track their availability 
+
+- **Consent_DiagnosticConsentLevel** – Indicates what level of diagnostic data consent the user has given (Required, optional) 
+
+- **Consent_DiagnosticDataConsentTime** – Indicates when the user provided the consent for diagnostic data 
+
+- **Consent_DownloadContentSourceLocation** – Feature gate related events to track their availability 
+
+- **Consent_DownloadContentState** – Indicates whether the user has chosen to enable or disable connected experiences that download online content 
+
+- **Consent_DownloadContentConsentTime** – This field captures the time when consent was given 
+
+- **Consent_ServiceConnectionStateSourceLocation** – Feature gate related events to track their availability 
+
+- **Consent_ServiceConnectionState** – Indicates whether the user has chosen to use or not use all connected experiences 
+
+- **Consent_UserCategoryValue** – Records the user's consent preferences for different types of data usage, ensuring compliance and transparency 
+
+- **Consent_UserContentDependentSourceLocation** – Feature gate related events to track their availability 
+
+- **Consent_UserContentDependentState** – Indicates whether the user has chosen to enable or disable connected experiences that analyze content 
+
+- **Consent_UserContentDependentConsentTime** – This field captures the time when consent was given
+
+- **Data_EventCode** – Numeric code representing this event type
+
+- **Data_EventTime** – The timestamp when this event occurred
+
+- **Data_OperationId** – A unique identifier for this upsell operation instance
+
+- **Data_OperationName** – The name of the upsell operation 
+
+- **Data_Result** – Indicates the outcome of the upsell operation (for example, success/failure code)
+
+- **Device_NetworkCost** – The network cost tier
+
+- **Device_NetworkCountry** – The network country code
+
+- **Device_OsBuild** – The device build number
+
+- **Device_OsVersion** – The device OS version
+
+- **Event_Name** – The event name
+
+- **Event_Source** – The event source
+
+- **Event_Time** – The event timestamp
+
+- **Event_ReceivedTime** – When the event was received by backend
+
+- **Event_SampleRate** – The sampling rate for this event
+
+- **Event_SchemaVersion** – The schema version of the event
+
+- **Event_Sequence** – The sequence number in the event stream
+
+- **Event_Flags** – Flags associated with the event
+
+- **Release_Audience** – The app release audience
+
+- **Release_AudienceGroup** – The release audience group
+
+- **Release_Channel** – The release channel
+
+- **Release_Fork** – The release fork name
+
+- **Session_EcsETag** – The session ECS tag
+
+- **Session_Flags** – The session flags 
+
+- **Session_HostAppName** – The host app name
+
+- **Session_HostSessionId** – The host session ID
+
+- **Session_Id** – The session ID
+
+- **Session_MeasuresEnabled** – Captures if the session measures are enabled 
+
+- **Session_SamplingClientIdValue** – Captures the sampling client ID value 
+
+- **Session_SubAppName** – The app subname 
+
+- **Session_VirtualizationType** – The session virtualization type 
+
+- **User_PrimaryIdentityHash** – A unique hashed identifier for the user
+
+- **User_PrimaryIdentitySpace** – The identity namespace for the user
+
+- **User_TelemetryRegion** – The region where telemetry is stored
+
+- **User_TenantId** – The user’s tenant ID
+
+- **User_TenantGroup** – The tenant grouping for the user
+ 
 
 ### Office.Omex.Checkout.Analytics.CheckoutStageChangeActivity
 
@@ -6897,6 +7273,23 @@ This event logs the status upon Intune enrollment. This scenario is specific to 
 The following fields are collected:
  
 - **EnrollmentResult** - The result of Intune enrollment
+
+### redeem.pending.purchase
+
+This event helps track the Google Play purchase acknowledgment success rate. When users make purchases in Google Play app, Outlook Android app will need to redeem the purchases and acknowledge them, and this event will be collected throughout the whole redemption flow.
+
+The following fields are collected:
+
+- **entry_point** - the product type of the Google Play purchase.
+
+- **event_type** - the redeem flow action type of this event.
+
+- **order_id** - the order id of the Google Play purchase.
+
+- **redeem_flow_action_type** - redeem flow action types.
+
+- **result_code** - the redemption result of the Google Play purchase.
+
 
 ### SKU.PRODUCT.PRICE.NULL.EVENT
 
@@ -19240,6 +19633,107 @@ This event is triggered when users are presented with the share family subscript
 The following fields are collected:
  
 - **entryPoint** - Indicates the entryPoint through which ShareSubscriptionView is displayed to the user.
+
+
+### Office.OfficeMobile.Copilot.AIFeaturesEnabled
+
+This event gets triggered on app launch to capture the Copilot features that are enabled in the app. The event is used to determine which Copilot powered features are being served to the user across the app.
+
+The following fields are collected:
+
+- **Data_Copilot_ConversationId** - A unique GUID that is created when a Copilot conversation is initiated.
+
+- **Data_Copilot_EntryPoint** - The entry point field indicates the origin of the copilot feature.
+
+- **Data_Copilot_FeatureActionType** - The type of action being performed (IsEnabled).
+
+- **Data_Copilot_FeatureName** - A string uniquely identifying the feature within the app.
+
+- **Data_Copilot_InteractionId** - A unique identifier that the client apps send as part of every Copilot service call.
+
+- **Data_Copilot_IsUserInitiated** - Represents whether the action was initiated by the users (true or false).
+
+- **Data_Copilot_SubFeatureName** - A string uniquely identifying the sub feature within the app.
+
+### Office.OfficeMobile.Copilot.AIFeaturesKept
+
+This event gets triggered when user accepts the response generated for Copilot features that are enabled in the app. The event is used to determine how frequently users are accepting the responses generated for Copilot powered features are being served across the app.
+
+The following fields are collected:
+
+- **Data_Copilot_ConversationId** - A unique GUID that is created when a Copilot conversation is initiated.
+
+- **Data_Copilot_EntryPoint** - The entry point field indicates the origin of the copilot feature.
+
+- **Data_Copilot_FeatureActionType** - The type of action being performed (IsKept).
+
+- **Data_Copilot_FeatureName** - A string uniquely identifying the feature within the app.
+
+- **Data_Copilot_InteractionId** - A unique identifier that the client apps send as part of every Copilot service call.
+
+- **Data_Copilot_IsUserInitiated** - Represents whether the action was initiated by the users (true or false).
+
+- **Data_Copilot_SubFeatureName** - A string uniquely identifying the sub feature within the app.
+
+### Office.OfficeMobile.Copilot.AIFeaturesSeen
+
+This event gets triggered when user sees the Copilot features that are enabled in the app. The event is used to determine which Copilot powered features are being shown to the user across the app.
+
+The following fields are collected:
+
+- **Data_Copilot_ConversationId** - A unique GUID that is created when a Copilot conversation is initiated.
+
+- **Data_Copilot_EntryPoint** - The entry point field indicates the origin of the copilot feature.
+
+- **Data_Copilot_FeatureActionType** - The type of action being performed (IsSeen).
+
+- **Data_Copilot_FeatureName** - A string uniquely identifying the feature within the app.
+
+- **Data_Copilot_InteractionId** - A unique identifier that the client apps send as part of every Copilot service call.
+
+- **Data_Copilot_IsUserInitiated** - Represents whether the action was initiated by the users (true or false).
+
+- **Data_Copilot_SubFeatureName** - A string uniquely identifying the sub feature within the app.
+
+### Office.OfficeMobile.Copilot.AIFeaturesThumbsUp
+
+This event gets triggered when user likes or dislikes the response generated for Copilot features that are enabled in the app. The event is used to determine how users are reacting to the responses generated for Copilot powered features across the app.
+
+The following fields are collected:
+
+- **Data_Copilot_ConversationId** - A unique GUID that is created when a Copilot conversation is initiated.
+
+- **Data_Copilot_EntryPoint** - The entry point field indicates the origin of the copilot feature.
+
+- **Data_Copilot_FeatureName** - A string uniquely identifying the feature within the app.
+
+- **Data_Copilot_InteractionId** - A unique identifier that the client apps send as part of every Copilot service call.
+
+- **Data_Copilot_IsThumbsUp** - Represents whether user liked or disliked the feature response (true or false).
+
+- **Data_Copilot_IsUserInitiated** - Represents whether the action was initiated by the users (true or false).
+
+- **Data_Copilot_SubFeatureName** - A string uniquely identifying the sub feature within the app.
+
+### Office.OfficeMobile.Copilot.AIFeaturesTried
+
+This event gets triggered when user interacts with the Copilot features that are enabled in the app. The event is used to determine which Copilot powered features are being tried by the user across the app.
+
+The following fields are collected:
+
+- **Data_Copilot_ConversationId** - A unique GUID that is created when a Copilot conversation is initiated.
+
+- **Data_Copilot_EntryPoint** - The entry point field indicates the origin of the copilot feature.
+
+- **Data_Copilot_FeatureActionType** - The type of action being performed (IsTried).
+
+- **Data_Copilot_FeatureName** - A string uniquely identifying the feature within the app.
+
+- **Data_Copilot_InteractionId** - A unique identifier that the client apps send as part of every Copilot service call.
+
+- **Data_Copilot_IsUserInitiated** - Represents whether the action was initiated by the users (true or false).
+
+- **Data_Copilot_SubFeatureName** - A string uniquely identifying the sub feature within the app.
 
 
 ### Office.Omex.Checkout.LoggingEvent
