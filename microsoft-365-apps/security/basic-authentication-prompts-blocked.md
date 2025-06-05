@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.collection: Tier1
 ms.localizationpriority: medium
 description: "Provides guidance for admins about how Office blocks Basic authentication sign-in prompts."
-ms.date: 05/24/2024
+ms.date: 05/30/2025
 ---
 
 # Basic authentication sign-in prompts are blocked by default in Microsoft 365 Apps
@@ -59,6 +59,8 @@ The following table shows the version, for each update channel, in which the war
 | Monthly Enterprise Channel               | Version 2304                             | *Version 2311* <br/> *(January 9, 2024)* |
 | Semi-Annual Enterprise Channel (Preview) | Version 2308                             | *Version 2402* <br/> *(March 12, 2024)*  |
 | Semi-Annual Enterprise Channel           | *Version 2308* <br/> *(January 9, 2024)* | *Version 2402* <br/> *(July 9, 2024)*    |
+
+[!INCLUDE [saec-preview-deprecation-notice](../includes/saec-preview-deprecation-notice.md)]
 
 > [!NOTE]
 > - This change will also affect retail versions of Office 2021, Office 2019, and Office 2016. They're on the same schedule as Current Channel.

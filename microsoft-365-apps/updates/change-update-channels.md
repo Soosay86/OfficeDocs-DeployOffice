@@ -10,12 +10,15 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "This article gives step-by-step instructions for changing the update channel for Microsoft 365 Apps."
-ms.date: 05/27/2025
+
+ms.date: 05/30/2025
 ---
 
 # Change the Microsoft 365 Apps update channel for devices in your organization
 
 There are multiple options to switch the selected update channel for an existing Microsoft 365 Apps installation. For instance, moving a device from Semi-Annual Enterprise Channel to Monthly Enterprise Channel using group policy settings. This article covers several options to perform a channel change on a device. All use the update engine of the Microsoft 365 Apps, so the channel change happens through an update and not an uninstallation and reinstallation of the apps. The following technologies are covered:
+
+[!INCLUDE [july-2025-update-channel-changes](../includes/july-2025-update-channel-changes.md)]
 
 - [Group Policies](#change-the-update-channel-with-group-policy)
 - [Office Deployment Tool](#change-the-update-channel-with-the-office-deployment-tool-odt)

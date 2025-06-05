@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.collection: Tier1
 ms.localizationpriority: medium
 description: "Provides guidance for admins about how Office blocks macros in files from the internet."
-ms.date: 09/20/2024
+ms.date: 05/30/2025
 ---
 
 # Macros from the internet are blocked by default in Office
@@ -72,6 +72,8 @@ The following table shows when this change became available in each update chann
 |Monthly Enterprise Channel|Version 2208|October 11, 2022|
 |Semi-Annual Enterprise Channel (Preview)|Version 2208|October 11, 2022|
 |Semi-Annual Enterprise Channel |Version 2208|January 10, 2023|
+
+[!INCLUDE [saec-preview-deprecation-notice](../includes/saec-preview-deprecation-notice.md)]
 
 The following table shows when this change became available in each update channel for Publisher.
 

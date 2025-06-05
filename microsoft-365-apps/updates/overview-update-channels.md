@@ -4,7 +4,7 @@ ms.author: nwhite
 author: nicholasswhite
 manager: dougeby
 audience: ITPro
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: o365-proplus-itpro
 ms.collection: 
  - tier1
@@ -12,17 +12,20 @@ ms.collection:
 ms.localizationpriority: medium
 recommendations: false
 description: "Provides IT Pros with an overview of the update channels for Microsoft 365 Apps, including Current Channel, Monthly Enterprise Channel, and Semi-Annual Enterprise Channel"
-ms.date: 05/19/2025
+ms.date: 05/30/2025
 ---
 
 # Overview of update channels for Microsoft 365 Apps
 
+> [!IMPORTANT]
+> **Update Channel Changes Coming July 2025**: Microsoft is making significant changes to update channels beginning July 2025:
+> - **Monthly Enterprise Channel**: Rollback support extended to 2 months (from 1 month)
+> - **Semi-Annual Enterprise Channel (Preview)**: Being deprecated - migrate devices immediately
+> - **Semi-Annual Enterprise Channel**: Support duration reduced to 8 months (from 14 months), shifting to focus on unattended devices
+
 One of the benefits of Microsoft 365 Apps is that Microsoft provides new (and updated) features for apps such as Excel and Word regularly. You can control how often the users in your organization get these new features by specifying the update channel.
 
 In addition to new features, update channels provide, as needed, security and non-security updates regularly, every month. Non-security updates provide fixes for known issues and offer stability or performance improvements for Microsoft 365 Apps.
-
-> [!NOTE]
-> If you prefer watching over reading, check out the [Update Channels Explained video](https://youtu.be/eNn4PDkmo7s). It covers all available update channels, plus  some tips & tricks for admins.
 
 There are three primary update channels:
 
@@ -41,12 +44,13 @@ The following table provides a comparison of Current Channel, Monthly Enterprise
 
 | Category | Current Channel | Monthly Enterprise Channel | Semi-Annual Enterprise Channel |
 |---------|---------|---------|---------|
-| *Recommended use* | Provide your users with new Microsoft 365 Apps features as soon as they're ready, but on no set schedule. | Provide your users with new Microsoft 365 Apps features only once a month and on a predictable schedule. | For non-human devices and those running specialized or business-critical workloads that require extensive testing before new Microsoft 365 Apps features are implemented. Suitable for select devices performing automated tasks where end-users aren't present, ensuring compliance with regulatory and organizational standards. |
+| *Recommended use* | Provide your users with new Microsoft 365 Apps features as soon as they're ready, but on no set schedule. | Provide your users with new Microsoft 365 Apps features only once a month and on a predictable schedule. | For non-interactive devices and those running specialized or business-critical workloads that require extensive testing before new Microsoft 365 Apps features are implemented. Suitable for select devices performing automated tasks where end-users aren't present, ensuring compliance with regulatory and organizational standards. |
 | *Release frequency*<sup>1</sup> | At least once a month (likely more often), but on no set schedule | Once a month, on the second Tuesday of the month | Once a month, on the second Tuesday of the month |
 | *Feature updates*<sup>2</sup> | As soon as they’re ready (once a month), but on no set schedule | Once a month, on the second Tuesday of the month | Twice a year (in January and July), on the second Tuesday of the month |
 | *Security updates*<sup>3</sup><br></br>*(if needed)* | Once a month, on the second Tuesday of the month | Once a month, on the second Tuesday of the month | Once a month, on the second Tuesday of the month |
 | *Non-security updates*<sup>2</sup><br></br>*(if needed)* | Usually at least once a month (possibly more often), but no set schedule | Once a month, on the second Tuesday of the month | Once a month, on the second Tuesday of the month |
-| *Support duration for a given version*<sup>4</sup> | Until the next version is released with new features, which is usually about one month | Two months | Fourteen months |
+| *Support duration for a given version*<sup>4</sup> | Until the next version is released with new features, which is usually about one month | Two months | Eight months (Beginning July 2025; previously fourteen months) |
+| *Rollback support*<sup>5</sup> | Not applicable | Two months (Beginning July 2025; previously one month) | Two months (Beginning July 2025) |
 
 
 <sup>1</sup> For a list of release dates for these update channels, including version and build numbers, see [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date). 
@@ -159,29 +163,28 @@ Updates deployed to Monthly Enterprise Channel in this manner are documented lik
 ### Support duration for Monthly Enterprise Channel
 Any given version of Monthly Enterprise Channel is supported for two months. For example, the version of Monthly Enterprise Channel that is released on the second Tuesday of August is supported until the second Tuesday of October. 
 
+Beginning July 2025, Monthly Enterprise Channel will support up to three months of rollback. This extended rollback window provides greater flexibility to revert to a known build with the latest security fixes in case of issues.
+
 At any given time, there are always two versions of Monthly Enterprise Channel that are supported. To see which versions of Monthly Enterprise Channel are currently supported, refer to the table at the top of [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
 
 ## Semi-Annual Enterprise Channel overview
 
-Choose Semi-Annual Enterprise Channel only for non-human devices and those running specialized or business-critical workloads that require extensive testing before new Microsoft 365 Apps features are implemented. This channel is suitable for select devices performing automated tasks where end-users aren't present, ensuring compliance with regulatory and organizational standards.
+Choose Semi-Annual Enterprise Channel only for non-interactive devices and those running specialized or business-critical workloads that require extensive testing before new Microsoft 365 Apps features are implemented. This channel is suitable for select devices performing automated tasks where end-users aren't present, ensuring compliance with regulatory and organizational standards.
 
 Updates to Semi-Annual Enterprise Channel are released on the second Tuesday of the month. In January and July, the monthly update can include feature, security, and non-security updates. In other months, the update can include security and non-security updates.
 
-### Feature updates for Semi-Annual Enterprise Channel
-New, or updated, features are released in Semi-Annual Enterprise Channel twice a year, on the second Tuesday in January and July. New features aren’t added to Semi-Annual Enterprise Channel at any other time. Separate downloads of just feature updates for Semi-Annual Enterprise Channel aren’t available.
+> [!IMPORTANT]
+> Beginning July 2025, Semi-Annual Enterprise Channel is shifting to focus primarily on unattended devices. Microsoft recommends moving interactive devices to Monthly Enterprise Channel or Current Channel. Additionally, Semi-Annual Enterprise Channel feature releases will be supported for 6 months (reduced from 14 months) with new features each January and July, and monthly security updates. Rollback to prior feature release with security updates will be available for 2 months.
 
-These new features are available to all users in Monthly Enterprise Channel. Features in Monthly Enterprise Channel must meet specific release criteria before they're included in a feature update for Semi-Annual Enterprise Channel. Because of this criteria, some features that are in Monthly Enterprise Channel aren’t included right away in the next available feature update for Semi-Annual Enterprise Channel.
+### Feature updates for Semi-Annual Enterprise Channel
+New, or updated, features are released in Semi-Annual Enterprise Channel twice a year, on the second Tuesday in January and July. New features aren't added to Semi-Annual Enterprise Channel at any other time. Separate downloads of just feature updates for Semi-Annual Enterprise Channel aren't available.
+
+These new features are available to all users in Monthly Enterprise Channel. Features in Monthly Enterprise Channel must meet specific release criteria before they're included in a feature update for Semi-Annual Enterprise Channel. Because of this criteria, some features that are in Monthly Enterprise Channel aren't included right away in the next available feature update for Semi-Annual Enterprise Channel.
 
 For a list of feature updates included in a given release of Semi-Annual Enterprise Channel, see [Release notes for Microsoft 365 Apps releases](/officeupdates/release-notes-microsoft365-apps#release-notes-for-microsoft-365-apps-releases).
 
 #### Preview upcoming new features of Semi-Annual Enterprise Channel
-To become familiar with the new features coming in the next feature release of Semi-Annual Enterprise Channel, we recommend that you use Semi-Annual Enterprise Channel (Preview).
-
-Semi-Annual Enterprise Channel (Preview) is released with new features twice a year, on the second Tuesday in March and September. This schedule provides you with four months before those same new features are released in Semi-Annual Enterprise Channel. Semi-Annual Enterprise Channel (Preview) also receives, if needed, security and non-security updates every month, on the second Tuesday of the month.
-
-You should deploy Semi-Annual Enterprise Channel (Preview) to a small, representative sample of users in your organization. This approach can help you identify any possible issues for your organization before the new features are released more broadly to your users on Semi-Annual Enterprise Channel.
-
-We recommend using Semi-Annual Enterprise Channel (Preview). This approach allows you to identify and report any potential issues. We can then address these concerns in the four months before the version's release on Semi-Annual Enterprise Channel. Once a version is released to Semi-Annual Enterprise Channel, the approval process for non-security updates becomes even more rigorous.
+[!INCLUDE [saec-preview-deprecation-notice](../includes/saec-preview-deprecation-notice.md)]
 
 ### Security updates for Semi-Annual Enterprise Channel
 If needed, security updates for Semi-Annual Enterprise Channel are released on the second Tuesday of the month. 
@@ -206,9 +209,12 @@ Separate downloads of just non-security updates for Semi-Annual Enterprise Chann
 For a list of non-security updates included in a given release of Semi-Annual Enterprise Channel, see [Release notes for Microsoft 365 Apps releases](/officeupdates/release-notes-microsoft365-apps#release-notes-for-microsoft-365-apps-releases). The updates are listed as "Resolved issues."
 
 ### Support duration for Semi-Annual Enterprise Channel
-Any given version of Semi-Annual Enterprise Channel is supported for 14 months. The new Semi-Annual Enterprise Channel version released in January receives support until March of the next year. Similarly, the version released in July is supported until September of the following year.
+Any given version of Semi-Annual Enterprise Channel is supported for 14 months. Semi-Annual Enterprise Channel versions will continue to release in January and July using the most recent available fork. There is no longer a commitment to a specific fork ahead of time.
 
-At any given time, there are always two versions of Semi-Annual Enterprise Channel that are supported. To see which versions of Semi-Annual Enterprise Channel are currently supported, refer to the table at the top of [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
+> [!IMPORTANT]
+> Beginning July 2025, feature releases for Semi-Annual Enterprise Channel will be supported for 6 months. A 2-month rollback period will be available, allowing devices to revert to the previous feature release with security updates, resulting in an effective 8-month support window. No more than two forks will be supported simultaneously.
+
+At any given time, there are always two versions of Semi-Annual Enterprise Channel that are supported.To see which versions of Semi-Annual Enterprise Channel are currently supported, refer to the table at the top of [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
 
 Semi-Annual Enterprise Channel offers extended support to give organizations more time and flexibility. The extended support is especially helpful for thoroughly testing devices before implementing new Microsoft 365 Apps features. For example, in cases where organizations have to comply with specific regulatory, governmental, or other organizational requirements. The longer support duration gives these organizations the ability to deploy new features only once a year if needed.
 
@@ -262,7 +268,8 @@ When a new release is made available on the Office CDN, the availability is grad
 
 ### Support duration for other update channels
 - Each version of Current Channel (Preview) remains supported only until the release of the next version, which typically occurs every month. For example, Version 2004 is supported until Version 2005 is released.
-- Any given version of Semi-Annual Enterprise Channel (Preview) is supported for only six months. This support cadence coincides with how often Semi-Annual Enterprise Channel (Preview) is updated with new features. For example, Semi-Annual Enterprise Channel (Preview) releases a new version with features in March. This version remains supported until September when the next set of features is released. The September release is supported until the following March. To see what version of Semi-Annual Enterprise Channel (Preview) is currently supported, refer to the table at the top of [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date). 
+- Any given version of Semi-Annual Enterprise Channel (Preview) is supported for only six months. This support cadence coincides with how often Semi-Annual Enterprise Channel (Preview) is updated with new features. For example, Semi-Annual Enterprise Channel (Preview) releases a new version with features in March. This version remains supported until September when the next set of features is released. The September release is supported until the following March. To see what version of Semi-Annual Enterprise Channel (Preview) is currently supported, refer to the table at the top of [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
+  [!INCLUDE [saec-preview-deprecation-notice](../includes/saec-preview-deprecation-notice.md)]
 
 ### Microsoft 365 Insider program
 - The Microsoft 365 Insider program gives you early access to Microsoft 365 Apps features through these update channels: Beta Channel and Current Channel (Preview). For more information, see the [Microsoft 365 Insider Program for Business](../insider/index.yml).
