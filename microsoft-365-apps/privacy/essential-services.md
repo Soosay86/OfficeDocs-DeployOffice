@@ -6897,6 +6897,175 @@ The following fields are collected:
 
 - **zC_Activity_Result** – The high-level result classification for the activity
 
+### Office.OfficeMobile.Copilot.CWCEligibilityFetch
+
+This event captures users eligibility to Copilot features and enables the app to present the right Copilot features to the user. This event verifies user license and enables presenting the right Copilot features based on their license type.
+
+The following fields are collected:
+
+- **Activity_AggMode** -The field captures the aggregation mode of the activity
+
+- **Activity_Count** - The field captures the count of similar telemetry events happening at nearly the same time within a single session
+
+- **Activity_CV** - The field captures the correlation vector, which is used to track the sequence of related events
+
+- **Activity_Duration** - The field captures the duration of the activity in milliseconds
+
+- **Activity_Result_Code** - The field captures the result code of the activity
+
+- **Activity_Result_Tag** - The field captures additional tags related to the result of the activity
+
+- **Activity_Result_Type** - The field captures the type of result for the activity
+
+- **Activity_Success** - Boolean denoting whether the activity was a success
+
+- **App_Branch** - The app branch
+
+- **App_InstallType** - A unique identifier of the app installation type
+
+- **App_Name** - The app name
+
+- **App_Platform** - The OS type 
+
+- **App_Version** - The app version
+
+- **Client_Id** - A unique identifier of the user device
+
+- **Consent_AddInContentSourceLocation** - Indicates how the user made the choice to allow or disallow collection of add-in content
+
+- **Consent_AddInContentState** - Indicates whether add-in content collection is allowed
+
+- **Consent_ControllerConnectedServicesConsentTime** - Indicates when the user chose the status of optional connected experiences.
+
+- **Consent_ControllerConnectedServicesSourceLocation** - Indicates how the user's choice for optional connected experiences was made
+
+- **Consent_ControllerConnectedServicesState** - Indicates whether the user has access to optional connected experiences
+
+- **Consent_DiagnosticConsentLevel** - Indicates what level of diagnostic data consent the user has given
+
+- **Consent_DiagnosticConsentLevelSourceLocation** - Indicates how the user had provided the consent for diagnostic data
+
+- **Consent_DiagnosticDataConsentTime** - Indicates when the user provided the consent for diagnostic data.
+
+- **Consent_DownloadContentConsentTime** - Indicates when the user made the choice to enable or disable connected experiences that download online content.
+
+- **Consent_DownloadContentSourceLocation** - Indicates how the user made the choice to enable or disable connected experiences that that download online content
+
+- **Consent_DownloadContentState** - Indicates whether the user has chosen to enable or disable connected experiences that download online content
+
+- **Consent_ServiceConnectionState** - Indicates whether the user has chosen to use or not use all connected experiences
+
+- **Consent_ServiceConnectionStateSourceLocation** - Indicates how the user provided the choice whether to use all connected experiences
+
+- **Consent_UserCategoryValue** - The user consent category value
+
+- **Consent_UserContentDependentConsentTime** - Indicates when the user chose to enable or disable connected experiences that analyze content.
+
+- **Consent_UserContentDependentSourceLocation** - Indicates how the user's choice to enable or disable was made for connected experiences that analyze content
+
+- **Consent_UserContentDependentState** - Indicates whether the user has chosen to enable or disable connected experiences that analyze content
+
+- **Data_CorrelationId** - The event correlation ID
+
+- **Data_DetachedDuration** - This field is used to measure and analyze the performance and sequence of events during the app's operation.
+
+- **Data_EligibilityFailureCode** - The eligibility failure code
+
+- **Data_EligibilityFetchStatus** - The eligibility status
+
+- **Data_EventTime** - The event time
+
+- **Data_HttpStatusCode** - The Http status code
+
+- **Data_IsMsaUser** - Captures if its an MSA user
+
+- **Data_IsMytikasAppIdUsed** - Captures if a certain AppID is used
+
+- **Data_IsOlympusAppIdEnabled** - Captures if Olympus AppID is enabled
+
+- **Data_IsOlympusAppIdUsed** - Captured if Olympus AppID is used
+
+- **Data_IsRocksteadyEnabled** - Captures if certain features are enabled as part of feature gate
+
+- **Data_OperationId** - Operation ID
+
+- **Data_OperationName** - Operation Name
+
+- **Data_StopwatchDuration** - Logs timestamp for a specific stage of the feature to evaluate its performance
+
+- **Device_Model** - The device model
+
+- **Device_NetworkCost** - Network cost
+
+- **Device_NetworkCountry** - Network country
+
+- **Device_OsBuild** - The device OS build
+
+- **Device_OsVersion** - The device OS version
+
+- **Event_Contract** - The event contract
+
+- **Event_CV** - The field captures information related to the context of an event within the application
+
+- **Event_Flags** - The event flags
+
+- **Event_IsExportable** - Captures if the event is exportable
+
+- **Event_Name** - The event name
+
+- **Event_ReceivedTime** - The event received time
+
+- **Event_SampleRate** - The event sample rate
+
+- **Event_SchemaVersion** - The event schema version
+
+- **Event_Sequence** - The event sequence
+
+- **Event_Source** - The event source
+
+- **Event_Time** - The event time
+
+- **Release_Audience** - The release audience 
+
+- **Release_AudienceGroup** - The release audience group
+
+- **Release_Channel** - The release channel
+
+- **Release_Fork** - App release fork
+
+- **Session_EcsETag** - The session ECS tab
+
+- **Session_Flags** - The session flags
+
+- **Session_HostAppName** - The session Host app name
+
+- **Session_HostSessionId** - The session Host app ID
+
+- **Session_Id** - The session ID
+
+- **Session_MeasuresEnabled** - Captures if Session measures are enabled
+
+- **Session_SamplingClientIdValue** - The sampling client ID value
+
+- **Session_SubAppName** - The sub app name
+
+- **Session_VirtualizationType** - The session virtualization type
+
+- **User_ActiveUserTenantId** - A unique identifier of the active user's tenant
+
+- **User_PrimaryIdentityHash** - A unique identifier of User identity
+
+- **User_PrimaryIdentitySpace** - The type of user identity 
+
+- **User_TelemetryRegion** - The region in which user telemetry is collected and stored
+
+- **User_TenantGroup** - The category of tenant user belongs to 
+
+- **User_TenantId** - A unique identifier of the user tenant
+
+- **zC_Activity_Result** - This field captures the result of an activity
+
+
 ### Office.OfficeMobile.Copilot.SubscriptionFlowEvent
 
 This event is triggered when the user starts the subscription flow. This event tells us whether the user successfully purchased a subscription or not.

@@ -17255,7 +17255,6 @@ The following fields are collected:
 
 This event captures tab render when user clicks on the tab or from feature entry point on the hamburger. This event is used to evaluate the iOS app service render performance and reliability of all the features that are enabled from Hamburger actions like Chat, Create, Home, Chat history, agents, etc.
 
-
 The following fields are collected:
 
 - **Activity_AggMode** - The field captures the aggregation mode of the activity
@@ -17422,6 +17421,226 @@ The following fields are collected:
 
 - **zC_Activity_Result** - This field captures the result of an activity
 
+
+Office.OfficeMobile.AppShell.TabRender
+
+This event captures tab render when user clicks on the tab or from feature entry point on the hamburger. This event is used to evaluate the iOS app service render performance and reliability of each different tabs as they render on user click or intentional action.
+
+The following fields are collected:
+
+- **Activity_AggMode** - The field captures the aggregation mode of the activity
+
+- **Activity_Count** - The field captures the count of similar telemetry events happening at nearly the same time within a single session
+
+- **Activity_CV** - The field captures the correlation vector, which is used to track the sequence of related events
+
+- **Activity_Duration** - The field captures the correlation vector, which is used to track the sequence of related events
+
+- **Activity_Result_Code** - The field captures the duration of the activity in milliseconds
+
+- **Activity_Result_Tag** - The field captures the result code of the activity
+
+- **Activity_Result_Type** - The field captures the type of result for the activity
+
+- **Activity_Success** - Boolean denoting whether the activity was a success
+
+- **App_Branch** - The app branch
+
+- **App_InstallType** - The field captures additional tags related to the result of the activity
+
+- **App_Name** - The app name
+
+- **App_Platform** - The OS type (Android/iOS)
+
+- **App_Version** - The app version
+
+- **Client_Id** - A unique identifier of the user device
+
+- **Consent_AddInContentSourceLocation** - Indicates how the user made the choice to allow or disallow collection of add-in content
+
+- **Consent_AddInContentState** - Indicates whether add-in content collection is allowed
+
+- **Consent_ControllerConnectedServicesConsentTime** - Indicates when the user chose the status of optional connected experiences.
+
+- **Consent_ControllerConnectedServicesSourceLocation** - Indicates how the user's choice for optional connected experiences was made
+
+- **Consent_ControllerConnectedServicesState** - Indicates whether the user has access to optional connected experiences
+
+- **Consent_DiagnosticConsentLevel** - Indicates what level of diagnostic data consent the user has given
+
+- **Consent_DiagnosticConsentLevelSourceLocation** - Indicates how the user had provided the consent for diagnostic data
+
+- **Consent_DiagnosticDataConsentTime** - Indicates when the user provided the consent for diagnostic data.
+
+- **Consent_DownloadContentConsentTime** - Indicates when the user made the choice to enable or disable connected experiences that download online content.
+
+- **Consent_DownloadContentSourceLocation** - Indicates how the user made the choice to enable or disable connected experiences that that download online content
+
+- **Consent_DownloadContentState** - Indicates whether the user has chosen to enable or disable connected experiences that download online content
+
+- **Consent_ServiceConnectionState** - Indicates whether the user has chosen to use or not use all connected experiences
+
+- **Consent_ServiceConnectionStateSourceLocation** - Indicates how the user provided the choice whether to use all connected experiences
+
+- **Consent_UserCategoryValue** - This field is used to record the user's consent preferences for different types of data usage, ensuring compliance with privacy regulations and providing transparency about how user data is handled
+
+- **Consent_UserContentDependentConsentTime** - Indicates when the user chose to enable or disable connected experiences that analyze content.
+
+- **Consent_UserContentDependentSourceLocation** - Indicates how the user's choice to enable or disable was made for connected experiences that analyze content
+
+- **Consent_UserContentDependentState** - Indicates whether the user has chosen to enable or disable connected experiences that analyze content
+
+- **Data_ActivityActiveTime** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+
+- **Data_ActivityId** - This field captures the unique identifier for an activity
+
+- **Data_ActivityTotalTime** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+
+- **Data_Checkpoint0** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+
+- **Data_Checkpoint1** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+
+- **Data_Checkpoint10** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+
+- **Data_Checkpoint11** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+
+- **Data_Checkpoint12** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+
+- **Data_Checkpoint13** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+
+- **Data_Checkpoint14** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+
+- **Data_Checkpoint15** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+
+- **Data_Checkpoint2** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+
+- **Data_Checkpoint3** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+
+- **Data_Checkpoint4** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+
+- **Data_Checkpoint5** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+
+- **Data_Checkpoint6** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+
+- **Data_Checkpoint7** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+
+- **Data_Checkpoint8** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+
+- **Data_Checkpoint9** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+
+- **Data_CheckpointTime0** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+
+- **Data_CheckpointTime1** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+
+- **Data_CheckpointTime10** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+
+- **Data_CheckpointTime11** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+
+- **Data_CheckpointTime12** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+
+- **Data_CheckpointTime13** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+
+- **Data_CheckpointTime14** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+
+- **Data_CheckpointTime15** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+
+- **Data_CheckpointTime2** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+
+- **Data_CheckpointTime3** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+
+- **Data_CheckpointTime4** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+
+- **Data_CheckpointTime5** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+
+- **Data_CheckpointTime6** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+
+- **Data_CheckpointTime7** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+
+- **Data_CheckpointTime8** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+
+- **Data_CheckpointTime9** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+
+- **Data_DetachedDuration** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+
+- **Data_ErrorCode** - This field records the specific code associated with an error
+
+- **Data_ErrorDomain** - This field captures the domain in which an error occurred
+
+- **Data_ModuleId** - The feature or module ID
+
+- **Data_ModuleName** - The feature or module name
+
+- **Data_ModuleSessionId** - The feature or module session ID
+
+- **Data_StopwatchDuration** - Logs timestamp for a specific stage of the App shell tab render process, providing a comprehensive record of apps performance
+
+- **Device_Model** - The Device model (for example, iPhone 16 )
+
+- **Device_NetworkCost** - Network cost of the user (Low, Med, High)
+
+- **Device_NetworkCountry** - The device country (based on network)
+
+- **Device_OsBuild** - The device OS build
+
+- **Device_OsVersion** - The OS version installed in the user's device 
+
+- **Event_Contract** - Office.System.Activity
+
+- **Event_CV** - The field captures information related to the context of an event within the application
+
+- **Event_Flags** - The event flags
+
+- **Event_IsExportable** - Boolean denoting whether the event is exportable
+
+- **Event_Name** - The table name
+
+- **Event_ReceivedTime** - Time at which event telemetry was recorded
+
+- **Event_SampleRate** - The Sampling rate of the event
+
+- **Event_SchemaVersion** - The event schema version
+
+- **Event_Sequence** - The event sequence
+
+- **Event_Source** - The table source (Mso)
+
+- **Event_Time** - Time at which event occurred
+
+- **Release_Audience** - The audience ring 
+
+- **Release_AudienceGroup** - The audience ring 
+
+- **Release_Channel** - The release channel
+
+- **Release_Fork** - The monthly release fork 
+
+- **Session_EcsETag** - The session ECS tag
+
+- **Session_Flags** - The session flags
+
+- **Session_Id** - The user session id
+
+- **Session_MeasuresEnabled** - The session measures are enabled
+
+- **Session_SamplingClientIdValue** - The session sampling value
+
+- **Session_SubAppName** - The Sub-process name (Word, Excel, PowerPoint, OfficeMobile)
+
+- **Session_VirtualizationType** - The session virtualization type
+
+- **User_ActiveUserTenantId** - A unique identifier of the active user's tenant
+
+- **User_PrimaryIdentityHash** - A unique identifier of User identity
+
+- **User_PrimaryIdentitySpace** - The type of user identity
+
+- **User_TelemetryRegion** - The region in which user telemetry is collected and stored
+
+- **User_TenantGroup** - The category of tenant user belongs to
+
+- **User_TenantId** - A unique identifier of the user tenant
+
+- **zC_Activity_Result** - This field captures the result of an activity
 
 #### Office.OfficeMobile.AppShell.UserAction
 
