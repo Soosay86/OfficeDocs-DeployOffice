@@ -7066,6 +7066,271 @@ The following fields are collected:
 - **zC_Activity_Result** - This field captures the result of an activity
 
 
+### Office.OfficeMobile.Copilot.CwCRedirectionAndOptIn
+
+The event captures users eligibility to Copilot features and enables the app to present the right Copilot features to the user. The event verifies user license and enables presenting the right Copilot features based on their license type.
+
+The following fields are collected:
+
+- **Activity_AggMode** - The field captures the aggregation mode of the activity
+
+- **Activity_Count** - The field captures the count of similar telemetry events happening at nearly the same time within a single session
+
+- **Activity_CV** - The field captures the correlation vector, which is used to track the sequence of related events
+
+- **Activity_Duration** - The field captures the duration of the activity in milliseconds
+
+- **Activity_Result_Code** - The field captures the result code of the activity
+
+- **Activity_Result_Tag** - The field captures additional tags related to the result of the activity
+
+- **Activity_Result_Type** - The field captures the type of result for the activity
+
+- **Activity_Success** - Boolean denoting whether the activity was a success
+
+- **App_Branch** - The app branch
+
+- **App_InstallType** - A unique identifier of the app installation type
+
+- **App_Name** - The app name
+
+- **App_Platform** - The OS type (Android/iOS)
+
+- **App_Version** - The app version
+
+- **Client_Id** - A unique identifier of the user device
+
+- **Consent_AddInContentSourceLocation** - Indicates how the user made the choice to allow or disallow collection of add-in content
+
+- **Consent_AddInContentState** - Indicates whether add-in content collection is allowed
+
+- **Consent_ControllerConnectedServicesConsentTime** - Indicates when the user chose the status of optional connected experiences.
+
+- **Consent_ControllerConnectedServicesSourceLocation** - Indicates how the user's choice for optional connected experiences was made
+
+- **Consent_ControllerConnectedServicesState** - Indicates whether the user has access to optional connected experiences
+
+- **Consent_DiagnosticConsentLevel** - Indicates what level of diagnostic data consent the user has given
+
+- **Consent_DiagnosticConsentLevelSourceLocation** - Indicates how the user had provided the consent for diagnostic data
+
+- **Consent_DiagnosticDataConsentTime** - Indicates when the user provided the consent for diagnostic data.
+
+- **Consent_DownloadContentConsentTime** - Indicates when the user made the choice to enable or disable connected experiences that download online content.
+
+- **Consent_DownloadContentSourceLocation** - Indicates how the user made the choice to enable or disable connected experiences that that download online content
+
+- **Consent_DownloadContentState** - Indicates whether the user has chosen to enable or disable connected experiences that download online content
+
+- **Consent_ServiceConnectionState** - Indicates whether the user has chosen to use or not use all connected experiences
+
+- **Consent_ServiceConnectionStateSourceLocation** - Indicates how the user provided the choice whether to use all connected experiences
+
+- **Consent_UserCategoryValue** - The user consent category value
+
+- **Consent_UserContentDependentConsentTime** - Indicates when the user chose to enable or disable connected experiences that analyze content.
+
+- **Consent_UserContentDependentSourceLocation** - Indicates how the user's choice to enable or disable was made for connected experiences that analyze content
+
+- **Consent_UserContentDependentState** - Indicates whether the user has chosen to enable or disable connected experiences that analyze content
+
+- **Data_AdminPinningState** - Indicates the pinning policy set by the admin
+
+- **Data_AreCustomSettingsEnabled** - Indicates custom setting in Bing chat if integrated in the app *(not actively used)*
+
+- **Data_AuthStatus** - Indicates authentication status based on cookie
+
+- **Data_ConsentDialogActionPerformed** - Indicates whether user interacted (either allow or deny) with the consent or opt in dialogue
+
+- **Data_ConsentDialogEntryPoint** - The field captures information related to user consent for data usage
+
+- **Data_ConsentDialogShown** - A boolean which indicates whether user was shown the Consent dialogue to pin Copilot
+
+- **Data_ConsetDialogActionPerformed** - A boolean which indicates whether user took an action on the consent dialog
+
+- **Data_CopilotTabActive** - Indicates if Chat tab is active
+
+- **Data_CopilotTabInitialPinnedState** - This field captures the pinned state of the Copilot tab
+
+- **Data_CopilotTabPinnedState** - Indicates if Chat tab is pinned
+
+- **Data_CurrentCopilotTabStatus** - A boolean which indicates the Copilot tab visibility for the user
+
+- **Data_CurrentUpsellCopilotTabStatus** - This field tracks the status of the for the Copilot tab upsell
+
+- **Data_CwCAdminPinningState** - Indicates the admin selection of the Copilot pinning policy on the MAC
+
+- **Data_CwCAgeGroup** - Indicates the age group of the user according to the CWC Eligibility API
+
+- **Data_CwCCodexEnabledRegion** - Indicates the codex enabled region
+
+- **Data_CwCCohort** - Indicates the Copilot license of the user according to the CWC Eligibility API
+
+- **Data_CwCEduType** - Indicates the Education level of the user according to the CWC Eligibility API
+
+- **Data_CwcEligibilityEvaluationTime** - This field records the time taken to evaluate a user's eligibility for Copilot
+
+- **Data_CwCEligibilityStatus** - Indicates whether user is eligible for Copilot according to the CWC Eligibility API
+
+- **Data_CwCImplicitPinningConsentStatus** - Indicates if Chat tab is implicitly pinned when a user newly installs the app
+
+- **Data_CwCOCEStatus** - Indicates whether optional connected experiences are turned on for the user
+
+- **Data_CwCPersona** - Indicates the persona of the user according to the CWC Eligibility API
+
+- **Data_CwCUserDismissedConsentDialog** - A boolean which indicates whether user dismissed the consent dialog shown to pin Copilot
+
+- **Data_CwCUserPinningState** - Indicates the user preference on the consent dialog shown to pin Copilot
+
+- **Data_DetachedDuration** - This field captures the duration for which a user was detached from the feature
+
+- **Data_DialogDismissedReason** - This field captures the dialog dismissed state
+
+- **Data_DialogEntryPoint** - The field captures the dialog entry point
+
+- **Data_DialogType** - Indicates the type of dialog shown to user
+
+- **Data_DismissButtonShown** - Indicates if the dismiss button is shown in the consent dialogue
+
+- **Data_Dismissed** - Indicates if the user dismissed the dialogue when asked to pin chat tab *(not actively used)*
+
+- **Data_EligibilityFailureCode** - Indicates the reason for failure of the eligibility call to CWC Eligibility API
+
+- **Data_EligibilityFinalStatus** - The field captures the user eligibility status
+
+- **Data_EventTime** - The field captures the event time
+
+- **Data_FinalEligibilityStatus** - The field captures the user eligibility status
+
+- **Data_HasSwitchedToCopilotTab** - The field captures if user launched the Copilot tab
+
+- **Data_ImplicitPinningConsentStatus** - Indicates whether user is eligible for implicit pinning on Microsoft 365 Copilot app
+
+- **Data_IsAdminDeclinedCGOn** - Indicates if admin declined change is on *(not actively used)*
+
+- **Data_IsAppLaunchEvent** - Captures if this is a app launch event
+
+- **Data_IsBcbEnabled** - Indicates if Bing chat business edition is enabled for the user account *(not actively used)*
+
+- **Data_IsBceEnabled** - Indicates if Bing chat enterprise edition is enabled for the user account *(not actively used)*
+
+- **Data_IsConsentGivenFromOptInDialog** - Indicates if User has given consent to pin Chat tab *(not actively used)*
+
+- **Data_IsCopilotHiddenAdminDeclined** - Indicates if Admin declined to pin chat tab *(not actively used)*
+
+- **Data_IsRedirectedInCurrentSession** - A boolean which indicates whether user was redirected from another app in the current session
+
+- **Data_IsRedirectedUser** - A boolean which indicates whether user was redirected from another app
+
+- **Data_IsRocksteadyEnabled** - Indicates if the latest IA changes and features are enabled to the user
+
+- **Data_OceStatus** - Indicates if OptionalConnectedExperiences are turned on or off for the user
+
+- **Data_OperationId** - Data operation ID
+
+- **Data_OperationName** - Indicates the operation performed (eligibility status fetches, Copilot tab landed)
+
+- **Data_OptInDialogShown** - Indicates if Opt in dialogue is shown to the user
+
+- **Data_OptInDismissStateEnabled** - Captures if users have dismissed the opt-in prompt
+
+- **Data_PinningEligibility** - Indicates if Chat is pinned for the user *(not actively used)*
+
+- **Data_RedirectId** - This field records the ID associated with a redirection event
+
+- **Data_RedirectionEntryPoint** - Indicates if user is redirected for copilot scenarios *(not actively used)*
+
+- **Data_RedirectionScenario** - Indicates the user action on app (sign in, install) after redirected from another app
+
+- **Data_RedirectionSourceApp** - Indicates the source app from which user got redirected to the app
+
+- **Data_StopwatchDuration** - This helps in understanding the time taken for certain actions.
+
+- **Data_TimeSpent** - This field records the amount of time spent on a particular activity or within a specific context
+
+- **Data_UsedFallbackAdminStatus** - Indicates if admin set to show or hide bing chat *(not actively used)*
+
+- **Data_UsedFallbackUserStatus** - Indicates user consent to show or hide bing chat *(not actively used)*
+
+- **Data_UserCohort** - Indicates user license type for copilot experiences
+
+- **Data_UserInstallType** - Indicates the app install type
+
+- **Data_UserPinningState** - Indicates if user pinned chat tab
+
+- **Device_Model** - The Device model (for example, iPhone 16 )
+
+- **Device_NetworkCost** - Network cost of the user (Low, Med, High)
+
+- **Device_NetworkCountry** - The device country (based on network)
+
+- **Device_OsBuild** - This field captures the build version of the operating system
+
+- **Device_OsVersion** - The OS version installed in the user's device 
+
+- **Event_Contract** - This field records the contract associated with an event
+
+- **Event_CV** - This field captures the coefficient of variation for events
+
+- **Event_Flags** - This field records flags associated with events
+
+- **Event_IsExportable** - Boolean denoting whether the event is exportable
+
+- **Event_Name** - The table name
+
+- **Event_ReceivedTime** - Time at which event telemetry was recorded
+
+- **Event_SampleRate** - The Sampling rate of the event
+
+- **Event_SchemaVersion** - The event schema version
+
+- **Event_Sequence** - The event sequence
+
+- **Event_Source** - The table source (Mso)
+
+- **Event_Time** - Time at which event occurred
+
+- **Release_Audience** - The audience ring
+
+- **Release_AudienceGroup** - The audience ring
+
+- **Release_Channel** - The release channel
+
+- **Release_Fork** - The monthly release fork
+
+- **Session_EcsETag** - The session ECS tag
+
+- **Session_Flags** - The session flag
+
+- **Session_HostAppName** - The session Host app name
+
+- **Session_HostSessionId** - The session Host session ID
+
+- **Session_Id** - The user session id
+
+- **Session_MeasuresEnabled** - The session measure enabled or not
+
+- **Session_SamplingClientIdValue** - The session sampling value
+
+- **Session_SubAppName** - The Sub-process name (Word, Excel, PowerPoint, OfficeMobile)
+
+- **Session_VirtualizationType** - The field captures information about the type of virtualization used during a session
+
+- **User_ActiveUserTenantId** - A unique identifier of the active user's tenant
+
+- **User_PrimaryIdentityHash** - A unique identifier of User identity
+
+- **User_PrimaryIdentitySpace** - The type of user identity
+
+- **User_TelemetryRegion** - The region in which user telemetry is collected and stored
+
+- **User_TenantGroup** - The category of tenant user belongs to
+
+- **User_TenantId** - A unique identifier of the user tenant
+
+- **zC_Activity_Result** - This field captures the result of an activity
+
+
 ### Office.OfficeMobile.Copilot.SubscriptionFlowEvent
 
 This event is triggered when the user starts the subscription flow. This event tells us whether the user successfully purchased a subscription or not.
