@@ -17422,7 +17422,7 @@ The following fields are collected:
 - **zC_Activity_Result** - This field captures the result of an activity
 
 
-Office.OfficeMobile.AppShell.TabRender
+#### Office.OfficeMobile.AppShell.TabRender
 
 This event captures tab render when user clicks on the tab or from feature entry point on the hamburger. This event is used to evaluate the iOS app service render performance and reliability of each different tabs as they render on user click or intentional action.
 
@@ -17686,7 +17686,7 @@ The following fields are collected:
 
 - **Consent_ControllerConnectedServicesState** - Indicates whether the user has access to optional connected experiences
 
-- **Consent_DiagnosticConsentLevel** - Indicates what level of diagnostic data consent the user has given - Required, optional
+- **Consent_DiagnosticConsentLevel** - Indicates what level of diagnostic data consent the user has given
 
 - **Consent_DiagnosticConsentLevelSourceLocation** - Indicates how the user had provided the consent for diagnostic data
 
