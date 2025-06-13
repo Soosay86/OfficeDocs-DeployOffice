@@ -3,6 +3,7 @@ title: Configuring Preferences for Microsoft AutoUpdate (MAU) in Microsoft 365 E
 ms.author:  geokri
 author:  nicholasswhite
 manager: dougeby
+ms.reviewer: ppark
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
@@ -12,7 +13,7 @@ ms.collection: Tier2
 recommendations: false 
 ai-usage: ai-assisted
 description: Learn how to use preferences for Microsoft AutoUpdate (MAU) in Microsoft 365 Enterprise to meet the needs of various users.
-ms.date: 04/22/2025 
+ms.date: 06/13/2025 
 ---  
 
 # Configuring Preferences for Microsoft AutoUpdate (MAU) in Microsoft 365 Enterprise
@@ -99,6 +100,9 @@ You can specify a ChannelName for each app by adding a ChannelName key and value
 ```
 
 ## ManifestServer
+
+> [!NOTE]
+> As of MAU 4.79, this can only be configured via Managed Profile (MDM). For enhanced security, it will be ignored when set in the user profile.
 
 The ManifestServer is the URL for the server hosting update manifests. Applies to managed device configurations only. Local configurations of this setting are ignored. MAU downloads update manifests from this location when ChannelName is set to Custom.
 
