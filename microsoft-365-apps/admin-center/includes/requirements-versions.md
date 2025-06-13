@@ -16,4 +16,4 @@ You can manage Microsoft 365 Apps on Windows with the following version requirem
 - [Supported version of Windows Server that supports Microsoft 365 Apps](../../end-of-support/windows-server-support.md)
 
 > [!NOTE]  
-> For government customers (GCC, GCC High, and DoD), the minimum supported Office client version for policies to be delivered to Microsoft 365 Apps running on Windows is *Version 2410* or later.
+> For government customers (GCC, GCC High, and DoD), the minimum supported Office client version for policies to be delivered to Microsoft 365 Apps running on Windows is *Version 2402* or later.
