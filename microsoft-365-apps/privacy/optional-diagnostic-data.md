@@ -11,7 +11,7 @@ ms.collection:
 - privacy-microsoft365
 - must-keep
 hideEdit: true
-ms.date: 05/30/2025
+ms.date: 06/13/2025
 ---
 
 # Optional diagnostic data for Office
@@ -77,7 +77,7 @@ The following table provides examples of events in this category and a descripti
 
 This category includes events that may cover the following areas:
 
-- Success of application functionality. Limited to opening and closing of the application and documents, file editing, and file sharing (collaboration).​
+- Success of application functionality. Limited to opening and closing of the application and documents, file editing, file sharing (collaboration), and in-app purchases.​
 - Determination if specific feature events have occurred, such as start or stop, and if feature is running​.
 - Office accessibility features
 

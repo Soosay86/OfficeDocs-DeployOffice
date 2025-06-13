@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.collection: Tier2
 ms.localizationpriority: medium
 description: "Provides guidance for admins about how OneNote blocks embedded files that have dangerous extensions."
-ms.date: 06/05/2024
+ms.date: 05/30/2025
 ---
 
 # OneNote blocks embedded files that have dangerous extensions
@@ -44,6 +44,8 @@ The following table shows the version, for each update channel, in which the blo
 | Semi-Annual Enterprise Channel (Preview)   | 2308    | September 12, 2023 |
 | Semi-Annual Enterprise Channel             | 2308    | January 9, 2024    |
 | Semi-Annual Enterprise Channel (Extended)  | 2302    | July 11, 2023      |
+
+[!INCLUDE [saec-preview-deprecation-notice](../includes/saec-preview-deprecation-notice.md)]
 
 > [!NOTE]
 > - This change affects OneNote in retail versions of Office 2021, Office 2019, and Office 2016. They're on the same schedule as Current Channel.

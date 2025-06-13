@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "This article gives step-by-step instructions for how to plan your deployment of Microsoft 365 Apps. The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
-ms.date: 05/27/2025
+ms.date: 05/30/2025
 ---
 
 # Plan your enterprise deployment of Microsoft 365 Apps
@@ -93,9 +93,6 @@ With Microsoft 365 Apps, you can control how frequently your users receive featu
 - **Monthly Enterprise Channel:** Provides users with the latest features once a month and on a predictable schedule (the second Tuesday of the month)
 
 - **Semi-Annual Enterprise Channel:** Provides users a roll-up of features every six months, in January and July.
-
-> [!NOTE]
-> The "[Explained - Microsoft 365 Apps Update Channels](https://youtu.be/eNn4PDkmo7s)" video gives you a complete overview of all update channels.
 
 We recommend Current Channel, because it provides your users with the newest features as soon as they're ready. If you need more predictability of when new features are released, we recommend Monthly Enterprise Channel with [cloud update](../admin-center/cloud-update.md). By using cloud update, you automatically deliver monthly Microsoft 365 Apps updates for specific users or groups in waves, limiting the effect on your network. In those cases where you select devices that require extensive testing before receiving new features, we recommend Semi-Annual Enterprise Channel.
 
