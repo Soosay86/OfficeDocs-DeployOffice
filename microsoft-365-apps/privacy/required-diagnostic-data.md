@@ -12767,9 +12767,9 @@ analysis.
 
 - **Data_CommonLibraryLoadPhaseTime** - Captures the duration taken to load shared libraries (for example, Office core components) during app boot
 
-- **Data_CreateMainOfficeActivityEnd** - These fields bracket the start and end of the creation of the OfficeMobileActivity, which is the primary launcher activity. 
+- **Data_CreateMainOfficeActivityEnd** - This field brackets the start and end of the creation of the OfficeMobileActivity, which is the primary launcher activity. 
 
-- **Data_CreateMainOfficeActivityStart** - These fields bracket the start and end of the creation of the OfficeMobileActivity, which is the primary launcher activity. 
+- **Data_CreateMainOfficeActivityStart** - This field brackets the start and end of the creation of the OfficeMobileActivity, which is the primary launcher activity. 
 
 - **Data_DefaultLandingView** - The tab user landed on the app
 
@@ -12787,7 +12787,7 @@ analysis.
 
 - **Data_FreFlowDurationInMs** - Measures the duration of the First Run Experience (FRE) flow, which includes onboarding steps like permissions, sign-in, and initial setup.
 
-- **Data_hub_warmup** - These fields log the warmup time for the OfficeMobile Hub, which aggregates app modules like Word, Excel, and Copilot.
+- **Data_hub_warmup** - This field logs the warmup time for the OfficeMobile Hub, which aggregates app modules like Word, Excel, and Copilot.
 
 - **Data_InitialBootPhaseTime** - Represents the time taken for the initial boot phase, including app object creation and early activity setup.
 
@@ -12861,11 +12861,11 @@ analysis.
 
 - **Data_OnActivityPreCreateStart** - This field logs timestamp for a specific stage of the app boot process
 
-- **Data_PostAppInitializeBGTasksEnd** - These fields indicate the completion of background and UI tasks that are triggered after app initialization.
+- **Data_PostAppInitializeBGTasksEnd** - This field indicates the completion of background and UI tasks that are triggered after app initialization.
 
 - **Data_PostAppInitializeBGTasksStart** - This field logs timestamp for a specific stage of the app boot process
 
-- **Data_PostAppInitializeUITasksEnd** - These fields indicate the completion of background and UI tasks that are triggered after app initialization.
+- **Data_PostAppInitializeUITasksEnd** - This field indicates the completion of background and UI tasks that are triggered after app initialization.
 
 - **Data_PostAppInitializeUITasksStart** - This field logs timestamp for a specific stage of the app boot process
 
@@ -12967,23 +12967,23 @@ analysis.
 
 - **Data_TS_CopilotLaunched_web** - Captures the timestamp when the Copilot module is launched via a web-based trigger or deep link.
 
-- **Data_TS_CreateMainOfficeActivityEnd** - These fields bracket the creation of the main Office activity, which is the central UI for OfficeMobile.
+- **Data_TS_CreateMainOfficeActivityEnd** - This field brackets the creation of the main Office activity, which is the central UI for OfficeMobile.
 
-- **Data_TS_CreateMainOfficeActivityStart** - These fields bracket the creation of the main Office activity, which is the central UI for OfficeMobile.
+- **Data_TS_CreateMainOfficeActivityStart** - This field brackets the creation of the main Office activity, which is the central UI for OfficeMobile.
 
-- **Data_TS_FragmentInitView** - These fields mark the start of view initialization for the primary fragment (for example, OneDrive, Copilot, or Home).
+- **Data_TS_FragmentInitView** - This field marks the start of view initialization for the primary fragment (for example, OneDrive, Copilot, or Home).
 
-- **Data_TS_FragmentInitViewStart** - These fields mark the start of view initialization for the primary fragment (for example, OneDrive, Copilot, or Home).
+- **Data_TS_FragmentInitViewStart** - This field marks the start of view initialization for the primary fragment (for example, OneDrive, Copilot, or Home).
 
-- **Data_TS_GetDefaultAndAIHubAppShellListEnd** - These fields capture the start and end of retrieving the list of default and AI Hub app shells.
+- **Data_TS_GetDefaultAndAIHubAppShellListEnd** - This field captures the start and end of retrieving the list of default and AI Hub app shells.
 
 - **Data_TS_GetDefaultAndAIHubAppShellListEnd1736407622271** - *(not actively used)*
 
-- **Data_TS_GetDefaultAndAIHubAppShellListStart** - These fields capture the start and end of retrieving the list of default and AI Hub app shells.
+- **Data_TS_GetDefaultAndAIHubAppShellListStart** - This field captures the start and end of retrieving the list of default and AI Hub app shells.
 
 - **Data_TS_GetDefaultAndAIHubAppShellListStart1736407622161** - *(not actively used)*
 
-- **Data_TS_GetNonAiHubAppShellListEnd** - These fields mark the start and end of retrieving the list of non-AI Hub app shells.
+- **Data_TS_GetNonAiHubAppShellListEnd** - This field marks the start and end of retrieving the list of non-AI Hub app shells.
 
 - **Data_TS_GetNonAiHubAppShellListStart** - Marks the beginning of the process to retrieve the list of Hub app shells (for example, Word, Excel, PowerPoint). 
 
@@ -12991,9 +12991,9 @@ analysis.
 
 - **Data_TS_GettingClassStart** - These timestamps bracket the process of resolving and loading the appropriate class definitions for modules or fragments during boot.
 
-- **Data_TS_HubOrchestrator_getModuleEnd** - These fields capture the start and end of the module retrieval process managed by the Hub Orchestrator.
+- **Data_TS_HubOrchestrator_getModuleEnd** - This field captures the start and end of the module retrieval process managed by the Hub Orchestrator.
 
-- **Data_TS_HubOrchestrator_getModuleStart** - These fields capture the start and end of the module retrieval process managed by the Hub Orchestrator.
+- **Data_TS_HubOrchestrator_getModuleStart** - This field captures the start and end of the module retrieval process managed by the Hub Orchestrator.
 
 - **Data_TS_HubOrchestrator_getModuleStart1736407627983** - *(not actively used)*
 
@@ -13011,17 +13011,17 @@ analysis.
 
 - **Data_TS_HubOrchestrator_getModuleStart1736407888592** - *(not actively used)*
 
-- **Data_TS_InitializeOfficeActivityUIEnd** - These fields mark the beginning and completion of UI initialization for the main Office activity.
+- **Data_TS_InitializeOfficeActivityUIEnd** - This field marks the beginning and completion of UI initialization for the main Office activity.
 
-- **Data_TS_InitializeOfficeActivityUIStart** - These fields mark the beginning and completion of UI initialization for the main Office activity.
+- **Data_TS_InitializeOfficeActivityUIStart** - This field marks the beginning and completion of UI initialization for the main Office activity.
 
 - **Data_TS_InitialSetup** - Represents the timestamp when the initial setup logic begins during app boot.
 
-- **Data_TS_InitModule** - These fields bracket the initialization of a specific Office module (for example, Word, Excel, Copilot).
+- **Data_TS_InitModule** - This field brackets the initialization of a specific Office module (for example, Word, Excel, Copilot).
 
-- **Data_TS_InitModuleEnd** - These fields bracket the initialization of a specific Office module (for example, Word, Excel, Copilot).
+- **Data_TS_InitModuleEnd** - This field brackets the initialization of a specific Office module (for example, Word, Excel, Copilot).
 
-- **Data_TS_InitModuleStart** - These fields bracket the initialization of a specific Office module (for example, Word, Excel, Copilot).
+- **Data_TS_InitModuleStart** - This field brackets the initialization of a specific Office module (for example, Word, Excel, Copilot).
 
 - **Data_TS_InitViewModelEnd** - Marks the start and end of initializing the view model associated with the active fragment or module.
 
@@ -13033,9 +13033,9 @@ analysis.
 
 - **Data_TS_kopal_copiloteligibilitycheck** - *(not actively used)*
 
-- **Data_TS_LaunchFragmentEnd** - These fields bracket the lifecycle of launching a fragment (for example, OneDrive, Copilot, Home).
+- **Data_TS_LaunchFragmentEnd** - This field brackets the lifecycle of launching a fragment (for example, OneDrive, Copilot, Home).
 
-- **Data_TS_LaunchFragmentStart** - These fields bracket the lifecycle of launching a fragment (for example, OneDrive, Copilot, Home).
+- **Data_TS_LaunchFragmentStart** - This field brackets the lifecycle of launching a fragment (for example, OneDrive, Copilot, Home).
 
 - **Data_TS_M365TTIHSBackroundtriggerBackgroundActivationcalled** - *(not actively used)*
 
@@ -13081,9 +13081,9 @@ analysis.
 
 - **Data_TS_M365TTISkippedcreateSilhouette** - Indicates that the specific creation step was skipped, likely due to an inorganic boot path (for example, file activation or notification trigger) where full UI setup is deferred or bypassed 
 
-- **Data_TS_MinimumLibrariesLoadEnd** - These fields bracket the loading of the minimum required libraries for OfficeMobile to function.
+- **Data_TS_MinimumLibrariesLoadEnd** - This field brackets the loading of the minimum required libraries for OfficeMobile to function.
 
-- **Data_TS_MinimumLibrariesLoadStartStart** - These fields bracket the loading of the minimum required libraries for OfficeMobile to function.
+- **Data_TS_MinimumLibrariesLoadStartStart** - This field brackets the loading of the minimum required libraries for OfficeMobile to function.
 
 - **Data_TS_ModuleHostFragment_OnCreate** - Marks the start of the lifecycle method for the ModuleHostFragment, which hosts specific Office modules like Word, Excel, or Copilot.
 
@@ -13091,17 +13091,17 @@ analysis.
 
 - **Data_TS_ModuleHostFragment_OnViewCreated** - Indicates the completion of the view creation process for the ModuleHostFragment.
 
-- **Data_TS_ModuleLauncher_ComposeEnd** - These fields bracket the composition phase of the module launcher, which prepares the UI and logic for launching a specific Office module.
+- **Data_TS_ModuleLauncher_ComposeEnd** - This field brackets the composition phase of the module launcher, which prepares the UI and logic for launching a specific Office module.
 
-- **Data_TS_ModuleLauncher_ComposeStart** - These fields bracket the composition phase of the module launcher, which prepares the UI and logic for launching a specific Office module.
+- **Data_TS_ModuleLauncher_ComposeStart** - This field brackets the composition phase of the module launcher, which prepares the UI and logic for launching a specific Office module.
 
-- **Data_TS_ModuleLauncher_FragmentEnd** - These fields bracket the lifecycle of launching a module-specific fragment (for example, Word, Excel, Copilot) within OfficeMobile.
+- **Data_TS_ModuleLauncher_FragmentEnd** - This field brackets the lifecycle of launching a module-specific fragment (for example, Word, Excel, Copilot) within OfficeMobile.
 
-- **Data_TS_ModuleLauncher_FragmentStart** - These fields bracket the lifecycle of launching a module-specific fragment (for example, Word, Excel, Copilot) within OfficeMobile.
+- **Data_TS_ModuleLauncher_FragmentStart** - This field brackets the lifecycle of launching a module-specific fragment (for example, Word, Excel, Copilot) within OfficeMobile.
 
-- **Data_TS_ModuleObjectsEnd** - These fields bracket the initialization of module-specific objects (for example, Word, Excel, PowerPoint, Copilot) during the OfficeMobile boot sequence.
+- **Data_TS_ModuleObjectsEnd** - This field brackets the initialization of module-specific objects (for example, Word, Excel, PowerPoint, Copilot) during the OfficeMobile boot sequence.
 
-- **Data_TS_ModuleObjectsStart** - These fields bracket the initialization of module-specific objects (for example, Word, Excel, PowerPoint, Copilot) during the OfficeMobile boot sequence.
+- **Data_TS_ModuleObjectsStart** - This field brackets the initialization of module-specific objects (for example, Word, Excel, PowerPoint, Copilot) during the OfficeMobile boot sequence.
 
 - **Data_TS_OnActivityPreCreateEnd** - These timestamps mark the beginning and end of the pre-creation phase of the main Office activity.
 
@@ -13109,25 +13109,25 @@ analysis.
 
 - **Data_TS_onContentUpdated** - Captures the moment when dynamic content (for example, recent files, personalized feeds) is updated and ready for rendering.
 
-- **Data_TS_OnCreateCoreEnd** - These fields bracket the execution of the core logic within the specific method of the Office activity.
+- **Data_TS_OnCreateCoreEnd** - This field brackets the execution of the core logic within the specific method of the Office activity.
 
-- **Data_TS_OnCreateCoreStart** - These fields bracket the execution of the core logic within the specific method of the Office activity.
+- **Data_TS_OnCreateCoreStart** - This field brackets the execution of the core logic within the specific method of the Office activity.
 
 - **Data_TS_onPreCreateOfficeActivityEnd** - These timestamps capture the start and end of the specific phase of the Office activity.
 
 - **Data_TS_onPreCreateOfficeActivityStart** - These timestamps capture the start and end of the specific phase of the Office activity.
 
-- **Data_TS_ParsingJSONEnd** - These fields mark the beginning and end of parsing configuration files or payloads during app boot.
+- **Data_TS_ParsingJSONEnd** - This field marks the beginning and end of parsing configuration files or payloads during app boot.
 
-- **Data_TS_ParsingJSONStart** - These fields mark the beginning and end of parsing configuration files or payloads during app boot.
+- **Data_TS_ParsingJSONStart** - This field marks the beginning and end of parsing configuration files or payloads during app boot.
 
 - **Data_TS_PostAppActivateTasksEnd** - These timestamps bracket the execution of tasks that are triggered after the app is activated (for example, after a cold start or file open).
 
 - **Data_TS_PostAppActivateTasksStart** - These timestamps bracket the execution of tasks that are triggered after the app is activated (for example, after a cold start or file open).
 
-- **Data_TS_PostAppInitializeBGTasksEnd** - These fields capture the start and end of background tasks that are initiated after the core app initialization completes.
+- **Data_TS_PostAppInitializeBGTasksEnd** - This field captures the start and end of background tasks that are initiated after the core app initialization completes.
 
-- **Data_TS_PostAppInitializeBGTasksStart** - These fields capture the start and end of background tasks that are initiated after the core app initialization completes.
+- **Data_TS_PostAppInitializeBGTasksStart** - This field captures the start and end of background tasks that are initiated after the core app initialization completes.
 
 - **Data_TS_PostAppInitializeUITasksEnd** - These timestamps bracket UI-related tasks that are executed after the app has initialized.
 
@@ -13136,9 +13136,9 @@ analysis.
 - **Data_TS_PostingLiveData** - Marks the point at which LiveData objects (used for reactive UI updates) are posted to observers.
 
 - **Data_TS_PostponeCreateSilhouette** - Indicates that the creation of the specific UI shell has been deferred.
-- **Data_TS_PreRaiseActivationEnd** - These fields bracket the pre-activation phase, which includes preparing the app to handle activation triggers such as file opens, notifications, or protocol links.
+- **Data_TS_PreRaiseActivationEnd** - This field brackets the pre-activation phase, which includes preparing the app to handle activation triggers such as file opens, notifications, or protocol links.
 
-- **Data_TS_PreRaiseActivationStart** - These fields bracket the pre-activation phase, which includes preparing the app to handle activation triggers such as file opens, notifications, or protocol links.
+- **Data_TS_PreRaiseActivationStart** - This field brackets the pre-activation phase, which includes preparing the app to handle activation triggers such as file opens, notifications, or protocol links.
 
 - **Data_TS_ReadModuleJSONEnd** - These timestamps capture the reading of module-specific files that define the structure, behavior, and eligibility of Office modules (for example, Word, Excel, Copilot).
 
@@ -13150,11 +13150,11 @@ analysis.
 
 - **Data_TS_SelectedTabLiveData1736407628246** - *(not actively used)*
 
-- **Data_TS_SetEligibleTabsListEnd** - These fields bracket the process of determining which tabs (for example, Home, Copilot, Apps) are eligible to be shown based on user context, feature flags, and licensing.
+- **Data_TS_SetEligibleTabsListEnd** - This field brackets the process of determining which tabs (for example, Home, Copilot, Apps) are eligible to be shown based on user context, feature flags, and licensing.
 
 - **Data_TS_SetEligibleTabsListEnd1736407622504** - *(not actively used)*
 
-- **Data_TS_SetEligibleTabsListStart** - These fields bracket the process of determining which tabs (for example, Home, Copilot, Apps) are eligible to be shown based on user context, feature flags, and licensing.
+- **Data_TS_SetEligibleTabsListStart** - This field brackets the process of determining which tabs (for example, Home, Copilot, Apps) are eligible to be shown based on user context, feature flags, and licensing.
 
 - **Data_TS_SetEligibleTabsListStart1736407622151** - *(not actively used)*
 
@@ -13210,21 +13210,21 @@ analysis.
 
 - **Data_TSApplicationConstructorInvokedStart** - Marks the timestamp when the OfficeMobile application constructor is invoked by the OS.
 
-- **Data_TSCommonLibrariesLoadEndEnd** - These fields bracket the loading of shared Office libraries (for example, core components used across Word, Excel, PowerPoint, and Copilot). 
+- **Data_TSCommonLibrariesLoadEndEnd** - This field brackets the loading of shared Office libraries (for example, core components used across Word, Excel, PowerPoint, and Copilot). 
 
-- **Data_TSCommonLibrariesLoadStartStart** - These fields bracket the loading of shared Office libraries (for example, core components used across Word, Excel, PowerPoint, and Copilot). 
+- **Data_TSCommonLibrariesLoadStartStart** - This field brackets the loading of shared Office libraries (for example, core components used across Word, Excel, PowerPoint, and Copilot). 
 
-- **Data_TSMinimumLibrariesLoadEnd** - These fields capture the loading of the minimum required libraries for OfficeMobile to function.
+- **Data_TSMinimumLibrariesLoadEnd** - This field captures the loading of the minimum required libraries for OfficeMobile to function.
 
-- **Data_TSMinimumLibrariesLoadStartStart** - These fields capture the loading of the minimum required libraries for OfficeMobile to function.
+- **Data_TSMinimumLibrariesLoadStartStart** - This field captures the loading of the minimum required libraries for OfficeMobile to function.
 
 - **Data_TSOnCreateCoreEnd** - These timestamps bracket the execution of the core logic within the specific method of the OfficeMobile activity.
 
 - **Data_TSOnCreateCoreStart** - These timestamps bracket the execution of the core logic within the specific method of the OfficeMobile activity.
 
-- **Data_UpdateFragmentEnd** - These fields mark the start and end of fragment updates triggered during boot or navigation.
+- **Data_UpdateFragmentEnd** - This field marks the start and end of fragment updates triggered during boot or navigation.
 
-- **Data_UpdateFragmentStart** - These fields mark the start and end of fragment updates triggered during boot or navigation.
+- **Data_UpdateFragmentStart** - This field marks the start and end of fragment updates triggered during boot or navigation.
 
 - **Data_WARMUP_LANDING_MODULE** - Captures the warmup markers for landing ai hub module
 
@@ -17994,9 +17994,9 @@ The following fields are collected:
 
 - **Data_AppShellWrapperViewDidLoad3** - Marks the timestamp when the app shell wrapper view is loaded into memory
 
-- **Data_AuthFetchEnd** - Captures the completion of the authentication metadata fetch. These fields help measure latency in auth setup.
+- **Data_AuthFetchEnd** - Captures the completion of the authentication metadata fetch. This field helps measure latency in auth setup.
 
-- **Data_AuthFetchEnd1** - Captures the completion of the authentication metadata fetch. These fields help measure latency in auth setup.
+- **Data_AuthFetchEnd1** - Captures the completion of the authentication metadata fetch. This field helps measure latency in auth setup.
 
 - **Data_AuthFetchStart** - Marks the beginning of fetching authentication metadata or configuration (for example, endpoints, policies).
 
