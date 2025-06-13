@@ -11,7 +11,7 @@ ms.collection:
 - privacy-microsoft365
 - must-keep
 hideEdit: true
-ms.date: 06/03/2025
+ms.date: 06/13/2025
 ---
 
 # Required diagnostic data for Office
@@ -12682,6 +12682,621 @@ The following fields are collected:
 - **ve** - Operating system version of the device at session start.​
 
 
+#### Office.OfficeMobile.AppActivation.AppBootPerformance
+
+This event is triggered automatically on boot to record the performance of certain operations of the Office Mobile Application. This event is used to evaluate the Android app service boot performance and reliability of each different tabs as they render on user click or intentional action.
+
+The following fields are collected:
+
+- **App_Branch** - The app branch detail
+
+- **App_InstallType** - The app install type
+
+- **App_Name** - The app name
+
+- **App_Platform** - The app platform name Android/iOS
+
+- **App_Version** - The version number of the app
+
+- **Client_Id** - The client ID
+
+- **Consent_AddInContentSourceLocation** - Indicates the source location from which the user consent for Office Add-in content was triggered like first-run experience, etc.
+
+- **Consent_AddInContentState** - Indicates whether add-in content collection is allowed
+
+- **Consent_ControllerConnectedServicesConsentTime** - This field captures the time when consent was given
+
+- **Consent_ControllerConnectedServicesSourceLocation** - This field captures the origin or source location from which the Connected Services consent controller was triggered during the Office Mobile app boot process.
+
+- **Consent_ControllerConnectedServicesState** - Indicates whether the user has access to optional connected experiences
+
+- **Consent_DiagnosticConsentHevelSourceLocatiof** - *(not actively used)*
+
+- **Consent_DiagnosticConsentLevel** - Indicates what level of diagnostic data consent the user has given - Required, optional
+
+- **Consent_DiagnosticConsentLevelSourceLocation** - Captures the origin of the diagnostic data consent level prompt.
+
+- **Consent_DiagnosticDataConsentTime** - Indicates when the user provided the consent for diagnostic data.
+
+- **Consent_DownloadContentConsentTime** - This field captures the time when consent was given
+
+- **Consent_DownloadContentSourceLocation** - Represents the source location where the user was prompted to consent to downloading content like cloud-hosted files, accessing shared documents, or initiating downloads from external services.
+
+- **Consent_DownloadContentState** - Indicates whether the user has chosen to enable or disable connected experiences that download online content
+
+- **Consent_ServiceConnectionState** - Indicates whether the user has chosen to use or not use all connected experiences
+
+- **Consent_ServiceConnectionStateSourceLocation** - Logs the source location from which the consent related to service connection state was initiated.
+
+- **Consent_UserCategoryValue** - This field is used to record the user's consent preferences for different types of data usage, ensuring compliance with privacy regulations and providing transparency about how user data is handled
+
+- **Consent_UserContentDependentConsentTime** - This field captures the time when consent was given
+
+- **Consent_UserContentDependentSourceLocation** - Identifies the source location where consent was requested for accessing or processing user-dependent content
+
+- **Consent_UserContentDependentState** - Indicates whether the user has chosen to enable or disable connected experiences that analyze content
+
+- **Data_ActivityTransitionTime** - This field captures the time taken for transitioning between activities
+
+- **Data_AppActivationTimeInMs** - This field records the time taken to activate the application
+
+- **Data_ApplicationBootTime** - This field captures the total time taken for the application to boot
+
+- **Data_ApplicationObjectCreationTime** - This field records the timestamp (in milliseconds) when the OfficeMobile application object is instantiated during the boot process.
+
+- **Data_AppPausedDurationInMs** - Captures the total duration (in milliseconds) for which the app was paused (i.e., moved to the background or suspended) before resuming.
+
+- **Data_BaseFragmentOnCreateStart** - Indicates the timestamp (in milliseconds) when the base fragment's onCreate() method is triggered during the app boot sequence. It helps identify delays caused by fragment initialization and is often used in performance regression 
+analysis.
+
+- **Data_BatteryStatus** - The device battery status
+
+- **Data_BootImprovementsFGFlag** - Logs boot improvement feature flag to help evaluate performance
+
+- **Data_BootRearchFGFlag** - Logs boot improvement feature flag to help evaluate performance
+
+- **Data_Checkpoint1** - Marks a key milestone in the boot sequence of OfficeMobile, typically used to measure elapsed time from app launch to a specific initialization phase.
+
+- **Data_Checkpoint2** - Marks a key milestone in the boot sequence of OfficeMobile, typically used to measure elapsed time from app launch to a specific initialization phase.
+
+- **Data_Checkpoint3** - Marks a key milestone in the boot sequence of OfficeMobile, typically used to measure elapsed time from app launch to a specific initialization phase.
+
+- **Data_Checkpoint4** - Marks a key milestone in the boot sequence of OfficeMobile, typically used to measure elapsed time from app launch to a specific initialization phase.
+
+- **Data_Checkpoint5** - Marks a key milestone in the boot sequence of OfficeMobile, typically used to measure elapsed time from app launch to a specific initialization phase.
+
+- **Data_CommonLibraryLoadPhaseTime** - Captures the duration taken to load shared libraries (for example, Office core components) during app boot
+
+- **Data_CreateMainOfficeActivityEnd** - These fields bracket the start and end of the creation of the OfficeMobileActivity, which is the primary launcher activity. 
+
+- **Data_CreateMainOfficeActivityStart** - These fields bracket the start and end of the creation of the OfficeMobileActivity, which is the primary launcher activity. 
+
+- **Data_DefaultLandingView** - The tab user landed on the app
+
+- **Data_DeviceModel** - The device model
+
+- **Data_DuplicatedUpdatesInTimeline** - Tracks instances where multiple updates to the same UI or data component are logged within the boot timeline.
+
+- **Data_ExtractionTime** - Measures the time taken to extract necessary resources or configuration data during app boot.
+
+- **Data_FragmentCreationTime** - Captures the duration required to instantiate key fragments (UI components) during the boot process.
+
+- **Data_FragmentInitViewStart** - Marks the timestamp when the fragment's view initialization begins to measure time to render and time to interactive metrics.
+
+- **Data_FragmentTimeTakenInMs** - Represents the total time taken (in milliseconds) for a fragment to complete its lifecycle from creation to view rendering.
+
+- **Data_FreFlowDurationInMs** - Measures the duration of the First Run Experience (FRE) flow, which includes onboarding steps like permissions, sign-in, and initial setup.
+
+- **Data_hub_warmup** - These fields log the warmup time for the OfficeMobile Hub, which aggregates app modules like Word, Excel, and Copilot.
+
+- **Data_InitialBootPhaseTime** - Represents the time taken for the initial boot phase, including app object creation and early activity setup.
+
+- **Data_INITIALIZE_IDENTITIES_LISTENERS** - Logs point marker to a specific stage of the app boot phase
+
+- **Data_InitializeOfficeActivityUIEnd** - This field logs timestamp for a specific stage of the app boot process
+
+- **Data_InitializeOfficeActivityUIStart** - This field logs timestamp for a specific stage of the app boot process
+
+- **Data_Is_Restart_From_Process_Kill** - This field logs timestamp for a specific stage of the app boot process
+
+- **Data_IS_TAB_SWITCHED_BY_USER** - This field logs boolean value to track if user switched appshell tabs while app is in boot phase.
+
+- **Data_IsAsyncLibLoadEnabled** - Captured if a specific feature gate is enabled. The field is used to ensure users are seeing the specific features based on the feature gates enabled or disabled.
+
+- **Data_IsBootPerformanceLoggingV2Enabled** - Captured if a specific feature gate is enabled. The field is used to ensure users are seeing the specific features based on the feature gates enabled or disabled.
+
+- **Data_isComposeInitializerEnabled** - Captured if a specific feature gate is enabled. The field is used to ensure users are seeing the specific features based on the feature gates enabled or disabled.
+
+- **Data_IsCopilotOptInDialogShown** - Captures boolean data if Copilot consent dialog was shown to user in app boot phase
+
+- **Data_IsCoroutineTimestampEnabled** - This field records whether timestamping is enabled
+
+- **Data_IsCoroutineYieldEnabled** - Captured if a specific feature gate is enabled. The field is used to ensure users are seeing the specific features based on the feature gates enabled or disabled.
+
+- **Data_IsFirstLaunch** - Captures if user is launching app for the first time
+
+- **Data_IsLandingTabSyncFetchEnabled** - Captured if a specific feature gate is enabled. The field is used to ensure users are seeing the specific features based on the feature gates enabled or disabled.
+
+- **Data_IsOrganicLaunch** - Captures if user is launching app organically through app icon on device
+
+- **Data_IsPostUpdateLaunch** - Captures if app is launched after user upgraded app from playstore
+
+- **Data_IsPriorityCoroutineEnabled** - Captured if a specific feature gate is enabled. The field is used to ensure users are seeing the specific features based on the feature gates enabled or disabled.
+
+- **Data_IsPriorityThreadAsyncLibLoadEnabled** - Captured if a specific feature gate is enabled. The field is used to ensure users are seeing the specific features based on the feature gates enabled or disabled.
+
+- **Data_IsRestartFromProcessKill** - This field logs timestamp for a specific stage of the app boot process
+
+- **Data_isRocksteadyCreateTabEnabled** - Captured if a specific feature gate is enabled. The field is used to ensure users are seeing the specific features based on the feature gates enabled or disabled.
+
+- **Data_IsRocksteadyCreateTabEnabled** - Captured if a specific feature gate is enabled. The field is used to ensure users are seeing the specific features based on the feature gates enabled or disabled.
+
+- **Data_IsRocksteadyEnabled** - Captured if a specific feature gate is enabled. The field is used to ensure users are seeing the specific features based on the feature gates enabled or disabled.
+
+- **Data_IsRockSteadyEnabled** - Captured if a specific feature gate is enabled. The field is used to ensure users are seeing the specific features based on the feature gates enabled or disabled.
+
+- **Data_IsTabSwitchedByUser** - Captures boolean if user switched app shell tabs in boot phase
+
+- **Data_IsThreadEngineEnabled** - Captured if a specific feature gate is enabled. The field is used to ensure users are seeing the specific features based on the feature gates enabled or disabled.
+
+- **Data_landing_module_warmup** - *(not actively used)*
+
+- **Data_LandingView** - Captures landing appshell tab
+
+- **Data_LandingViewPivots** - *(not actively used)*
+
+- **Data_MarkerType** - Captures reason marker type. That is, TTR or TTI
+
+- **Data_MinimumLibraryLoadPhaseTime** - This field captures the time taken for library loading phases
+
+- **Data_NavigationType** - *(not actively used)*
+
+- **Data_NetworkStatus** - The network status
+
+- **Data_non_landing_module_warmup** - *(not actively used)*
+
+- **Data_OfficeActivityTime** - This field records the time taken for Office-related activities
+
+- **Data_OnActivityPreCreateEnd** - Marks the completion of pre-creation tasks for the main activity, such as initializing fragment managers and loading views with minimal inflation cost.
+
+- **Data_OnActivityPreCreateStart** - This field logs timestamp for a specific stage of the app boot process
+
+- **Data_PostAppInitializeBGTasksEnd** - These fields indicate the completion of background and UI tasks that are triggered after app initialization.
+
+- **Data_PostAppInitializeBGTasksStart** - This field logs timestamp for a specific stage of the app boot process
+
+- **Data_PostAppInitializeUITasksEnd** - These fields indicate the completion of background and UI tasks that are triggered after app initialization.
+
+- **Data_PostAppInitializeUITasksStart** - This field logs timestamp for a specific stage of the app boot process
+
+- **Data_PostAppInitTimeInMs** - This field captures the time taken for post-application initialization tasks
+
+- **Data_PostBootMemory** - Captures device memory size post app is booted
+
+- **Data_PostBootMemoryInMB** - Captures device memory size post app is booted
+
+- **Data_PostCommonLibraryLoadPhaseTime** - Captures the time taken after shared libraries are loaded, typically used to measure the transition into app-specific logic or UI rendering
+
+- **Data_PostOfficeActivityTimeInMs** - Captures the time taken after the main Office activity is created, including fragment inflation, view model setup, and background task registration.
+
+- **Data_PreAppInitTimeInMs** - Measures the time spent before the app initialization logic begins.
+
+- **Data_PreBootMemory** - Captures device memory size before app is booted
+
+- **Data_PreCommonLibraryLoadPhaseTime** - Represents the time before shared libraries begin loading.
+
+- **Data_PreRaiseActivationEnd** - Marks the end of pre-activation tasks such as intent parsing, module resolution, and shell preparation.
+
+- **Data_PreRaiseActivationStart** - This field logs timestamp for a specific stage of the app boot process
+
+- **Data_Referrer** - The type of app launch - launched directly or through a notification or from a file link
+
+- **Data_SilhouetteCreationEnd** - Point marker in app boot phase
+
+- **Data_SilhouetteCreationStart** - This field logs timestamp for a specific stage of the app boot process
+
+- **Data_TabSwitchedFromDefaultTo** - Point marker in app boot phase
+
+- **Data_TimeTakenInMs** - The field used to log elapsed time for specific boot phases or operations
+
+- **Data_TimeTakenInMS** - Measures the time from app launch to when the UI becomes interactive for the user.
+
+- **Data_TimeToInteractiveCompletedBy** - Indicates which component or module completed the Time to Interactive milestone.
+
+- **Data_TimeToInteractiveInMs** - Measures the time from app launch to when the UI becomes interactive for the user.
+
+- **Data_TimeToInteractiveStart** - Marks the beginning of the Time to Interactive measurement window, typically when the first fragment begins rendering
+
+- **Data_TimeToLaunchInMs** - Captures the total time from app launch to full readiness, including boot, module loading, and UI rendering.
+
+- **Data_TimeToRenderCompletedBy** - Identifies the component responsible for completing the rendering phase.
+
+- **Data_TimeToRenderInMs** - Measures the time taken to render the first visible UI after app launch.
+
+- **Data_TimeToRenderStart** - Marks the start of the rendering phase, typically when the fragment view begins inflation
+
+- **Data_TimeToStartLoadingLibMs** - Logs the time taken to begin loading shared libraries (for example, Office core components). 
+
+- **Data_TimeToStartLoadingLibraries** - Logs the time taken to begin loading shared libraries (for example, Office core components). 
+
+- **Data_TotalLockDurationDuringMinLibLoad** - Tracks the duration for which the app was blocked or locked during minimal and native library loading.
+
+- **Data_TotalLockDurationDuringNativeLibLoad** - Tracks the duration for which the app was blocked or locked during minimal and native library loading.
+
+- **Data_TriedOnDemandModuleInstall** - Captures if appshell module is installed using dynamically delivery 
+
+- **Data_TS_ActivationTriggeredStart** - Indicates when an activation intent (for example, file open, notification, protocol link) is received and processed.
+
+- **Data_TS_AppHostActivityOnCreateStart** - Marks the beginning of the AppHost activity, which is responsible for launching specific Office modules like Word or Excel.
+
+- **Data_TS_ApplicationConstructorInvokedStart** - Marks the timestamp when the application constructor is invoked.
+
+- **Data_TS_ApplicationOnCreateEnd** - These timestamp measure how long it takes to initialize global app state and register core services 
+
+- **Data_TS_ApplicationOnCreateStart** - These timestamp measure how long it takes to initialize global app state and register core services 
+
+- **Data_TS_AppShellUpdateTabVisibility** - Logs when the visibility of tabs in the app shell is updated.
+
+- **Data_TS_BaseFragment_OnViewCreatedEnd** - The timestamp markers bracket the view creation lifecycle of the base fragment. Used to calculate rendering and interaction readiness
+
+- **Data_TS_BaseFragment_OnViewCreatedEnd1736407627983** - The timestamp markers bracket the view creation lifecycle of the base fragment. Used to calculate rendering and interaction readiness
+
+- **Data_TS_BaseFragment_OnViewCreatedStart** - The timestamp markers bracket the view creation lifecycle of the base fragment. Used to calculate rendering and interaction readiness
+
+- **Data_TS_BaseFragment_OnViewCreatedStart1736407627983** - The timestamp markers bracket the view creation lifecycle of the base fragment. Used to calculate rendering and interaction readiness
+
+- **Data_TS_BaseFragmentOnCreate** - Marks the creation of the base fragment, which typically hosts the landing experience. These are used to measure fragment initialization performance.
+
+- **Data_TS_BaseFragmentOnCreateStart** - Marks the creation of the base fragment, which typically hosts the landing experience. These are used to measure fragment initialization performance.
+
+- **Data_TS_CheckpointTime1** - Represents a predefined checkpoint in the boot timeline, used to measure elapsed time from app launch to a specific milestone.
+
+- **Data_TS_CheckpointTime2** - Represents a predefined checkpoint in the boot timeline, used to measure elapsed time from app launch to a specific milestone.
+
+- **Data_TS_CheckpointTime3** - Represents a predefined checkpoint in the boot timeline, used to measure elapsed time from app launch to a specific milestone.
+
+- **Data_TS_CheckpointTime4** - Represents a predefined checkpoint in the boot timeline, used to measure elapsed time from app launch to a specific milestone.
+
+- **Data_TS_CheckpointTime5** - Represents a predefined checkpoint in the boot timeline, used to measure elapsed time from app launch to a specific milestone.
+
+- **Data_TS_CommonLibrariesLoadEndEnd** - Marks the timestamp when the loading of shared Office libraries completes.
+
+- **Data_TS_CommonLibrariesLoadStartStart** - Marks the timestamp when the loading of shared Office libraries begins.
+
+- **Data_TS_ContentWithSearchAndTabs** - Indicates the point in the boot sequence when the app has initialized the content view that includes both search functionality and tabbed navigation.
+
+- **Data_TS_CopilotLaunched_web** - Captures the timestamp when the Copilot module is launched via a web-based trigger or deep link.
+
+- **Data_TS_CreateMainOfficeActivityEnd** - These fields bracket the creation of the main Office activity, which is the central UI for OfficeMobile.
+
+- **Data_TS_CreateMainOfficeActivityStart** - These fields bracket the creation of the main Office activity, which is the central UI for OfficeMobile.
+
+- **Data_TS_FragmentInitView** - These fields mark the start of view initialization for the primary fragment (for example, OneDrive, Copilot, or Home).
+
+- **Data_TS_FragmentInitViewStart** - These fields mark the start of view initialization for the primary fragment (for example, OneDrive, Copilot, or Home).
+
+- **Data_TS_GetDefaultAndAIHubAppShellListEnd** - These fields capture the start and end of retrieving the list of default and AI Hub app shells.
+
+- **Data_TS_GetDefaultAndAIHubAppShellListEnd1736407622271** - *(not actively used)*
+
+- **Data_TS_GetDefaultAndAIHubAppShellListStart** - These fields capture the start and end of retrieving the list of default and AI Hub app shells.
+
+- **Data_TS_GetDefaultAndAIHubAppShellListStart1736407622161** - *(not actively used)*
+
+- **Data_TS_GetNonAiHubAppShellListEnd** - These fields mark the start and end of retrieving the list of non-AI Hub app shells.
+
+- **Data_TS_GetNonAiHubAppShellListStart** - Marks the beginning of the process to retrieve the list of Hub app shells (for example, Word, Excel, PowerPoint). 
+
+- **Data_TS_GettingClassEnd** - These timestamps bracket the process of resolving and loading the appropriate class definitions for modules or fragments during boot.
+
+- **Data_TS_GettingClassStart** - These timestamps bracket the process of resolving and loading the appropriate class definitions for modules or fragments during boot.
+
+- **Data_TS_HubOrchestrator_getModuleEnd** - These fields capture the start and end of the module retrieval process managed by the Hub Orchestrator.
+
+- **Data_TS_HubOrchestrator_getModuleStart** - These fields capture the start and end of the module retrieval process managed by the Hub Orchestrator.
+
+- **Data_TS_HubOrchestrator_getModuleStart1736407627983** - *(not actively used)*
+
+- **Data_TS_HubOrchestrator_getModuleStart1736407655402** - *(not actively used)*
+
+- **Data_TS_HubOrchestrator_getModuleStart1736407671875** - *(not actively used)*
+
+- **Data_TS_HubOrchestrator_getModuleStart1736407710373** - *(not actively used)*
+
+- **Data_TS_HubOrchestrator_getModuleStart1736407787191** - *(not actively used)*
+
+- **Data_TS_HubOrchestrator_getModuleStart1736407838816** - *(not actively used)*
+
+- **Data_TS_HubOrchestrator_getModuleStart1736407862418** - *(not actively used)*
+
+- **Data_TS_HubOrchestrator_getModuleStart1736407888592** - *(not actively used)*
+
+- **Data_TS_InitializeOfficeActivityUIEnd** - These fields mark the beginning and completion of UI initialization for the main Office activity.
+
+- **Data_TS_InitializeOfficeActivityUIStart** - These fields mark the beginning and completion of UI initialization for the main Office activity.
+
+- **Data_TS_InitialSetup** - Represents the timestamp when the initial setup logic begins during app boot.
+
+- **Data_TS_InitModule** - These fields bracket the initialization of a specific Office module (for example, Word, Excel, Copilot).
+
+- **Data_TS_InitModuleEnd** - These fields bracket the initialization of a specific Office module (for example, Word, Excel, Copilot).
+
+- **Data_TS_InitModuleStart** - These fields bracket the initialization of a specific Office module (for example, Word, Excel, Copilot).
+
+- **Data_TS_InitViewModelEnd** - Marks the start and end of initializing the view model associated with the active fragment or module.
+
+- **Data_TS_InitViewModelStart** - Marks the start and end of initializing the view model associated with the active fragment or module.
+
+- **Data_TS_inputBox** - Logs the timestamp when the input box (for example, search or chat input) is rendered or becomes interactive
+
+- **Data_TS_K2TopTabBar** - Marks the timestamp when the Top Tab Bar component is initialized. This UI element is responsible for rendering the top-level navigation tabs.
+
+- **Data_TS_kopal_copiloteligibilitycheck** - *(not actively used)*
+
+- **Data_TS_LaunchFragmentEnd** - These fields bracket the lifecycle of launching a fragment (for example, OneDrive, Copilot, Home).
+
+- **Data_TS_LaunchFragmentStart** - These fields bracket the lifecycle of launching a fragment (for example, OneDrive, Copilot, Home).
+
+- **Data_TS_M365TTIHSBackroundtriggerBackgroundActivationcalled** - *(not actively used)*
+
+- **Data_TS_M365TTIMyContentViewModelonIdentityChanged** - *(not actively used)*
+
+- **Data_TS_M365TTIMyContentViewModelsetSelectedTab** - *(not actively used)*
+
+- **Data_TS_M365TTIMyContentViewModeltriggerOneDriveSyncIfNeeded** - *(not actively used)*
+
+- **Data_TS_M365TTIOfficeMobileActivty_JavacreateSilhouette1** - Logs the step in the creation of the specific object within the OfficeMobileActivity.
+
+- **Data_TS_M365TTIOfficeMobileActivty_JavacreateSilhouette2** - Logs the step in the creation of the specific object within the OfficeMobileActivity.
+
+- **Data_TS_M365TTIOfficeMobileActivty_JavacreateSilhouette3** - Logs the step in the creation of the specific object within the OfficeMobileActivity.
+
+- **Data_TS_M365TTIonContentUpdatedcalled** - Marks the timestamp when the content update callback is triggered during the boot sequence.
+
+- **Data_TS_M365TTIonPostAppInitializecalled12** - Captures the execution of the post-app-initialization task.
+
+- **Data_TS_M365TTIonPostAppInitializecalled15** - Captures the execution of the post-app-initialization task.
+
+- **Data_TS_M365TTIonPostAppInitializecalled5** - Captures the execution of the post-app-initialization task.
+
+- **Data_TS_M365TTIonPostAppInitializecalled6** - Captures the execution of the post-app-initialization task.
+
+- **Data_TS_M365TTIperformMigrationIfPendingcalled** - This field logs when the app checks for and performs any pending data or configuration migrations.
+
+- **Data_TS_M365TTIpostAppInitializeBackgroundTasksOnMainThreadcalled1** - This timestamp marks the invocation of a specific post-app-initialization task in the boot sequence.
+
+- **Data_TS_M365TTIpostAppInitializeBackgroundTasksOnMainThreadcalled2** - This timestamp marks the invocation of a specific post-app-initialization task in the boot sequence.
+
+- **Data_TS_M365TTIpostAppInitializeBackgroundTasksOnMainThreadcalled3** - This timestamp marks the invocation of a specific post-app-initialization task in the boot sequence.
+
+- **Data_TS_M365TTIpostAppInitializeBackgroundTasksOnMainThreadcalled4** - This timestamp marks the invocation of a specific post-app-initialization task in the boot sequence.
+
+- **Data_TS_M365TTIpostAppInitializeBackgroundTasksOnMainThreadcalled5** - This timestamp marks the invocation of a specific post-app-initialization task in the boot sequence.
+
+- **Data_TS_M365TTIpostAppInitializeBackgroundTasksOnMainThreadcalled6** - This timestamp marks the invocation of a specific post-app-initialization task in the boot sequence.
+
+- **Data_TS_M365TTIpostAppInitializeBackgroundTasksOnMainThreadcalled7** - This timestamp marks the invocation of a specific post-app-initialization task in the boot sequence.
+
+- **Data_TS_M365TTIpostAppInitializeBackgroundTasksOnMainThreadcalled8** - This timestamp marks the invocation of a specific post-app-initialization task in the boot sequence.
+
+- **Data_TS_M365TTISkippedcreateSilhouette** - Indicates that the specific creation step was skipped, likely due to an inorganic boot path (for example, file activation or notification trigger) where full UI setup is deferred or bypassed 
+
+- **Data_TS_MinimumLibrariesLoadEnd** - These fields bracket the loading of the minimum required libraries for OfficeMobile to function.
+
+- **Data_TS_MinimumLibrariesLoadStartStart** - These fields bracket the loading of the minimum required libraries for OfficeMobile to function.
+
+- **Data_TS_ModuleHostFragment_OnCreate** - Marks the start of the lifecycle method for the ModuleHostFragment, which hosts specific Office modules like Word, Excel, or Copilot.
+
+- **Data_TS_ModuleHostFragment_OnCreateView** - Captures the timestamp when the view creation begins for the ModuleHostFragment.
+
+- **Data_TS_ModuleHostFragment_OnViewCreated** - Indicates the completion of the view creation process for the ModuleHostFragment.
+
+- **Data_TS_ModuleLauncher_ComposeEnd** - These fields bracket the composition phase of the module launcher, which prepares the UI and logic for launching a specific Office module.
+
+- **Data_TS_ModuleLauncher_ComposeStart** - These fields bracket the composition phase of the module launcher, which prepares the UI and logic for launching a specific Office module.
+
+- **Data_TS_ModuleLauncher_FragmentEnd** - These fields bracket the lifecycle of launching a module-specific fragment (for example, Word, Excel, Copilot) within OfficeMobile.
+
+- **Data_TS_ModuleLauncher_FragmentStart** - These fields bracket the lifecycle of launching a module-specific fragment (for example, Word, Excel, Copilot) within OfficeMobile.
+
+- **Data_TS_ModuleObjectsEnd** - These fields bracket the initialization of module-specific objects (for example, Word, Excel, PowerPoint, Copilot) during the OfficeMobile boot sequence.
+
+- **Data_TS_ModuleObjectsStart** - These fields bracket the initialization of module-specific objects (for example, Word, Excel, PowerPoint, Copilot) during the OfficeMobile boot sequence.
+
+- **Data_TS_OnActivityPreCreateEnd** - These timestamps mark the beginning and end of the pre-creation phase of the main Office activity.
+
+- **Data_TS_OnActivityPreCreateStart** - These timestamps mark the beginning and end of the pre-creation phase of the main Office activity.
+
+- **Data_TS_onContentUpdated** - Captures the moment when dynamic content (for example, recent files, personalized feeds) is updated and ready for rendering.
+
+- **Data_TS_OnCreateCoreEnd** - These fields bracket the execution of the core logic within the specific method of the Office activity.
+
+- **Data_TS_OnCreateCoreStart** - These fields bracket the execution of the core logic within the specific method of the Office activity.
+
+- **Data_TS_onPreCreateOfficeActivityEnd** - These timestamps capture the start and end of the specific phase of the Office activity.
+
+- **Data_TS_onPreCreateOfficeActivityStart** - These timestamps capture the start and end of the specific phase of the Office activity.
+
+- **Data_TS_ParsingJSONEnd** - These fields mark the beginning and end of parsing configuration files or payloads during app boot.
+
+- **Data_TS_ParsingJSONStart** - These fields mark the beginning and end of parsing configuration files or payloads during app boot.
+
+- **Data_TS_PostAppActivateTasksEnd** - These timestamps bracket the execution of tasks that are triggered after the app is activated (for example, after a cold start or file open).
+
+- **Data_TS_PostAppActivateTasksStart** - These timestamps bracket the execution of tasks that are triggered after the app is activated (for example, after a cold start or file open).
+
+- **Data_TS_PostAppInitializeBGTasksEnd** - These fields capture the start and end of background tasks that are initiated after the core app initialization completes.
+
+- **Data_TS_PostAppInitializeBGTasksStart** - These fields capture the start and end of background tasks that are initiated after the core app initialization completes.
+
+- **Data_TS_PostAppInitializeUITasksEnd** - These timestamps bracket UI-related tasks that are executed after the app has initialized.
+
+- **Data_TS_PostAppInitializeUITasksStart** - These timestamps bracket UI-related tasks that are executed after the app has initialized.
+
+- **Data_TS_PostingLiveData** - Marks the point at which LiveData objects (used for reactive UI updates) are posted to observers.
+
+- **Data_TS_PostponeCreateSilhouette** - Indicates that the creation of the specific UI shell has been deferred.
+- **Data_TS_PreRaiseActivationEnd** - These fields bracket the pre-activation phase, which includes preparing the app to handle activation triggers such as file opens, notifications, or protocol links.
+
+- **Data_TS_PreRaiseActivationStart** - These fields bracket the pre-activation phase, which includes preparing the app to handle activation triggers such as file opens, notifications, or protocol links.
+
+- **Data_TS_ReadModuleJSONEnd** - These timestamps capture the reading of module-specific files that define the structure, behavior, and eligibility of Office modules (for example, Word, Excel, Copilot).
+
+- **Data_TS_ReadModuleJSONStart** - These timestamps capture the reading of module-specific files that define the structure, behavior, and eligibility of Office modules (for example, Word, Excel, Copilot).
+
+- **Data_TS_RelativeStartMarker** - Serves as a reference point for calculating relative durations of subsequent telemetry markers.
+
+- **Data_TS_SelectedTabLiveData** - Marks the timestamp when the LiveData object representing the selected tab is updated.
+
+- **Data_TS_SelectedTabLiveData1736407628246** - *(not actively used)*
+
+- **Data_TS_SetEligibleTabsListEnd** - These fields bracket the process of determining which tabs (for example, Home, Copilot, Apps) are eligible to be shown based on user context, feature flags, and licensing.
+
+- **Data_TS_SetEligibleTabsListEnd1736407622504** - *(not actively used)*
+
+- **Data_TS_SetEligibleTabsListStart** - These fields bracket the process of determining which tabs (for example, Home, Copilot, Apps) are eligible to be shown based on user context, feature flags, and licensing.
+
+- **Data_TS_SetEligibleTabsListStart1736407622151** - *(not actively used)*
+
+- **Data_TS_SilhouetteCreationEnd** - These timestamps mark the beginning and end of creating the UI shell used during fast boot scenarios.
+
+- **Data_TS_SilhouetteCreationStart** - These timestamps mark the beginning and end of creating the UI shell used during fast boot scenarios.
+
+- **Data_TS_SkippedCreateSilhouette** - Indicates that silhouette creation was skipped, typically in inorganic boot paths (for example, file activation or notification triggers) where full UI setup is deferred or unnecessary
+
+- **Data_TS_switchFragment** - Marks the timestamp when the app switches from one fragment (for example, Home, Copilot, Apps) to another.
+
+- **Data_TS_TabFragmentOnCreate** - Captures the moment when a tab fragment (for example, Home, Apps, Copilot) is created.
+
+- **Data_TS_TabFragmentOnCreate1736407627979** - *(not actively used)*
+
+- **Data_TS_TabSwitchedFromDefault** - Indicates that the user has switched away from the default landing tab (typically Home) to another tab.
+
+- **Data_TS_TimeToInteractive** - Captures the total time (in milliseconds) from app launch to the point when the UI becomes fully interactive
+
+- **Data_TS_TimeToInteractiveFromFragmentCreation** - Measures the time from the creation of the primary fragment (for example, Home, Copilot) to when it becomes interactive
+
+- **Data_TS_TimeToInteractiveStart** - Marks the timestamp when the Time to Interactive (TTI) measurement begins
+
+- **Data_TS_TimeToRender** - Captures the total time (in milliseconds) from app launch to when the first frame of the UI is rendered
+
+- **Data_TS_TimeToRenderFromFragmentCreation** - Measures the time from fragment creation to the first successful render
+
+- **Data_TS_TimeToRenderStart** - Marks the beginning of the rendering phase, typically when the fragment view begins inflation or layout processing
+
+- **Data_TS_updateFragment** - Indicates the timestamp when a fragment update is triggered—such as switching tabs, refreshing content, or reloading a module
+
+- **Data_TS_UpdateFragmentEnd** - Marks the completion of a fragment update
+
+- **Data_TS_UpdateFragmentEnd1736407622504** - *(not actively used)*
+
+- **Data_TS_UpdateFragmentEnd1736407628246** - *(not actively used)*
+
+- **Data_TS_UpdateFragmentStart** - Marks the start of a fragment update
+
+- **Data_TS_UpdateFragmentStart1736407622494** - *(not actively used)*
+
+- **Data_TS_UpdateFragmentStart1736407627958** - *(not actively used)*
+
+- **Data_TS_UpdateLiveData** - Marks the timestamp when LiveData objects are updated with new values
+
+- **Data_TS_updateSelectedAppShell** - Captures the moment when the selected app shell (for example, Word, Excel, Copilot) is updated based on user interaction or eligibility logic
+
+- **Data_TS_zeroQueryMessage** - Indicates when the Zero Query Message (ZQM)—a default message shown in the Chat module before user input—is rendered
+
+- **Data_TSActivationTriggeredStart** - Marks the timestamp when an activation trigger (for example, file open, notification, deep link) is received by the app
+
+- **Data_TSAppHostActivityOnCreateStart** - Marks the start of the AppHost activity, which is responsible for launching specific Office modules like Word, Excel, or Copilot.
+
+- **Data_TSApplicationConstructorInvokedStart** - Marks the timestamp when the OfficeMobile application constructor is invoked by the OS.
+
+- **Data_TSCommonLibrariesLoadEndEnd** - These fields bracket the loading of shared Office libraries (for example, core components used across Word, Excel, PowerPoint, and Copilot). 
+
+- **Data_TSCommonLibrariesLoadStartStart** - These fields bracket the loading of shared Office libraries (for example, core components used across Word, Excel, PowerPoint, and Copilot). 
+
+- **Data_TSMinimumLibrariesLoadEnd** - These fields capture the loading of the minimum required libraries for OfficeMobile to function.
+
+- **Data_TSMinimumLibrariesLoadStartStart** - These fields capture the loading of the minimum required libraries for OfficeMobile to function.
+
+- **Data_TSOnCreateCoreEnd** - These timestamps bracket the execution of the core logic within the specific method of the OfficeMobile activity.
+
+- **Data_TSOnCreateCoreStart** - These timestamps bracket the execution of the core logic within the specific method of the OfficeMobile activity.
+
+- **Data_UpdateFragmentEnd** - These fields mark the start and end of fragment updates triggered during boot or navigation.
+
+- **Data_UpdateFragmentStart** - These fields mark the start and end of fragment updates triggered during boot or navigation.
+
+- **Data_WARMUP_LANDING_MODULE** - Captures the warmup markers for landing ai hub module
+
+- **Data_WasShimmerShown** - Captures boolean if shimmer was visible to user before loading data
+
+- **Device_Model** - The device model 
+
+- **Device_NetworkCost** - The network cost
+
+- **Device_NetworkCountry** - The network country
+
+- **Device_OsBuild** - The device build
+
+- **Device_OsVersion** - The device OD version
+
+- **Event_Flags** - The event flags
+
+- **Event_IsExportable** - Captures if the event is exportable
+
+- **Event_Name** - The event name
+
+- **Event_ReceivedTime** - The event received time
+
+- **Event_SampleRate** - The event sample rate
+
+- **Event_SchemaVersion** - The event schema version
+
+- **Event_Sequence** - The event sequence
+
+- **Event_Source** - The event source
+
+- **Event_Time** - The event time
+
+- **Release_Audience** - The app release audience
+
+- **Release_AudienceGroup** - The app release audience group
+
+- **Release_Channel** - The app release channel
+
+- **Release_Fork** - The app release fork name
+
+- **Session_EcsETag** - The session ECS tag
+
+- **Session_Flags** - The session flags
+
+- **Session_HostAppName** - The host app name
+
+- **Session_HostSessionId** - The host session ID
+
+- **Session_Id** - The session ID
+
+- **Session_MeasuresEnabled** - Captures if the session measures are enabled
+
+- **Session_SamplingClientIdValue** - Captures the sampling client ID value
+
+- **Session_SubAppName** - The app subname
+
+- **Session_VirtualizationType** - The session virtualization type
+
+- **User_ActiveUserTenantId** - The user tenant ID
+
+- **User_PrimaryIdentityHash** - A unique identifier of User identity
+
+- **User_PrimaryIdentitySpace** - The type of user identity (AAD, MSA)
+
+- **User_TelemetryRegion** - The region in which user telemetry is collected and stored
+
+- **User_TenantGroup** - The category of tenant user belongs to (Consumer, Commercial)
+
+- **User_TenantId** - The user tenant ID
+
+
 #### Office.OfficeMobile.AppActivation.Launch
 
 This event identifies first time and subsequent activations through external triggers that activate the app. App activation loads certain dependencies that are responsible for making the app run smoothly and this event will record if it loaded successfully. It will also record the source of activation and app intent that was responsible for activating the app.
@@ -17223,33 +17838,624 @@ The following fields are collected:
 
 #### Office.OfficeMobile.AppActivation.LandingViewPerf
 
-This event is triggered when user launches Copilot in Office Mobile. The data is used to calculate latency of user perceived load time.
+This event is triggered automatically on boot to record the performance of certain operations of the Office Mobile Application. The event is used to measure service performance and quality of the Office Mobile on iOS app as the app boots on user request.
 
 The following fields are collected:
- 
-- **App_Name** - The application name.
 
-- **App_Platform** – The application platform.
+- **Activity_AggMode** -The field captures the aggregation mode of the activity
 
-- **App_Version** – The application version.
+- **Activity_Count** -The field captures the count of similar telemetry events happening at nearly the same time within a single session
 
-- **Data_LandingView** – The landing view for data.
+- **Activity_CV** -The field captures the correlation vector, which is used to track the sequence of related events
 
-- **Device_Model** – The device model.
+- **Activity_Duration** - The field captures the duration of the activity in milliseconds
 
-- **Device_OsBuild** – The version of the operating system.
+- **Activity_Result_Code** - The field captures the result code of the activity
 
-- **Device_OsVersion** – The version of the device.
+- **Activity_Result_Tag** - The field captures additional tags related to the result of the activity
 
-- **Event_Source** – The event source.
+- **Activity_Result_Type** - The field captures the type of result for the activity
 
-- **SessionId** – The identifier for the session.
+- **Activity_Success** - Boolean denoting whether the activity was a success
 
-- **Session_SubAppName** – sub app name.
+- **App_Branch** - The app code branch
 
-- **User_ActiveUserTenantId** – User Tenant ID.
+- **App_InstallType** - The app install type 
 
-- **User_TenantGroup** – Tenant group
+- **App_Name** - The app name
+
+- **App_Platform** - The app platform (Android/iOS)
+
+- **App_Version** - The app version number
+
+- **Client_Id** - The device ID hash
+
+- **Consent_AddInContentSourceLocation** - Indicates how the user made the choice to allow or disallow collection of add-in content
+
+- **Consent_AddInContentState** - Indicates whether add-in content collection is allowed
+
+- **Consent_ControllerConnectedServicesConsentTime** - The field captures the timestamp when the user provided consent for controller-connected services
+
+- **Consent_ControllerConnectedServicesSourceLocation** - Indicates how the user's choice for optional connected experiences was made
+
+- **Consent_ControllerConnectedServicesState** - Indicates whether the user has access to optional connected experiences
+
+- **Consent_DiagnosticConsentLevel** - Indicates what level of diagnostic data consent the user has given - Required, optional
+
+- **Consent_DiagnosticConsentLevelSourceLocation** - Indicates how the user had provided the consent for diagnostic data
+
+- **Consent_DiagnosticDataConsentTime** - Indicates when the user provided the consent for diagnostic data.
+
+- **Consent_DownloadContentConsentTime** - Indicates when the user made the choice to enable or disable connected experiences that download online content.
+
+- **Consent_DownloadContentSourceLocation** - Indicates how the user made the choice to enable or disable connected experiences that that download online content
+
+- **Consent_DownloadContentState** - Indicates whether the user has chosen to enable or disable connected experiences that download online content
+
+- **Consent_ServiceConnectionState** - Indicates whether the user has chosen to use or not use all connected experiences
+
+- **Consent_ServiceConnectionStateSourceLocation** - Indicates how the user provided the choice whether to use all connected experiences
+
+- **Consent_UserCategoryValue** - This field is used to record the user's consent preferences for different types of data usage, ensuring compliance with privacy regulations and providing transparency about how user data is handled
+
+- **Consent_UserContentDependentConsentTime** - Indicates when the user chose to enable or disable connected experiences that analyze content.
+
+- **Consent_UserContentDependentSourceLocation** - Indicates how the user's choice to enable or disable was made for connected experiences that analyze content
+
+- **Consent_UserContentDependentState** - Indicates whether the user has chosen to enable or disable connected experiences that analyze content
+
+- **Data_ActivationKind** - The field captures the type of activation that triggered the application launch
+
+- **Data_AppBootComplete** - Marks the timestamp when the app has completed its boot sequence and is ready for user interaction. 
+
+- **Data_AppEnteredForeground** - Captures the moment when the app transitions from background to foreground.
+
+- **Data_AppEnteredForeground1** - Captures the moment when the app transitions from background to foreground.
+
+- **Data_AppEnteredForeground2** - Captures the moment when the app transitions from background to foreground.
+
+- **Data_AppEnteredForeground3** - Captures the moment when the app transitions from background to foreground.
+
+- **Data_AppShellBeforeShellRegister** - The field captures the timestamp or event related to the application shell's state before the shell registration process begins
+
+- **Data_AppShellFetchTabViewController** - Captures the timestamp when the tab view controller is fetched during app shell initialization
+
+- **Data_AppShellRegister** - Marks the moment when the app shell is registered with the control manager or telemetry system
+
+- **Data_AppShellTabConfigFetchEnd** - Marks the completion of tab configuration fetch
+
+- **Data_AppShellTabConfigFetchEnd1** - Marks the completion of tab configuration fetch
+
+- **Data_AppShellTabConfigFetchEnd2** - Marks the completion of tab configuration fetch
+
+- **Data_AppShellTabConfigFetchEnd3** - Marks the completion of tab configuration fetch
+
+- **Data_AppShellTabConfigFetchStart** - Indicates the start of fetching tab configuration data
+
+- **Data_AppShellTabConfigFetchStart1** - Indicates the start of fetching tab configuration data
+
+- **Data_AppShellTabConfigFetchStart2** - Indicates the start of fetching tab configuration data
+
+- **Data_AppShellTabConfigFetchStart3** - Indicates the start of fetching tab configuration data
+
+- **Data_AppShellViewDidAppear** - Logs when the app shell view is loaded into memory
+
+- **Data_AppShellViewDidAppear1** - Logs when the app shell view is loaded into memory
+
+- **Data_AppShellViewDidAppear2** - Logs when the app shell view is loaded into memory
+
+- **Data_AppShellViewDidAppear3** - Logs when the app shell view is loaded into memory
+
+- **Data_AppShellViewDidLoad** - Marks the timestamp when the app shell view is about to appear on screen
+
+- **Data_AppShellViewDidLoad1** - Marks the timestamp when the app shell view is about to appear on screen
+
+- **Data_AppShellViewDidLoad2** - Marks the timestamp when the app shell view is about to appear on screen
+
+- **Data_AppShellViewDidLoad3** - Marks the timestamp when the app shell view is about to appear on screen
+
+- **Data_AppShellViewWillAppear** - Indicates that the app shell wrapper did not reset the tab state
+
+- **Data_AppShellViewWillAppear1** - Marks the timestamp when the app shell view is about to appear on screen
+
+- **Data_AppShellViewWillAppear2** - Marks the timestamp when the app shell view is about to appear on screen
+
+- **Data_AppShellViewWillAppear3** - Marks the timestamp when the app shell view is about to appear on screen
+
+- **Data_AppShellWrapperNoTabReset** - Indicates that the app shell wrapper did not reset the tab state
+
+- **Data_AppShellWrapperNoTabReset1** - Indicates that the app shell wrapper did not reset the tab state
+
+- **Data_AppShellWrapperNoTabReset2** - Indicates that the app shell wrapper did not reset the tab state
+
+- **Data_AppShellWrapperNoTabReset3** - Indicates that the app shell wrapper did not reset the tab state
+
+- **Data_AppShellWrapperResetToCopilotTab** - Captures the moment when the app shell wrapper explicitly resets the active tab to Copilot
+
+- **Data_AppShellWrapperResetToCopilotTab1** - Captures the moment when the app shell wrapper explicitly resets the active tab to Copilot
+
+- **Data_AppShellWrapperResetToCopilotTab2** - Captures the moment when the app shell wrapper explicitly resets the active tab to Copilot
+
+- **Data_AppShellWrapperResetToCopilotTab3** - Captures the moment when the app shell wrapper explicitly resets the active tab to Copilot
+
+- **Data_AppShellWrapperViewDidAppear** - Logs when the app shell wrapper view becomes visible to the user
+
+- **Data_AppShellWrapperViewDidAppear1** - Logs when the app shell wrapper view becomes visible to the user
+
+- **Data_AppShellWrapperViewDidAppear2** - Logs when the app shell wrapper view becomes visible to the user
+
+- **Data_AppShellWrapperViewDidAppear3** - Logs when the app shell wrapper view becomes visible to the user
+
+- **Data_AppShellWrapperViewDidLoad** - Marks the timestamp when the app shell wrapper view is loaded into memory
+
+- **Data_AppShellWrapperViewDidLoad1** - Marks the timestamp when the app shell wrapper view is loaded into memory
+
+- **Data_AppShellWrapperViewDidLoad2** - Marks the timestamp when the app shell wrapper view is loaded into memory
+
+- **Data_AppShellWrapperViewDidLoad3** - Marks the timestamp when the app shell wrapper view is loaded into memory
+
+- **Data_AuthFetchEnd** - Captures the completion of the authentication metadata fetch. These fields help measure latency in auth setup.
+
+- **Data_AuthFetchEnd1** - Captures the completion of the authentication metadata fetch. These fields help measure latency in auth setup.
+
+- **Data_AuthFetchStart** - Marks the beginning of fetching authentication metadata or configuration (for example, endpoints, policies).
+
+- **Data_AuthFetchStart1** - Marks the beginning of fetching authentication metadata or configuration (for example, endpoints, policies).
+
+- **Data_AuthTokenFetchEnd** - Marks the completion of token retrieval
+
+- **Data_AuthTokenFetchEnd1** - Marks the completion of token retrieval
+
+- **Data_AuthTokenFetchEnd2** - Marks the completion of token retrieval
+
+- **Data_AuthTokenFetchEnd3** - Marks the completion of token retrieval
+
+- **Data_AuthTokenFetchStart** - Indicates the start of fetching the actual authentication token.
+
+- **Data_AuthTokenFetchStart1** - Indicates the start of fetching the actual authentication token.
+
+- **Data_AuthTokenFetchStart2** - Indicates the start of fetching the actual authentication token.
+
+- **Data_AuthTokenFetchStart3** - Indicates the start of fetching the actual authentication token.
+
+- **Data_AvailableMemoryInMB** - Logs the available memory on the device (in MB) at the time of app launch
+
+- **Data_BackstageViewcontrollerCreation** - Captures the timestamp when the backstage view controller (for example, for settings, profile, or Copilot) is created.
+
+- **Data_BackstageViewControllerCreation** - Captures the timestamp when the backstage view controller (for example, for settings, profile, or Copilot) is created
+
+- **Data_BackstageViewControllerCreation1** - Captures the timestamp when the backstage view controller (for example, for settings, profile, or Copilot) is created
+
+- **Data_BackstageViewControllerCreation2** - Captures the timestamp when the backstage view controller (for example, for settings, profile, or Copilot) is created
+
+- **Data_BackstageViewControllerCreation3** - Captures the timestamp when the backstage view controller (for example, for settings, profile, or Copilot) is created
+
+- **Data_BatteryStatus** - The field is used to capture device performance.
+
+- **Data_BCBUserIdentified** - This field is used to determine whether a user has been identified as a BCB user
+
+- **Data_BCBUserIdentified1** - This field is used to determine whether a user has been identified as a BCB user
+
+- **Data_BCBUserIdentified2** - This field is used to determine whether a user has been identified as a BCB user
+
+- **Data_BingAuthorizationFlowEnd** - The field captures the timestamp or event related to the completion of the authorization flow
+
+- **Data_BingAuthorizationFlowEnd1** - The field captures the timestamp or event related to the completion of the authorization flow
+
+- **Data_BingAuthorizationFlowEnd2** - The field captures the timestamp or event related to the completion of the authorization flow
+
+- **Data_BingAuthorizationFlowEnd3** - The field captures the timestamp or event related to the completion of the authorization flow
+
+- **Data_BingAuthorizationFlowStart** - The field captures the timestamp or event related to the completion of the authorization flow
+
+- **Data_BingAuthorizationFlowStart1** - The field captures the timestamp or event related to the completion of the authorization flow
+
+- **Data_BingAuthorizationFlowStart2** - The field captures the timestamp or event related to the completion of the authorization flow
+
+- **Data_BingAuthorizationFlowStart3** - The field captures the timestamp or event related to the completion of the authorization flow
+
+- **Data_BingCookieCacheInvalid** - Indicates that the cached cookie was invalid, triggering a re-fetch or fallback behavior
+
+- **Data_BingCookieCacheInValid** - Indicates that the cached cookie was invalid, triggering a re-fetch or fallback behavior
+
+- **Data_BingCookieCacheInvalid1** - Indicates that the cached cookie was invalid, triggering a re-fetch or fallback behavior
+
+- **Data_BingCookieCacheInvalid2** - Indicates that the cached cookie was invalid, triggering a re-fetch or fallback behavior
+
+- **Data_BingCookieCacheInvalid3** - Indicates that the cached cookie was invalid, triggering a re-fetch or fallback behavior
+
+- **Data_BingCookieCacheValid** - Indicates that a valid cookie was found in the cache, allowing Copilot or search-related services to proceed without delay
+
+- **Data_BingCookieCacheValid1** - Indicates that a valid cookie was found in the cache, allowing Copilot or search-related services to proceed without delay
+
+- **Data_BingCookieCacheValid2** - Indicates that a valid cookie was found in the cache, allowing Copilot or search-related services to proceed without delay
+
+- **Data_BingCookieCacheValid3** - Indicates that a valid cookie was found in the cache, allowing Copilot or search-related services to proceed without delay
+
+- **Data_BingCookieFetchEnd** - Captures the completion of the cookie fetch process
+
+- **Data_BingCookieFetchEnd1** - Captures the completion of the cookie fetch process
+
+- **Data_BingCookieFetchEnd2** - Captures the completion of the cookie fetch process
+
+- **Data_BingCookieFetchEnd3** - Captures the completion of the cookie fetch process
+
+- **Data_BingCookieFetchStart** - Marks the beginning of a cookie fetch operation, typically triggered when no valid cookie is found
+
+- **Data_BingCookieFetchStart1** - Marks the beginning of a cookie fetch operation, typically triggered when no valid cookie is found
+
+- **Data_BingCookieFetchStart2** - Marks the beginning of a cookie fetch operation, typically triggered when no valid cookie is found
+
+- **Data_BingCookieFetchStart3** - Marks the beginning of a cookie fetch operation, typically triggered when no valid cookie is found
+
+- **Data_BingCWCEligibilityFetchEnd** - The field captures the timestamp or event related to the completion of the authorization flow
+
+- **Data_BingCWCEligibilityFetchEnd1** - The field captures the timestamp or event related to the completion of the authorization flow
+
+- **Data_BingCWCEligibilityFetchEnd2** - The field captures the timestamp or event related to the completion of the authorization flow
+
+- **Data_BingCWCEligibilityFetchStart** - The field captures the timestamp or event related to the completion of the authorization flow
+
+- **Data_BingCWCEligibilityFetchStart1** - The field captures the timestamp or event related to the completion of the authorization flow
+
+- **Data_BingCWCEligibilityFetchStart2** - The field captures the timestamp or event related to the completion of the authorization flow
+
+- **Data_CheckPoint1** - These are predefined telemetry markers used to measure elapsed time between key boot phases. They help isolate performance bottlenecks
+
+- **Data_CheckPoint11** - These are predefined telemetry markers used to measure elapsed time between key boot phases. They help isolate performance bottlenecks
+
+- **Data_CheckPoint2** - These are predefined telemetry markers used to measure elapsed time between key boot phases. They help isolate performance bottlenecks
+
+- **Data_CheckPoint3** - These are predefined telemetry markers used to measure elapsed time between key boot phases. They help isolate performance bottlenecks
+
+- **Data_CheckPoint4** - These are predefined telemetry markers used to measure elapsed time between key boot phases. They help isolate performance bottlenecks
+
+- **Data_CopilotSettingUpScreenViewDidAppear** - Marks the timestamp when the Copilot setup screen is loaded into memory
+
+- **Data_CopilotSettingUpScreenViewDidAppear1** - Marks the timestamp when the Copilot setup screen is loaded into memory
+
+- **Data_CopilotSettingUpScreenViewDidAppear2** - Marks the timestamp when the Copilot setup screen is loaded into memory
+
+- **Data_CopilotSettingUpScreenViewDidAppear3** - Marks the timestamp when the Copilot setup screen is loaded into memory
+
+- **Data_CopilotSettingUpScreenViewDidLoad** - Captures the moment when the Copilot setup screen is about to be dismissed
+
+- **Data_CopilotSettingUpScreenViewDidLoad1** - Captures the moment when the Copilot setup screen is about to be dismissed
+
+- **Data_CopilotSettingUpScreenViewDidLoad2** - Captures the moment when the Copilot setup screen is about to be dismissed
+
+- **Data_CopilotSettingUpScreenViewDidLoad3** - Captures the moment when the Copilot setup screen is about to be dismissed
+
+- **Data_CopilotSettingUpScreenViewWillDisappear** - Captures the moment when the Copilot setup screen is about to be dismissed
+
+- **Data_CopilotSettingUpScreenViewWillDisappear1** - Captures the moment when the Copilot setup screen is about to be dismissed
+
+- **Data_CopilotSettingUpScreenViewWillDisappear2** - Captures the moment when the Copilot setup screen is about to be dismissed
+
+- **Data_CopilotSettingUpScreenViewWillDisappear3** - Captures the moment when the Copilot setup screen is about to be dismissed
+
+- **Data_DetachedDuration** - Measures the duration for which the app was detached from the foreground (for example, backgrounded or suspended). 
+
+- **Data_FinishLaunching** - Marks the timestamp when the app finishes launching and transitions into its main operational state
+
+- **Data_FirstBoot** - Indicates whether the current session is the first boot after installation or update. This is used to segment telemetry and performance data
+
+- **Data_HamburgerMenuInitialized** - Tracks the lifecycle of the hamburger menu (navigation drawer), including initialization and rendering
+
+- **Data_HamburgerMenuInitiated** - Tracks the lifecycle of the hamburger menu (navigation drawer), including initialization and rendering
+
+- **Data_HamburgerMenuViewDidLoad** - Tracks the lifecycle of the hamburger menu (navigation drawer), including initialization and rendering
+
+- **Data_InterruptionMessageId** - Logs the ID of any interruption message shown during boot (for example, error, update prompt). Useful for diagnostics
+
+- **Data_isAccountManaged** - Flags whether the user account or app instance is managed by the organization (for example, via Intune or MDM) 
+
+- **Data_isAppManaged** - Flags whether the user account or app instance is managed by the organization (for example, via Intune or MDM) 
+
+- **Data_isBootInterrupted** - Indicates whether the boot sequence was interrupted due to external factors (for example, crash, forced close)
+
+- **Data_IsBootInteruppted** - Indicates whether the boot sequence was interrupted due to external factors (for example, crash, forced close)
+
+- **Data_IsNewAppShellEnabled** - Flags whether the new app shell experience is enabled for the user. 
+
+- **Data_IsRocksteadyEnabled** - Indicates whether the framework (used for Copilot and AI features) is enabled for the session
+
+- **Data_isUserBCB** - Flags whether the user is part of the BCB (Business Copilot Beta) program or eligible for it
+
+- **Data_isUserBCBEligible** - Flags whether the user is part of the BCB (Business Copilot Beta) program or eligible for it
+
+- **Data_isViewLoadSuccess** - Indicates whether the view loaded successfully
+
+- **Data_LandingView** - The landing tab in the app
+
+- **Data_Module_Checkpoint_0** - This field is part of the sequential telemetry markers used to measure specific steps in module boot and rendering. Each checkpoint corresponds to a distinct phase such as input box render, zero query message, tab load,etc.
+
+- **Data_Module_Checkpoint_1** - This field is part of the sequential telemetry markers used to measure specific steps in module boot and rendering. Each checkpoint corresponds to a distinct phase such as input box render, zero query message, tab load,etc.
+
+- **Data_Module_Checkpoint_10** - This field is part of the sequential telemetry markers used to measure specific steps in module boot and rendering. Each checkpoint corresponds to a distinct phase such as input box render, zero query message, tab load,etc.
+
+- **Data_Module_Checkpoint_11** - This field is part of the sequential telemetry markers used to measure specific steps in module boot and rendering. Each checkpoint corresponds to a distinct phase such as input box render, zero query message, tab load,etc.
+
+- **Data_Module_Checkpoint_12** - This field is part of the sequential telemetry markers used to measure specific steps in module boot and rendering. Each checkpoint corresponds to a distinct phase such as input box render, zero query message, tab load,etc.
+
+- **Data_Module_Checkpoint_13** - This field is part of the sequential telemetry markers used to measure specific steps in module boot and rendering. Each checkpoint corresponds to a distinct phase such as input box render, zero query message, tab load,etc.
+
+- **Data_Module_Checkpoint_14** - This field is part of the sequential telemetry markers used to measure specific steps in module boot and rendering. Each checkpoint corresponds to a distinct phase such as input box render, zero query message, tab load,etc.
+
+- **Data_Module_Checkpoint_15** - This field is part of the sequential telemetry markers used to measure specific steps in module boot and rendering. Each checkpoint corresponds to a distinct phase such as input box render, zero query message, tab load,etc.
+
+- **Data_Module_Checkpoint_2** - This field is part of the sequential telemetry markers used to measure specific steps in module boot and rendering. Each checkpoint corresponds to a distinct phase such as input box render, zero query message, tab load,etc.
+
+- **Data_Module_Checkpoint_3** - This field is part of the sequential telemetry markers used to measure specific steps in module boot and rendering. Each checkpoint corresponds to a distinct phase such as input box render, zero query message, tab load,etc.
+
+- **Data_Module_Checkpoint_4** - This field is part of the sequential telemetry markers used to measure specific steps in module boot and rendering. Each checkpoint corresponds to a distinct phase such as input box render, zero query message, tab load,etc.
+
+- **Data_Module_Checkpoint_5** - This field is part of the sequential telemetry markers used to measure specific steps in module boot and rendering. Each checkpoint corresponds to a distinct phase such as input box render, zero query message, tab load,etc.
+
+- **Data_Module_Checkpoint_6** - This field is part of the sequential telemetry markers used to measure specific steps in module boot and rendering. Each checkpoint corresponds to a distinct phase such as input box render, zero query message, tab load,etc.
+
+- **Data_Module_Checkpoint_7** - This field is part of the sequential telemetry markers used to measure specific steps in module boot and rendering. Each checkpoint corresponds to a distinct phase such as input box render, zero query message, tab load,etc.
+
+- **Data_Module_Checkpoint_8** - This field is part of the sequential telemetry markers used to measure specific steps in module boot and rendering. Each checkpoint corresponds to a distinct phase such as input box render, zero query message, tab load,etc.
+
+- **Data_Module_Checkpoint_9** - This field is part of the sequential telemetry markers used to measure specific steps in module boot and rendering. Each checkpoint corresponds to a distinct phase such as input box render, zero query message, tab load,etc.
+
+- **Data_Module_Checkpoint0** - This field is part of the sequential telemetry markers used to measure specific steps in module boot and rendering. Each checkpoint corresponds to a distinct phase such as input box render, zero query message, tab load,etc.
+
+- **Data_Module_Checkpoint1** - This field is part of the sequential telemetry markers used to measure specific steps in module boot and rendering. Each checkpoint corresponds to a distinct phase such as input box render, zero query message, tab load,etc.
+
+- **Data_Module_Checkpoint2** - This field is part of the sequential telemetry markers used to measure specific steps in module boot and rendering. Each checkpoint corresponds to a distinct phase such as input box render, zero query message, tab load,etc.
+
+- **Data_Module_Checkpoint3** - This field is part of the sequential telemetry markers used to measure specific steps in module boot and rendering. Each checkpoint corresponds to a distinct phase such as input box render, zero query message, tab load,etc.
+
+- **Data_Module_Checkpoint4** - This field is part of the sequential telemetry markers used to measure specific steps in module boot and rendering. Each checkpoint corresponds to a distinct phase such as input box render, zero query message, tab load,etc.
+
+- **Data_Module_Checkpoint5** - This field is part of the sequential telemetry markers used to measure specific steps in module boot and rendering. Each checkpoint corresponds to a distinct phase such as input box render, zero query message, tab load,etc.
+
+- **Data_Module_CheckpointTime_0** - This field captures the timestamp (in ms) when each corresponding checkpoint is hit. Used to calculate latency between phases.
+
+- **Data_Module_CheckpointTime_1** - This field captures the timestamp (in ms) when each corresponding checkpoint is hit. Used to calculate latency between phases.
+
+- **Data_Module_CheckpointTime_10** - This field captures the timestamp (in ms) when each corresponding checkpoint is hit. Used to calculate latency between phases.
+
+- **Data_Module_CheckpointTime_11** - This field captures the timestamp (in ms) when each corresponding checkpoint is hit. Used to calculate latency between phases.
+
+- **Data_Module_CheckpointTime_12** - This field captures the timestamp (in ms) when each corresponding checkpoint is hit. Used to calculate latency between phases.
+
+- **Data_Module_CheckpointTime_13** - This field captures the timestamp (in ms) when each corresponding checkpoint is hit. Used to calculate latency between phases.
+
+- **Data_Module_CheckpointTime_14** - This field captures the timestamp (in ms) when each corresponding checkpoint is hit. Used to calculate latency between phases.
+
+- **Data_Module_CheckpointTime_15** - This field captures the timestamp (in ms) when each corresponding checkpoint is hit. Used to calculate latency between phases.
+
+- **Data_Module_CheckpointTime_2** - This field captures the timestamp (in ms) when each corresponding checkpoint is hit. Used to calculate latency between phases.
+
+- **Data_Module_CheckpointTime_3** - This field captures the timestamp (in ms) when each corresponding checkpoint is hit. Used to calculate latency between phases.
+
+- **Data_Module_CheckpointTime_4** - This field captures the timestamp (in ms) when each corresponding checkpoint is hit. Used to calculate latency between phases.
+
+- **Data_Module_CheckpointTime_5** - This field captures the timestamp (in ms) when each corresponding checkpoint is hit. Used to calculate latency between phases.
+
+- **Data_Module_CheckpointTime_6** - This field captures the timestamp (in ms) when each corresponding checkpoint is hit. Used to calculate latency between phases.
+
+- **Data_Module_CheckpointTime_7** - This field captures the timestamp (in ms) when each corresponding checkpoint is hit. Used to calculate latency between phases.
+
+- **Data_Module_CheckpointTime_8** - This field captures the timestamp (in ms) when each corresponding checkpoint is hit. Used to calculate latency between phases.
+
+- **Data_Module_CheckpointTime_9** - This field captures the timestamp (in ms) when each corresponding checkpoint is hit. Used to calculate latency between phases.
+
+- **Data_Module_CheckpointTime0** - This field captures the timestamp (in ms) when each corresponding checkpoint is hit. Used to calculate latency between phases.
+
+- **Data_Module_CheckpointTime1** - This field captures the timestamp (in ms) when each corresponding checkpoint is hit. Used to calculate latency between phases.
+
+- **Data_Module_CheckpointTime2** - This field captures the timestamp (in ms) when each corresponding checkpoint is hit. Used to calculate latency between phases.
+
+- **Data_Module_CheckpointTime3** - This field captures the timestamp (in ms) when each corresponding checkpoint is hit. Used to calculate latency between phases.
+
+- **Data_Module_CheckpointTime4** - This field captures the timestamp (in ms) when each corresponding checkpoint is hit. Used to calculate latency between phases.
+
+- **Data_Module_CheckpointTime5** - This field captures the timestamp (in ms) when each corresponding checkpoint is hit. Used to calculate latency between phases.
+
+- **Data_Module_Name** - The field captures the Feature or Module name
+
+- **Data_Module_Session_Id** - The field captures the Feature or Module session ID
+
+- **Data_Module_SessionId** - The field captures the Feature or Module session ID
+
+- **Data_ModuleInitEnd** - Marks the start and end of initializing a specific module (for example, Copilot, OneDrive).
+
+- **Data_ModuleInitStart** - Marks the start and end of initializing a specific module (for example, Copilot, OneDrive).
+
+- **Data_ModuleRenderStart** - Indicates when rendering begins for the module UI.
+
+- **Data_ModuleRenderStart1** - Indicates when rendering begins for the module UI.
+
+- **Data_ModuleRenderStart2** - Indicates when rendering begins for the module UI.
+
+- **Data_ModuleRenderStart3** - Indicates when rendering begins for the module UI.
+
+- **Data_ModulesInitEnd** - Marks the completion of all module initializations
+
+- **Data_ModulesInitEnd1** - Marks the completion of all module initializations
+
+- **Data_ModulesInitEnd2** - Marks the completion of all module initializations
+
+- **Data_ModulesInitEnd3** - Marks the completion of all module initializations
+
+- **Data_ModulesInitStart** - Captures the start of initializing all modules in the shell
+
+- **Data_ModulesInitStart1** - Captures the start of initializing all modules in the shell
+
+- **Data_ModulesInitStart2** - Captures the start of initializing all modules in the shell
+
+- **Data_ModulesInitStart3** - Captures the start of initializing all modules in the shell
+
+- **Data_NavigationType** - Indicates the type of navigation (for example, tab switch, deep link, organic launch).
+
+- **Data_ODTabInitialized** - Marks when the OneDrive tab is initialized
+
+- **Data_OFMInterruptionId** - Identifiers for any interruption messages shown during boot
+
+- **Data_OFMInterruptionMessageId** - Identifiers for any interruption messages shown during boot
+
+- **Data_OptInUIShown** - Indicates whether the opt-in UI (for example, for Copilot) was shown
+
+- **Data_PostBootMemoryInMB** - Available memory after boot, in MB.
+
+- **Data_PreWarm** - Boolean value indicating if the app was pre-warmed before launch
+
+- **Data_Referrer** - This field is used to measure and analyze the performance and sequence of events during the app's operation.
+
+- **Data_RefreshTokenFetchEnd** - Marks the end of refresh token fetch
+
+- **Data_RefreshTokenFetchFailure** - Indicates failure in token fetch
+
+- **Data_RefreshTokenFetchFailure1** - Indicates failure in token fetch
+
+- **Data_RefreshTokenFetchFailure2** - Indicates failure in token fetch
+
+- **Data_RefreshTokenFetchFailure3** - Indicates failure in token fetch
+
+- **Data_RefreshTokenFetchStart** - Marks the start of refresh token fetch
+
+- **Data_RefreshTokenFetchStart1** - Marks the start of refresh token fetch
+
+- **Data_RefreshTokenFetchStart2** - Marks the start of refresh token fetch
+
+- **Data_RefreshTokenFetchStart3** - Marks the start of refresh token fetch
+
+- **Data_RefreshTokenFetchSuccess** - Indicates successful token fetch
+
+- **Data_RefreshTokenFetchSuccess1** - Indicates successful token fetch
+
+- **Data_RefreshTokenFetchSuccess2** - Indicates successful token fetch
+
+- **Data_RefreshTokenFetchSuccess3** - Indicates successful token fetch
+
+- **Data_StopwatchDuration** - Duration of stopwatch-based performance measurement
+
+- **Data_SuggestedTabSectionViewInitialized** - Marks when the suggested tab section view is initialized.
+
+- **Data_SuggestedTabSectionViewInitialized1** - Marks when the suggested tab section view is initialized.
+
+- **Data_SuggestedTabSectionViewInitialized2** - Marks when the suggested tab section view is initialized.
+
+- **Data_SuggestedTabSectionViewInitialized3** - Marks when the suggested tab section view is initialized.
+
+- **Data_SuggestedTabViewInitialized** - Indicates when the suggested tab itself is initialized
+
+- **Data_SuggestedTabViewInitialized1** - Indicates when the suggested tab itself is initialized
+
+- **Data_TimeToInteractiveInMs** - This field is used to measure and analyze the performance and sequence of events during the app's operation.
+
+- **Data_TimeToRenderInMs** - This field is used to measure and analyze the performance and sequence of events during the app's operation.
+
+- **Data_TypeofCopilotGrowthExperiment** - Specifies the type of Copilot experiment the user is part of (for example, BCB, control, variant).
+
+- **Data_UIRenderStart** - This field is used to measure and analyze the performance and sequence of events during the app's operation.
+
+- **Data_WebViewLoadEnd** - Timestamp when WebView finishes loading
+
+- **Data_WebViewLoadEnd1** - Timestamp when WebView finishes loading
+
+- **Data_WebViewLoadEnd2** - Timestamp when WebView finishes loading
+
+- **Data_WebViewLoadEnd3** - Timestamp when WebView finishes loading
+
+- **Data_WebViewLoadStart** - Timestamp when WebView starts loading
+
+- **Data_WebViewLoadStart1** - Timestamp when WebView starts loading
+
+- **Data_WebViewLoadStart2** - Timestamp when WebView starts loading
+
+- **Data_WebViewLoadStart3** - Timestamp when WebView starts loading
+
+- **Data_WebViewPreloadInitiated** - Indicates when WebView preload is initiated.
+
+- **Data_WebViewPreloadInitiated1** - Indicates when WebView preload is initiated.
+
+- **Data_WebViewPreloadInitiated2** - Indicates when WebView preload is initiated.
+
+- **Data_WebViewPreloadInitiated3** - Indicates when WebView preload is initiated.
+
+- **Data_WebViewReadyForInteraction** - Marks when WebView is ready for user interaction
+
+- **Data_WebViewReadyForInteraction1** - Marks when WebView is ready for user interaction
+
+- **Data_WebViewReadyForInteraction2** - Marks when WebView is ready for user interaction
+
+- **Data_WebViewReadyForInteraction3** - Marks when WebView is ready for user interaction
+
+- **Data_WillFinishLaunching** - Timestamp when the app is expected to finish launching
+
+- **Device_Model** - The device model
+
+- **Device_NetworkCost** - The device network cost
+
+- **Device_NetworkCountry** - The device network country
+
+- **Device_OsBuild** - The device OS build
+
+- **Device_OsVersion** - The device OS version
+
+- **Event_Contract** - The event contract Office.System
+
+- **Event_CV** - The field captures information related to the context of an event within the application
+
+- **Event_Flags** - The event flags
+
+- **Event_IsExportable** - Captures if the event is exportable
+
+- **Event_Name** - The event name Office.System
+
+- **Event_ReceivedTime** - The time the event received
+
+- **Event_SampleRate** - The event SAMPLE rate
+
+- **Event_SchemaVersion** - The event SCHEMA version
+
+- **Event_Sequence** - The event sequence
+
+- **Event_Source** - The event source 
+
+- **Event_Time** - The time the event occurred
+
+- **Release_Audience** - The app release audience
+
+- **Release_AudienceGroup** - The release audience group
+
+- **Release_Channel** - The release channel
+
+- **Release_Fork** - The release fork name
+
+- **Session_EcsETag** - The session ECS tag
+
+- **Session_Flags** - The session flag
+
+- **Session_Id** - The session ID
+
+- **Session_MeasuresEnabled** - The session measure is enabled
+
+- **Session_SamplingClientIdValue** - The session sampling value
+
+- **Session_SubAppName** - The session subapp name
+
+- **Session_VirtualizationType** - The session virtualization type
+
+- **User_ActiveUserTenantId** - The user tenant ID
+
+- **User_PrimaryIdentityHash** - A unique identifier of User identity
+
+- **User_PrimaryIdentitySpace** - The type of user identity (AAD, MSA)
+
+- **User_TelemetryRegion** - The region in which user telemetry is collected and stored
+
+- **User_TenantGroup** - The category of tenant user belongs to (Consumer, Commercial)
+
+- **User_TenantId** - A unique identifier of the user tenant
+
+- **zC_Activity_Result** - This field captures the result of an activity
+
 
 #### Office.OfficeMobile.AppShell.HamburgerActions
 
@@ -17794,6 +19000,59 @@ The following fields are collected:
 
 - **zC_Activity_Result** - This field captures the result of an activity
 
+#### Office.OfficeMobile.Homescreen.UserAction
+
+This event captures tab render when user clicks on the tab or from feature entry point on the hamburger. This event is used to evaluate the service render performance and reliability of the app when user clicks on each tab.
+
+The following fields are collected:
+
+- **Data_ActionType** - Type of user action
+
+- **Data_ActivityId** -Captures user activity ID
+
+- **Data_ActivityName** - Captures activity name
+
+- **Data_ContentType** - Content type
+
+- **Data_CorrelationId** - Correlation ID
+
+- **Data_Count** - Represents the total number of items available in the UI section where the interaction occurred
+
+- **Data_DetachedDuration** -Logs timestamp for a specific stage of the feature to evaluate its performance
+
+- **Data_DroppedAction** - Dropped action
+
+- **Data_DroppedPosition** - Dropped position
+
+- **Data_EventTime** - The time of point-event, as measured from the start of the OperationTelemetry it is logged from.
+
+- **Data_FailureReason** - Failure reason
+
+- **Data_FeatureName** - Feature name
+
+- **Data_FileExtension** - File Extension
+
+- **Data_HostView** - View/screen which hosts the target. 
+
+- **Data_OperationId** - Unique Id for an activity instance 
+
+- **Data_OperationName** - Name of the feature 
+
+- **Data_Position** - Indicates the position index of the UI element (for example, tab, button, card) that the user interacted with on the homescreen.
+
+- **Data_Referrer** - Name of the referrer activity or entry point where it was activated from 
+
+- **Data_ReferrerAction** - Action with which the feature/task was activated by the referrer 
+
+- **Data_ReferrerOperationId** - Unique ID of the referrer activity or entry point where it was activated from 
+
+- **Data_State** - State
+
+- **Data_StopwatchDuration** - Logs timestamp for a specific stage of the feature to evaluate its performance
+
+- **Data_Target** - Target control or view on which the action is performed.  
+
+- **Data_ToggleValue** - Toggle value for the feature
 
 #### Office.OfficeMobile.PdfViewer.PdfFileOpenMeasurements (on Android)
 

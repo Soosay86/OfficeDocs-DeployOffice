@@ -11,7 +11,7 @@ ms.collection:
 - privacy-microsoft365
 - must-keep
 hideEdit: true
-ms.date: 06/03/2025
+ms.date: 06/13/2025
 ---
 
 # Optional diagnostic data for Office
