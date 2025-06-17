@@ -32,7 +32,7 @@ These lightweight apps integrate seamlessly with Microsoft 365, allowing users t
 
 Microsoft 365 companion apps are available to users who:
 
-- Are part of the [Microsoft 365 Insider Program for Business](../insider/overview.md) (Beta Channel)
+- Are part of the [Microsoft 365 Insider Program for Business](../insider/overview.md) 
 - Have Microsoft 365 desktop apps installed
 - Are running Windows 11
 
