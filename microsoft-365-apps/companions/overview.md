@@ -60,7 +60,7 @@ If you don’t want Microsoft 365 companion apps to be installed automatically, 
 
 | Channel      | Date                   |
 | ------------ | ---------------------- |
-| Beta Channel | Rollout will begin on April 1, 2025|
+| Beta Channel | Available April 1, 2025|
 | Preview Channel |  June 5th, 2025 onwards|
 
 ## What do users see?
