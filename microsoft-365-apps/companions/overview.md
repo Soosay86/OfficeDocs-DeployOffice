@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
 description: "Learn about Microsoft 365 companions, including availability, opt-out options, and feedback mechanisms."
-ms.date: 05/19/2025
+ms.date: 06/17/2025
 ---
 
 # Overview of Microsoft 365 companion apps (preview)
@@ -32,7 +32,7 @@ These lightweight apps integrate seamlessly with Microsoft 365, allowing users t
 
 Microsoft 365 companion apps are available to users who:
 
-- Are part of the [Microsoft 365 Insider Program for Business](../insider/overview.md) (Beta Channel)
+- Are part of the [Microsoft 365 Insider Program for Business](../insider/overview.md) 
 - Have Microsoft 365 desktop apps installed
 - Are running Windows 11
 
@@ -60,7 +60,8 @@ If you don’t want Microsoft 365 companion apps to be installed automatically, 
 
 | Channel      | Date                   |
 | ------------ | ---------------------- |
-| Beta Channel | Rollout will begin on April 1, 2025|
+| Beta Channel | Available since April 1, 2025|
+| Preview Channel |  June 5th, 2025 onwards|
 
 ## What do users see?
 

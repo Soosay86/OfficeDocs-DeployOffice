@@ -16,9 +16,7 @@ ms.date: 05/26/2025
 
 # Overview of Cloud Policy service for Microsoft 365
 
-[Cloud Policy service for Microsoft 365](https://config.office.com/officeSettings/officePolicies) lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device isn't domain joined or otherwise managed. When a user signs into Microsoft 365 Apps for enterprise on a device, the policy settings roam to that device. Policy settings are available for devices running Windows, macOS, iOS, and Android, although not all policy settings are available for all operating systems. You can also enforce some policy settings for Office for the web and Loop, both for guests who are signed in and for users who access documents anonymously.
-
-Cloud Policy is part of the [Microsoft 365 Apps admin center](https://config.office.com/). The service includes many of the same user-based policy settings that are available in Group Policy. You can also use Cloud Policy directly in the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/p/?linkid=2109431), under **Apps** > **Policy** > **Policies for Office apps**.  
+Cloud Policy service for Microsoft 365 lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device isn't domain joined or otherwise managed. When a user signs into Microsoft 365 Apps for enterprise on a device, the policy settings roam to that device. Policy settings are available for devices running Windows, macOS, iOS, and Android, although not all policy settings are available for all operating systems. You can also enforce some policy settings for Office for the web and Loop, both for guests who are signed in and for users who access documents anonymously.
 
 ## Requirements
 
@@ -56,25 +54,27 @@ Cloud Policy Service supports the use of [Microsoft Entra groups](/entra/fundame
 
 ## Steps for creating a policy configuration
 
-The following are the basic steps for creating a policy configuration.
+To create or edit policy configurations you must sign into the Microsoft 365 Apps admin center. If you're using the admin center for the first time, review the terms. Then, select **Accept**.
+- Commercial and US Government customers can access the Microsoft 365 Apps admin center at [config.office.com](https://config.office.com) or directly in the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/p/?linkid=2109431), under **Apps** > **Policy** > **Policies for Office apps**.
+- US Government Community (GCC) High customers can access the Microsoft 365 Apps admin center at [config.office365.us](https://config.office365.us)
+- Department of Defense (DoD) customers can access the Microsoft 365 Apps admin center at [config.apps.mil](https://config.apps.mil)
 
-1. Sign in to the [Microsoft 365 Apps admin center](https://config.office.com/). If you're using the admin center for the first time, review the terms. Then, select **Accept**.
-2. Under **Customization**, select **Policy Management**.
-3. On the **Policy configurations** page, select **Create**.
-4. On the **Start with the basics** page, enter a name (required) and a description (optional), then select **Next**.
-5. On the **Choose the scope** page, determine whether the policy configuration applies to all users, specific groups, or to users who anonymously access documents using Office for the web.
-6. If the policy configuration applies to specific groups, you can now add multiple groups to a single policy configuration for more flexible targeting. To add groups, select **Add Groups** and choose the relevant groups. Adding multiple groups to a single policy configuration allows for the same group to be included in multiple policy configurations, facilitating a more streamlined and efficient policy management process.
-7. After making your selection, choose **Next**.
-8. On the **Configure Settings** page, select the policies that you want to include in the policy configuration. You can search for the policy by name, or you can create a custom filter. You can filter on platform, by application, on whether the policy is configured, and on whether the policy is a recommended security baseline.
-9. After making your selections, select **Next** to review your selections. Then select **Create** to create the policy configuration.
+1. Under **Customization**, select **Policy Management**.
+2. On the **Policy configurations** page, select **Create**.
+3. On the **Start with the basics** page, enter a name (required) and a description (optional), then select **Next**.
+4. On the **Choose the scope** page, determine whether the policy configuration applies to all users, specific groups, or to users who anonymously access documents using Office for the web.
+5. If the policy configuration applies to specific groups, you can now add multiple groups to a single policy configuration for more flexible targeting. To add groups, select **Add Groups** and choose the relevant groups. Adding multiple groups to a single policy configuration allows for the same group to be included in multiple policy configurations, facilitating a more streamlined and efficient policy management process.
+6. After making your selection, choose **Next**.
+7. On the **Configure Settings** page, select the policies that you want to include in the policy configuration. You can search for the policy by name, or you can create a custom filter. You can filter on platform, by application, on whether the policy is configured, and on whether the policy is a recommended security baseline.
+8. After making your selections, select **Next** to review your selections. Then select **Create** to create the policy configuration.
 
 
 ## Managing policy configurations
 
 To change a policy configuration:
 
-1. Go to the **Policy configurations** page.
-2. Open the configuration details of the policy you want to change by selecting it.
+1. Under **Customization**, select **Policy Management**.
+2. Open the configuration details of the policy configuration you want to change by selecting it.
 3. Make the appropriate changes to the policy configuration.
 4. Navigate to the **Review and publish** page.
 5. Select **Update** to save and apply your changes.
