@@ -4,7 +4,7 @@ ms.author: nwhite
 author: nicholasswhite
 manager: dougeby
 audience: ITPro
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 ms.service: o365-proplus-itpro
 ms.collection: Tier1
 ms.localizationpriority: medium
