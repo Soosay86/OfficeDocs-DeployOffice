@@ -4,7 +4,7 @@ ms.author: chinmayjain
 author: nicholasswhite
 manager: dougeby
 audience: ITPro
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: o365-proplus-itpro
 ms.subservice: office-mac
 ms.localizationpriority: medium
