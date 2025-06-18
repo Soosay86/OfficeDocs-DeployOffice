@@ -4,7 +4,7 @@ ms.author: nwhite
 author: nicholasswhite
 manager: dougeby
 audience: ITPro
-ms.topic: conceptual
+ms.topic: product-comparison
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier1
