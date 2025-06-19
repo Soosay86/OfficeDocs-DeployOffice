@@ -4,7 +4,7 @@ ms.author: nwhite
 author: nicholasswhite
 manager: dougeby
 audience: ITPro
-ms.topic: conceptual
+ms.topic: overview
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier1
