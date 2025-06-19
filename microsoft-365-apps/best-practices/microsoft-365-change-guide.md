@@ -4,7 +4,7 @@ ms.author: tabriggs
 author: tabriggs
 manager: dougeby
 audience: ITPro
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
