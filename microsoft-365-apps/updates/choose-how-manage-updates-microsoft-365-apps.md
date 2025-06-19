@@ -4,7 +4,7 @@ ms.author: nwhite
 author: nicholasswhite
 manager: dougeby
 udience: ITPro
-ms.topic: how-to
+ms.topic: concept-article
 ms.service: o365-proplus-itpro
 ms.collection: Tier1
 ms.localizationpriority: medium
