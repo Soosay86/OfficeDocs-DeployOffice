@@ -121,7 +121,7 @@ To pause and resume a profile, follow these steps:
 5. Resume the profile by returning to the **Monthly Enterprise Channel** profile page and selecting **Resume channel**.
 
 > [!NOTE]
-> For [rollout waves](#rollout-waves), the scheduled rollout continues when a profile is paused and doesn't restart when the profile is resumed.
+> For [rollout waves](#rollout-waves), the scheduled rollout does not continue when a profile is paused and does restart when the profile is resumed.
 
 ### Rollback
 
@@ -184,9 +184,11 @@ Cloud update is designed to give you full update coverage across the devices on 
 - Refer to the [Microsoft Entra group requirements](#microsoft-entra-groups-requirements) for cloud update.
 - Exclude groups is a tenant-level setting and applies to all profiles.
 - Excluded devices are reflected in your [device inventory](https://config.office.com/officeSettings/inventory/devices) within 24 hours. You can confirm a device was excluded by reviewing the **Cloud Update Status** column.
-- Once a device is marked as excluded, you can change the following registry value to regain control:
+- Once a device is marked as excluded, it will alter the registry value below. To accelerate the exclusion, you can change the following registry value to regain control:
 `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\cloud\office\16.0\Common\officeupdate`  
 `Value: IgnoreGPO=0`
+
+- The "ignoreGPO=0" update will happen within 24 hours and is effective in excluding the device from Cloud Update management.  In addition, within the week, the contents of the "officeupdates" key (above), will be cleaned out as part of an ongoing maintenance process.  
 
 To add or modify a group exclusion, follow these steps:
 
@@ -335,7 +337,7 @@ The predecessor of Cloud Update, Servicing Profiles, registered [COM objects](/w
 
 If you encounter a problem enabling or managing cloud update, first verify that you reviewed the [requirements](#requirements) and completed the steps in the [troubleshooting](#troubleshooting) section.
 
-If the problem persists after troubleshooting, open a support ticket with Microsoft. For a quick investigation, include the date and time when the issue was discovered, and provide a detailed description of the problem. Provide a detailed description of the problem. If it relates to a device, gather the Device ID from your [device inventory](https://config.office.com/officeSettings/inventory/devices). You can find the Device ID by selecting the device name in inventory and reviewing the flyout.
+If the problem persists after troubleshooting, open a support ticket with Microsoft. For a quick investigation, include the date and time when the issue was discovered, and provide a detailed description of the problem. If it relates to a device, gather the Device ID from your [device inventory](https://config.office.com/officeSettings/inventory/devices). You can find the Device ID by selecting the device name in inventory and reviewing the flyout.
 
 ## Send feedback
 
