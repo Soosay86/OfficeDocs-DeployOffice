@@ -184,7 +184,7 @@ Cloud update is designed to give you full update coverage across the devices on 
 - Refer to the [Microsoft Entra group requirements](#microsoft-entra-groups-requirements) for cloud update.
 - Exclude groups is a tenant-level setting and applies to all profiles.
 - Excluded devices are reflected in your [device inventory](https://config.office.com/officeSettings/inventory/devices) within 24 hours. You can confirm a device was excluded by reviewing the **Cloud Update Status** column.
-- Once a device is marked as excluded, it will alter the registry value below.  To accelerate the exclusion, you can change the following registry value to regain control:
+- Once a device is marked as excluded, it will alter the registry value below. To accelerate the exclusion, you can change the following registry value to regain control:
 `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\cloud\office\16.0\Common\officeupdate`  
 `Value: IgnoreGPO=0`
 
