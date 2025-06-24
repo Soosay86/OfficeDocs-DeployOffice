@@ -54,7 +54,7 @@ Microsoft 365 Apps is supported on Windows Server 2019 until October 2025.
 >  
 > Devices will remain on Version 2608, receiving only security updates until October 10, 2028.
 >
-> For more information on support after October 2025, see [Office and Windows configuration support matrix](/lifecycle/office-windows-configuration-matrix)
+> For more information on support after October 2025, see [Office and Windows configuration support matrix](/lifecycle/office-windows-configuration-matrix).
 
 For end of support dates for Windows Server 2019, see the [Windows Server 2019 lifecycle](/lifecycle/products/windows-server-2019) page.
 
@@ -73,7 +73,7 @@ Microsoft 365 Apps is supported on Windows Server 2016 until October 2025.
 >  
 > Devices will remain on Version 2602, receiving only security updates until October 10, 2028.
 > 
-> For more information on support after October 2025, see [Office and Windows configuration support matrix](/lifecycle/office-windows-configuration-matrix)
+> For more information on support after October 2025, see [Office and Windows configuration support matrix](/lifecycle/office-windows-configuration-matrix).
 
 For end of support dates for Windows Server 2016, see the [Windows Server 2016 lifecycle](/lifecycle/products/windows-server-2016) page.
 
