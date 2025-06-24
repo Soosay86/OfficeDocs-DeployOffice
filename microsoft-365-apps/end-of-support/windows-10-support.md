@@ -26,9 +26,9 @@ To help maintain security while you transition to Windows 11, Microsoft will con
 
 Devices running Microsoft 365 Apps on Windows 10 will receive feature updates until Version 2608 is released on the following dates: 
 
-- August 2026 for the Current Channel (including all versions for individuals and families)
-- October 13, 2026 for the Monthly Enterprise Channel 
-- January 12, 2027 for the Semi-Annual Enterprise Channel
+- August 2026 for Current Channel (including all versions for individuals and families)
+- October 13, 2026 for Monthly Enterprise Channel 
+- January 12, 2027 for Semi-Annual Enterprise Channel
 
 Devices will remain on Version 2608, receiving only security updates until October 10, 2028. 
 
