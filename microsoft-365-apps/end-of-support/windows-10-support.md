@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides Office admins with information about the implications of Windows 10 end of support on Microsoft 365 Apps."
-ms.date: 05/08/2025
+ms.date: 06/24/2025
 ---
 
 # Windows 10 end of support and Microsoft 365 Apps
