@@ -24,6 +24,14 @@ Although apps such as Word will continue to work after Windows 10 reaches end of
 
 To help maintain security while you transition to Windows 11, Microsoft will continue providing security updates for Microsoft 365 Apps on Windows 10 for three years after Windows 10 reaches end of support. These updates will be delivered through the standard update channels, ending on October 10, 2028.
 
+Devices running Microsoft 365 Apps on Windows 10 will receive feature updates until Version 2608 is released on the following dates: 
+
+- August 2026 for Current Channel (including all versions for individuals and families)
+- October 13, 2026 for Monthly Enterprise Channel 
+- January 12, 2027 for Semi-Annual Enterprise Channel
+
+Devices will remain on Version 2608, receiving only security updates until October 10, 2028. 
+
 ## Customer support expectations after Windows 10 end of support
 
 Customers with a valid Microsoft 365 subscription will continue to be able to open support cases with Microsoft. However, the following limitations to customer service and support will apply to incidents involving Microsoft 365 Apps running on Windows 10 after October 14, 2025:
