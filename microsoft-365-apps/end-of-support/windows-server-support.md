@@ -10,7 +10,7 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides admins using Microsoft 365 Apps with information about which versions of Windows Server are supported."
-ms.date: 04/24/2025
+ms.date: 06/24/2025
 ---
 
 # Windows Server end of support and Microsoft 365 Apps
@@ -34,14 +34,11 @@ For recommendations on other client hosting solutions, see [Microsoft 365 Apps m
 
 ## Windows Server 2022
 
-Microsoft 365 Apps (Version 2302 or later) is supported on Windows Server 2022 while it's in Mainstream Support. Mainstream Support for Windows Server 2022 ends in October 2026.
+Microsoft 365 Apps is supported on Windows Server 2022 while it's in Mainstream Support. Mainstream Support for Windows Server 2022 ends in October 2026.
 
 For end of support dates for Windows Server 2022, see the [Windows Server 2022 lifecycle](/lifecycle/products/windows-server-2022) page.
 
 For recommendations on other client hosting solutions, see [Microsoft 365 Apps migration from Windows Server](windows-server-migration.md).
-
-> [!NOTE]
-> For the availability of Version 2302 or later in each update channel, see [Supported Versions](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions).
 
 ## Windows Server 2019
 
@@ -50,7 +47,14 @@ Microsoft 365 Apps is supported on Windows Server 2019 until October 2025.
 > [!NOTE]
 > In the interest of maintaining security while customers complete their migrations to a supported configuration, Microsoft will continue providing security updates for Microsoft 365 desktop apps running on Windows Server 2019 for a total of three years, ending on October 10, 2028. 
 > 
-> For more information on support after October 2025, see [Office and Windows configuration support matrix](/lifecycle/office-windows-configuration-matrix)
+> Devices running Microsoft 365 Apps on Windows Server 2019 will receive feature updates until Version 2608 is released on the following dates: 
+> - August 2026 for Current Channel
+> - October 13, 2026 for Monthly Enterprise Channel 
+> - January 12, 2027 for Semi-Annual Enterprise Channel
+>  
+> Devices will remain on Version 2608, receiving only security updates until October 10, 2028.
+>
+> For more information on support after October 2025, see [Office and Windows configuration support matrix](/lifecycle/office-windows-configuration-matrix).
 
 For end of support dates for Windows Server 2019, see the [Windows Server 2019 lifecycle](/lifecycle/products/windows-server-2019) page.
 
@@ -62,8 +66,14 @@ Microsoft 365 Apps is supported on Windows Server 2016 until October 2025.
 
 > [!NOTE]
 > In the interest of maintaining security while customers complete their migrations to a supported configuration, Microsoft will continue providing security updates for Microsoft 365 desktop apps running on Windows Server 2016 for a total of three years, ending on October 10, 2028. 
+> Devices running Microsoft 365 Apps on Windows Server 2016 will receive feature updates until Version 2602 is released on the following dates: 
+> - February 2026 for Current Channel
+> - April 14, 2026 for Monthly Enterprise Channel 
+> - July 14, 2026 for Semi-Annual Enterprise Channel
+>  
+> Devices will remain on Version 2602, receiving only security updates until October 10, 2028.
 > 
-> For more information on support after October 2025, see [Office and Windows configuration support matrix](/lifecycle/office-windows-configuration-matrix)
+> For more information on support after October 2025, see [Office and Windows configuration support matrix](/lifecycle/office-windows-configuration-matrix).
 
 For end of support dates for Windows Server 2016, see the [Windows Server 2016 lifecycle](/lifecycle/products/windows-server-2016) page.
 
