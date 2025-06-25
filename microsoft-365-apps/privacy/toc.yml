@@ -36,10 +36,21 @@ items:
             href: connected-experiences-content.md
           - name: Optional connected experiences
             href: optional-connected-experiences.md
-          - name: Required service data
-            href: required-service-data.md
 
+      - name: Required service data
+        href: required-service-data.md
       - name: Essential services
         href: essential-services.md
       - name: In-product recommendations
         href: in-product-recommendations.md
+
+      - name: Understanding diagnostic events
+        items:
+          - name: Diagnostic events in exported data
+            href: diagnostic-events-exported-data.md
+          - name: Diagnostic event namespaces
+            href: diagnostic-event-namespaces.md    
+          - name: Data contracts and common data fields
+            href: data-contracts-common-data-fields.md
+          - name: Diagnostic events in Microsoft 365 Copilot Chat
+            href: diagnostic-events-microsoft-365-copilot-chat.md        

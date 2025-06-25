@@ -11,7 +11,7 @@ ms.collection:
 - privacy-microsoft365
 - must-keep
 hideEdit: true
-ms.date: 05/30/2025
+ms.date: 06/25/2025
 ---
 
 # Connected experiences and your content
@@ -29,9 +29,10 @@ For a connected experience to perform its function to help you accomplish a task
 For more information, see [Appendix: Content used by connected experiences](#appendix-content-used-by-connected-experiences).
 
 > [!IMPORTANT]
-> The content that a connected experience uses to perform its function to help you accomplish a task is not used for the purposes of profiling you or for the purposes of targeting advertising at you.
+> - The content that a connected experience uses to perform its function to help you accomplish a task isn't used for the purposes of profiling you or for the purposes of targeting advertising at you.
+> - For more information, see the [Microsoft Products and Services Data Protection Addendum (DPA)](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA) if you’re signed in with a work or school account, unless you’re using an [optional connected experience](optional-connected-experiences.md). If you’re using an optional connected experience with a work or school account, or if you’re signed in with a Microsoft account (for example, an outlook.com email address), see the [Microsoft Service Agreement](https://www.microsoft.com/servicesagreement).
 
-The connected experience processes the content it receives to perform its function to help you accomplish a task. When the content is no longer needed, it's immediately deleted (that is, it's not retained). There are, however, a few connected experiences that retain a portion of this content. For more information, see [Content retained by a connected experience](#content-retained-by-a-connected-experience).
+The connected experience processes the content it receives to perform its function to help you accomplish a task. When the content is no longer needed, it's deleted (that is, it's not retained). There are, however, a few connected experiences that retain a portion of this content. For more information, see [Content retained by a connected experience](#content-retained-by-a-connected-experience).
 
 Microsoft takes its responsibility to safeguard your content seriously. For more information, see [Securing content used by a connected experience](#securing-content-used-by-a-connected-experience).
 
@@ -48,7 +49,7 @@ To perform their function to help you accomplish a task, some connected experien
 
 With Editor, for example, when you check the spelling of a word, that word and some of the words before and after that word is sent to Microsoft. No more than five words are sent at a time. If you’re checking grammar or style, one sentence at a time is sent to the Microsoft service that is designed to perform this task.
 
-When required, a connected experience sends content to Microsoft so that the connected experience can perform its function to help you accomplish a task. Content can be sent when you ask the connected experience to perform a task, such as translating some text in a document. In other cases, like the grammar checker, it can occur at pre-defined intervals.
+When required, a connected experience sends content to Microsoft so that the connected experience can perform its function to help you accomplish a task. Content can be sent when you ask the connected experience to perform a task, such as translating some text in a document. In other cases, like the grammar checker, it can occur at predefined intervals.
 
 For more information, see [Appendix: Content used by connected experiences](#appendix-content-used-by-connected-experiences).
 
@@ -97,7 +98,7 @@ For information about where Microsoft stores data for Microsoft 365 customers, s
 
 Microsoft 365 uses a [multi-layered access control approach](/compliance/assurance/assurance-microsoft-365-account-management) built on the principle of least privilege and incorporating data access controls and audits. Nearly all service operations performed by Microsoft are fully automated, and access to customer data by Microsoft operations and support personnel is denied by default. Only in rare cases does a Microsoft engineer need access to customer data, typically at a customer’s request to resolve an issue.
 
-To ensure that no one has unapproved physical, logical, or remote access to Microsoft 365 data, Microsoft employs a series of [isolation controls](/compliance/assurance/assurance-microsoft-365-isolation-controls) and [personnel controls](/compliance/assurance/assurance-human-resources). Access to customer data is highly restricted by role-based access controls, multifactor authentication, data minimization and other controls. In addition, Microsoft performs extensive [audit logging and monitoring](/compliance/assurance/assurance-audit-logging) of all delegation, privileges, and operations that occur within Microsoft 365. All access to customer data is strictly logged, and both Microsoft and third parties perform regular audits (as well as sample audits) to attest that any access is appropriate.
+To ensure that no one has unapproved physical, logical, or remote access to Microsoft 365 data, Microsoft employs a series of [isolation controls](/compliance/assurance/assurance-microsoft-365-isolation-controls) and [personnel controls](/compliance/assurance/assurance-human-resources). Access to customer data is highly restricted by role-based access controls, multifactor authentication, data minimization, and other controls. In addition, Microsoft performs extensive [audit logging and monitoring](/compliance/assurance/assurance-audit-logging) of all delegation, privileges, and operations that occur within Microsoft 365. All access to customer data is strictly logged, and both Microsoft and third parties perform regular audits (as well as sample audits) to attest that any access is appropriate.
 
 For more information, see [Identity and access management overview](/compliance/assurance/assurance-identity-and-access-management).
 
@@ -123,7 +124,8 @@ The following connected experiences use machine learning services:
 - Transform to Web page
 
 > [!IMPORTANT]
-> - These machine learning services are not used for the purposes of profiling you or for the purposes of targeting advertising at you.
+> - These machine learning services aren't used for the purposes of profiling you or for the purposes of targeting advertising at you.
+> - For more information, see the [Microsoft Products and Services Data Protection Addendum (DPA)](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA) if you’re signed in with a work or school account, unless you’re using an [optional connected experience](optional-connected-experiences.md). If you’re using an optional connected experience with a work or school account, or if you’re signed in with a Microsoft account (for example, an outlook.com email address), see the [Microsoft Service Agreement](https://www.microsoft.com/servicesagreement).
 > - Microsoft is committed to the responsible use of machine learning. For more information, see [Responsible AI](https://www.microsoft.com/ai/responsible-ai).
 
 ## Appendix: Content used by connected experiences
@@ -171,11 +173,11 @@ The role listed in the third column of the preceding table is based on you being
 
 The European Union General Data Protection Regulation (GDPR) gives rights to people (known in the regulation as data subjects) to request their personal data that has been collected by the data controller. A formal request by a data subject to a controller to take an action on their personal data is called a Data Subject Request (DSR).
 
-Microsoft strongly supports this right. When Microsoft acts as a data processor of personal data processed in connection with the use of Microsoft 365 Apps, they process such data only on the documented instructions of the commercial customer as the data controller. To support fulfilling DSRs, Microsoft provides the data controllers with the administrative tools and documentation to help them respond to DSRs. For more information, see [Data Subject Requests and the GDPR and CCPA](/compliance/regulatory/gdpr-data-subject-requests).
+Microsoft strongly supports this right. When Microsoft acts as a data processor of personal data processed in connection with the use of Microsoft 365 Apps, they process such data only on the documented instructions of the commercial customer as the data controller. To support fulfilling DSRs, Microsoft provides the data controllers with the administrative tools and documentation to help them respond to DSRs. For more information, see [Office 365 Data Subject Requests for the GDPR and CCPA](/compliance/regulatory/gdpr-dsr-office365).
 
 ## Related articles
 
 - [Privacy at Microsoft](https://www.microsoft.com/privacy)
 - [Microsoft Trust Center](https://www.microsoft.com/trust-center/)
-- [Microsoft Online Services Data Protection Addendum (DPA)](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA)
+- [Microsoft Products and Services  Data Protection Addendum (DPA)](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA)
 - [What is the EU Data Boundary?](/privacy/eudb/eu-data-boundary-learn)
