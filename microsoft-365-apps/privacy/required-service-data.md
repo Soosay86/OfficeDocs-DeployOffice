@@ -1,5 +1,5 @@
 ---
-title: "Required service data for Office"
+title: "Required service data for Microsoft 365 products"
 description: "Provides Office admins with an overview of required service data that is collected about connected experiences in Office."
 author: DHB-MSFT
 ms.author: danbrown
@@ -11,62 +11,97 @@ ms.collection:
 - privacy-microsoft365
 - must-keep
 hideEdit: true
-ms.date: 05/30/2025
+ms.date: 06/25/2025
 ---
 
-# Required service data for Office
+# Required service data for Microsoft 365 products
 
 > [!NOTE]
-> For a list of Office products covered by this privacy information, see [Privacy controls available for Office products](products-versions-privacy-controls.md).
+> For a list of Microsoft 365 products covered by this privacy information, see [Privacy controls available for Office products](products-versions-privacy-controls.md).
 
-Office consists of client software applications and [connected experiences](connected-experiences.md) designed to enable you to create, communicate, and collaborate more effectively. Working with others on a document stored on Microsoft OneDrive or translating the contents of a Word document into a different language are examples of connected experiences.
+As you use services with Microsoft 365 apps, such as inserting an image into a PowerPoint slide or updating to the latest version of Excel, data is sent to and processed by Microsoft to provide you with that functionality. This data, which we refer to as required service data, is necessary for Microsoft to deliver this functionality, helping ensure that it’s secure, up to date, and performing as expected.
 
-As you use a connected experience, data is sent to and processed by Microsoft to provide you that connected experience. This data is crucial because this information enables us to deliver these cloud-based connected experiences. We refer to this data as required service data.
+[Connected experiences](connected-experiences.md), [Microsoft 365 Copilot](/copilot/microsoft-365/microsoft-365-copilot-transparency-note), and [essential services](essential-services.md) all generate required service data when you interact with Microsoft 365 apps.
 
-Required service data can include information related to the operation of the connected experience that is needed to keep the underlying service secure, up to date, and performing as expected. If you choose to use a connected experience that analyzes your content, for example Translator in Word, the text you typed and selected to translate in the document is also sent and processed to provide you the connected experience. Required service data can also include information needed by a connected experience to perform its task, such as configuration information about the Office app.
+- Connected experiences use cloud-based functionality to provide enhanced Microsoft 365 apps features. For example, Editor to help check grammar in Word documents or Focused Inbox to help organize your emails in Outlook.
 
-## Example of required service data for a connected experience
+- Microsoft 365 Copilot provides Microsoft 365 apps with the use of artificial intelligence (AI) backed functionality. For example, Copilot can summarize a long Word document or create action items from a Microsoft Teams meeting.
 
-Let’s use PowerPoint Designer as another example to show the type of required service data that a connected experience sends to Microsoft. PowerPoint Designer helps you improve your slides by automatically generating design ideas to choose from. While you're putting content on a slide, Designer works in the background to match that content to professionally designed layouts.
+- Essential services are a set of services that are key to how Microsoft 365 apps function. For example, the licensing service that confirms that you’re properly licensed to use Microsoft 365 apps or Click-to-Run that helps update Microsoft 365 apps on Windows devices.
 
-The required service data that PowerPoint Designer sends to Microsoft could include the following information:
+## Service calls, content, and service-related diagnostic data
+
+Required service data isn’t a specific data type, such as Customer Data or Personal Data (which are defined in the [Microsoft Products and Services Data Protection Addendum (DPA)](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA)). Instead, it’s a general description for all data required to be processed when interacting with a service through Microsoft 365 apps. It consists of the following distinct elements:
+
+- **Service calls**, which are transient information and instructions needed by the service to perform its task.
+
+- **Content**, which becomes Customer Data when stored and processed in Microsoft 365.
+
+- **Service-related diagnostic data**, which includes information related to the operation of the connected experience that is needed to keep the underlying service secure, up to date, and performing as expected. This data doesn't include a user's name or email address, the content of the user's files, or information about apps unrelated to Office.
+
+The following diagram illustrates the elements of required service data, including its relationship to client-related diagnostic data ([required diagnostic data](required-diagnostic-data.md) and [optional diagnostic data](optional-diagnostic-data.md)).
+
+![Diagram visualizing the relationship between diagnostic data (required and optional) and the 3 elements of required service data.](media/elements-required-service-data.png)
+
+### Additional information about diagnostic events
+
+- The diagnostic events that are part of required service data don’t contain content, but they may contain pseudonymized identifiers. These events are stored and processed as Personal Data in Microsoft 365.
+
+- The diagnostic events collected for a specific user’s activity with Microsoft 365 apps can be reviewed in a Data Service Request (DSRs). For more information, see the [Microsoft Privacy Statement](https://www.microsoft.com/privacy/privacystatement), [Office 365 Data Subject Requests for the GDPR and CCPA](/compliance/regulatory/gdpr-dsr-Office365), and [Understanding Microsoft 365 diagnostic events in exported data](diagnostic-events-exported-data.md).
+
+- The diagnostic events are grouped into event namespaces. Event namespaces signify the feature, application, or service that generates the event. For more information, see [Diagnostic event namespaces for Microsoft 365 products and Microsoft 365 Copilot](diagnostic-event-namespaces.md).
+
+- The diagnostic events are collected using standard internet protocols. As documentation on those protocols is available online elsewhere, it’s not covered in this article.
+
+## Example scenarios of the data collected and sent to Microsoft
+
+Here are two examples of the required service data that could be collected and sent to Microsoft.
+
+### Use Microsoft 365 Copilot to summarize a Word document
+
+In Word, you ask Microsoft 365 Copilot to create a summary of the document. The data sent to Microsoft and processed to fulfill your request could include the following information.
+
+**Service calls**
+
+- The client IP address so the result can be returned.
+- HTTP protocol information needed to manage the HTTP request.
+
+**Content**
+
+- The prompt that you provided to Microsoft 365 Copilot. For example, “Create a summary of the document.”
+- Any grounding information needed to provide the response to the prompt. In this scenario, the contents of your document that you want Microsoft 365 Copilot to summarize.
+
+**Service-related diagnostic data**
+
+- Whether Microsoft 365 Copilot successfully returned a response.
+- How long it took Microsoft 365 Copilot to respond.
+- Whether you kept the summary suggested by Microsoft 365 Copilot.
+
+### Use PowerPoint Designer to get slide design ideas
+
+In PowerPoint, you ask PowerPoint Designer to provide design ideas for a slide. The data sent to Microsoft and processed to fulfill your request could include the following information.
+
+**Service calls**
+
+- The client IP address so the result can be returned.
+- HTTP protocol information needed to manage the HTTP request.
+
+**Content**
+
 - The text or images you added to your slide.
 - Which slide you’re working on and the slide’s layout.
+
+**Service-related diagnostic data**
+
 - Whether the design idea was correctly applied to your slide.
 - Whether the interaction between PowerPoint and the Designer service performed as expected.
 
-This required service data helps ensure that PowerPoint Designer is performing as expected.
+## Manage the data that is collected and sent to Microsoft
 
-## Manage required service data
+For connected experiences and Microsoft 365 Copilot, you can use our existing privacy controls and settings to prevent required service data from being collected and sent to Microsoft.
 
-We give you the ability to choose which types of connected experiences you want to use in Office, which then determines what required service data is sent to Microsoft. Dictation in Word, for example, is one of several connected experiences that analyzes your content. If you choose to turn off connected experiences that analyze content, no required service data about Dictation in Word is sent to Microsoft because Dictation in Word won’t be available to use. For more information, see [Choose whether these connected experiences are available to use](connected-experiences.md#choose-whether-these-connected-experiences-are-available-to-use).
+- For connected experiences, you can choose which types of connected experiences you want to use in Microsoft 365 apps. For example, if you choose to turn off [connected experiences that analyze your content](connected-experiences.md#connected-experiences-that-analyze-your-content), no required service data about those connected experiences is collected and sent to Microsoft. For more information, see [Overview of privacy controls for Microsoft 365 Apps for enterprise](overview-privacy-controls.md#connected-experiences-for-microsoft-365-apps-for-enterprise).
 
-Required service data is separate from required or optional [diagnostic data](overview-privacy-controls.md#diagnostic-data-sent-from-microsoft-365-apps-for-enterprise-to-microsoft), which relates to information about the use of Office software running on your device. Therefore, the privacy settings you chose for required or optional diagnostic data don’t affect whether required service data is sent to Microsoft.
+- For Microsoft 365 Copilot, some privacy settings for connected experiences can be used to turn off Microsoft 365 Copilot. For more information, see [Microsoft 365 Copilot and privacy controls for connected experiences](/copilot/microsoft-365/microsoft-365-copilot-privacy#microsoft-365-copilot-and-privacy-controls-for-connected-experiences).
 
-Required service data is also collected and sent to Microsoft for the [essential services](essential-services.md) of Office, such as the licensing service that confirms that you're properly licensed to use Office. While you can control many of the connected experiences that are available to you, or to your users if you're the administrator in your organization, this set of services are essential to how Office functions, and therefore can't be disabled. The data for essential services is always sent to and processed by Microsoft when using Office, regardless of how other privacy-related settings are configured.
-
-Required service data is available through Data Service Requests (DSRs). For more information, see the [Microsoft Privacy Statement](https://www.microsoft.com/privacy/privacystatement) and [Office 365 Data Subject Requests for the GDPR and CCPA](/compliance/regulatory/gdpr-dsr-Office365).
-
-If you’re the administrator for your organization and want to manage connected experiences, see the following articles:
-
-- [Overview of privacy controls for Microsoft 365 Apps for enterprise](overview-privacy-controls.md)
-- [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](manage-privacy-controls.md)
-- [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
-- [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
-- [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md)
-- [Use policy settings to manage privacy controls for Office for the web applications](office-web-privacy-controls.md)
-
-## Categories of required service data
-
-Required service data is organized into the following categories:
-
-- Software setup and inventory
-- Product and service usage
-- Product and service performance
-- Device connectivity and configuration
-
-The information in these categories enables Microsoft to assess whether a connected experience or essential service is secure, up to date, and performing as expected.
-
-For example, information in the product and service performance category may cover unexpected issues (crashes), poor response times or performance, or errors in functionality.
-
-For the product and service usage category, information might be collected that indicates whether the service used by a connected experience started successfully and was available when needed.
+For essential services, required service data is always collected and sent to Microsoft. You can’t turn off these essential services because they’re key to how Microsoft 365 apps function.

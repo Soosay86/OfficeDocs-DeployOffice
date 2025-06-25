@@ -11,12 +11,15 @@ ms.collection:
 - privacy-microsoft365
 - must-keep
 hideEdit: true
-ms.date: 05/30/2025
+ms.date: 06/25/2025
 ---
 
 # Privacy controls available for Office products
 
 Microsoft is committed to providing you with the information and controls you need to make informed choices about how your data is collected and used when you’re using Office products. This includes when you use the Office products on Windows, Mac, iOS, and Android devices as well as when you use the Office apps on the web.
+
+> [!NOTE]
+> For information about the effect of these policy settings on Microsoft 365 Copilot features, see [Microsoft 365 Copilot and privacy controls for connected experiences](/copilot/microsoft-365/microsoft-365-copilot-privacy#microsoft-365-copilot-and-privacy-controls-for-connected-experiences).
 
 Starting in April 2019, we began providing new, updated, and improved privacy controls for diagnostic data and connected experiences to our most current Office products. For more information, see [Overview of privacy controls for Microsoft 365 Apps for enterprise](overview-privacy-controls.md).
 
