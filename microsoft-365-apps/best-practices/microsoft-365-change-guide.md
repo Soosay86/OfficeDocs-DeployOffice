@@ -4,7 +4,7 @@ ms.author: tabriggs
 author: tabriggs
 manager: dougeby
 audience: ITPro
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
@@ -292,14 +292,9 @@ The Microsoft change mission is to enable rapid delivery, improve productivity, 
 
 ### Change management plan
 
-The Microsoft 365 Change Management Plan is essential for enabling customers to plan for and manage change. Figure 8 illustrates the pillars of the plan.
+The Microsoft 365 Change Management Plan is essential for enabling customers to plan for and manage change. The plan outlines three change phases and recommended customer actions that are associated with each action. Table 3 summarizes the three change phases.
 
-:::image type="content" source="./media/microsoft-365-change-guide/change-management-plan-pillars.png" alt-text="A screenshot of the diagram of the four pillars of the Microsoft 365 Change Management Plan.":::
-*Figure 8*
-
-The Microsoft Change Management Plan outlines three change phases and recommended customer actions that are associated with each action. Table 3 summarizes the three change phases.
-
-*Table 3: Microsoft Change Management Plan phases*
+*Table 3: Microsoft 365 Change Management Plan phases*
 
 | Phase 1: Before change | Phase 2: During change | Phase 3: After change |
 |------------------------|------------------------|-----------------------|
@@ -322,10 +317,10 @@ Major updates are communicated at least 30 days in advance when an action is req
 - A new service or application deployed with default settings turned on.
 - Changes to where data is stored or accessed.
 
-The Message center in the Microsoft 365 [admin center](https://portal.office.com/) is your primary source of change information. Message center marks changes of high importance (major updates) with a red exclamation mark (❗) - this helps them to be easy to identify and track during various stages of release. Figure 9 shows a screenshot.
+The Message center in the Microsoft 365 [admin center](https://portal.office.com/) is your primary source of change information. Message center marks changes of high importance (major updates) with a red exclamation mark (❗) - this helps them to be easy to identify and track during various stages of release. Figure 8 shows a screenshot.
 
 :::image type="content" source="./media/microsoft-365-change-guide/message-center-preferences.png" alt-text="A screenshot of Message Center preferences.":::
-*Figure 9*
+*Figure 8*
 
 Messages are identified in the right-side column above by one of three categories:  
 
@@ -357,24 +352,24 @@ To ensure broad dissemination and accessibility, Microsoft publishes change info
 
 [**Microsoft 365 Roadmap**](https://www.microsoft.com/microsoft-365/roadmap)
 
-The Microsoft 365 Roadmap is a public website that relays the status of products that are in development, rolling out, or launched. You can view the status of each feature or workload, search using tags, and confirm release dates from a single portal. As illustrated in Figure 10, you can use filtering to easily find services or features of interest.
+The Microsoft 365 Roadmap is a public website that relays the status of products that are in development, rolling out, or launched. You can view the status of each feature or workload, search using tags, and confirm release dates from a single portal. As illustrated in Figure 9, you can use filtering to easily find services or features of interest.
 
 :::image type="content" source="./media/microsoft-365-change-guide/roadmap-filtering.png" alt-text="A screenshot of the Microsoft 365 roadmap with filters.":::
-*Figure 10*
+*Figure 9*
 
 **Message center weekly digest**
 
-Your admins can use the Message center weekly digest to review Message center communications via email in a digestible, easily shared, summary format. The digest was created in response to customer feedback and demonstrates the innovative ways the Microsoft community effects change in our processes. Customers can opt out of digest emails by changing settings in the admin portal. Figure 11 shows an example of the digest.
+Your admins can use the Message center weekly digest to review Message center communications via email in a digestible, easily shared, summary format. The digest was created in response to customer feedback and demonstrates the innovative ways the Microsoft community effects change in our processes. Customers can opt out of digest emails by changing settings in the admin portal. Figure 10 shows an example of the digest.
 
 :::image type="content" source="./media/microsoft-365-change-guide/message-center-announcement.png" alt-text="A screenshot of a sample Message Center announcement.":::
-*Figure 11*
+*Figure 10*
 
 [**Microsoft admin mobile app**](/microsoft-365/admin/admin-overview/admin-mobile-app)
 
-The Microsoft 365 admin mobile app has more than 80 features that help you manage your company when you’re on the go. The app is available for download in the Apple App Store and Google Play. Using the mobile app, you can perform common tasks like user password reset, add users to a group, and review change notifications and alerts. We recommend enabling mobile alerts, so that you stay apprised of updates the moment they're released. Figure 12 shows a screenshot of the mobile app.
+The Microsoft 365 admin mobile app has more than 80 features that help you manage your company when you’re on the go. The app is available for download in the Apple App Store and Google Play. Using the mobile app, you can perform common tasks like user password reset, add users to a group, and review change notifications and alerts. We recommend enabling mobile alerts, so that you stay apprised of updates the moment they're released. Figure 11 shows a screenshot of the mobile app.
 
 :::image type="content" source="./media/microsoft-365-change-guide/mobile-admin-app-snip.png" alt-text="A screenshot of the Microsoft 365 admin mobile app.":::<br>
-*Figure 12*
+*Figure 11*
 
 To take advantage of the Microsoft 365 admin mobile app features, [download the app](https://www.microsoft.com/microsoft-365/business/manage-office-365-admin-app).
 
@@ -405,29 +400,29 @@ Microsoft establishes a virtuous feedback loop between customers and our product
 - Microsoft Tech Community
 
 [**Microsoft 365 admin portal**](https://portal.office.com/)  
-At the bottom-right of each page in the admin portal, customers can provide feedback by clicking the **Give feedback** button, which is illustrated in Figure 13.
+At the bottom-right of each page in the admin portal, customers can provide feedback by clicking the **Give feedback** button, which is illustrated in Figure 12.
 
 :::image type="content" source="./media/microsoft-365-change-guide/give-feedback-button.png" alt-text="A screenshot of the Give Feedback button.":::<br>
-*Figure 13*
+*Figure 12*
 
 [**Message center**](https://admin.cloud.microsoft/Adminportal/Home?source=applauncher#/MessageCenter)
 
-The **Give feedback** button also exists in the Message center so that you can provide feedback about incoming changes or other notifications without switching portal pages. The feedback from the Message center goes directly to the owning engineering and marketing teams within Microsoft. Microsoft owners receive a daily report of new feedback that has been submitted. If your feedback is regarding a specific change or message, be sure to include the Message center ID so that the feedback can be correctly correlated. In Figure 14, you can see the **Give feedback** button in the lower-right of the Message center.
+The **Give feedback** button also exists in the Message center so that you can provide feedback about incoming changes or other notifications without switching portal pages. The feedback from the Message center goes directly to the owning engineering and marketing teams within Microsoft. Microsoft owners receive a daily report of new feedback that has been submitted. If your feedback is regarding a specific change or message, be sure to include the Message center ID so that the feedback can be correctly correlated. In Figure 13, you can see the **Give feedback** button in the lower-right of the Message center.
 
 :::image type="content" source="./media/microsoft-365-change-guide/message-center-planner-synching.png" alt-text="A screenshot of the Message center configuration page.":::
-*Figure 14*
+*Figure 13*
 
-The Message center also supports **Like** and **Dislike** buttons, as shown in Figure 15, for each message. Using these, you can quickly provide feedback. We aggregate this feedback and use it to understand general customer reception of our recent changes.
+The Message center also supports **Like** and **Dislike** buttons, as shown in Figure 14, for each message. Using these, you can quickly provide feedback. We aggregate this feedback and use it to understand general customer reception of our recent changes.
 
 :::image type="content" source="./media/microsoft-365-change-guide/message-center-like-and-dislike.png" alt-text="A screenshot of Like and Dislike buttons.":::
-*Figure 15*
+*Figure 14*
 
 [**Microsoft Tech Community**](https://aka.ms/office365network)
 
-This community serves both as a source of change information from your peers and as a forum for providing feedback. We monitor the Tech Community forums for valuable feedback and use the information to influence internal decisions. Figure 16 shows a list of feedback forums.
+This community serves both as a source of change information from your peers and as a forum for providing feedback. We monitor the Tech Community forums for valuable feedback and use the information to influence internal decisions. Figure 15 shows a list of feedback forums.
 
 :::image type="content" source="./media/microsoft-365-change-guide/feedback-forums.png" alt-text="A screenshot of the Feedback forums list.":::
-*Figure 16*
+*Figure 15*
 
 ## Footnotes
 

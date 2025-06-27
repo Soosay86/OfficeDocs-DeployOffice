@@ -22,8 +22,9 @@ ms.date: 05/30/2025
 If you have a work or school account, your organization's admin may have provided you with the ability to use one or more cloud-backed services (also referred to as "optional connected experiences") while using the Office apps, like Word or Excel, that are included with Microsoft 365 Apps for enterprise. These cloud-backed services are optional. Whether you use them is up to you. They're provided to you under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://www.microsoft.com/privacy/privacystatement). In some cases, other terms may also apply. This article lists the cloud-backed services, further explains their terms of use, and describes how you can turn them off or on at any time.
 
 > [!NOTE]
-> - If you're an admin, see [Admin controls for optional connected experiences](#admin-controls-for-optional-connected-experiences).
-> - For Microsoft Teams, see [Overview of optional connected experiences in Microsoft Teams](/microsoftteams/teams-privacy-oce-overview).
+> For Microsoft Teams, see [Overview of optional connected experiences in Microsoft Teams](/microsoftteams/teams-privacy-oce-overview).
+
+If you're an admin, see [Admin controls for optional connected experiences](#admin-controls-for-optional-connected-experiences).
 
 ### If you use these services, what terms of use do you need to agree to?
 
@@ -141,9 +142,9 @@ For more information, see [Account Privacy Settings](https://support.microsoft.c
 
 ## Required service data
 
-When you use any of the optional cloud-backed services described in this article, Microsoft may collect [required service data](required-service-data.md) (such as usage data, error and performance data) about the performance of the experience when you used it. This required service data may contain "personal data" as defined by Article 4 of the European GDPR. All required service data Microsoft collects during the use of any Microsoft 365 Apps for enterprise applications and services is pseudonymized as defined in ISO/IEC 19944-1:2020, (section 8.3.3) standard.
+When you use any of the optional cloud-backed services described in this article, Microsoft may collect [required service data](required-service-data.md) (such as usage, error, and performance data) about the performance of the experience when you used it. This required service data may contain "personal data" as defined by Article 4 of the European GDPR. All required service data Microsoft collects during the use of any Microsoft 365 Apps for enterprise applications and services is pseudonymized as defined in ISO/IEC 19944-1:2020, (section 8.3.3) standard.
 
-## Admin controls for optional connected experiences 
+## Admin controls for optional connected experiences
 
 If you're an admin, see the following articles to learn how to give or restrict your users' ability to use optional connected experiences:
 
