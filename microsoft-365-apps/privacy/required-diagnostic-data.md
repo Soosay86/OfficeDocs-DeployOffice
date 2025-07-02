@@ -12167,6 +12167,8 @@ analysis.
 
 - **Data_ExtractionTime** - Measures the time taken to extract necessary resources or configuration data during app boot.
 
+- **Data_FeatureGatesEnabled** - Indicates which sub variant of the page is loaded and shown to the user.
+
 - **Data_FragmentCreationTime** - Captures the duration required to instantiate key fragments (UI components) during the boot process.
 
 - **Data_FragmentInitViewStart** - Marks the timestamp when the fragment's view initialization begins to measure time to render and time to interactive metrics.
@@ -15559,6 +15561,10 @@ Needed for monitoring app performance errors to prevent cases where the app stop
 
 The following fields are collected: 
 
+- **boot_thread_1_stacktrace** - boot thread 1's stack trace when ANR occurs.
+
+- **boot_thread_2_stacktrace** - boot thread 2's stack trace when ANR occurs.
+
 - **callstack** - the code callstack where the ANR occurred
  
 - **caused_restart** - whether the app was forced to restart because of the ANR
@@ -17524,6 +17530,8 @@ The following fields are collected:
 
 - **Data_DetachedDuration** - Measures the duration for which the app was detached from the foreground (for example, backgrounded or suspended). 
 
+- **Data_FeatureGatesEnabled** - Indicates which sub variant of the page is loaded and shown to the user.
+
 - **Data_FinishLaunching** - Marks the timestamp when the app finishes launching and transitions into its main operational state
 
 - **Data_FirstBoot** - Indicates whether the current session is the first boot after installation or update. This is used to segment telemetry and performance data
@@ -18310,6 +18318,8 @@ The following fields are collected:
 
 - **Data_EventTime** - The event type
 
+- **Data_FeatureGatesEnabled** - Indicates which sub variant of the page is loaded and shown to the user.
+
 - **Data_HostView** - The host view
 
 - **Data_OperationId** - The operation ID
@@ -18415,6 +18425,8 @@ The following fields are collected:
 - **Data_EventTime** - The time of point-event, as measured from the start of the OperationTelemetry it is logged from.
 
 - **Data_FailureReason** - Failure reason
+
+- **Data_FeatureGatesEnabled** - Indicates which sub variant of the page is loaded and shown to the user.
 
 - **Data_FeatureName** - Feature name
 
@@ -19539,13 +19551,17 @@ The following fields are collected:
 
 - **anr_timestamp** - The timestamp when ANR occurs.
 
+- **boot_thread_1_stacktrace** - boot thread 1's stack trace when ANR occurs.
+
+- **boot_thread_2_stacktrace** - boot thread 2's stack trace when ANR occurs.
+
 - **is_background** - Whether ANR occurs in background.
 
 - **main_thread_stacktrace** - Main thread's stack trace when ANR occurs.
 
 - **main_thread_state** - Main thread's state trace when ANR occurs.
 
-- **main_thread_trimmed_stacktrace** - string value of main thread's trimmed stack trace when ANR occurs.
+- **main_thread_trimmed_stacktrace** - string value of main thread's trimmed stack trace when ANR occurs. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **reason** - The reason why ANR occurs.
 
