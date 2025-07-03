@@ -11,7 +11,7 @@ ms.collection:
 - privacy-microsoft365
 - must-keep
 hideEdit: true
-ms.date: 06/13/2025
+ms.date: 07/03/2025
 ---
 
 # Essential services for Office
@@ -19787,6 +19787,18 @@ This event is triggered when a user goes to purchase a subscription via any purc
 The following fields are collected:
 
 - **EntryPoint** - String – Entry point of the paywall subscription screen in the app.
+
+### Office.Android.DocsUI.PaywallControl.PaymentInstrumentFixSnackBar
+
+This event is triggered when a user sees an in-app notification asking them to fix their payment instrument in Google Play in case it's faulty. This data will help to navigate the end-to-end flows in order to identify the root cause of any potential errors. 
+
+The following fields are collected:
+
+- **EventDate** - Timestamp of the event occurrence  
+
+- **paymentInstrumentResultCode** - ResponseCode provided by the Google Play API
+
+- **SessionID** - GUID to connect events by session
 
 
 ### Office.Android.DocsUI.PaywallControl.PaywallOperationMetrics
