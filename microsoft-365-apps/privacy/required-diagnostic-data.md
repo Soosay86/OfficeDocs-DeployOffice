@@ -11,7 +11,7 @@ ms.collection:
 - privacy-microsoft365
 - must-keep
 hideEdit: true
-ms.date: 06/25/2025
+ms.date: 07/03/2025
 ---
 
 # Required diagnostic data for Office
@@ -6664,6 +6664,114 @@ The following fields are collected:
 
   - **Data.Log** - Custom log message indicating the precheck success or failure
 
+#### Office.OfficeMobile.Copilot.RedirectCTA
+
+This event is triggered when the user selects the redirect "call to action" in Copilot tab that navigates them from Microsoft 365 Copilot to the Microsoft Copilot experience, helping us track intent and funnel conversion towards Microsoft Copilot. 
+
+The following fields are collected:
+
+- **App_Branch** - The app branch detail
+
+- **App_InstallType** - The app install type
+
+- **App_Name** - The app name
+
+- **App_Platform** - The app platform name
+
+- **App_Version** - The version number of the app
+
+- **Client_Id** - The client ID
+
+- **Consent_AddInContentSourceLocation** - Feature gate related events to track their availability
+
+- **Consent_AddInContentState** - Indicates whether add-in content collection is allowed
+
+- **Consent_ControllerConnectedServicesSourceLocation** - Feature gate related events to track their availability
+
+- **Consent_ControllerConnectedServicesState** - Indicates whether the user has access to optional connected experiences
+
+- **Consent_DiagnosticConsentLevel** - Indicates what level of diagnostic-data consent the user has given
+
+- **Consent_DiagnosticConsentLevelSourceLocation** - Feature gate related events to track their availability
+
+- **Consent_DiagnosticDataConsentTime** - Indicates when the user provided the consent for diagnostic data
+
+- **Consent_DownloadContentSourceLocation** - Feature gate related events to track their availability
+
+- **Consent_DownloadContentState** - Indicates whether the user has chosen to enable or disable connected experiences that download online content
+
+- **Consent_ServiceConnectionState** - Indicates whether the user has chosen to use or not use all connected experiences
+
+- **Consent_ServiceConnectionStateSourceLocation** - Feature gate related events to track their availability
+
+- **Consent_UserCategoryValue** - Records the user's consent preferences for different types of data usage, ensuring compliance and transparency
+
+- **Consent_UserContentDependentSourceLocation** - Feature gate related events to track their availability
+
+- **Consent_UserContentDependentState** - Indicates whether the user has chosen to enable or disable connected experiences that analyze content
+
+- **Data_IsConsumerCopilotAppInstalled** - Indicates whether the standalone Copilot (consumer) app is already installed on the device
+
+- **Device_NetworkCost** - The network cost tier
+
+- **Device_NetworkCountry** - The network country code
+
+- **Device_OsBuild** - The device build number
+
+- **Device_OsVersion** - The device OS version
+
+- **Event_Flags** - Flags associated with the event
+
+- **Event_Name** - The event name
+
+- **Event_ReceivedTime** - When the event was received by backend
+
+- **Event_SampleRate** - The sampling rate for this event
+
+- **Event_SchemaVersion** - The schema version of the event
+
+- **Event_Sequence** - The sequence number in the event stream
+
+- **Event_Source** - The event source
+
+- **Event_Time** - The event timestamp
+
+- **Release_Audience** - The app release audience
+
+- **Release_AudienceGroup** - The release audience group
+
+- **Release_Channel** - The release channel
+
+- **Release_Fork** - The release fork name
+
+- **Session_EcsETag** - The session ECS tag
+
+- **Session_Flags** - The session flags
+
+- **Session_HostAppName** - The host app name
+
+- **Session_HostSessionId** - The host session ID
+
+- **Session_Id** - The session ID
+
+- **Session_MeasuresEnabled** - Indicates if session measures are enabled
+
+- **Session_SamplingClientIdValue** - Captures the sampling client ID value
+
+- **Session_SubAppName** - The app sub-name
+
+- **Session_VirtualizationType** - The session virtualization type
+
+- **User_PrimaryIdentityHash** - A unique hashed identifier for the user
+
+- **User_PrimaryIdentitySpace** - The identity namespace for the user
+
+- **User_TelemetryRegion** - The region where telemetry is stored
+
+- **User_TenantGroup** - The tenant grouping for the user
+
+- **User_TenantId** - The user’s tenant ID
+
 
 #### Office.OfficeMobile.Fluid.FluidFileOperations
 
@@ -6698,6 +6806,471 @@ The following fields are collected:
 - **Data_I2DServiceProcessID** - String that identifies the service-request in I2D service when user is uploading images for conversion. 
 
 - **Data_LensSessionID** - String field to identify Lens session ID.
+
+
+#### Office.OfficeMobile.MicrosoftCopilot.CopilotHistory
+
+This event is triggered whenever a user opens their conversation history inside the consumer Microsoft Copilot experience in the Microsoft 365 Copilot app. It lets us measure how frequently people return to previous chats, correlate the action with downstream engagement, and diagnose any reliability or performance issues while loading history.
+
+The following fields are collected:
+
+- **App_Branch** - The app branch detail
+
+- **App_InstallType** - The app install type
+
+- **App_Name** - The app name
+
+- **App_Platform** - The app platform name
+
+- **App_Version** - The version number of the app
+
+- **Client_Id** - The client ID
+
+- **Consent_AddInContentSourceLocation** - Feature gate location that governs add-in content consent
+
+- **Consent_AddInContentState** - Indicates whether add-in content collection is allowed
+
+- **Consent_ControllerConnectedServicesSourceLocation** - Feature gate location that governs connected services consent
+
+- **Consent_ControllerConnectedServicesState** - Indicates whether the user has access to optional connected experiences
+
+- **Consent_DiagnosticConsentLevel** - Level of diagnostic data consent given
+
+- **Consent_DiagnosticConsentLevelSourceLocation** - Feature gate location that governs diagnostic level consent
+
+- **Consent_DiagnosticDataConsentTime** - Timestamp when the user provided diagnostic data consent
+
+- **Consent_DownloadContentSourceLocation** - Feature gate location that governs download content consent
+
+- **Consent_DownloadContentState** - Indicates whether connected experiences that download online content are enabled
+
+- **Consent_ServiceConnectionState** - Indicates whether all connected experiences are enabled or disabled
+
+- **Consent_ServiceConnectionStateSourceLocation** - Feature gate location that governs service connection consent
+
+- **Consent_UserCategoryValue** - Encodes the user’s consent preferences for different data usage categories
+
+- **Consent_UserContentDependentSourceLocation** - Feature gate location that governs content dependent consent
+
+- **Consent_UserContentDependentState** - Indicates whether connected experiences that analyze content are enabled
+
+- **Data_CorrelationId** - Identifier that links related telemetry from the same user action/session
+
+- **Data_eventType** - High-level category for the telemetry event
+
+- **Data_ModuleId** - GUID of the module generating the event
+
+- **Data_pageView** - Logical name of the page/screen that triggered the event
+
+- **Device_NetworkCost** - The network cost tier
+
+- **Device_NetworkCountry** - The network country code
+
+- **Device_OsBuild** - The device OS build number
+
+- **Device_OsVersion** - The device OS version
+
+- **Event_Flags** - Flags associated with the event
+
+- **Event_Name** - The fully-qualified event name
+
+- **Event_ReceivedTime** - When the event was received by the backend
+
+- **Event_SampleRate** - Sampling rate for this event
+
+- **Event_SchemaVersion** - The schema version of the event
+
+- **Event_Sequence** - Sequence number in the event stream
+
+- **Event_Source** - The event source
+
+- **Event_Time** - The event timestamp
+
+- **Release_Audience** - App release audience
+
+- **Release_AudienceGroup** - Release audience group
+
+- **Release_Channel** - Release channel
+
+- **Release_Fork** - Release fork name
+
+- **Session_EcsETag** - Session ECS tag
+
+- **Session_Flags** - Session flags
+
+- **Session_HostAppName** - Host app name
+
+- **Session_HostSessionId** - Host session ID
+
+- **Session_Id** - Session ID
+
+- **Session_MeasuresEnabled** - Indicates whether session measures are enabled
+
+- **Session_SamplingClientIdValue** - Sampling client ID value
+
+- **Session_SubAppName** - Sub-app name
+
+- **Session_VirtualizationType** - Session virtualization type
+
+- **User_PrimaryIdentityHash** - Hashed primary user identifier
+
+- **User_PrimaryIdentitySpace** - Identity namespace for the user
+
+- **User_TelemetryRegion** - Region where telemetry is stored
+
+- **User_TenantGroup** - Tenant grouping for the user
+
+- **User_TenantId** - The user’s tenant ID
+
+#### Office.OfficeMobile.MicrosoftCopilot.CopilotNewChat
+
+This event occurs whenever a user taps "New chat" inside the consumer Microsoft Copilot experience in the Microsoft 365 Copilot app. It lets us measure how often users begin fresh conversations, tie the action to downstream engagement, and diagnose any reliability issues during chat creation.
+
+The following fields are collected:  
+
+- **App_Branch** – The app branch detail
+
+- **App_InstallType** – The app install type
+
+- **App_Name** – The app name
+
+- **App_Platform** – The app platform name
+
+- **App_Version** – The version number of the app
+
+- **Client_Id** – The client ID
+
+- **Consent_AddInContentSourceLocation** – Feature gate location that governs add-in content consent
+
+- **Consent_AddInContentState** – Indicates whether add-in content collection is allowed
+
+- **Consent_ControllerConnectedServicesSourceLocation** – Feature gate location that governs connected services consent
+
+- **Consent_ControllerConnectedServicesState** – Indicates whether the user has access to optional connected experiences
+
+- **Consent_DiagnosticConsentLevel** – Level of diagnostic data consent given
+
+- **Consent_DiagnosticConsentLevelSourceLocation** – Feature gate location that governs diagnostic level consent
+
+- **Consent_DiagnosticDataConsentTime** – Timestamp when the user provided diagnostic data consent
+
+- **Consent_DownloadContentSourceLocation** – Feature gate location that governs download content consent
+
+- **Consent_DownloadContentState** – Indicates whether connected experiences that download online content are enabled
+
+- **Consent_ServiceConnectionState** – Indicates whether all connected experiences are enabled or disabled
+
+- **Consent_ServiceConnectionStateSourceLocation** – Feature gate location that governs service connection consent
+
+- **Consent_UserCategoryValue** – Encodes the user’s consent preferences for different data usage categories
+
+- **Consent_UserContentDependentSourceLocation** – Feature gate location that governs content-dependent consent
+
+- **Consent_UserContentDependentState** – Indicates whether connected experiences that analyze content are enabled
+
+- **Data_CorrelationId** – Identifier that links related telemetry from the same user action/session
+
+- **Data_eventType** – High-level category for the telemetry event
+
+- **Data_ModuleId** – GUID of the module generating the event
+
+- **Data_pageView** – Logical name of the page/screen that triggered the event
+
+- **Device_NetworkCost** – The network cost tier
+
+- **Device_NetworkCountry** – The network country code
+
+- **Device_OsBuild** – The device OS build number
+
+- **Device_OsVersion** – The device OS version
+
+- **Event_Flags** – Flags associated with the event
+
+- **Event_Name** – The fully-qualified event name
+
+- **Event_ReceivedTime** – When the event was received by the backend
+
+- **Event_SampleRate** – Sampling rate for this event
+
+- **Event_SchemaVersion** – The schema version of the event
+
+- **Event_Sequence** – Sequence number in the event stream
+
+- **Event_Source** – The event source
+
+- **Event_Time** – The event timestamp
+
+- **Release_Audience** – App release audience
+
+- **Release_AudienceGroup** – Release audience group
+
+- **Release_Channel** – Release channel
+
+- **Release_Fork** – Release fork name
+
+- **Session_EcsETag** – Session ECS tag
+
+- **Session_Flags** – Session flags
+
+- **Session_HostAppName** – Host app name
+
+- **Session_HostSessionId** – Host session ID
+
+- **Session_Id** – Session ID
+
+- **Session_MeasuresEnabled** – Indicates whether session measures are enabled
+
+- **Session_SamplingClientIdValue** – Sampling client ID value
+
+- **Session_SubAppName** – Sub-app name
+
+- **Session_VirtualizationType** – Session virtualization type
+
+- **User_PrimaryIdentityHash** – Hashed primary user identifier
+
+- **User_PrimaryIdentitySpace** – Identity namespace for the user
+
+- **User_TelemetryRegion** – Region where telemetry is stored
+
+- **User_TenantGroup** – Tenant grouping for the user
+
+- **User_TenantId** – The user’s tenant ID
+
+#### Office.OfficeMobile.MicrosoftCopilot.CopilotSendQuery
+
+This event occurs each time a user submits a prompt (query) to the consumer Microsoft Copilot experience inside the Microsoft 365 Copilot app. It helps us track prompt-level engagement, correlate queries with downstream responses, and diagnose any reliability or performance issues during request submission.
+
+The following fields are collected:
+
+- **App_Branch** - The app branch detail
+
+- **App_InstallType** - The app install type
+
+- **App_Name** - The app name
+
+- **App_Platform** - The app platform name
+
+- **App_Version** - The version number of the app
+
+- **Client_Id** - The client ID
+
+- **Consent_AddInContentSourceLocation** - Feature-gate location that governs add-in content consent
+
+- **Consent_AddInContentState** - Indicates whether add-in content collection is allowed
+
+- **Consent_ControllerConnectedServicesSourceLocation** - Feature gate location that governs connected services consent
+
+- **Consent_ControllerConnectedServicesState** - Indicates whether the user has access to optional connected experiences
+
+- **Consent_DiagnosticConsentLevel** - Level of diagnostic data consent given
+
+- **Consent_DiagnosticConsentLevelSourceLocation** - Feature gate location that governs diagnostic level consent
+
+- **Consent_DiagnosticDataConsentTime** - Timestamp when the user provided diagnostic data consent
+
+- **Consent_DownloadContentSourceLocation** - Feature gate location that governs download content consent
+
+- **Consent_DownloadContentState** - Indicates whether connected experiences that download online content are enabled
+
+- **Consent_ServiceConnectionState** - Indicates whether all connected experiences are enabled or disabled
+
+- **Consent_ServiceConnectionStateSourceLocation** - Feature gate location that governs service connection consent
+
+- **Consent_UserCategoryValue** - Encodes the user’s consent preferences for different data usage categories
+
+- **Consent_UserContentDependentSourceLocation** - Feature gate location that governs content-dependent consent
+
+- **Consent_UserContentDependentState** - Indicates whether connected experiences that analyze content are enabled
+
+- **Data_conversationId** - Identifier of the Copilot conversation thread to which this query belongs
+
+- **Data_CorrelationId** - Identifier that links related telemetry from the same user action/session
+
+- **Data_inputMethod** - Input method used to send the query
+
+- **Data_ModuleId** - GUID of the module generating the event
+
+- **Data_mode** - Copilot interaction mode at the time of the query
+
+- **Data_name** - Name of the Copilot scenario or feature invoked
+
+- **Data_numDocumentsUploaded** - Number of documents attached with the query
+
+- **Data_numImagesUploaded** - Number of images attached with the query
+
+- **Device_NetworkCost** - The network cost tier
+
+- **Device_NetworkCountry** - The network country code
+
+- **Device_OsBuild** - The device OS build number
+
+- **Device_OsVersion** - The device OS version
+
+- **Event_Flags** - Flags associated with the event
+
+- **Event_Name** - The fully-qualified event name
+
+- **Event_ReceivedTime** - When the event was received by the backend
+
+- **Event_SampleRate** - Sampling rate for this event
+
+- **Event_SchemaVersion** - The schema version of the event
+
+- **Event_Sequence** - Sequence number in the event stream
+
+- **Event_Source** - The event source
+
+- **Event_Time** - The event timestamp
+
+- **Release_Audience** - App release audience
+
+- **Release_AudienceGroup** - Release audience group
+
+- **Release_Channel** - Release channel
+
+- **Release_Fork** - Release fork name
+
+- **Session_EcsETag** - Session ECS tag
+
+- **Session_Flags** - Session flags
+
+- **Session_HostAppName** - Host app name
+
+- **Session_HostSessionId** - Host session ID
+
+- **Session_Id** - Session ID
+
+- **Session_MeasuresEnabled** - Indicates whether session measures are enabled
+
+- **Session_SamplingClientIdValue** - Sampling client ID value
+
+- **Session_SubAppName** - Sub-app name
+
+- **Session_VirtualizationType** - Session virtualization type
+
+- **User_PrimaryIdentityHash** - Hashed primary user identifier
+
+- **User_PrimaryIdentitySpace** - Identity namespace for the user
+
+- **User_TelemetryRegion** - Region where telemetry is stored
+
+- **User_TenantGroup** - Tenant grouping for the user
+
+- **User_TenantId** - The user’s tenant ID
+
+#### Office.OfficeMobile.MicrosoftCopilot.CopilotStartup
+
+This event is collected when the consumer Microsoft Copilot experience starts up inside Microsoft 365 Copilot app. It captures both performance telemetry and configuration details so the team can track launch reliability, diagnose issues, and understand user environments.
+
+The following fields are collected:
+
+- **App_Branch** – The app branch detail
+
+- **App_InstallType** – The app install type
+
+- **App_Name** – The app name
+
+- **App_Platform** – The app platform name
+
+- **App_Version** – The version number of the app
+
+- **Client_Id** – The client ID
+
+- **Consent_AddInContentSourceLocation** – Feature gate location that governs add-in content consent
+
+- **Consent_AddInContentState** – Indicates whether add-in content collection is allowed
+
+- **Consent_ControllerConnectedServicesSourceLocation** – Feature gate location that governs connected services consent
+
+- **Consent_ControllerConnectedServicesState** – Indicates whether the user has access to optional connected experiences
+
+- **Consent_DiagnosticConsentLevel** – Level of diagnostic data consent given
+
+- **Consent_DiagnosticConsentLevelSourceLocation** – Feature gate location that governs diagnostic level consent
+
+- **Consent_DiagnosticDataConsentTime** – Timestamp of the user’s diagnostic data consent
+
+- **Consent_DownloadContentSourceLocation** – Feature gate location that governs download content consent
+
+- **Consent_DownloadContentState** – Indicates whether connected experiences that download online content are enabled
+
+- **Consent_ServiceConnectionState** – Indicates whether all connected experiences are enabled or disabled
+
+- **Consent_ServiceConnectionStateSourceLocation** – Feature gate location that governs service connection consent
+
+- **Consent_UserCategoryValue** – Encodes the user’s consent preferences for different data usage categories
+
+- **Consent_UserContentDependentSourceLocation** – Feature gate location that governs content dependent consent
+
+- **Consent_UserContentDependentState** – Indicates whether connected experiences that analyze content are enabled
+
+- **Data_CorrelationId** – Identifier that links related telemetry from the same user action/session
+
+- **Data_EventType** – High-level category of the event
+
+- **Data_LaunchScenario** – Code representing the launch scenario
+
+- **Data_ModuleId** – GUID of the module generating the event
+
+- **Device_NetworkCost** – The network cost tier
+
+- **Device_NetworkCountry** – The network country code
+
+- **Device_OsBuild** – The OS build number
+
+- **Device_OsVersion** – The OS version
+
+- **Event_Flags** – Flags associated with the event
+
+- **Event_Name** – The event name
+
+- **Event_ReceivedTime** – When the event was received by the backend
+
+- **Event_SampleRate** – Sampling rate for the event
+
+- **Event_SchemaVersion** – The schema version of the event
+
+- **Event_Sequence** – Sequence number in the event stream
+
+- **Event_Source** – The event source
+
+- **Event_Time** – The event timestamp
+
+- **Release_Audience** – App release audience
+
+- **Release_AudienceGroup** – Release audience group
+
+- **Release_Channel** – Release channel
+
+- **Release_Fork** – Release fork name
+
+- **Session_EcsETag** – Session ECS tag
+
+- **Session_Flags** – Session flags
+
+- **Session_HostAppName** – Host app name
+
+- **Session_HostSessionId** – Host session ID
+
+- **Session_Id** – Session ID
+
+- **Session_MeasuresEnabled** – Indicates whether session measures are enabled
+
+- **Session_SamplingClientIdValue** – Sampling client ID value
+
+- **Session_SubAppName** – Sub-app name
+
+- **Session_VirtualizationType** – Session virtualization type
+
+- **User_PrimaryIdentityHash** – Hashed primary user identifier
+
+- **User_PrimaryIdentitySpace** – Identity namespace for the user
+
+- **User_TelemetryRegion** – Region where telemetry is stored
+
+- **User_TenantGroup** – Tenant grouping for the user
+
+- **User_TenantId** – The user’s tenant ID
 
 
 #### Office.OfficeMobile.PdfViewer.PdfFileOperations (on Android)
@@ -12167,6 +12740,8 @@ analysis.
 
 - **Data_ExtractionTime** - Measures the time taken to extract necessary resources or configuration data during app boot.
 
+- **Data_FeatureGatesEnabled** - Indicates which sub variant of the page is loaded and shown to the user.
+
 - **Data_FragmentCreationTime** - Captures the duration required to instantiate key fragments (UI components) during the boot process.
 
 - **Data_FragmentInitViewStart** - Marks the timestamp when the fragment's view initialization begins to measure time to render and time to interactive metrics.
@@ -15559,6 +16134,10 @@ Needed for monitoring app performance errors to prevent cases where the app stop
 
 The following fields are collected: 
 
+- **boot_thread_1_stacktrace** - boot thread 1's stack trace when ANR occurs.
+
+- **boot_thread_2_stacktrace** - boot thread 2's stack trace when ANR occurs.
+
 - **callstack** - the code callstack where the ANR occurred
  
 - **caused_restart** - whether the app was forced to restart because of the ANR
@@ -17524,6 +18103,8 @@ The following fields are collected:
 
 - **Data_DetachedDuration** - Measures the duration for which the app was detached from the foreground (for example, backgrounded or suspended). 
 
+- **Data_FeatureGatesEnabled** - Indicates which sub variant of the page is loaded and shown to the user.
+
 - **Data_FinishLaunching** - Marks the timestamp when the app finishes launching and transitions into its main operational state
 
 - **Data_FirstBoot** - Indicates whether the current session is the first boot after installation or update. This is used to segment telemetry and performance data
@@ -18310,6 +18891,8 @@ The following fields are collected:
 
 - **Data_EventTime** - The event type
 
+- **Data_FeatureGatesEnabled** - Indicates which sub variant of the page is loaded and shown to the user.
+
 - **Data_HostView** - The host view
 
 - **Data_OperationId** - The operation ID
@@ -18415,6 +18998,8 @@ The following fields are collected:
 - **Data_EventTime** - The time of point-event, as measured from the start of the OperationTelemetry it is logged from.
 
 - **Data_FailureReason** - Failure reason
+
+- **Data_FeatureGatesEnabled** - Indicates which sub variant of the page is loaded and shown to the user.
 
 - **Data_FeatureName** - Feature name
 
@@ -18773,6 +19358,44 @@ The following fields are collected:
 
 - **ServerType** - Returns the type of the server offering the service
 
+#### Office.OneNote.CLP.NavigateToViewAccessRestrictedSection
+
+This event is triggered when the user navigates to a section, but OneNote determines that user's view access to the section is restricted by a sensitivity label applied to the section. This event is used to monitor and verify that access to the content is given or denied as expected.
+
+The following fields are collected:
+ 
+- **App** - The application process sending the event.
+
+- **AppInfo_Language** – The language the application is running under.
+
+- **AppVersionLong** – The application version.
+
+- **Channel** – The preference for audience.
+
+- **DeviceID** – The device identifier.
+
+- **DeviceInfo_NetworkType** – The type of network.
+
+- **DeviceInfo_OsBuild** – The version of the operating system.
+
+- **HowTocheck** – The preference for checking of updates.
+
+- **LabelType** - type of label applied to the section
+
+- **Payload** – Static text.
+
+- **PipelineInfo_ClientCountry** – The device country (based on IP address).
+
+- **PipelineInfo_ClientIp** – The first three octets of the IP address.
+
+- **SectionAccessDenied** - another Boolean value that indicate whether sync request has failed due to user's view access to the section is restricted by sensitivity label.
+
+- **SectionLabelViewAccessDenied** - a Boolean value that indicate whether sync request has failed due to user's view access to the section is restricted by sensitivity label.
+
+- **SectionResourceId** - unique identifier of the section user is navigating to.
+
+- **SessionId** – The identifier for the session.
+
 #### Office.OneNote.System.BootDialogs.SafeBootDialogPending 
 
 The critical signal used to track when we decide to show user a safe boot dialog on next boot because we have been crashing on boot multiple times continuously. This is used to ensure critical regression detection for OneNote app and service health. If users are seeing the safe boot dialog, then we have a critical boot crash bug and this info will help us know how many users are facing this issue and how many users boot the app again to actually see the safe boot dialog vs how many don’t return.
@@ -18937,6 +19560,24 @@ The following fields are collected:
 - **WriteOperationCount** – The number of write operations performed. (Windows only)
 
 - **WriteTransferCount** – The number of bytes written. (Windows only)
+
+
+#### Office.Performance.InputDelayMonitor.Responsiveness
+
+This event is used to monitor the responsiveness of the Office application and identify areas of the product that need performance improvements. The event monitors keyboard and mouse latency in the application. The event is triggered upon the detection of an input delay in the application. This data helps with remediating performance issues such as hangs and lagging input in Office applications.
+
+The following fields are collected :
+
+- **Minute** - Number of interactive minutes into the session duration when the issue occurred.
+
+- **Name** - The name of the condition, such as a hang or lag.
+
+- **ScopeImpactMs** - Estimated impact of the primary feature code likely to be the cause of the issue.
+
+- **ScopeName** - Primary feature code in the product likely to be the cause of the issue.
+
+- **Value** - Measured value related to the condition.
+
 
 
 #### Office.Performance.OPerfMon.HangDetected
@@ -19539,13 +20180,17 @@ The following fields are collected:
 
 - **anr_timestamp** - The timestamp when ANR occurs.
 
+- **boot_thread_1_stacktrace** - boot thread 1's stack trace when ANR occurs.
+
+- **boot_thread_2_stacktrace** - boot thread 2's stack trace when ANR occurs.
+
 - **is_background** - Whether ANR occurs in background.
 
 - **main_thread_stacktrace** - Main thread's stack trace when ANR occurs.
 
 - **main_thread_state** - Main thread's state trace when ANR occurs.
 
-- **main_thread_trimmed_stacktrace** - string value of main thread's trimmed stack trace when ANR occurs.
+- **main_thread_trimmed_stacktrace** - string value of main thread's trimmed stack trace when ANR occurs. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **reason** - The reason why ANR occurs.
 
@@ -22809,6 +23454,15 @@ Allows us to detect and fix situations where our email storage is using up too m
 The following fields are collected:
 
 - **db_size_megabytes** - tracks the size of the core data database rounded to the nearest 25 megabytes and with a maximum megabyte of 500
+
+#### EventWriteAccountConfiguration.AccountInformationDefaultExchange
+
+This event is triggered when opening an Outlook profile. This happens on launch of Outlook. It happens once per session since the Cached Mode state doesn't change through a session. We only need the data for that given session. When analyzing and diagnosing performance of Outlook it's important to know if the user is in Cached Mode or Online Mode.
+
+The following fields are collected:  
+
+- **Data_IsCachedMode** - Indicates whether session is in Cache Mode or Online Mode.
+
 
 #### general.properties.log
 
