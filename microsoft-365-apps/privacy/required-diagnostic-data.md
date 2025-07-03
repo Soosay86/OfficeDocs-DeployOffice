@@ -6810,7 +6810,7 @@ The following fields are collected:
 
 #### Office.OfficeMobile.MicrosoftCopilot.CopilotHistory
 
-This event fires whenever a user opens their conversation history inside the consumer Microsoft Copilot experience in the Microsoft 365 Copilot app. It lets us measure how frequently people return to previous chats, correlate the action with downstream engagement, and diagnose any reliability or performance issues while loading history.
+This event is triggered whenever a user opens their conversation history inside the consumer Microsoft Copilot experience in the Microsoft 365 Copilot app. It lets us measure how frequently people return to previous chats, correlate the action with downstream engagement, and diagnose any reliability or performance issues while loading history.
 
 The following fields are collected:
 
@@ -19388,13 +19388,13 @@ The following fields are collected:
 
 - **PipelineInfo_ClientIp** – The first three octets of the IP address.
 
-- **SessionId** – The identifier for the session.
-
-- **SectionResourceId** - unique identifier of the section user is navigating to.
+- **SectionAccessDenied** - another Boolean value that indicate whether sync request has failed due to user's view access to the section is restricted by sensitivity label.
 
 - **SectionLabelViewAccessDenied** - a Boolean value that indicate whether sync request has failed due to user's view access to the section is restricted by sensitivity label.
 
-- **SectionAccessDenied** - another Boolean value that indicate whether sync request has failed due to user's view access to the section is restricted by sensitivity label.
+- **SectionResourceId** - unique identifier of the section user is navigating to.
+
+- **SessionId** – The identifier for the session.
 
 #### Office.OneNote.System.BootDialogs.SafeBootDialogPending 
 
