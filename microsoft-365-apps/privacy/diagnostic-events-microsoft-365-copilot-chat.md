@@ -11,7 +11,7 @@ ms.collection:
 - privacy-microsoft365
 - must-keep
 hideEdit: true
-ms.date: 06/25/2025
+ms.date: 07/03/2025
 ---
 
 # Diagnostic events in Microsoft 365 Copilot Chat
@@ -47,7 +47,7 @@ As an example, the diagnostic event below represents the user action of clicking
 }
 ```
 
-The following are some examples of diagnostic events in Microsoft 365 Copilot Chat, with a description of each event.
+The following are examples of diagnostic events in Microsoft 365 Copilot Chat, with a description of each event.
 
 ## Attachment
 
