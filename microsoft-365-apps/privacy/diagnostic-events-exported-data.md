@@ -11,7 +11,7 @@ ms.collection:
 - privacy-microsoft365
 - must-keep
 hideEdit: true
-ms.date: 06/25/2025
+ms.date: 07/03/2025
 ---
 
 # Understanding Microsoft 365 diagnostic events in exported data
@@ -40,7 +40,7 @@ When a user performs an action, multiple diagnostic events may be collected. The
 
 ### What data does Microsoft retain and for how long?
 
-Microsoft adheres to data minimization obligations under GDPR Article 5, which requires that Microsoft not retain personal data beyond the period for which it's required. For more information, see [Data retention, deletion, and destruction in Microsoft 365](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview).
+Microsoft adheres to data minimization obligations under GDPR Article 5, which requires that Microsoft not retain personal data beyond the period for which it's required. Microsoft has a general policy to retain diagnostic event data for Microsoft 365 apps and services, including Microsoft 365 Copilot, for up to 18 months. For more information, see [Data retention, deletion, and destruction in Microsoft 365](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview).
 
 ### How long does it take for an export to complete?
 
