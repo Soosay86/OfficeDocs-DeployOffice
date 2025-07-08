@@ -11,7 +11,7 @@ ms.collection:
 - privacy-microsoft365
 - must-keep
 hideEdit: true
-ms.date: 05/30/2025
+ms.date: 07/08/2025
 ---
 
 # Connected experiences in Office
@@ -158,6 +158,7 @@ The following table provides a list of those other connected experiences and pro
 | Room Finder |[Use the Scheduling Assistant and Room Finder for meetings in Outlook](https://support.microsoft.com/office/2e00ac07-cef1-47c8-9b99-77372434d3fa) *(for users)*  <br/>[How to control the Room Finder in Outlook](/microsoft-365-apps/outlook/calendaring/room-finder) *(for admins)* |
 |Safe Documents|[Safe Documents](https://support.microsoft.com/office/e2071599-fb31-442b-a30c-198c25e2aacd) *(for users)* <br/> [Safe Documents in Microsoft 365 A5 or E5 Security](/microsoft-365/security/office-365-security/safe-documents-in-e5-plus-security-about) *(for admins)*|
 | Safe Links |[Advanced Outlook.com security for Microsoft 365 subscribers](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2) *(for users)* </br> [Safe Links in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/safe-links-about) *(for admins)* |
+|Scheduled prompts <sup>[11]|[Schedule Copilot prompts](https://support.microsoft.com/topic/29dfd5fb-211a-4515-88a6-730b8074e489) *(for users)* <br/> [Manage scheduled prompts for Microsoft 365 Copilot](/copilot/microsoft-365/scheduled-prompts) *(for admins)*|
 | Sensitivity labels <sup>[12]</sup> |[Apply sensitivity labels to your files and email in Office](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)  |
 | Share  |[Share your Excel workbook with others](https://support.microsoft.com/office/8d8a52bb-03c3-4933-ab6c-330aabf1e589) <br/>[Share a presentation (PowerPoint)](https://support.microsoft.com/office/fdcad9ad-4f13-4f5b-9910-12b4108a4c86) <br/>[Share a document (Word)](https://support.microsoft.com/office/d39f3cd8-0aa0-412f-9a35-1abba926d354) |
 | Shared with me |[See files others have shared with you](https://support.microsoft.com/office/e0476dc7-bf2f-4203-b9ad-c809578b03e7)  |
