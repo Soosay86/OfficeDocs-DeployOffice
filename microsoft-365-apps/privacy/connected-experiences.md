@@ -11,7 +11,7 @@ ms.collection:
 - privacy-microsoft365
 - must-keep
 hideEdit: true
-ms.date: 05/30/2025
+ms.date: 07/08/2025
 ---
 
 # Connected experiences in Office
