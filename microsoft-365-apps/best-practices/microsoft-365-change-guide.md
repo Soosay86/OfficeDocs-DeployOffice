@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Microsoft 365 change guide"
-ms.date: 05/25/2024
+ms.date: 07/10/2025
 ---
 
 # Microsoft 365 change guide
@@ -249,9 +249,9 @@ Messages are identified in the right-side column above by one of three categorie
 Both "prevent or fix issues" and "plan for change" messages might require action from admins. To help you prioritize and plan, the **Act by** column contains the date by which action is required.
 
 > [!IMPORTANT]
-> "To help you prioritize and plan, the **Act by** column contains the date by which action is required."
+> To help you prioritize and plan, the **Act by** column contains the date by which action is required.
 
-The Message center admin user interface is one way to obtain service change information. Using the [Access service health and communications in Microsoft Graph][def], you can build automated solutions to query relevant data:
+The Message center admin user interface is one way to obtain service change information. Using the [Access service health and communications in Microsoft Graph](https://learn.microsoft.com/graph/service-communications-concept-overview), you can build automated solutions to query relevant data.
 
 We commit to continuously improving our change classification and notification processes. Our efforts to predict which changes may impact customer environments are the basis of our change classifications, but these predictions are limited without input from our community of customers. The customer feedback we receive through various channels enhances our ability to respond to change concerns in an agile, democratized, and customer-centric manner.
 
@@ -331,11 +331,11 @@ At the bottom-right of each page in the admin portal, customers can provide feed
 Feedback can be provided on each individual Message center post. The feedback experience is broken out in two parts:
 
 1. You can provide a reaction of either Thumbs Up or Thumbs Down.
-  :::image type="content" source="./media/microsoft-365-change-guide/Figure-13.1.png" alt-text="A screenshot of Feedback message.":::
+  :::image type="content" source="./media/microsoft-365-change-guide/Figure-13.2.png" alt-text="A screenshot of Thumbs-up or Thumbs-down.":::
 *Figure 13*
 
 2. You can then provide more detailed information and/or ask questions. If a valid email address is provided we are able to reply to your feedback. Responses from Microsoft are available under "My Feedback": https://feedbackportal.microsoft.com/feedback/ .
-  :::image type="content" source="./media/microsoft-365-change-guide/Figure-13.2.png" alt-text="A screenshot of Feedback message.":::
+  :::image type="content" source="./media/microsoft-365-change-guide/Figure-13.1.png" alt-text="A screenshot of Feedback captured with details.":::
 
 The feedback from the Message center goes directly to the owning engineering and marketing teams within Microsoft. Microsoft owners receive a daily report of new feedback that has been submitted.
 
