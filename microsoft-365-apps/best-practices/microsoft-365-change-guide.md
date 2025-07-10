@@ -69,8 +69,6 @@ Three categories of customers can be identified based on their observed change s
 - **Restrict All Change**: Microsoft advises customers to be intentional with their decisions to disable a change and to avoid unconsciously leaving all changes disabled. Microsoft strives to enable you to make risk-based decisions about changes that require in-depth evaluation, while allowing the rest of the changes to be deployed immediately with minimal evaluation (and risk). By proactively identifying our change impact levels, described in [change classification and notification](#change-classification-and-notification), and by keeping you apprised of upcoming changes, described in [sources of change information](#sources-of-change-information), we aid you in making risk-based decisions on which changes require evaluation.
 The Microsoft industry observation shows that the Restrict All Change strategy is overly burdensome and less effective at user empowerment because it limits the benefits of continuous innovation.
 
-Figure 2 summarizes these categories.
-
 :::image type="content" source="./media/microsoft-365-change-guide/maximum-change-strategy.png" alt-text="A screenshot of the Maximum Change Strategy diagram.":::
 *Figure 2*
 
@@ -82,7 +80,9 @@ All change strategies require communication and messaging for users to consume a
 - Plan for change, and
 - Stay informed
 
-The message attributes that Message center provides include Publish Date, Message ID (for tracking specific messages), Title, and (change/event) Description. The Message center is a critical source of information that's important for change planning and update consumption across Microsoft 365. Building projects and tasks from these often-actionable notifications is critical to a successful change strategy. To help you better understand this content, [Planner has been integrated with Message center allowing messages to be directly synced with Planner](/office365/planner/track-message-center-tasks-planner).
+The Message center provides the following attributes in a message; Publish Date, Message ID (for tracking specific messages), Title, and (change/event) Description. The Message center is a critical source of information and important for change planning and update consumption across Microsoft 365. Building projects and tasks from these often-actionable notifications is critical to a successful change strategy.
+
+To help you better understand this content, [Planner has been integrated with Message center allowing messages to be directly synced with Planner](/office365/planner/track-message-center-tasks-planner).
 
 Planner features include:
 
@@ -90,18 +90,20 @@ Planner features include:
 - Selecting the type(s) of messages synced.
 - Setting a cadence for the message sync.
 
-After a message is synced to Planner, it shows in Planner as a task. Messages center post titles are prefixed with the associated service in brackets. If a message is updated, that update also syncs to the Planner task.
+After a message is synced to the Planner, it shows in the Planner as a task. Message center post titles are prefixed with the associated service in brackets. If a message is updated, that update also syncs to the Planner task.
 
 Each task is structured as:
 
-- The message post title has a prefix in brackets (for example, "[SharePoint] New feature") that indicates the service that the post is associated with. Figure 3 shows an example.
+- The message post title has a prefix in brackets (for example, "[SharePoint] New feature") that indicates the service that the post is associated with.
+
 - The Start Date is set to the time the task was created in Planner.
+
 - The Published Date of the message post can be found in the Notes.
 
 :::image type="content" source="./media/microsoft-365-change-guide/new-feature-post.png" alt-text="A screenshot of a message center post sample.":::
 *Figure 3*
 
-When you use Planner to manage tasks, group tasks, and formulate a plan of action for completing tasks strategically, you can review boards and change management teams to track change efficiently.
+When you use the Planner to manage tasks, group tasks, and formulate a plan of action for completing tasks strategically, you can review boards and change management teams to track change efficiently.
 
 ## Change types and control methods
 
@@ -201,9 +203,9 @@ To reduce potential risk, Microsoft commits to:
 
 The Microsoft 365 Change Management Plan is essential for enabling customers to plan for and manage change. The plan outlines three change phases and recommends customer actions that are associated with each action.
 
-Table 3 summarizes the three change phases.
+Table 2 summarizes the three change phases.
 
-#### Table 3: Microsoft 365 Change Management Plan phases
+#### Table 2: Microsoft 365 Change Management Plan phases
 
 | Phase 1: Before change | Phase 2: During change | Phase 3: After change |
 |------------------------|------------------------|-----------------------|
@@ -331,11 +333,11 @@ At the bottom-right of each page in the admin portal, customers can provide feed
 Feedback can be provided on each individual Message center post. The feedback experience is broken out in two parts:
 
 1. You can provide a reaction of either Thumbs Up or Thumbs Down.
-  :::image type="content" source="./media/microsoft-365-change-guide/Figure-13.2.png" alt-text="A screenshot of Thumbs-up or Thumbs-down.":::
+  :::image type="content" source="./media/microsoft-365-change-guide/figure-13-2.png" alt-text="A screenshot of Thumbs-up or Thumbs-down.":::
 *Figure 13*
 
 2. You can then provide more detailed information and/or ask questions. If a valid email address is provided we are able to reply to your feedback. Responses from Microsoft are available under "My Feedback": https://feedbackportal.microsoft.com/feedback/ .
-  :::image type="content" source="./media/microsoft-365-change-guide/Figure-13.1.png" alt-text="A screenshot of Feedback captured with details.":::
+  :::image type="content" source="./media/microsoft-365-change-guide/figure-13-1.png" alt-text="A screenshot of Feedback captured with details.":::
 
 The feedback from the Message center goes directly to the owning engineering and marketing teams within Microsoft. Microsoft owners receive a daily report of new feedback that has been submitted.
 
