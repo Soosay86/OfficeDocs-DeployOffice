@@ -63,11 +63,12 @@ Three categories of customers can be identified based on their observed change s
 
 - **Maximize Change**: The Maximize Change strategy is most applicable to small- or medium-sized businesses that seek to optimize user productivity, and that operate without compliance or regulatory requirements.
 
-- **Allow Most Restricting High Impact**: The Allow Most Restricting High Impact category is the strategy that we recommend you target, especially if your organization operates in a regulated environment, or if you have strict security requirements (like in the financial services, healthcare, and aerospace industries). The case for implementing a risk-based approach for evaluating changes is supported by the NPS data in Figure 1.
+- **Allow Most Restricting High Impact**: The Allow Most Restricting High Impact category is the strategy that we recommend you target, especially if your organization operates in a regulated environment, or if you have strict security requirements (like in the financial services, healthcare, and aerospace industries).
 
 - **Restrict All Change**: Microsoft recommends customers be deliberate when disabling changes and avoid leaving all changes disabled by default. Focus on making risk-based decisions—evaluate only high-impact changes while allowing most updates to proceed with minimal review. Using change impact levels [change classification and notification](#change-classification-and-notification) and staying informed about upcoming updates [sources of change information](#sources-of-change-information) helps organizations decide which changes need attention. An overly restrictive strategy is burdensome and limits user empowerment and cloud innovation.
 
 *Figure 2*
+
 :::image type="content" source="./media/microsoft-365-change-guide/maximum-change-strategy.png" alt-text="A screenshot of the Maximum Change Strategy diagram.":::
 
 ### Consuming and managing change – Message center and Planner
@@ -99,6 +100,7 @@ Each task is structured as:
 - The **Published Date** of the message post can be found in the Notes.
 
 *Figure 3*
+
 :::image type="content" source="./media/microsoft-365-change-guide/new-feature-post.png" alt-text="A screenshot of a message center post sample.":::
 
 When you use the Planner to manage tasks, group tasks, and formulate a plan of action for completing tasks strategically, you can review boards and change management teams to track change efficiently.
@@ -136,6 +138,7 @@ Microsoft 365 services provide two options for receiving new product updates and
 As Microsoft develops products and features, new releases are validated in various stages. Figure 4 depicts these stages, with each validation stage reaching a broader audience. Before moving to the next stage, a threshold of deployments in the prior stage must be completed without any issues.
 
 *Figure 4*
+
 :::image type="content" source="./media/microsoft-365-change-guide/release-validation.png" alt-text="A screenshot of the Release Management Validation diagram.":::
 
 Microsoft feature teams are first to validate the features that they develop.
@@ -159,6 +162,7 @@ Navigate to the portal, and then select **Settings** \> **Org Settings** \> **Or
 Figure 5 shows the configuration pane where you can select to have everyone on Standard Release, everyone on Targeted Release, or specific users on Targeted Release.
 
 *Figure 5*
+
 :::image type="content" source="./media/microsoft-365-change-guide/release-preferences.png" alt-text="A screenshot of the Release Preferences options.":::
 
 It's important to have a staging or test tenant as part of your change strategy. Certain features require tenant changes before manifestation in the user experience. These tenant changes can be implemented in the staging tenant, so you can preview features, while preserving production tenant configurations.
@@ -179,14 +183,13 @@ Earlier, we shared data that supports the user value of being on Current Channel
 
 Microsoft recommends two models for using these channels:
 
-- **Test tenant:** To evaluate and test incoming features, customers use a test tenant that mimics production.
+- **Test tenant:** To evaluate and test incoming features, customers use a test tenant that mimics production. Test tenants are used for integration testing and product evaluation separate from production. Traditionally, IT owns tests tenants and operates the test accounts within. This is an IT-centric model that may cause bottlenecks and incomplete evaluations to occur. We recommend inclusion of users from various departments and roles in your test tenant. IT departments aren't experts on every product and aren't always best suited to perform certain product evaluations. For Microsoft 365 services, Targeted Release and Standard Release options are available.
+
   - For clients, we recommend that the test tenant be subscribed to the Current Channel or Monthly Enterprise Channel.
   - For services, we recommend that the test tenant be subscribed to the Targeted Release option.
-Test tenants are used for integration testing and product evaluation separate from production. Traditionally, IT owns tests tenants and operates the test accounts within. This is an IT-centric model that may cause bottlenecks and incomplete evaluations to occur. We recommend inclusion of users from various departments and roles in your test tenant. IT departments aren't experts on every product and aren't always best suited to perform certain product evaluations. For Microsoft 365 services, Targeted Release and Standard Release options are available.
+  - **Microsoft 365 Apps**: For information about the benefits and how to enroll or change update channels, see [Change the Microsoft 365 Apps update channel for devices in your organization](../updates/change-update-channels.md). For a description of the benefits, see the [Client release channels](#client-release-channels) section of this article.
 
-   - **Microsoft 365 Apps**: For information about the benefits and how to enroll or change update channels, see [Change the Microsoft 365 Apps update channel for devices in your organization](../updates/change-update-channels.md). For a description of the benefits, see the [Client release channels](#client-release-channels) section of this article.
-
-   - **Microsoft 365 services:** For information about the benefits and how to enroll into these updated channels, see [Set up the Standard or Targeted release options](/microsoft-365/admin/manage/release-options-in-office-365). For an outline of the channels, see the [Service release options and controls](#service-release-options-and-controls) section earlier in this article.
+  - **Microsoft 365 services:** For information about the benefits and how to enroll into these updated channels, see [Set up the Standard or Targeted release options](/microsoft-365/admin/manage/release-options-in-office-365). For an outline of the channels, see the [Service release options and controls](#service-release-options-and-controls) section earlier in this article.
 
 - **Power user (expertise):** To democratize update evaluations, identify power users in your production tenant and subscribe to the Current Channel or Monthly Enterprise Channel (Microsoft 365 Apps) and the Targeted Release option (services). Only the specified power users receive continuous or early updates and serve as an essential source of feedback, bugs, and experience across various lines of business and user expertise.
 
@@ -245,9 +248,10 @@ The Message center in the Microsoft 365 [admin center](https://portal.office.com
 Figure 8 shows the Message center with the **Major Update** tag.
 
 *Figure 8*
+
 :::image type="content" source="./media/microsoft-365-change-guide/message-center-preferences.png" alt-text="A screenshot of Message Center preferences.":::
 
-Messages are identified in the right-side column above by one of three categories:  
+Messages are identified in the right-side column by one of three categories:  
 
 **Prevent or fix issues**: These messages inform you of known issues that are affecting your organization and might require you to take action to avoid disruptions in service. **Prevent or fix issues** are different than Service health messages because they prompt you to be proactive to avoid issues.  
   
@@ -276,18 +280,16 @@ To ensure broad dissemination and accessibility, Microsoft publishes change info
 
 The Microsoft 365 Roadmap is a public website that relays the status of products that are in development, rolling out, or launched. You can view the status of each feature or workload, search using tags, and confirm release dates from a single portal.
 
-Figure 9 shows how you can use filtering to easily find services or features of interest.
-
 *Figure 9*
+
 :::image type="content" source="./media/microsoft-365-change-guide/roadmap-filtering.png" alt-text="A screenshot of the Microsoft 365 roadmap with filters.":::
 
 #### Message center weekly digest
 
 Your admins can use the Message center weekly digest to review Message center communications via email in a digestible, easily shared, summary format. The digest was created in response to customer feedback and demonstrates the innovative ways the Microsoft community effects change in our processes. Customers can opt out of digest emails by changing settings in the admin portal.
 
-Figure 10 shows an example of the digest.
-
 *Figure 10*
+
 :::image type="content" source="./media/microsoft-365-change-guide/message-center-announcement.png" alt-text="A screenshot of a sample Message Center announcement.":::
 
 #### Microsoft admin mobile app
@@ -296,16 +298,17 @@ Figure 10 shows an example of the digest.
 
 The Microsoft 365 admin mobile app has more than 80 features that help you manage your company when you're on the go. The app is available for download in the Apple App Store and Google Play. Using the mobile app, you can perform common tasks like user password reset, adding users to a group, and reviewing change notifications and alerts. We recommend enabling mobile alerts, so that you stay apprised of updates the moment they're released.
 
-Figure 11 shows a screenshot of the mobile app.
-
 *Figure 11*
+
 :::image type="content" source="./media/microsoft-365-change-guide/mobile-admin-app-snip.png" alt-text="A screenshot of the Microsoft 365 admin mobile app.":::<br>
 
 To take advantage of the Microsoft 365 admin mobile app features, [download the app](https://www.microsoft.com/microsoft-365/business/manage-office-365-admin-app).
 
 **<span class="underline">Other change information resources</span>**
 
-In addition to changing our services, we also update Microsoft 365 clients. Both sets of changes follow our Change Management Plan and are communicated in the Message center. For documentation about client changes, see:
+In addition to changing our services, we also update Microsoft 365 clients. Both sets of changes follow our Change Management Plan and are communicated in the Message center. 
+
+For documentation about client changes, see:
 
 - [Overview of update channels for Microsoft 365 Apps](../updates/overview-update-channels.md)
   - These update channels mirror those described earlier in the Change Management Plan.
@@ -333,6 +336,7 @@ Microsoft establishes a virtuous feedback loop between customers and our product
 At the bottom-right of each page in the admin portal, customers can provide feedback when they click the **Give feedback** button, which is illustrated in Figure 12.
 
 *Figure 12*
+
 :::image type="content" source="./media/microsoft-365-change-guide/give-feedback-button.png" alt-text="A screenshot of the Give Feedback button.":::<br>
 
 [Message center](https://admin.cloud.microsoft/Adminportal/Home?source=applauncher#/MessageCenter)
@@ -340,16 +344,21 @@ At the bottom-right of each page in the admin portal, customers can provide feed
 Feedback can be provided on each individual Message center post. The feedback experience is broken out in two parts:
 
 1. You can provide a reaction of either Thumbs Up or Thumbs Down.
-  *Figure 13.1*
-  :::image type="content" source="./media/microsoft-365-change-guide/figure-13-2.png" alt-text="A screenshot of Thumbs-up or Thumbs-down.":::
+  
+   *Figure 13.1*
+  
+   :::image type="content" source="./media/microsoft-365-change-guide/figure-13-2.png" alt-text="A screenshot of Thumbs-up or Thumbs-down.":::
 
-2. You can then provide more detailed information and/or ask questions. If a valid email address is provided we are able to reply to your feedback. Responses from Microsoft are available under "My Feedback": https://feedbackportal.microsoft.com/feedback/ .
+2. You can then provide more detailed information and/or ask questions. If a valid email address is provided we are able to reply to your feedback. Responses from Microsoft are available under "My Feedback": https://feedbackportal.microsoft.com/feedback/.
+
     *Figure 13.2*
+
     :::image type="content" source="./media/microsoft-365-change-guide/figure-13-1.png" alt-text="A screenshot of Feedback captured with details.":::
 
 The feedback from the Message center goes directly to the owning engineering and marketing teams within Microsoft. Microsoft owners receive a daily report of new feedback that has been submitted.
 
 *Figure 14*
+
 :::image type="content" source="./media/microsoft-365-change-guide/message-center-like-and-dislike.png" alt-text="A screenshot of a summary page with Like and Dislike buttons.":::
 
 <!-- commenting this section until we get confirmation about which community can be listed. [**Microsoft Tech Community**](https://aka.ms/office365network)
