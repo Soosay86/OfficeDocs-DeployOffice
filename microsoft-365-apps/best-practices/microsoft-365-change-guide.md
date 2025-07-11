@@ -41,22 +41,21 @@ Only updates that have significant impact should require detailed analysis; for 
 
 Microsoft stands out by providing customers with granular control over impactful changes—an uncommon practice among technology providers focused mainly on innovation. We prioritize transparency in our change process and encourage customer feedback, aiming to help organizations adopt the rapidly increasing volume of updates efficiently and support their ongoing success.
 
-### Challenges
+### Key challenges
 
-From industry observations, feedback, and supporting data, we've identified a key challenge that our customers face when they apply highly restrictive change ingestion models to the continuous release policy of Microsoft 365.
+**Pace of Change**: Microsoft 365 releases frequent updates—up to 720 per year. Highly restrictive review processes can quickly lead to large backlogs, making it hard for organizations to keep up and preventing users from accessing the latest features.
 
-The challenge lies in how frequently Microsoft updates services in the modern cloud. To illustrate the challenge, assume that Microsoft pushes 720 changes per year, released linearly. If these changes are restricted for evaluation, IT departments that are gating changes could be behind up to 60 changes after the first month. The resulting backlog of changes heightens the entropy in the environment and prevents users from utilizing the latest features and updates. The question becomes: is the organization capable of processing these rapid changes according to existing procedures or are changes left disabled because they can't match the pace of release?
+**Resource Burden**: IT teams struggle to evaluate every change, creating an unsustainable workload and potentially leaving valuable features disabled simply because the pace outmatches existing procedures. IT departments that are gating changes could be behind by up to 60 changes after the first month.
 
-> [!IMPORTANT]
-> "Is the organization capable of processing these rapid changes according to existing procedures or are changes left disabled because they cannot match the pace of release?"
+**User Experience Overlooked**: Focusing only on security and functionality is like ignoring the comforts and safety features users want in a car. Overly restrictive strategies can disenfranchise users seeking improved productivity and satisfaction.
 
-The challenge can be further explained by the "automobile metaphor." Many organizations focus only on functionality and security. In the context of a vehicle, this is the equivalent of focusing on getting from point A to point B. In this case, owners are content if they can fix the vehicle, if they know how it works, and if the vehicle has seat belts for security. However, we challenge the IT professionals reading this to consider the user. To the average vehicle consumer, transportation is more than A to B. Users (consumer drivers) want a radio for entertainment, air conditioning for climate control, and power windows for convenience. Drivers want anti-lock braking systems, airbags, and seat belts for security. If the focus is solely on enabling users to reach the destination, you might be disenfranchising the population that wants to be more secure, comfortable, and efficient on the journey. If organizational lines of defense spend valuable time divining which features are important, which features users care about, and which features are causing disruption to the IT environment, the burden becomes unsustainable. This calls for democratization of change evaluation; for more information, see the section, [Change Evaluation Democratization](#change-evaluation-democratization).
+**Loss of Cloud Benefits**: Turning off most features using provided controls reverts the environment to an on-premises model, removing any advantages that come from cloud innovation.
 
-Although Microsoft doesn't provide a default off option, we find that very few customers take advantage of the options that we provide to disable features in their environments. When organizations employ an "everything off" strategy by leveraging our provided configurations, the result is similar to managing on-premises software. The benefits originally sought by moving to the cloud are largely alienated by this approach, because the innovations that users care about are unavailable. Moreover, the Microsoft ecosystem suffers from the gap in usage data created by this strategy. For example, diagnostic data[[3]](#footnote-3) provides Microsoft with valuable information about how our customers use features, how the features are (or are not) improving overall experience, and crash reports that help us to stay apprised of widespread issues. Although we provide customers control over diagnostic data, exercising these controls limits the data we have for keeping our service secure, up to date, and functioning as expected.
+**Reduced Feedback Loop**: Disabling features and diagnostic data limits Microsoft's ability to gather usage insights and address issues, which can affect service reliability and improvements. For example, diagnostic data[[3]](#footnote-3) provides Microsoft with valuable information about how our customers use features, how the features are (or are not) improving overall experience, and crash reports that help us to stay apprised of widespread issues.
 
-We cite this as a challenge because we acknowledge the delicate balance that must be reached between controlling the environment, ensuring proper training, and providing employees exciting new features. IT professionals are at the forefront of maintaining this balance - this is why Microsoft provides tools, transparency, and guidance for making risk-based deployment decisions. Configuration management tools, product roadmaps, change notifications, and documentation are manifestations of our commitment to aid you in reaching change-risk equilibrium.
+**Need for Balance**: Organizations must find a balance between control, proper training, and delivering new features. Microsoft offers tools, transparency, and guidance to support informed, risk-based deployment decisions.
 
-This conversation is focused on the features that we deliver, not the security updates that happen in the background. The same features that we develop with exhaustive market research to increase productivity and user satisfaction. The features that help empower our customers to achieve more, with open feedback channels to adjust for negative feedback in an agile manner. We require customer participation to validate our features, which means features must first be deployed in customer environments for users to leverage.
+**Feature Adoption Required**: New features need to be deployed and used to gather customer feedback and drive further improvement. Without customer participation, Microsoft can't validate or enhance new capabilities. This calls for democratization of change evaluation; for more information, see the section, [Change Evaluation Democratization](#change-evaluation-democratization).
 
 ### Strategy
 
@@ -66,11 +65,10 @@ Three categories of customers can be identified based on their observed change s
 
 - **Allow Most Restricting High Impact**: The Allow Most Restricting High Impact category is the strategy that we recommend you target, especially if your organization operates in a regulated environment, or if you have strict security requirements (like in the financial services, healthcare, and aerospace industries). The case for implementing a risk-based approach for evaluating changes is supported by the NPS data in Figure 1.
 
-- **Restrict All Change**: Microsoft advises customers to be intentional with their decisions to disable a change and to avoid unconsciously leaving all changes disabled. Microsoft strives to enable you to make risk-based decisions about changes that require in-depth evaluation, while allowing the rest of the changes to be deployed immediately with minimal evaluation (and risk). By proactively identifying our change impact levels, described in [change classification and notification](#change-classification-and-notification), and by keeping you apprised of upcoming changes, described in [sources of change information](#sources-of-change-information), we aid you in making risk-based decisions on which changes require evaluation.
-The Microsoft industry observation shows that the Restrict All Change strategy is overly burdensome and less effective at user empowerment because it limits the benefits of continuous innovation.
+- **Restrict All Change**: Microsoft recommends customers be deliberate when disabling changes and avoid leaving all changes disabled by default. Focus on making risk-based decisions—evaluate only high-impact changes while allowing most updates to proceed with minimal review. Using change impact levels [change classification and notification](#change-classification-and-notification) and staying informed about upcoming updates [sources of change information](#sources-of-change-information) helps organizations decide which changes need attention. An overly restrictive strategy is burdensome and limits user empowerment and cloud innovation.
 
-:::image type="content" source="./media/microsoft-365-change-guide/maximum-change-strategy.png" alt-text="A screenshot of the Maximum Change Strategy diagram.":::
 *Figure 2*
+:::image type="content" source="./media/microsoft-365-change-guide/maximum-change-strategy.png" alt-text="A screenshot of the Maximum Change Strategy diagram.":::
 
 ### Consuming and managing change – Message center and Planner
 
@@ -82,7 +80,7 @@ All change strategies require communication and messaging for users to consume a
 
 The Message center provides the following attributes in a message; Publish Date, Message ID (for tracking specific messages), Title, and (change/event) Description. The Message center is a critical source of information and important for change planning and update consumption across Microsoft 365. Building projects and tasks from these often-actionable notifications is critical to a successful change strategy.
 
-To help you better understand this content, [Planner has been integrated with Message center allowing messages to be directly synced with Planner](/office365/planner/track-message-center-tasks-planner).
+To help you better understand this content, the [Planner has been integrated with Message center allowing messages to be directly synced with Planner](/office365/planner/track-message-center-tasks-planner).
 
 Planner features include:
 
@@ -94,14 +92,14 @@ After a message is synced to the Planner, it shows in the Planner as a task. Mes
 
 Each task is structured as:
 
-- The message post title has a prefix in brackets (for example, "[SharePoint] New feature") that indicates the service that the post is associated with.
+- The message post **Title** has a prefix in brackets (for example, "[SharePoint] New feature") that indicates the service that the post is associated with.
 
-- The Start Date is set to the time the task was created in Planner.
+- The **Start Date** is set to the time the task was created in the Planner.
 
-- The Published Date of the message post can be found in the Notes.
+- The **Published Date** of the message post can be found in the Notes.
 
-:::image type="content" source="./media/microsoft-365-change-guide/new-feature-post.png" alt-text="A screenshot of a message center post sample.":::
 *Figure 3*
+:::image type="content" source="./media/microsoft-365-change-guide/new-feature-post.png" alt-text="A screenshot of a message center post sample.":::
 
 When you use the Planner to manage tasks, group tasks, and formulate a plan of action for completing tasks strategically, you can review boards and change management teams to track change efficiently.
 
@@ -137,8 +135,8 @@ Microsoft 365 services provide two options for receiving new product updates and
 
 As Microsoft develops products and features, new releases are validated in various stages. Figure 4 depicts these stages, with each validation stage reaching a broader audience. Before moving to the next stage, a threshold of deployments in the prior stage must be completed without any issues.
 
-:::image type="content" source="./media/microsoft-365-change-guide/release-validation.png" alt-text="A screenshot of the Release Management Validation diagram.":::
 *Figure 4*
+:::image type="content" source="./media/microsoft-365-change-guide/release-validation.png" alt-text="A screenshot of the Release Management Validation diagram.":::
 
 Microsoft feature teams are first to validate the features that they develop.
 
@@ -154,12 +152,14 @@ To implement the [democratization of change](#change-evaluation-democratization)
 
 Your primary control for receiving service updates is the configuration of your release options. Although Microsoft provides you with control over the cadence at which your users receive updates, these changes are deployed to our hyperscale cloud services (instead of software installations that are running in your IT infrastructure). It would be impractical for Microsoft to manage, update, and secure a global cloud with specific versions of our services running for specific tenants. Service changes give you less granularity of control over deployment than Microsoft 365 Apps do, because Microsoft 365 Apps have both release channels and various deployment tools available.
 
-You can configure release options in the Microsoft 365 admin portal as described in [Set up the release option in the admin center](/microsoft-365/admin/manage/release-options-in-office-365#set-up-the-release-option-in-the-admin-center). Navigate to the portal, and then select **Settings** \> **Org Settings** \> **Organizational Profile** \> **Release Preferences**. 
+You can configure release options in the Microsoft 365 admin portal as described in [Set up the release option in the admin center](/microsoft-365/admin/manage/release-options-in-office-365#set-up-the-release-option-in-the-admin-center). 
+
+Navigate to the portal, and then select **Settings** \> **Org Settings** \> **Organizational Profile** \> **Release Preferences**.
 
 Figure 5 shows the configuration pane where you can select to have everyone on Standard Release, everyone on Targeted Release, or specific users on Targeted Release.
 
-:::image type="content" source="./media/microsoft-365-change-guide/release-preferences.png" alt-text="A screenshot of the Release Preferences options.":::
 *Figure 5*
+:::image type="content" source="./media/microsoft-365-change-guide/release-preferences.png" alt-text="A screenshot of the Release Preferences options.":::
 
 It's important to have a staging or test tenant as part of your change strategy. Certain features require tenant changes before manifestation in the user experience. These tenant changes can be implemented in the staging tenant, so you can preview features, while preserving production tenant configurations.
 
@@ -167,15 +167,22 @@ It's important to have a staging or test tenant as part of your change strategy.
 
 #### Client release channels
 
-Microsoft offers different update channels to which customers can subscribe for updates to our Click-to-Run clients, Microsoft 365 Apps. These channels determine how frequently changes are released to their entire tenant or subscribed subdivisions their tenant, depending on customer configuration. Channels are a powerful mechanism through which IT departments and power users can evaluate and test upcoming changes without hindering their release to the greater user population. For more information, see [Overview of update channels for Microsoft 365 Apps](../updates/overview-update-channels.md).
+Microsoft offers different update channels to which customers can subscribe for updates to our Click-to-Run clients, Microsoft 365 Apps. These channels determine how frequently changes are released to their entire tenant or subscribed subdivisions their tenant, depending on customer configuration. Channels are a powerful mechanism through which IT departments and power users can evaluate and test upcoming changes without hindering their release to the greater user population.
+
+For more information, see [Overview of update channels for Microsoft 365 Apps](../updates/overview-update-channels.md).
 
 Microsoft provides privacy controls so that you can meet compliance and security obligations on a global scale, regardless of operational localities. With Cloud Policy, you can use a drop-down menu to modify these settings and apply the modifications across the devices that use that profile.
 
 ### Change evaluation democratization
 
-Earlier, we shared data that supports the user value of being on Current Channel, which provides continuous updates. We recommend this channel and Monthly Enterprise Channel as two solutions to expedite update evaluation and testing. Microsoft recommends two models for using these channels:
+Earlier, we shared data that supports the user value of being on Current Channel, which provides continuous updates. We recommend this channel and Monthly Enterprise Channel as two solutions to expedite update evaluation and testing.
 
-- **Test tenant:** To evaluate and test incoming features, customers use a test tenant that mimics production. For clients, we recommend that the test tenant be subscribed to the Current Channel or Monthly Enterprise Channel. For services, we recommend that the test tenant be subscribed to the Targeted Release option. Test tenants are used for integration testing and product evaluation separate from production. Traditionally, IT owns tests tenants and operates the test accounts within. This is an IT-centric model that may cause bottlenecks and incomplete evaluations to occur. We recommend inclusion of users from various departments and roles in your test tenant. IT departments aren't experts on every product and aren't always best suited to perform certain product evaluations. For Microsoft 365 services, Targeted Release and Standard Release options are available.
+Microsoft recommends two models for using these channels:
+
+- **Test tenant:** To evaluate and test incoming features, customers use a test tenant that mimics production.
+  - For clients, we recommend that the test tenant be subscribed to the Current Channel or Monthly Enterprise Channel.
+  - For services, we recommend that the test tenant be subscribed to the Targeted Release option.
+Test tenants are used for integration testing and product evaluation separate from production. Traditionally, IT owns tests tenants and operates the test accounts within. This is an IT-centric model that may cause bottlenecks and incomplete evaluations to occur. We recommend inclusion of users from various departments and roles in your test tenant. IT departments aren't experts on every product and aren't always best suited to perform certain product evaluations. For Microsoft 365 services, Targeted Release and Standard Release options are available.
 
    - **Microsoft 365 Apps**: For information about the benefits and how to enroll or change update channels, see [Change the Microsoft 365 Apps update channel for devices in your organization](../updates/change-update-channels.md). For a description of the benefits, see the [Client release channels](#client-release-channels) section of this article.
 
@@ -237,8 +244,8 @@ The Message center in the Microsoft 365 [admin center](https://portal.office.com
 
 Figure 8 shows the Message center with the **Major Update** tag.
 
-:::image type="content" source="./media/microsoft-365-change-guide/message-center-preferences.png" alt-text="A screenshot of Message Center preferences.":::
 *Figure 8*
+:::image type="content" source="./media/microsoft-365-change-guide/message-center-preferences.png" alt-text="A screenshot of Message Center preferences.":::
 
 Messages are identified in the right-side column above by one of three categories:  
 
@@ -271,8 +278,8 @@ The Microsoft 365 Roadmap is a public website that relays the status of products
 
 Figure 9 shows how you can use filtering to easily find services or features of interest.
 
-:::image type="content" source="./media/microsoft-365-change-guide/roadmap-filtering.png" alt-text="A screenshot of the Microsoft 365 roadmap with filters.":::
 *Figure 9*
+:::image type="content" source="./media/microsoft-365-change-guide/roadmap-filtering.png" alt-text="A screenshot of the Microsoft 365 roadmap with filters.":::
 
 #### Message center weekly digest
 
@@ -280,8 +287,8 @@ Your admins can use the Message center weekly digest to review Message center co
 
 Figure 10 shows an example of the digest.
 
-:::image type="content" source="./media/microsoft-365-change-guide/message-center-announcement.png" alt-text="A screenshot of a sample Message Center announcement.":::
 *Figure 10*
+:::image type="content" source="./media/microsoft-365-change-guide/message-center-announcement.png" alt-text="A screenshot of a sample Message Center announcement.":::
 
 #### Microsoft admin mobile app
 
@@ -291,8 +298,8 @@ The Microsoft 365 admin mobile app has more than 80 features that help you manag
 
 Figure 11 shows a screenshot of the mobile app.
 
-:::image type="content" source="./media/microsoft-365-change-guide/mobile-admin-app-snip.png" alt-text="A screenshot of the Microsoft 365 admin mobile app.":::<br>
 *Figure 11*
+:::image type="content" source="./media/microsoft-365-change-guide/mobile-admin-app-snip.png" alt-text="A screenshot of the Microsoft 365 admin mobile app.":::<br>
 
 To take advantage of the Microsoft 365 admin mobile app features, [download the app](https://www.microsoft.com/microsoft-365/business/manage-office-365-admin-app).
 
@@ -325,24 +332,25 @@ Microsoft establishes a virtuous feedback loop between customers and our product
 [Microsoft 365 admin portal](https://portal.office.com/)  
 At the bottom-right of each page in the admin portal, customers can provide feedback when they click the **Give feedback** button, which is illustrated in Figure 12.
 
-:::image type="content" source="./media/microsoft-365-change-guide/give-feedback-button.png" alt-text="A screenshot of the Give Feedback button.":::<br>
 *Figure 12*
+:::image type="content" source="./media/microsoft-365-change-guide/give-feedback-button.png" alt-text="A screenshot of the Give Feedback button.":::<br>
 
 [Message center](https://admin.cloud.microsoft/Adminportal/Home?source=applauncher#/MessageCenter)
 
 Feedback can be provided on each individual Message center post. The feedback experience is broken out in two parts:
 
 1. You can provide a reaction of either Thumbs Up or Thumbs Down.
+  *Figure 13.1*
   :::image type="content" source="./media/microsoft-365-change-guide/figure-13-2.png" alt-text="A screenshot of Thumbs-up or Thumbs-down.":::
-*Figure 13*
 
 2. You can then provide more detailed information and/or ask questions. If a valid email address is provided we are able to reply to your feedback. Responses from Microsoft are available under "My Feedback": https://feedbackportal.microsoft.com/feedback/ .
-  :::image type="content" source="./media/microsoft-365-change-guide/figure-13-1.png" alt-text="A screenshot of Feedback captured with details.":::
+    *Figure 13.2*
+    :::image type="content" source="./media/microsoft-365-change-guide/figure-13-1.png" alt-text="A screenshot of Feedback captured with details.":::
 
 The feedback from the Message center goes directly to the owning engineering and marketing teams within Microsoft. Microsoft owners receive a daily report of new feedback that has been submitted.
 
-:::image type="content" source="./media/microsoft-365-change-guide/message-center-like-and-dislike.png" alt-text="A screenshot of a summary page with Like and Dislike buttons.":::
 *Figure 14*
+:::image type="content" source="./media/microsoft-365-change-guide/message-center-like-and-dislike.png" alt-text="A screenshot of a summary page with Like and Dislike buttons.":::
 
 <!-- commenting this section until we get confirmation about which community can be listed. [**Microsoft Tech Community**](https://aka.ms/office365network)
 
@@ -369,7 +377,7 @@ Net Promoter Score (NPS) is an industry calculation that measures user preferenc
 With a 1.5 margin of error.
 
 3:<span id="footnote-3"></span>
-Microsoft provides controls over the diagnostic data collected from user endpoints, as described in [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](../privacy/manage-privacy-controls.md). To the extent that Microsoft is a processor or subprocessor of Personal Data subject to the GDPR, the GDPR Terms in the [Microsoft Online Services Data Protection Addendum](https://www.microsoft.com/licensing/product-licensing/products) Attachment 3 govern that processing and the parties also agree to the following terms in this sub-section (“Processing of Personal Data; GDPR”).
+Microsoft provides controls over the diagnostic data collected from user endpoints, as described in [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](../privacy/manage-privacy-controls.md). To the extent that Microsoft is a processor or subprocessor of Personal Data subject to the GDPR, the GDPR Terms in the [Microsoft Online Services Data Protection Addendum](https://www.microsoft.com/licensing/product-licensing/products) Attachment 3 govern that processing and the parties also agree to the following terms in this sub-section ("Processing of Personal Data; GDPR").
 
 4:<span id="footnote-4"></span>
 For guidance about opting in to these service release options, see [Set up the Standard or Targeted release options](/microsoft-365/admin/manage/release-options-in-office-365).
@@ -382,6 +390,5 @@ This consists of a selected subset of non-security updates for Semi-Annual Enter
 
 7:<span id="footnote-7"></span>
 For Configuration Manager to be able to manage Office updates, an Office COM object needs to be enabled on the computer where Office is installed. The Office COM object takes commands from Configuration Manager to download and install client updates. You can enable the Office COM object by using client policy in Configuration Manager, Group Policy, or the Office Deployment Tool. If you use more than one method, the Group Policy setting determines the final configuration.
-
 
 [def]: https://learn.microsoft.com/graph/service-communications-concept-overview
