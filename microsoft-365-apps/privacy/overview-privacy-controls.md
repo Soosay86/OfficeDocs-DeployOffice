@@ -8,9 +8,10 @@ ms.topic: concept-article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: 
- - privacy-microsoft365
- - essentials-privacy
- - must-keep
+- privacy-microsoft365
+- essentials-privacy
+- must-keep
+- trust-pod
 hideEdit: true
 ms.date: 05/30/2025
 ---
