@@ -12,7 +12,7 @@ ms.collection:
 - must-keep
 - trust-pod
 hideEdit: true
-ms.date: 07/03/2025
+ms.date: 07/24/2025
 ---
 
 # Understanding Microsoft 365 diagnostic events in exported data
