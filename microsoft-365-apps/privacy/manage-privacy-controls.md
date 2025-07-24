@@ -10,6 +10,7 @@ ms.localizationpriority: high
 ms.collection: 
 - privacy-microsoft365
 - must-keep
+- trust-pod
 hideEdit: true
 ms.date: 05/30/2025
 ---
@@ -46,7 +47,7 @@ These policy settings can be implemented by using either Group Policy or [Cloud 
 
 If you’re using the Group Policy Management tool, all these policy settings are located under User Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016\\Privacy\\Trust Center.
 
-These new policy settings also apply to the desktop versions of Project and Visio that come with some subscription plans, such as Project Plan 5 or Visio Plan 2. They also apply to Microsoft 365 Apps for business.
+These new policy settings also apply to the desktop versions of Project and Visio that come with some subscription plans, such as Planner and Project Plan 5 or Visio Plan 2. They also apply to Microsoft 365 Apps for business.
 
 There are also some existing policy settings that will no longer apply to Microsoft 365 Apps for enterprise, and there are some user interface (UI) changes for privacy settings that you should be aware of because your users might notice those changes and ask about them.
 
