@@ -43,7 +43,7 @@ Microsoft stands out by providing customers with granular control over impactful
 
 ### Key challenges
 
-**Pace of Change**: Microsoft 365 releases frequent updates—up to 720 per year. Highly restrictive review processes can quickly lead to large backlogs, making it hard for organizations to keep up and preventing users from accessing the latest features.
+**Pace of Change**: To ensure customers have access to great innovations, Microsoft releases hundreds of changes in a year. Highly restrictive review processes can quickly lead to large backlogs, making it hard for organizations to keep up and preventing users from accessing the latest features.
 
 **Resource Burden**: IT teams struggle to evaluate every change, creating an unsustainable workload and potentially leaving valuable features disabled simply because the pace outmatches existing procedures. IT departments that are gating changes could be behind by up to 60 changes after the first month.
 
@@ -51,7 +51,7 @@ Microsoft stands out by providing customers with granular control over impactful
 
 **Loss of Cloud Benefits**: Turning off most features using provided controls reverts the environment to an on-premises model, removing any advantages that come from cloud innovation.
 
-**Reduced Feedback Loop**: Disabling features and diagnostic data limits Microsoft's ability to gather usage insights and address issues, which can affect service reliability and improvements. For example, diagnostic data[[3]](#footnote-3) provides Microsoft with valuable information about how our customers use features, how the features are (or are not) improving overall experience, and crash reports that help us to stay apprised of widespread issues.
+**Reduced Feedback Loop**: Disabling features and diagnostic data limits Microsoft's ability to gather usage insights and address issues, which can affect service reliability and improvements. For example, diagnostic data[[3]](#footnote-1) provides Microsoft with valuable information about how our customers use features, how the features are (or are not) improving overall experience, and crash reports that help us to stay apprised of widespread issues.
 
 **Need for Balance**: Organizations must find a balance between control, proper training, and delivering new features. Microsoft offers tools, transparency, and guidance to support informed, risk-based deployment decisions.
 
@@ -133,7 +133,7 @@ Now that we've outlined the types of changes that you can expect from Microsoft 
 
 #### Service release options
 
-Microsoft 365 services provide two options for receiving new product updates and features as they become available: Standard Release and Targeted Release.[[4]](#footnote-4) These release options help you manage how your organization receives service updates. We provide controls for you to designate which users receive updates, based on their association with one of the release options.
+Microsoft 365 services provide two options for receiving new product updates and features as they become available: Standard Release and Targeted Release.[[4]](#footnote-2) These release options help you manage how your organization receives service updates. We provide controls for you to designate which users receive updates, based on their association with one of the release options.
 
 As Microsoft develops products and features, new releases are validated in various stages. Figure 4 depicts these stages, with each validation stage reaching a broader audience. Before moving to the next stage, a threshold of deployments in the prior stage must be completed without any issues.
 
@@ -380,24 +380,8 @@ To learn more about the types of feedback and how Microsoft uses user feedback, 
 ## Footnotes
 
 1:<span id="footnote-1"></span>
-Net Promoter Score (NPS) is an industry calculation that measures user preferences for a product or service. NPS is calculated by accounting for users who detract, support, or are neutral toward the target of the examination. Subtracting the percentage of Detractors from the percentage of Promoters yields the Net Promoter Score, which can range from a low of -100 (if every customer is a Detractor) to a high of 100 (if every customer is a Promoter).
-
-2:<span id="footnote-2"></span>
-With a 1.5 margin of error.
-
-3:<span id="footnote-3"></span>
 Microsoft provides controls over the diagnostic data collected from user endpoints, as described in [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](../privacy/manage-privacy-controls.md). To the extent that Microsoft is a processor or subprocessor of Personal Data subject to the GDPR, the GDPR Terms in the [Microsoft Online Services Data Protection Addendum](https://www.microsoft.com/licensing/product-licensing/products) Attachment 3 govern that processing and the parties also agree to the following terms in this sub-section ("Processing of Personal Data; GDPR").
 
-4:<span id="footnote-4"></span>
+2:<span id="footnote-2"></span>
 For guidance about opting in to these service release options, see [Set up the Standard or Targeted release options](/microsoft-365/admin/manage/release-options-in-office-365).
 
-5:<span id="footnote-5"></span>
-If your entire organization is on a semi-annual cadence, you might find that the six-month period between feature updates causes your clients to fall out of compliance with regulatory requirements or internal policies as you wait for such an extended period between releases.
-
-6:<span id="footnote-6"></span>
-This consists of a selected subset of non-security updates for Semi-Annual Enterprise Channel.
-
-7:<span id="footnote-7"></span>
-For Configuration Manager to be able to manage Office updates, an Office COM object needs to be enabled on the computer where Office is installed. The Office COM object takes commands from Configuration Manager to download and install client updates. You can enable the Office COM object by using client policy in Configuration Manager, Group Policy, or the Office Deployment Tool. If you use more than one method, the Group Policy setting determines the final configuration.
-
-[def]: https://learn.microsoft.com/graph/service-communications-concept-overview
