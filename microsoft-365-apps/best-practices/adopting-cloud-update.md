@@ -25,7 +25,6 @@ This document covers:
 
 > [!NOTE]
 > The information in this document applies to updates for Microsoft 365 Apps only. Cloud update does not replace, modify, or impact existing solutions for deploying other updates, for example Windows updates.
-> Cloud update is currently in Public Preview.
 
 >[!Tip]
 > If you prefer video over text, we have a [playlist of short instructional videos](https://aka.ms/CloudUpdateVideos) for you.
@@ -52,10 +51,10 @@ Estimate network impact by reviewing the [number of devices on an outdated relea
 Updates downloaded from Office CDN use [Delivery Optimization](/windows/deployment/do/waas-delivery-optimization), reducing network impact through peer-to-peer file sharing. If Configuration Manager is in use, consider enabling [Microsoft Connected Cache](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) for centralized caching. If Delivery Optimization is disabled, we recommend enabling it to benefit Microsoft 365 Apps, Windows, Teams, Edge, and Windows Store Apps.
 
 ### Exclusions
-To exclude devices from cloud update, add Microsoft Entra or hybrid joined devices and/or users to an [Microsoft Entra ID group](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). See [Requirements for using Microsoft Entra groups](../admin-center/cloud-update.md#microsoft-entra-groups-requirements) for more details. Common devices often excluded include Remote Desktop Service Hosts and non-persistent virtual machines.
+To exclude devices from cloud update, add Microsoft Entra or hybrid joined devices and/or users to an [Microsoft Entra ID group](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). See [Requirements for using Microsoft Entra groups](../admin-center/cloud-update.md#microsoft-entra-groups-requirements) for more details. Device types that are often excluded include Remote Desktop Service Hosts and non-persistent virtual machines.
 
 ### Requirements and permissions
-Ensure your devices meet the [requirements](../admin-center/cloud-update.md#requirements) for using cloud update. [Network connectivity](../admin-center/cloud-update.md#network-requirements) from your devices to the Microsoft 365 Apps admin center is necessary. The [Office Apps admin role](/microsoft-365/admin/add-users/about-admin-roles#commonly-used-microsoft-365-admin-center-roles) is recommended due to its restrictive permissions that still allow cloud update configuration and enablement.
+Ensure your devices meet the [requirements](../admin-center/cloud-update.md#requirements) for using cloud update. [Network connectivity](../admin-center/cloud-update.md#network-requirements) from your devices to the Microsoft 365 Apps admin center is necessary. For the admins, the [Office Apps admin role](/microsoft-365/admin/add-users/about-admin-roles#commonly-used-microsoft-365-admin-center-roles) is recommended due to its restrictive permissions that still allow cloud update configuration and enablement.
 
 ## Enable Cloud Update
 Once you've gone through the benefits and preparation steps, it's time to activate cloud update.
