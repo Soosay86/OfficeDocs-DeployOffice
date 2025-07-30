@@ -19,7 +19,7 @@ ms.date: 05/30/2025
 
 ## Overview
 
-To use Microsoft 365 Copilot, Microsoft 365 Apps must run on the [Current](overview-update-channels.md#current-channel-overview) or [Monthly Enterprise Channel](overview-update-channels.md#monthly-enterprise-channel-overview). This article provides configuration guidance and best practices on how to switch Microsoft 365 Apps to such a channel.
+To use Microsoft 365 Copilot, Microsoft 365 Apps must run on [Current](overview-update-channels.md#current-channel-overview) or [Monthly Enterprise Channel](overview-update-channels.md#monthly-enterprise-channel-overview). This article provides configuration guidance and best practices on how to switch Microsoft 365 Apps to such a channel.
 
 > [!NOTE]
 > Assigning the Copilot licenses to users is a required step which is not covered in this documentation. For more information, see [How to prepare for Microsoft 365 Copilot](https://techcommunity.microsoft.com/t5/microsoft-365-copilot/how-to-prepare-for-microsoft-365-copilot/ba-p/3851566).
