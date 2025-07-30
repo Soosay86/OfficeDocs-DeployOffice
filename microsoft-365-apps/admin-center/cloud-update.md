@@ -126,7 +126,7 @@ To pause and resume a profile, follow these steps:
 ### Rollback
 
 > [!NOTE]
-> Rollback is only available for devices managed by the Monthly Enterprise Channel profile. 
+> Rollback is available only for devices managed by the Monthly Enterprise Channel profile. 
 
 Rollback enables you to roll back a device to a previous version. For example, if your finance department experiences an issue with the latest version of Excel, you can roll them back to the previous version. Monthly Enterprise Channel provides access to two previous monthly builds for rollback purposes through the Microsoft 365 Apps admin center.
 
@@ -136,7 +136,8 @@ Keep these points in mind when using rollback:
 - If the underlying issue was resolved, you can cancel a rollback action before the next version is available. 
 - A rollback can still be initiated when a profile is paused.
 - You can select either of the two previous monthly builds when rolling back devices. This gives you up to two months of rollback support.
-- The rollback builds are intended as a safety net when issues are encountered with the latest build, not as a method to delay updates. We recommend deploying the latest monthly build and only using rollback when necessary.
+- The rollback builds are intended as a safety net when issues are encountered with the latest build, not as a method to delay updates. We recommend deploying the latest monthly build and using rollback only when necessary.
+
 - It isn't possible to roll devices back to another channel.
 
 To trigger a rollback, follow these steps:
@@ -144,8 +145,8 @@ To trigger a rollback, follow these steps:
 1. Sign in to the [Microsoft 365 Apps admin center](https://config.office.com) with a privileged account.
 2. Expand **Cloud Update** from the left navigation and select **Monthly Enterprise Channel**.
 3. On the **Overview** tab of the **Monthly Enterprise Channel** profile, select **Channel actions** > **Rollback devices**.
-4. On the flyout, select which of the two previous versions you want to roll the device back to, enter the name of the device or devices, and select **Roll back**.
-5. The rollback action takes 24 hours to complete. You can monitor the status from the **Overview** page by selecting **Channel actions** > **Manage rolled back devices**.
+1. On the flyout, select which of the two previous build versions you want to roll the device back to, enter the name of the device or devices, and select **Roll back**.
+1. The rollback action can take up to 24 hours to complete. You can monitor the status from the **Overview** page by selecting **Channel actions** > **Manage rolled back devices**.
 
 ## Tenant settings
 
@@ -154,14 +155,14 @@ Tenant settings apply to all profiles, unless otherwise specified. Available set
 ### Exclusion windows
 
 > [!NOTE]
-> Exclusion windows is only available for devices managed by the Monthly Enterprise Channel profile. 
+> The exclusion windows feature is available only for devices managed by the Monthly Enterprise Channel profile. 
 
-Exclusion windows enables you to limit change in your environment during busy periods, such as tax season or at the end of the fiscal year. Create an exclusion window to prevent devices from downloading updates during specific dates. Keep these points in mind when using exclusion windows:
+Exclusion windows allows you to limit changes in your environment during busy periods, such as tax season or at the end of the fiscal year. Create an exclusion window to prevent devices from downloading updates during specific dates. Keep these points in mind when using exclusion windows:
 
 - By default, exclusion windows affect all devices managed by a corresponding cloud update profile. 
 - You can set an exclusion window for specific devices or users in a Microsoft Entra group. Only these specified devices or users are excluded from updates, while all other devices follow their regular update schedule.
-- Update exclusions start and end at 00:00 UTC on the specified dates, not local device time.
-- Consider adding a buffer when scheduling a start and end date to accommodate UTC. If a device received the update policy before the exclusion window applies, it continues with the update installation.
+- Update exclusions start 14 hours before 00:00 UTC and end 36 hours after 00:00 UTC on the specified dates, not local device time.  This automatic cushion help ensure that all impacted devices will not receive updates within the specified date range. 
+
 - Exclusion windows supports groups. Refer to the [Microsoft Entra group requirements](#microsoft-entra-groups-requirements) for cloud update.
 
 To create and manage an exclusion window, follow these steps:
@@ -293,7 +294,7 @@ The cloud update status for devices in inventory on a deactivated profile change
 Cloud updates take priority over existing update management settings for Microsoft 365 Apps. For example, if you apply settings through Microsoft Configuration Manager or set policies using Microsoft Intune’s configuration profiles, these settings remain unchanged by the cloud update but aren't enforced anymore. This change affects all devices managed by the cloud update.
 
 > [!NOTE]
-> Cloud update won't change the update settings of other products, such as Windows or Microsoft Edge. It won't prevent management solutions from reinstalling Microsoft 365 Apps. 
+> Cloud update won't change the update settings of other products, such as Windows or Microsoft Edge. It won't prevent other management solutions from reinstalling Microsoft 365 Apps. 
 
 ## Channel to profile mapping
 
@@ -327,7 +328,7 @@ If you're using [custom rollout waves](#rollout-waves), there could be instances
   
 ### My Device-based group didn't work with *[feature name]*
 
-If you're using a group that contains device objects, the devices must be Microsoft Entra joined or hybrid joined. Devices that are Microsoft Entra registered/Workplace joined aren't recognized when the group is processed. As an alternative, consider adding one or more corresponding user objects. For more information, see the [requirements for using Microsoft Entra groups](#microsoft-entra-groups-requirements).
+If you're using a group that contains device objects, the devices must be Microsoft Entra joined or hybrid joined. *Devices that are Microsoft Entra registered/Workplace joined aren't recognized when the group is processed.* As an alternative, consider adding one or more corresponding user objects. For more information, see the [requirements for using Microsoft Entra groups](#microsoft-entra-groups-requirements).
 
 ### I noticed that no Component Object Model (COM) component for Cloud update has been registered on my devices.
 
