@@ -2965,7 +2965,7 @@ The following fields are collected:
 
 #### Office.Android.DocsUI.PaywallControl.CoroutineLaunchException
 
-This event is triggered when tapping the share invite link in user profile fails. It's a critical data to log coroutine launch failures in paywall flows. This helps identify unexpected crashes or issues during asynchronous operations.
+This event is triggered when tapping the share invite link in user profile fails. It's critical data to log coroutine launch failures in paywall flows. This helps identify unexpected crashes or issues during asynchronous operations.
 
 The following fields are collected:
 
