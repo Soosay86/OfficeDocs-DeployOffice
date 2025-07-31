@@ -2963,7 +2963,15 @@ The following fields are collected:
 
 - **Data_TimeSplitMeasurements** - A string value logging the time duration spent in some function calls, in a format with function tag, start timestamp and duration. 
 
-#### Office.Android.DocsUI.PaywallControl.OneDriveStorageUsage 
+#### Office.Android.DocsUI.PaywallControl.CoroutineLaunchException
+
+This event is triggered when tapping the share invite link in user profile fails. It is a critical data to log coroutine launch failures in paywall flows. This helps identify unexpected crashes or issues during asynchronous operations.
+
+The following fields are collected:
+
+- **StackTrace** - Captures the stack trace at the time of the exception.
+
+#### Office.Android.DocsUI.PaywallControl.OneDriveStorageUsage
 
 This event is triggered when the notification to turn on Auto Renewal is displayed. The data is used to determine that the notification is shown to non-eligible users based on their estimated OneDrive storage usage.
 
@@ -2980,7 +2988,7 @@ The following fields are collected:
  
 This is critical usage telemetry for the upsell in the First Run Experience for unsigned users. This event captures the first-run sign-in metrics. The data will be used to infer insights for the pre sign-in and understand if the user is continuing to the next stage in the user flow.
  
-The following fields are collected: 
+The following fields are collected:
 
 - **EventDate** - Timestamp of the event occurrence  
 
@@ -2988,6 +2996,21 @@ The following fields are collected:
 
 - **SessionID** - Globally Unique Identifier to connect events by session
 
+#### Office.Android.DocsUI.PaywallControl.ShareableLinkFail
+
+This event is triggered when tapping the share invite link in user profile fails. This event is used to determine the reason for the shareable link service failure.
+
+The following fields are collected:
+
+- **failureReason** - Indicates the failure reason of shareable link service.
+
+#### Office.Android.DocsUI.PaywallControl.ShareableLinkSuccess
+
+This event is triggered when the Family onboarding aggregator backend is successful and is triggered on share invite link tap through user profile. This event is used to confirm that the Family subscription sharable link was successfully generated.
+
+The following fields are collected:
+
+- None
 
 #### Office.Android.DocsUI.PaywallControl.SkuChooserToggled
 
@@ -16932,6 +16955,14 @@ The following fields are collected:
 
 - **DBTExceptionType** - This is type of error (enum) which is property of exception.
 
+#### Office.Android.DocsUI.PaywallControl.FamilyShareScreenShown
+
+The share family subscription view is presented when the service detects that the user has an active family subscription. This enables us to understand the number of users who saw this view ensuring the service is performing as expected.
+
+The following fields are collected:
+
+- **entryPoint** - Indicates the entry point through which share family subscription view is displayed to the user.
+
 #### Office.Android.DocsUI.PaywallControl.SaveFlowUiShown
 
 Critical data to log the result of offers UI is shown to user or not. The data is used to understand if the user sees the relevant offer inline with their SKU.
@@ -16944,6 +16975,13 @@ The following fields are collected:
 
 - **SessionID** - GUID to connect events by session
 
+##### Office.Android.DocsUI.PaywallControl.ShareLinkTap
+
+This data is used to track the clicks and number of successful subscription shares, ensuring that the supporting services are performing as expected.
+
+The following fields are collected:
+
+- None
 
 #### Office.Android.DocsUI.Views.DimePurchaseFlowState
 
