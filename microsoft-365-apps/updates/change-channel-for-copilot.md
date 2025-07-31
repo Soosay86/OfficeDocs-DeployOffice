@@ -12,7 +12,7 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 description: "Guide for admins on switching devices to Current Channel or Monthly Enterprise Channel for Microsoft 365 Apps to prepare for Copilot usage"
-ms.date: 05/30/2025
+ms.date: 07/31/2025
 ---
 
 # Change update channel of Microsoft 365 Apps to enable Copilot
@@ -45,7 +45,7 @@ Our general recommendation for Microsoft 365 Apps is to direct devices to the Of
 This section covers the recommended approach for changing the update channel using Cloud Updates. It walks you through the  steps of enabling Cloud Update and initiating the channel change.
 
 > [!NOTE]
-> Cloud update and the Channel change feature are in **public preview**.
+> The Channel change feature is in **public preview**.
 
 We recommend using Microsoft Entra ID groups with user objects for initiating the channel change. It makes targeting the right subset of devices easier, especially when using the same Microsoft Entra ID group for assigning Copilot licenses. The service automatically translates user objects into the matching device objects, based on activation data.
 
@@ -92,7 +92,7 @@ Otherwise follow these instructions:
 1. Select **Move devices** to initiate the channel change.
 
 > [!NOTE]
-> It might take up to 24 hours for the channel change to be completed by the device, assuming devices are online and can connect to the service.
+> It can take up to 24 hours for the channel change to be triggered on the device, assuming devices are online and can connect to the service.
 
 > [!NOTE]
 > A channel change is a point-in-time activity. If you are using Microsoft Entra ID groups and add devices or users to the group after initiating a channel change, those devices will not be moved automatically. You will have to initiate the channel change again. There's no need to remove already switched devices from the group.
