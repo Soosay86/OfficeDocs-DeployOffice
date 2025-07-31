@@ -4978,9 +4978,9 @@ This event is used to understand the in-app purchase (IAP) experience for the us
 
 - **Office.iOS.Paywall.ExistingUserSignInButtonClicked** - To log how many people are clicking on the sign-in button on the SKU chooser screen. The data is used to measure the performance of the Sign-in button and is triggered every time a user clicks this button.
 
-- **Office.iOS.Paywall.LossAversionScreenView.PurchaseButtonClick** - This event is triggered when user clicks on the purchase button on the loss aversion screen. This event will help determine how many users are clicking on this button, thus helping keep track of the end-to-end performance and functionality of the button.
+- **Office.iOS.Paywall.LossAversionScreenView.PurchaseButtonClick** - This event is triggered when user selects the purchase button on the loss aversion screen. This event will help determine how many users select this button, thus helping keep track of the end-to-end performance and functionality of the button.
 
-- **Office.iOS.Paywall.LossAversionScreenView.TryLaterButtonClick** - This event is triggered when user clicks on the "try later" button on the loss aversion screen. This event will help determine how many users click on this button to opt out of the purchase process, thus helping keep track of the performance and functionality of the button.
+- **Office.iOS.Paywall.LossAversionScreenView.TryLaterButtonClick** - This event is triggered when user selects the "Try later" button on the loss aversion screen. This event will help determine how many users select this button to opt out of the purchase process, thus helping keep track of the performance and functionality of the button.
 
 - **Office.iOS.Paywall.Paywall.Presented** - Data is collected when paywall control is shown to the user. The data is used to build a view to measure the conversion rate at every step and ensure that the user interface is performing as expected with users experiencing minimal friction during the purchase experience.
 
@@ -5519,7 +5519,7 @@ The following fields are collected:
 
 - **Data_Mode** – Integer representing the license mode
 
-- **Data_SessionIdentity** – Hash of user identity associated with the active document session.
+- **Data_SessionIdentity** – Hash of the user identity associated with the active document session.
 
 - **Data_SessionIdentitySpace** – Categorization of the user identity associated with the active document session (consumer or commercial).
 

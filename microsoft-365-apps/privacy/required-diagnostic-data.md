@@ -1702,7 +1702,7 @@ The following fields are collected:
 
 - **emo_default_meeting_provider** - The type of default meeting provider used by the user while creating the meeting. Helps us to understand the user’s engagement with the "Every meeting online" feature.
 
-- **event_type** - The type of event this telemetry is for. Possible values are “event” (denote this as a published event) and “draft” (denoting this as a draft event which is not published).
+- **event_type** - The type of event this telemetry is for. Possible values are “event” (denoting this as a published event) and “draft” (denoting this as a draft event which isn't published).
 
 - **guest_count** - The number of guests on the meeting. Helps us make sure that the guests are being added correctly.
 
