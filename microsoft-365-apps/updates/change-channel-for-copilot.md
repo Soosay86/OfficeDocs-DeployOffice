@@ -12,7 +12,7 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 description: "Guide for admins on switching devices to Current Channel or Monthly Enterprise Channel for Microsoft 365 Apps to prepare for Copilot usage"
-ms.date: 05/30/2025
+ms.date: 07/31/2025
 ---
 
 # Change update channel of Microsoft 365 Apps to enable Copilot
