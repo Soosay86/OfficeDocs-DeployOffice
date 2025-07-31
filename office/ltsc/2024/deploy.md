@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Provides IT admins with information on how to deploy Office LTSC 2024."
-ms.date: 10/08/2024
+ms.date: 07/29/2025
 ---
 
 # Deploy Office LTSC 2024
