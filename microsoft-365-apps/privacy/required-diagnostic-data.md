@@ -12,7 +12,7 @@ ms.collection:
 - must-keep
 - trust-pod
 hideEdit: true
-ms.date: 07/03/2025
+ms.date: 08/01/2025
 ---
 
 # Required diagnostic data for Office
@@ -1702,7 +1702,9 @@ The following fields are collected:
 
 - **emo_default_meeting_provider** - The type of default meeting provider used by the user while creating the meeting. Helps us to understand the user’s engagement with the "Every meeting online" feature.
 
-- **guest_count** - The number of guests on the meeting. Helps us make sure that the guests are being added correctly. 
+- **event_type** - The type of event this telemetry is for. Possible values are “event” (denote this as a published event) and “draft” (denoting this as a draft event which is not published).
+
+- **guest_count** - The number of guests on the meeting. Helps us make sure that the guests are being added correctly.
 
 - **is_all_day** - Used along with "meeting_duration" to specify if this is an all-day meeting. Helps us understand if there are any issues with actions performed on all-day meetings. 
 

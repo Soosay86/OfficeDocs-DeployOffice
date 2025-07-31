@@ -12,7 +12,7 @@ ms.collection:
 - must-keep
 - trust-pod
 hideEdit: true
-ms.date: 07/03/2025
+ms.date: 08/01/2025
 ---
 
 # Essential services for Office
@@ -4978,6 +4978,10 @@ This event is used to understand the in-app purchase (IAP) experience for the us
 
 - **Office.iOS.Paywall.ExistingUserSignInButtonClicked** - To log how many people are clicking on the sign-in button on the SKU chooser screen. The data is used to measure the performance of the Sign-in button and is triggered every time a user clicks this button.
 
+- **Office.iOS.Paywall.LossAversionScreenView.PurchaseButtonClick** - This event is triggered when user clicks on the purchase button on the loss aversion screen. This event will help determine how many users are clicking on this button, thus helping keep track of the end-to-end performance and functionality of the button.
+
+- **Office.iOS.Paywall.LossAversionScreenView.TryLaterButtonClick** - This event is triggered when user clicks on the "try later" button on the loss aversion screen. This event will help determine how many users click on this button to opt out of the purchase process, thus helping keep track of the performance and functionality of the button.
+
 - **Office.iOS.Paywall.Paywall.Presented** - Data is collected when paywall control is shown to the user. The data is used to build a view to measure the conversion rate at every step and ensure that the user interface is performing as expected with users experiencing minimal friction during the purchase experience.
 
    The following fields are collected:
@@ -5483,13 +5487,13 @@ The following fields are collected:
 ### Office.Licensing.CopilotStatus
 
 This event is triggered when a user launches an app. The data is used to detect when a user is eligible for BYOA (Bring Your Own AI) functionality. 
-Without information of whether the user is entitled to use the app and the Copilot add-in, we cannot troubleshoot or identify performance of the Copilot add-in in these scenarios.
+Without information of whether the user is entitled to use the app and the Copilot add-in, we cannot troubleshoot or identify performance of the Copilot add-in.
 
 The following fields are collected:
 
 - **Data_ActiveIdentity** – Hash of user ID of the active identity (akin to User_PrimaryIdentityHash)
 
-- **Data_ActiveIdentitySpace** – Categorization of Session Identity (consumer or commercial)
+- **Data_ActiveIdentitySpace** – Categorization of active identity (consumer or commercial)
 
 - **Data_AllLicenseIDs** – Semi-colon delimited list of all license IDs
 
@@ -5503,17 +5507,21 @@ The following fields are collected:
 
 - **Data_CopilotScenario** – Estimation of whether the user is Prodigi, CopilotProConsumer, or Enterprise
 
-- **Data_IsCopilotProUser** – T/F whether Copilot is enabled through Copilot Pro subscription
+- **Data_CopilotStarterEnabled** - True or False whether Copilot Starter value is enabled
 
-- **Data_IsEnterpriseCopilotUser** – T/F whether Copilot is enabled through Enterprise-enabled subscription
+- **Data_CopilotTierAggregated** - The Copilot tier 
+
+- **Data_IsCopilotProUser** – True or False whether Copilot is enabled through Copilot Pro subscription
+
+- **Data_IsEnterpriseCopilotUser** – True or False whether Copilot is enabled through Enterprise-enabled subscription
 
 - **Data_IsProdigiCopilotUser** – Whether Copilot is enabled through Personal or Family subscription
 
 - **Data_Mode** – Integer representing the license mode
 
-- **Data_SessionIdentity** – Hash of user ID of the session Identity (akin to User_PrimaryIdentityHash)
+- **Data_SessionIdentity** – Hash of user identity associated with the active document session.
 
-- **Data_SessionIdentitySpace** – Categorization of Session Identity (consumer or commercial)
+- **Data_SessionIdentitySpace** – Categorization of the user identity associated with the active document session (consumer or commercial).
 
 
 ### Office.Licensing.Dialogs.ReactNativeDialog.RekaService.CloseAndStoreUserAction
