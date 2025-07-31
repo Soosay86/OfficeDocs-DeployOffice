@@ -264,7 +264,7 @@ Both "prevent or fix issues" and "plan for change" messages might require action
 > [!IMPORTANT]
 > To help you prioritize and plan, the **Act by** column contains the date by which action is required.
 
-The Message center admin user interface is one way to obtain service change information. Using the [Access service health and communications in Microsoft Graph](https://learn.microsoft.com/graph/service-communications-concept-overview), you can build automated solutions to query relevant data.
+The Message center admin user interface is one way to obtain service change information. Using the [Access service health and communications in Microsoft Graph](/graph/service-communications-concept-overview), you can build automated solutions to query relevant data.
 
 We commit to continuously improving our change classification and notification processes. Our efforts to predict which changes may impact customer environments are the basis of our change classifications, but these predictions are limited without input from our community of customers. The customer feedback we receive through various channels enhances our ability to respond to change concerns in an agile, democratized, and customer-centric manner.
 
