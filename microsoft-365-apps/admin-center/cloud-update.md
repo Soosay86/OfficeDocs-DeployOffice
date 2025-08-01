@@ -161,7 +161,7 @@ Exclusion windows allows you to limit changes in your environment during busy pe
 
 - By default, exclusion windows affect all devices managed by a corresponding cloud update profile. 
 - You can set an exclusion window for specific devices or users in a Microsoft Entra group. Only these specified devices or users are excluded from updates, while all other devices follow their regular update schedule.
-- Update exclusions start 14 hours before 00:00 UTC and end 36 hours after 00:00 UTC on the specified dates, not local device time.  This automatic cushion help ensure that all impacted devices will not receive updates within the specified date range. 
+- Update exclusions start 14 hours before 00:00 UTC and end 36 hours after 00:00 UTC on the specified dates, not local device time.  This automatic cushion helps ensure that no impacted devices will receive updates within the specified date range. 
 
 - Exclusion windows supports groups. Refer to the [Microsoft Entra group requirements](#microsoft-entra-groups-requirements) for cloud update.
 
